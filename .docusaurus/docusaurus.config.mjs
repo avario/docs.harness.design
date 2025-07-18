@@ -4,8 +4,8 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
-  "tagline": "Dinosaurs are cool",
+  "title": "harness.design",
+  "tagline": "Wire harness design tool",
   "favicon": "img/favicon.ico",
   "future": {
     "v4": {
@@ -30,8 +30,6 @@ export default {
   },
   "url": "https://your-docusaurus-site.example.com",
   "baseUrl": "/",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
@@ -73,9 +71,9 @@ export default {
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
-      "title": "My Site",
+      "title": "harness.design",
       "logo": {
-        "alt": "My Site Logo",
+        "alt": "harness.design Logo",
         "src": "img/logo.svg"
       },
       "items": [
@@ -141,7 +139,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2025 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2025 harness.design. Built with Docusaurus."
     },
     "prism": {
       "theme": {
