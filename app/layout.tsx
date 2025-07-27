@@ -2,6 +2,7 @@ import { Footer, Layout, Navbar } from "nextra-theme-docs";
 import { Head } from "nextra/components";
 import { getPageMap } from "nextra/page-map";
 import "nextra-theme-docs/style.css";
+import Logo from "./Logo";
 
 export const metadata = {
   // Define your metadata here
@@ -10,9 +11,7 @@ export const metadata = {
 
 const navbar = (
   <Navbar
-    logo={
-      <img src="/images/general/logo.svg" alt="Logo" width={200} height={40} />
-    }
+    logo={<Logo />}
     // ... Your additional navbar options
   />
 );
