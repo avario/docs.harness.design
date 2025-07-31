@@ -1,5 +1,40 @@
-# Connector
+import { Table } from 'nextra/components'
 
-Nextra provides a set of built-in components that you can use in your documentation.
+# Connector Part
 
-Check them out at [Nextra Components](https://nextra.site/docs/built-ins).
+## Contact Properties
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique code used to identify a specific part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that makes the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Cavities</Table.Td>
+      <Table.Td>Number of connections/ contacts that can connect to/ go inside the connector</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Gender</Table.Td>
+      <Table.Td>Gender of connector, Male or Female</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Color</Table.Td>
+      <Table.Td>Color of connector</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Assign a Connector Part
+Right click on a Connector in the Schematic or Layout View and select the Connector Part you want to assign
+<br />
+<img src="/components/connector-assign.png" width={634} style={{ borderRadius: '8px' }}/>

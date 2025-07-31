@@ -1,5 +1,36 @@
-# Diode
+import { Table } from 'nextra/components'
 
-Nextra provides a set of built-in components that you can use in your documentation.
+# Diode Part
 
-Check them out at [Nextra Components](https://nextra.site/docs/built-ins).
+## Diode Properties
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique code used to identify a specific part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that makes the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>VBR</Table.Td>
+      <Table.Td>Reverse breakdown voltage of diode measured in volts, select untis mV, V or kV</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>IF</Table.Td>
+      <Table.Td>Forward current rating of diode measured in amps, select units mA, A or kA</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Assign a Diode Part
+Right click on a Diode in the Schematic or Layout View and select the Diode Part you want to assign
+<br />
+<img src="/components/diode-assign.png" width={634} style={{ borderRadius: '8px' }}/>

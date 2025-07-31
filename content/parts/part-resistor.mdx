@@ -1,5 +1,36 @@
-# Resistor
+import { Table } from 'nextra/components'
 
-Nextra provides a set of built-in components that you can use in your documentation.
+# Resistor Part
 
-Check them out at [Nextra Components](https://nextra.site/docs/built-ins).
+## Resistor Properties
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique code used to identify a specific part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that makes the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Resistance</Table.Td>
+      <Table.Td>Resistance of the resistor in ohms, select untis mΩ, Ω, kΩ or MΩ</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Power</Table.Td>
+      <Table.Td>Power dissapation of resistor in watts, select units mW, W or kW</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Assign a Resistor Part
+Right click on a Resistor in the Schematic or Layout View and select the Resistor Part you want to assign
+<br />
+<img src="/components/resistor-assign.png" width={634} style={{ borderRadius: '8px' }}/>

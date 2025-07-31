@@ -1,5 +1,48 @@
-# Cable
+import { Table } from 'nextra/components'
 
-Nextra provides a set of built-in components that you can use in your documentation.
+# Cable Part
 
-Check them out at [Nextra Components](https://nextra.site/docs/built-ins).
+## Cable Properties
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique code used to identify a specific part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that makes the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Color</Table.Td>
+      <Table.Td>Color cable outer sheath</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Shielded</Table.Td>
+      <Table.Td>If there is a shield around the cable</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Cores</Table.Td>
+      <Table.Td>How many cores/ wires the cable has</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Core 1 - Color</Table.Td>
+      <Table.Td>Color of inner wires insulator</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Core 1 - Guage</Table.Td>
+      <Table.Td>Diameter of the inner conductor in mm² or AWG (type units to adjust from default)</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Assign a Cable Part
+Right click on a Cable in the Schematic View and select the Cable Part you want to assign
+<br />
+<img src="/components/cable-assign.png" width={634} style={{ borderRadius: '8px' }}/>

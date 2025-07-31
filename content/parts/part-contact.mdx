@@ -1,5 +1,44 @@
-# Contact
+import { Table } from 'nextra/components'
 
-Nextra provides a set of built-in components that you can use in your documentation.
+# Contact Part
 
-Check them out at [Nextra Components](https://nextra.site/docs/built-ins).
+## Contact Properties
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique code used to identify a specific part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that makes the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Type</Table.Td>
+      <Table.Td>Type of connection between wire and contact, crimp, solder or other</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Gender</Table.Td>
+      <Table.Td>Gender of crimp, pin or socket</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Min Gauge</Table.Td>
+      <Table.Td>Minimum wire size the contact can connect to in mm² or AWG (type units to adjust from default)</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Max Gauge</Table.Td>
+      <Table.Td>Max wire size the contact can connect to in mm² or AWG (type units to adjust from default)</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Assign a Contact Part
+Right click on a Connector in the Schematic or Layout View and select the Connector Part you want to assign contacts to. You can assign the contact to all the cavities or individual cavities
+<br />
+<img src="/components/connector-assign-contact.png" width={634} style={{ borderRadius: '8px' }}/>

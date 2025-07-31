@@ -1,5 +1,44 @@
-# Terminal
+import { Table } from 'nextra/components'
 
-Nextra provides a set of built-in components that you can use in your documentation.
+# Terminal Part
 
-Check them out at [Nextra Components](https://nextra.site/docs/built-ins).
+## Terminal Properties
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique code used to identify a specific part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that makes the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Size</Table.Td>
+      <Table.Td>Size of terminal in mm, cm, m, in, ft and yrd (type units to adjust from default) </Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Min Gauge</Table.Td>
+      <Table.Td>Minimum wire size the terminal can connect to in mm² or AWG (type units to adjust from default)</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Max Gauge</Table.Td>
+      <Table.Td>Max wire size the terminal can connect to in mm² or AWG (type units to adjust from default)</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Color</Table.Td>
+      <Table.Td>Color of the terminal's insulator</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Assign a Terminal Part
+Right click on a Terminal in the Schematic or Layout View and select the Terminal Part you want to assign
+<br />
+<img src="/components/terminal-assign.png" width={320} style={{ borderRadius: '8px' }}/>
