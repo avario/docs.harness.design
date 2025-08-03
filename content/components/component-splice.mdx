@@ -1,19 +1,29 @@
+import { Callout } from 'nextra/components'
+
 # Splice
-A splice is the connection of one or more wires within the harness.
 
-## Add a Splice
-Right click on the artboard of the Schematic view to add a Splice
-<br />
-<img src="/components/splice-add-right-click.png" width={634} style={{ borderRadius: '8px' }}/>
-A Splice can be added by selecting multiple wires in the Schematic view and right clicking to select "Add Splice"
-<br />
-<img src="/components/splice-add-wires.png" width={634} style={{ borderRadius: '8px' }}/>
+A **splice** connects two or more wires within the harness. Each splice can be assigned a [splice part](/parts/part-splice).
 
-## Locate a Splice
-Splice are located at branch points automatically in the harness based on the most efficent path for the wires. A Splice placed automatically is shown by a dashed arrow line
-<br />
-<img src="/components/splice-locate-automatic.png" width={634} style={{ borderRadius: '8px' }}/>
+## Adding a Splice
 
-Splices can be located manually by dragging from the location bar on the splice in the Layout view to any branch point, connector or terminal in the harness.
-<br />
-<img src="/components/splice-locate-manual.png" width={634} style={{ borderRadius: '8px' }}/>
+Right-click on the canvas in the [Schematic View](/quick-start/schematic) and select **Splice**.  
+<br />  
+<img src="/components/splice-add-right-click.png" width={634} style={{ borderRadius: '8px' }} />
+
+You can also add a splice by selecting multiple wires in the Schematic View, then right-clicking and choosing **Add splice**.  
+<br />  
+<img src="/components/splice-add-wires.png" width={634} style={{ borderRadius: '8px' }} />
+
+## Locating a Splice
+
+Splices are automatically positioned at branch points based on the most efficient wiring path. An automatically placed splice is shown with a dashed arrow line.  
+<br />  
+<img src="/components/splice-locate-automatic.png" width={634} style={{ borderRadius: '8px' }} />
+
+To position a splice manually, drag its location handle in the Layout View to any branch point, connector, or terminal.  
+<br />  
+<img src="/components/splice-locate-manual.png" width={634} style={{ borderRadius: '8px' }} />
+
+<Callout>  
+To reset a splice to automatic placement, select its location line and press **Delete**.  
+</Callout>

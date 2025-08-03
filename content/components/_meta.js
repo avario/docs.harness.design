@@ -1,11 +1,11 @@
 export default {
-  'component-branch-point': '',
-  'component-bundle': '',
-  'component-cable': '',
   'component-connector': '',
-  'component-diode': '',
-  'component-resistor': '',
-  'component-splice': '',
   'component-terminal': '',
   'component-wire': '',
+  'component-splice': '',
+  'component-cable': '',
+  'component-diode': '',
+  'component-resistor': '',
+  'component-bundle': '',
+  'component-branch-point': '',
 }

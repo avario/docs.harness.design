@@ -1,16 +1,38 @@
+import { Steps } from 'nextra/components'
+
 # Branch Point
-A Branch Point is used to join bundles together. They are used to locate components that live inside the harness such as [splices](/components/component-splice), [diodes](/components/component-diode) and [resistors](/components/component-resistor)
 
-## Add a Branch Point
-In the Layout View right click and select Branch Point
-<br />
-<img src="/components/branchpoint-add.png" width={634} style={{ borderRadius: '8px' }}/>
+A **branch point** is used to join multiple bundles together.
 
-Select multiple Bundles, right click, select "Add Branch Point" to merge them into a single Branch Point
-<br />
-<img src="/components/branchpoint-add-wires.png" width={634} style={{ borderRadius: '8px' }}/>
+Inline components that are located within the harness—such as [splices](/components/component-splice), [diodes](/components/component-diode), and [resistors](/components/component-resistor)—can also be positioned at branch points.
 
-## Locate Branch Point
-In the Layout View click and drag the Branch Point to locate it
-<br />
-<img src="/components/branchpoint-locate.png" width={634} style={{ borderRadius: '8px' }}/>
+Branch points can only be added in the [Layout View](/quick-start/layout).
+
+## Adding Branch Points
+
+There are several ways to add branch points to your harness:
+
+<Steps>
+### Add a New Branch Point  
+Right-click on the canvas and select **Branch Point**. This will add a branch point with no connected bundles. Drag from the connection point of a connector, terminal, or another branch point to create a bundle to the new branch point.  
+<br />  
+<img src="/components/branchpoint-add.png" width={634} style={{ borderRadius: '8px' }} />
+
+### Add a Branch Point to a Bundle  
+Right-click on a bundle and select **Add Branch Point**. This splits the bundle into two, with each segment connecting to the new branch point.
+
+### Join Multiple Bundles with a Branch Point  
+Select multiple bundles, right-click, and choose **Add Branch Point**. The selected bundles will be merged at a new branch point.  
+<br />  
+<img src="/components/branchpoint-add-wires.png" width={634} style={{ borderRadius: '8px' }} />
+</Steps>
+
+## Positioning Branch Points
+
+Click and drag a branch point to position it on the canvas.  
+<br />  
+<img src="/components/branchpoint-locate.png" width={634} style={{ borderRadius: '8px' }} />
+
+## Merging Branch Points
+
+To merge two branch points, drag one onto the other.

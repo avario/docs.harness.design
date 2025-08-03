@@ -2,21 +2,32 @@
 asIndexPage: true
 ---
 
+import { Callout } from 'nextra/components'
+
 # Parts
 
-Parts are the physical items used in the harness, such as connectors, cables, or coverings. They are created and managed in the Parts view. Each Part contains specific properties like part number, manufacturer, colour etc. These properties are inherited by Components when a Part is assigned to them.
+**Parts** are the physical items used in the harness—such as connectors, cables, and coverings. They are created and managed in the **Parts View**.
 
-## Add a Part
-In the Parts View either right click on the canvas or click the "Add Part" button in the bottom left corner of the view to add a part.
-<br />
-<img src="/parts/part-add.png" width={231} style={{ borderRadius: '8px' }}/>
+Each part can have specific properties like part number, manufacturer, colour, and more. Parts are assigned to [components](/components), and once assigned, relevant properties are automatically validated. For example, a [connector part](/parts/part-connector) must have the same number of cavities as the [connector component](/components/component-connector) it is assigned to.
 
-## Edit a Part
-In the Parts View select the dropdown arrow on the right side of the parts table to expand part and edit its properties
-<br />
-<img src="/parts/part-edit.png" width={634} style={{ borderRadius: '8px' }}/>
+## Adding Parts
 
-## Assign a Part
-Parts get assigned to Components in the Layout view. In the Layout view right click a Component, then select the appropriate corresponding Part
-<br />
-<img src="/components/connector-assign.png" width={634} style={{ borderRadius: '8px' }}/>
+In the Parts View, right-click on the canvas or click the `+` button in the bottom-left corner to add a new part.  
+<br />  
+<img src="/parts/part-add.png" width={231} style={{ borderRadius: '8px' }} />
+
+## Editing Parts
+
+Click the dropdown arrow on the right side of a part row in the Parts table to expand and edit its properties.  
+<br />  
+<img src="/parts/part-edit.png" width={634} style={{ borderRadius: '8px' }} />
+
+## Assigning Parts
+
+Parts are assigned to components in the [Layout](/quick-start/layout) or [Schematic](/quick-start/schematic) view. Right-click a component, then select the appropriate part from the list.  
+<br />  
+<img src="/components/connector-assign.png" width={634} style={{ borderRadius: '8px' }} />
+
+<Callout>  
+Quantities are automatically updated as parts are assigned to components.  
+</Callout>

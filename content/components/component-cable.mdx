@@ -1,32 +1,43 @@
 # Cable
-A cable is a group of wires wrapped in a sheath
 
-## Add a Cable
-Right click on the artboard of the Schematic view to add a Cable
-<br />
-<img src="/components/cable-add.png" width={634} style={{ borderRadius: '8px' }}/>
+A **cable** is a group of individual wires—called **cores**—wrapped in a sheath.
 
-Select multiple Wires and right click and select "Make Cable" to merge the wires into a cable
-<br />
-<img src="/components/cable-add-wires.png" width={634} style={{ borderRadius: '8px' }}/>
+[Cable parts](/parts/part-cable) can be assigned to cables created in the [Schematic View](/quick-start/schematic).
 
-## Route a Cable
-Cables are routed automatically based on connections and bundle locations. Cable length is based on longest wire
-<br />
-<img src="/components/cable-route.png" width={634} style={{ borderRadius: '8px' }}/>
+## Adding a Cable
 
-## Add wires to Cable
+Right-click on the canvas in the Schematic View and select **Cable** to add a new cable.  
+<br />  
+<img src="/components/cable-add.png" width={634} style={{ borderRadius: '8px' }} />
 
-Select the Cable in the Schematic View and click the "+" button to add wires
-<br />
-<img src="/components/cable-add-wire.png" width={634} style={{ borderRadius: '8px' }}/>
+### Create a Cable from Wires
 
-## Add sheild to Cable
+Select multiple wires, right-click, and choose **Make cable**. This creates a cable with one core for each selected wire.  
+<br />  
+<img src="/components/cable-add-wires.png" width={634} style={{ borderRadius: '8px' }} />
 
-Right click the Cable in the Schematic View and click "Add Sheild"
-<br />
-<img src="/components/cable-sheild.png" width={634} style={{ borderRadius: '8px' }}/>
+## Creating Cable Connections
 
-Example of a Cable with a Sheild
-<br />
-<img src="/components/cable-shield-example.png" width={634} style={{ borderRadius: '8px' }}/>
+Click and drag from a component's connection point to one of the cable's cores. Once two components are connected to the same core, a connection is established using that core as the conductor.
+
+## Cable Routing
+
+Cables are routed automatically based on connections and bundles. The cable length is determined by it's longest core.  
+<br />  
+<img src="/components/cable-route.png" width={634} style={{ borderRadius: '8px' }} />
+
+## Adding and Removing Cable Cores
+
+Select the cable in the Schematic View, then click the `+` button to add cores, or the `–` button to remove them.  
+<br />  
+<img src="/components/cable-add-wire.png" width={634} style={{ borderRadius: '8px' }} />
+
+## Adding a Shield to a Cable
+
+Right-click the cable in the Schematic View and select **Add Shield**.  
+<br />  
+<img src="/components/cable-sheild.png" width={634} style={{ borderRadius: '8px' }} />
+
+Shields can be connected to components just like wires.  
+<br />  
+<img src="/components/cable-shield-example.png" width={634} style={{ borderRadius: '8px' }} />

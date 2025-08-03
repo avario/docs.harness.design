@@ -1,8 +1,9 @@
 import { Table } from 'nextra/components'
+import { Callout } from 'nextra/components'
 
 # Terminal Part
 
-## Terminal Properties
+<br />
 <Table>
   <thead>
     <Table.Tr>
@@ -13,23 +14,23 @@ import { Table } from 'nextra/components'
   <tbody>
     <Table.Tr>
       <Table.Td>Part Number</Table.Td>
-      <Table.Td>Unique code used to identify a specific part</Table.Td>
+      <Table.Td>Unique identifier for the terminal part</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Manufacturer</Table.Td>
-      <Table.Td>Company that makes the part</Table.Td>
+      <Table.Td>Company that produces the part</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Size</Table.Td>
-      <Table.Td>Size of terminal in mm, cm, m, in, ft and yrd (type units to adjust from default) </Table.Td>
+      <Table.Td>Overall terminal size</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Min Gauge</Table.Td>
-      <Table.Td>Minimum wire size the terminal can connect to in mm² or AWG (type units to adjust from default)</Table.Td>
+      <Table.Td>Minimum wire size supported</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Max Gauge</Table.Td>
-      <Table.Td>Max wire size the terminal can connect to in mm² or AWG (type units to adjust from default)</Table.Td>
+      <Table.Td>Maximum wire size supported</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Color</Table.Td>
@@ -37,8 +38,15 @@ import { Table } from 'nextra/components'
     </Table.Tr>
   </tbody>
 </Table>
+<Callout>
+For the terminal size, you can enter units such as `mm`, `cm`, or `in`.  
+</Callout>
+<Callout>  
+You can enter `mm` or `AWG` for gauge values. Set the default units under **Main Menu → Preferences**.  
+</Callout>
 
-## Assign a Terminal Part
-Right click on a Terminal in the Schematic or Layout View and select the Terminal Part you want to assign
+## Assigning a Terminal Part
+
+Right-click on a terminal in the Schematic or Layout View and select the terminal part you want to assign.  
 <br />
-<img src="/components/terminal-assign.png" width={320} style={{ borderRadius: '8px' }}/>
+<img src="/components/terminal-assign.png" width={320} style={{ borderRadius: '8px' }} />

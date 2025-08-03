@@ -1,16 +1,25 @@
+import { Callout } from 'nextra/components'
+
 # Resistor
-A resistor limits electrical current and drops voltage in a circuit
 
-## Add a Resistor
-Right click on the artboard on the Schematic view to add a Resistor
-<br />
-<img src="/components/resistor-add.png" width={634} style={{ borderRadius: '8px' }}/>
+A **resistor** limits electrical current and reduces voltage in a circuit. Resistors can be assigned a [resistor part](/parts/part-resistor).
 
-## Locate a Resistor
-Resistor are located at branch points automatically in the harness based on the most efficent path for the wires. A Resistor placed automatically is shown by a dashed arrow line
-<br />
-<img src="/components/resistor-locate-automatic.png" width={634} style={{ borderRadius: '8px' }}/>
+## Adding a Resistor
 
-Resistor can be located manually by dragging from the location bar on the Diode in the Layout view to any branch point, connector or terminal in the harness.
-<br />
-<img src="/components/resistor-locate-manual.png" width={634} style={{ borderRadius: '8px' }}/>
+Right-click on the canvas in the [Schematic View](/quick-start/schematic) and select **Resistor**.  
+<br />  
+<img src="/components/resistor-add.png" width={634} style={{ borderRadius: '8px' }} />
+
+## Locating a Resistor
+
+Resistors are automatically positioned at branch points based on the most efficient wiring path. An automatically placed resistor is shown with a dashed arrow line.  
+<br />  
+<img src="/components/resistor-locate-automatic.png" width={634} style={{ borderRadius: '8px' }} />
+
+You can manually position a resistor by dragging its location handle in the Layout View to any branch point, connector, or terminal in the harness.  
+<br />  
+<img src="/components/resistor-locate-manual.png" width={634} style={{ borderRadius: '8px' }} />
+
+<Callout>  
+To reset a resistor to automatic placement, select its location line and press **Delete**.  
+</Callout>

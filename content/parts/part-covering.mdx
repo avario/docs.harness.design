@@ -1,14 +1,9 @@
 import { Table } from 'nextra/components'
+import { Callout } from 'nextra/components'
 
 # Covering Part
-## Covering Types
-- Heatshrink
-- Tape
-- Corrugated Tubing
-- Spiral Wrap
-- Tubing
 
-## Coverings Properties
+<br />
 <Table>
   <thead>
     <Table.Tr>
@@ -19,24 +14,38 @@ import { Table } from 'nextra/components'
   <tbody>
     <Table.Tr>
       <Table.Td>Part Number</Table.Td>
-      <Table.Td>Unique code used to identify a specific part</Table.Td>
+      <Table.Td>Unique identifier for the covering part</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Manufacturer</Table.Td>
-      <Table.Td>Company that makes the part</Table.Td>
+      <Table.Td>Company that produces the part</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Diameter</Table.Td>
-      <Table.Td>Diameter of covering in mm, cm, m, in, ft and yrd (type units to adjust from default) </Table.Td>
+      <Table.Td>Outer diameter of the covering</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Color</Table.Td>
-      <Table.Td>Color of the covering</Table.Td>
+      <Table.Td>Color of the covering material</Table.Td>
     </Table.Tr>
   </tbody>
 </Table>
 
-## Assign a Covering Part
-Right click on a Bundle in the Layout View and select the Covering Part you want to assign. Multiple coverings can be assigned to a single Bundle
+<Callout>
+For the covering diameter, you can enter units such as `mm`, `cm`, or `in`.  
+Set the default unit under **Main Menu → Preferences**.
+</Callout>
+
+## Covering Types
+
+- Heatshrink  
+- Tape  
+- Corrugated Tubing  
+- Spiral Wrap  
+- Tubing
+
+## Assigning a Covering Part
+
+Right-click on a bundle in the Layout View and select the covering part you want to assign. You can assign multiple coverings to a single bundle.  
 <br />
-<img src="/components/bundle-assign.png" width={634} style={{ borderRadius: '8px' }}/>
+<img src="/components/bundle-assign.png" width={634} style={{ borderRadius: '8px' }} />

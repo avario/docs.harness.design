@@ -1,8 +1,9 @@
 import { Table } from 'nextra/components'
+import { Callout } from 'nextra/components'
 
 # Wire Part
 
-## Wire Properties
+<br />
 <Table>
   <thead>
     <Table.Tr>
@@ -13,28 +14,32 @@ import { Table } from 'nextra/components'
   <tbody>
     <Table.Tr>
       <Table.Td>Part Number</Table.Td>
-      <Table.Td>Unique code used to identify a specific part</Table.Td>
+      <Table.Td>Unique identifier for the wire part</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Manufacturer</Table.Td>
-      <Table.Td>Company that makes the part</Table.Td>
+      <Table.Td>Company that produces the part</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Gauge</Table.Td>
-      <Table.Td>Diameter of the inner conductor in mm² or AWG (type units to adjust from default)</Table.Td>
+      <Table.Td>Cross-sectional size of the inner conductor</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Color</Table.Td>
-      <Table.Td>Color of the wire's insulator</Table.Td>
+      <Table.Td>Color of the wire's insulation</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Stripe</Table.Td>
-      <Table.Td>Color of the stripe on the wires insulator</Table.Td>
+      <Table.Td>Color of the stripe on the wire's insulation (if any)</Table.Td>
     </Table.Tr>
   </tbody>
 </Table>
+<Callout>  
+You can enter `mm` or `AWG` for gauge values. Set the default unit under **Main Menu → Preferences**.  
+</Callout>
 
-## Assign a Wire Part
-Right click on a wire in the Schematic, Layout or Connection view and select the Wire Part you want to assign
+## Assigning a Wire Part
+
+Right-click on a wire in the Schematic, Layout, or Connection View and select the wire part you want to assign.  
 <br />
-<img src="/quick-start/assign-part.png" width={634} style={{ borderRadius: '8px' }}/>
+<img src="/quick-start/assign-part.png" width={634} style={{ borderRadius: '8px' }} />

@@ -1,12 +1,26 @@
+import { Callout } from 'nextra/components'
+
 # Bundle
-A bundle is used to represent a collection of wires. It can have dimensions and coverings applied to it
 
-## Add a Bundle
-In the Layout View, drag from one connection point of a Contact, Terminal or Branch Point to another
-<br />
-<img src="/components/bundle-add.png" width={634} style={{ borderRadius: '8px' }}/>
+A **bundle** represents a group of wires. It can have a defined length and optional [coverings](/parts/part-covering) applied.
 
-## Add dimensions
-Select a bundle in the Layout View then double click the dimension and type in the value you want. Adding "mm", "cm", "m", "in", "ft" or "yrd" will automatically set the unit of measurement. Deffault length unit can be set under Preferences in the Main Menu
-<br />
-<img src="/components/bundle-dimension.png" width={634} style={{ borderRadius: '8px' }}/>
+Bundles can only be added in the [Layout View](/quick-start/layout).
+
+## Adding Bundle
+
+In the Layout View, drag from the connection point of a connector, terminal, or branch point to another.  
+<br />  
+<img src="/components/bundle-add.png" width={634} style={{ borderRadius: '8px' }} />
+
+## Setting Bundle Lengths
+
+Select a bundle, then double-click the input field to set its length.
+
+You can enter units such as `mm`, `cm`, `m`, `in`, `ft`, or `yd`. The appropriate unit will be applied to the length.
+
+<Callout>
+The default length unit can be set under **Main Menu → Preferences**.
+</Callout>
+
+<br />  
+<img src="/components/bundle-dimension.png" width={634} style={{ borderRadius: '8px' }} />

@@ -1,8 +1,9 @@
 import { Table } from 'nextra/components'
+import { Callout } from 'nextra/components'
 
 # Cable Part
 
-## Cable Properties
+<br />
 <Table>
   <thead>
     <Table.Tr>
@@ -13,36 +14,41 @@ import { Table } from 'nextra/components'
   <tbody>
     <Table.Tr>
       <Table.Td>Part Number</Table.Td>
-      <Table.Td>Unique code used to identify a specific part</Table.Td>
+      <Table.Td>Unique identifier for the cable part</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Manufacturer</Table.Td>
-      <Table.Td>Company that makes the part</Table.Td>
+      <Table.Td>Name of the company that produces the part</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Color</Table.Td>
-      <Table.Td>Color cable outer sheath</Table.Td>
+      <Table.Td>Colour of the cable's outer sheath</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Shielded</Table.Td>
-      <Table.Td>If there is a shield around the cable</Table.Td>
+      <Table.Td>Indicates whether the cable has a shield</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Cores</Table.Td>
-      <Table.Td>How many cores/ wires the cable has</Table.Td>
+      <Table.Td>Total number of individual conductors inside the cable</Table.Td>
     </Table.Tr>
     <Table.Tr>
-      <Table.Td>Core 1 - Color</Table.Td>
-      <Table.Td>Color of inner wires insulator</Table.Td>
+      <Table.Td>Core → Color</Table.Td>
+      <Table.Td>Colour of the insulation for each core</Table.Td>
     </Table.Tr>
     <Table.Tr>
-      <Table.Td>Core 1 - Guage</Table.Td>
-      <Table.Td>Diameter of the inner conductor in mm² or AWG (type units to adjust from default)</Table.Td>
+      <Table.Td>Core → Gauge</Table.Td>
+      <Table.Td>Cross-sectional size of the core conductor</Table.Td>
     </Table.Tr>
   </tbody>
 </Table>
 
-## Assign a Cable Part
-Right click on a Cable in the Schematic View and select the Cable Part you want to assign
-<br />
-<img src="/components/cable-assign.png" width={634} style={{ borderRadius: '8px' }}/>
+<Callout>  
+You can enter `mm` or `AWG` for gauge values. Set the default unit under **Main Menu → Preferences**.  
+</Callout>
+
+## Assigning a Cable Part
+
+Right-click on a cable in the Schematic View and select the cable part you want to assign.  
+<br />  
+<img src="/components/cable-assign.png" width={634} style={{ borderRadius: '8px' }} />
