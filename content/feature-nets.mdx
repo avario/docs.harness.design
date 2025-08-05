@@ -1,8 +1,23 @@
 # Nets
 
-Select any part or component to quickly visualize where it is used and what net it is connected to. 
+Select any part or component to quickly visualize where it is used across the views and the net it is connected to. The following are some examples:
 
-## Selection of Wire
-A wire selected in the any view will carry through to all the other views showing both the wire and the net it is connected to.
+##  Connector pin out
+Selecting a [Connector](/components/component-connector) will show all wires it is connected to and their path through the harness.
+<br />
+<img src="/features/nets-connector.png" width={800} style={{ borderRadius: '8px' }} />
+
+## Looking inside a Bundle
+Selecting a [Bundle](/components/component-bundle) will highlight the wires going through it and show the nets they are connected to.
+<br />
+<img src="/features/nets-bundle.png" width={800} style={{ borderRadius: '8px' }} />
+
+## Viewing a Wires net
+A [Wire](/components/component-wire) selected in the any view will carry through to all the other views showing both the wire and the net it is connected to.
 <br />
 <img src="/features/nets-wire.png" width={800} style={{ borderRadius: '8px' }} />
+
+## Part useage
+Selecting a [Part](/parts) in the parts screen will highlight where it is used in the other views.
+<br />
+<img src="/features/nets-part.png" width={800} style={{ borderRadius: '8px' }} />
