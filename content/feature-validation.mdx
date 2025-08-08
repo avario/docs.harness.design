@@ -5,7 +5,7 @@ import { Callout } from 'nextra/components'
 harness.design has several built-in tools to make sure your harness is built correctly.
 
 ## Wire Gauge
-If the wire gauge does not match the properties of the contact, a warning is shown in the Schematic view.  
+If the [Wire](/parts/part-wire) gauge does not match the properties of the [Contact](/parts/part-contact), a warning is shown in the Schematic view.  
 <br />  
 <img src="/features/validate-guage.png" width={432} style={{ borderRadius: '8px' }} />  
 If multiple wires go into one contact, the sizes will be summed to calculate the total gauge.  
@@ -16,7 +16,7 @@ Multiple wire gauges are calculated by converting `AWG` to `mm²`, adding them t
 </Callout>
 
 ## Connector Cavities
-If the Connector Component and Connector Part do not match the number of cavities, a warning is shown in the Schematic view.  
+If the [Connector](/components/component-connector) and [Connector Part](/parts/part-connector) do not match the number of cavities, a warning is shown in the Schematic view.  
 <br />  
 <img src="/features/validate-cavities.png" width={262} style={{ borderRadius: '8px' }} />  
 Parts with the same cavity count are suggested at the top of the parts list when assigning a part to a connector.  
@@ -24,21 +24,21 @@ Parts with the same cavity count are suggested at the top of the parts list when
 <img src="/features/validate-cavities-suggested.png" width={508} style={{ borderRadius: '8px' }} />
 
 ## Contact Compatibility
-Contacts from the same manufacturer are suggested at the top of the parts list when assigning a contact to a connector.  
+[Contacts](/parts/part-contact) from the same manufacturer are suggested at the top of the parts list when assigning a contact to a connector.  
 <br />  
 <img src="/features/validate-contacts.png" width={572} style={{ borderRadius: '8px' }} />
 
 ## Unassigned Wires
-Wires with no part assigned to them are highlighted in the Connection view as `No Part`.  
+[Wires](/components/component-wire) with no part assigned to them are highlighted in the Connection view as `No Part`.  
 <br />  
 <img src="/features/validate-wire-part.png" width={800} style={{ borderRadius: '8px' }} />
 
 ## Unassigned Lengths
-Wires routed through bundles that have no length assigned to them are highlighted in the Connection view as `No Length`. Wires that are routed through bundles where one length is missing are prefixed with `≥` to indicate that the length is at least the length of the wire.  
+[Wires](/components/component-wire) routed through [Bundles](/components/component-bundle) that have no length assigned to them are highlighted in the Connection view as `No Length`. Wires that are routed through bundles where one length is missing are prefixed with `≥` to indicate that the length is at least the length of the wire.  
 <br />  
 <img src="/features/validate-wire-length.png" width={800} style={{ borderRadius: '8px' }} />
 
 ## Unassigned Parts
-Parts that have not been assigned to components are highlighted in the Parts view as `Not Used`.  
+[Parts](/parts) that have not been assigned to components are highlighted in the Parts view as `Not Used`.  
 <br />  
 <img src="/features/validate-parts.png" width={800} style={{ borderRadius: '8px' }} />
