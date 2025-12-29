@@ -14,11 +14,17 @@ Each part can have specific properties like part number, manufacturer, colour, a
 
 In the Parts View, right-click on the canvas or click the `+` button in the bottom-left corner to add a new part.  
 <br />  
-<img src="/parts/part-add.png" width={231} style={{ borderRadius: '8px' }} />
+<img src="/parts/part-add.png" width={222} style={{ borderRadius: '8px' }} />
+
+## Creating Part from Component
+
+Parts can be created by right-clicking a component in the **Schematic** or **Layout View** and selecting **Part** → **Create New Part**.
+<br />  
+<img src="/parts/part-add-from-component.png" width={535} style={{ borderRadius: '8px' }} />
 
 ## Editing Parts
 
-Click the dropdown arrow on the right side of a part row in the Parts table to expand and edit its properties.  
+Click the dropdown arrow on the right side of a part row in the Parts table to expand it and edit its properties. 
 <br />  
 <img src="/parts/part-edit.png" width={634} style={{ borderRadius: '8px' }} />
 
@@ -31,3 +37,17 @@ Parts are assigned to components in the [Layout](/quick-start/layout) or [Schema
 <Callout>  
 Quantities are automatically updated as parts are assigned to components.  
 </Callout>
+
+## Removing Parts from BOM
+
+Parts can be removed from the BOM by right-clicking a component in the **Layout** or **Schematic View** with a part assigned and deselecting **Include in BOM**.
+<br />  
+<img src="/parts/part-remove-bom.png" width={307} style={{ borderRadius: '8px' }} />
+
+## Unassigned Parts
+
+To show components with unassigned parts, in the **View Options** at the bottom right of the Layout and Schematic Views select **Unassigned part warnings**.
+- **Red warning symbol:** No assigned part
+- **Orange warning symbol:** No assigned part (Excluded from BOM)
+<br />  
+<img src="/parts/part-unassigned.png" width={957} style={{ borderRadius: '8px' }} />

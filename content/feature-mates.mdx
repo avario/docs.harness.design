@@ -1,0 +1,82 @@
+import { Table } from 'nextra/components'
+import { Callout } from 'nextra/components'
+
+# Mates
+
+A mate is when a [Connector](/components/component-connector) or [Terminal](/components/component-terminal) is plugged into each other. Mates are used to split harness into smaller sub-harness or to plug a harness into a [Device](/parts/part-device) represented by a [Group](/components/component-group). A bulkhead connector is a common example of a mate. Matted connectors are sometimes called pass-through connectors.
+
+## Add a Mate
+In the [Schematic View](/quick-start/schematic) mate a Connector or Terminal by dragging from the handle on the left or right side of the component label to the corresponding handle of another Connector or Terminal.
+<br />  
+<img src="/features/mates-add.png" width={631} style={{ borderRadius: '8px' }} />
+
+## Mates on the Layout View
+Mates can be viewed and deleted on the [Layout View](/quick-start/layout) but cannot be added. Go to the [Schematic View](/quick-start/schematic) to add mates.
+<br />  
+<img src="/features/mates-layout.png" width={631} style={{ borderRadius: '8px' }} />
+
+## Mating Connectors
+When connectors are mated together the cavities are mapped one to one and are considered on the same electrical net. If the mate doesn't follow the following rules an error will be displayed:
+
+<br />
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Error</Table.Th>
+      <Table.Th>Rule</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+        <Table.Td>Cavities do not match</Table.Td>
+        <Table.Td>Mated connectors must have the same number of cavities</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+        <Table.Td>Genders do not match</Table.Td>
+        <Table.Td>Mated connectors with parts applied that have a gender must be opposing</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Mating Terminals
+You can mate terminals together (and terminals to connector cavities), however if it doesn't follow the following rules an error will be displayed:
+
+<br />
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Type</Table.Th>
+      <Table.Th>Compatible Part</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Ferrule</Table.Td>
+      <Table.Td>- Connector Cavity (Represents Terminal Block) (Max One)</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Ring</Table.Td>
+      <Table.Td>- Ring (Checks Size)<br />- Spade (Checks Size)<br />- Stud</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Spade</Table.Td>
+      <Table.Td>- Spade (Checks Size)<br />- Ring (Checks Size)<br />- Stud</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Male Quick Connect</Table.Td>
+      <Table.Td>- Female Quick Connect (Checks Size) (Max One)</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Female Quick Connect</Table.Td>
+      <Table.Td>- Male Quick Connect (Checks Size) (Max One)</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Stud</Table.Td>
+      <Table.Td>- Ring<br />- Spade</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+<Callout>  
+**Checks Size** means the mate will be invalid if a part is applied and the **Size** under the part properties do not match.
+</Callout>

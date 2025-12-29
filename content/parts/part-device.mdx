@@ -1,0 +1,43 @@
+import { Table } from 'nextra/components'
+import { Callout } from 'nextra/components'
+
+# Device Part
+A device is typically a physical component where connections start or end, and may contain multiple connections, such as an ECU (Electronic Control Unit) or a fuse box.
+<br />
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique identifier for the device part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that produces the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Description</Table.Td>
+      <Table.Td>Description of the device part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Color</Table.Td>
+      <Table.Td>Color of the device</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Assigning a Device Part
+
+Right-click on the heading of a [Group](/components/component-group) in the Schematic or Layout View and select the device part you want to assign.  
+<br />
+<img src="/components/group-device.png" width={648} style={{ borderRadius: '8px' }} />
+
+## Hiding Parts from BOM
+Generally you will not want the components inside a **Device** to be shown in the **BOM**. However you may want to assign parts to the components inside the group so that when you mate a connector or terminal it can validate that this is an appropriate connection. Select the components you wish to exclude from the BOM, right-click, and deselect **Include in BOM**.
+<br />
+<img src="/components/group-bom.png" width={772} style={{ borderRadius: '8px' }} />

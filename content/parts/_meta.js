@@ -1,6 +1,9 @@
 export default {
-  'part-connector': '',
-  'part-contact': '',
+    'connector': {
+    theme: {
+      collapsed: true
+    }
+  },
   'part-terminal': '',
   'part-wire': '',
   'part-splice': '',
@@ -8,4 +11,5 @@ export default {
   'part-diode': '',
   'part-resistor': '',
   'part-covering': '',
+  'part-device': '',
 }

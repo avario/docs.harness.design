@@ -1,8 +1,13 @@
 # Connector
 
-A **connector** joins electrical parts, allowing easy connection and disconnection of circuits. It serves as a termination point in the harness. Connectors can be assigned a [connector part](/parts/part-connector).
+A **connector** joins electrical parts, allowing easy connection and disconnection of circuits. It serves as a termination point in the harness. Connectors can be assigned a [Connector Part](/parts/connector).
 
-Connectors can have multiple **cavities**, and each cavity can be assigned a [contact part](/parts/part-contact).
+The following parts can be assigned to a **Connector**:
+- [Contact Part](/parts/connector/part-contact) - **Connectors** can have multiple **cavities**, and each cavity can be assigned a **contact**.
+- [Lock Part](/parts/connector/part-lock) - Some **connectors** require a **lock** to secure the contacts in place.
+- [Dust Cover Part](/parts/connector/part-dust-cover) - A **dust cover** can be added to **connectors** to protect the contacts when unmated.
+- [Boot Part](/parts/connector/part-boot) - A **boot**, which is soft, mounts to a **connector** for strain relief and sealing.
+- [Backshell Part](/parts/connector/part-backshell) - A **backshell**, which is rigid, mounts to a **connector** for strain relief and sealing.
 
 ## Adding a Connector
 
@@ -12,10 +17,26 @@ Right-click on the canvas in the [Schematic](/quick-start/schematic) or [Layout]
 
 ## Adding and Removing Cavities
 
-Select a connector in the Schematic view, then click the `+` or `–` buttons to add or remove cavities.  
+Select a connector in the Schematic view, then click the `+` or `–` buttons to add or remove cavities. Type in the number of cavities you want directly into the cavity count box to quickly set the number of cavities.
 <br />  
-<img src="/components/connector-cavities.png" width={210} style={{ borderRadius: '8px' }} />
+<img src="/components/connector-cavities.png" width={233} style={{ borderRadius: '8px' }} />
+
+## Connecting to Shell of Connector
+
+Right-click on the connector and select **Add Shell**
+<br />  
+<img src="/components/connector-shell-add.png" width={336} style={{ borderRadius: '8px' }} />
+
+Shells can be connected to just like cavities.
+<br />  
+<img src="/components/connector-shell-connection.png" width={534} style={{ borderRadius: '8px' }} />
 
 ## Editing Connector and Cavity Labels
 
 Double-click any connector or cavity label to edit it.
+
+## Adjust View Width of Connector
+
+If the name or cavity labels are too long to fit, right-click the connector, select Width, and set the desired width.
+<br />  
+<img src="/components/connector-width.png" width={426} style={{ borderRadius: '8px' }} />

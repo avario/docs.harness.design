@@ -3,6 +3,8 @@ import { Callout } from 'nextra/components'
 
 # Cable Part
 
+A bundled assembly of one or more conductors with insulation and protective layers, used to transmit power or signals between components. A cable can have a shield assigned to it.
+
 <br />
 <Table>
   <thead>
@@ -20,9 +22,13 @@ import { Callout } from 'nextra/components'
       <Table.Td>Manufacturer</Table.Td>
       <Table.Td>Name of the company that produces the part</Table.Td>
     </Table.Tr>
+        <Table.Tr>
+      <Table.Td>Description</Table.Td>
+      <Table.Td>Description of the cable part</Table.Td>
+    </Table.Tr>
     <Table.Tr>
       <Table.Td>Color</Table.Td>
-      <Table.Td>Colour of the cable's outer sheath</Table.Td>
+      <Table.Td>Color of the cable's outer sheath</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Shielded</Table.Td>
@@ -34,7 +40,11 @@ import { Callout } from 'nextra/components'
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Core → Color</Table.Td>
-      <Table.Td>Colour of the insulation for each core</Table.Td>
+      <Table.Td>Color of the insulation for each core</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Core → Stripe</Table.Td>
+      <Table.Td>Color of the stripe for each core</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Core → Gauge</Table.Td>
@@ -49,6 +59,6 @@ You can enter `mm` or `AWG` for gauge values. Set the default unit under **Main 
 
 ## Assigning a Cable Part
 
-Right-click on a cable in the Schematic View and select the cable part you want to assign.  
+Right-click a cable in the **Schematic View** and select the desired cable part to assign.  
 <br />  
 <img src="/components/cable-assign.png" width={634} style={{ borderRadius: '8px' }} />

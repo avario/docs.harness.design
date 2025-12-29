@@ -2,7 +2,7 @@ import { Table } from 'nextra/components'
 import { Callout } from 'nextra/components'
 
 # Contact Part
-
+A conductive element installed in a connector housing that forms the electrical interface between mating connectors. This is often crimped or soldered to a wire and has a specific shape to fit into a corresponding connector housing.
 <br />
 <Table>
   <thead>
@@ -19,6 +19,10 @@ import { Callout } from 'nextra/components'
     <Table.Tr>
       <Table.Td>Manufacturer</Table.Td>
       <Table.Td>Company that produces the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Description</Table.Td>
+      <Table.Td>Description of the contact part</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Type</Table.Td>
@@ -42,12 +46,17 @@ import { Callout } from 'nextra/components'
 You can enter `mm` or `AWG` for gauge values. Set the default unit under **Main Menu → Preferences**.  
 </Callout>
 
-## Assigning a Contact Part
+## Assigning a Contact to All Cavities
 
-Right-click on a connector in the Schematic or Layout View, then use the **Contacts** submenu to assign contact parts to the connector's cavities. You can assign a contact to all cavities or to individual ones.  
+Right-click on the label at the top of the connector and use the **Contacts** submenu to assign the contact part.
 <br />
-<img src="/components/connector-assign-contact.png" width={634} style={{ borderRadius: '8px' }} />
-
+<img src="/parts/part-contact-all.png" width={552} style={{ borderRadius: '8px' }} />
 <Callout>  
 You can assign the same contact to multiple connectors by selecting them together (click and drag on the canvas, or use Shift+Click).
 </Callout>
+
+## Assigning a Contact to Specific Cavities
+
+Right-click the cavity you want to assign, then select the desired contact part.
+<br />
+<img src="/parts/part-contact-single.png" width={379} style={{ borderRadius: '8px' }} />

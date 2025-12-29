@@ -8,4 +8,6 @@ export default {
   'component-resistor': '',
   'component-bundle': '',
   'component-branch-point': '',
+  'component-group': '',
+  'component-net-label': '',
 }

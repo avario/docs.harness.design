@@ -1,3 +1,5 @@
+import { Callout } from 'nextra/components'
+
 # Wire
 
 A **wire** represents an electrical connection between two components in the harness. Each wire can be assigned a [wire part](/parts/part-wire).
@@ -14,18 +16,26 @@ If no part is assigned to a wire, you can manually set its colour. Right-click t
 <br />  
 <img src="/components/wire-color.png" width={634} style={{ borderRadius: '8px' }} />
 
-## Wire Labels
+## Hide wire path
 
-To add labels, right-click a wire and select **Add labels** from the dropdown menu.  
+The **Hide Wire Path** feature improves schematic readability by visually breaking a **Wire**. This is useful when a **Wire** spans the full width of the schematic or crosses beneath other components. Hiding a wire has no effect on the physical harness and is purely for making the Schematic View visually cleaner.
+<br />
+To hide wire path, right-click a wire and select **Hide wire path** from the dropdown menu.  
 <br />  
-<img src="/components/wire-label-add.png" width={634} style={{ borderRadius: '8px' }} />
-
-Wire labels are used to improve schematic readability by visually breaking a wire—useful when a wire spans the full width of the schematic. Labels have no effect on the physical harness and are purely for visual reference.  
-<br />  
-<img src="/components/wire-label.png" width={634} style={{ borderRadius: '8px' }} />
+<img src="/components/wire-hide-path.png" width={611} style={{ borderRadius: '8px' }} />
 
 ## Dashed Wires
 
 Wires appear as dashed lines in the Schematic View when they are not yet routed through a bundle in the Layout View.  
 <br />  
 <img src="/components/wire-dashed.png" width={634} style={{ borderRadius: '8px' }} />
+
+## Jumper Wire
+
+A **Jumper Wire** (loopback wire) can be created by dragging from one cavity to another within the same connector in the **Schematic View**. 
+<br />  
+<img src="/components/wire-jumper.png" width={326} style={{ borderRadius: '8px' }} />
+
+<Callout>  
+A **Jumper Wire** is considered to have a length of **zero**. You may need to account for this when generating length reports.  
+</Callout>

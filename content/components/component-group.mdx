@@ -1,0 +1,53 @@
+import { Callout } from 'nextra/components'
+
+# Group
+
+A **group** contains a selection of components. It is commonly used to represent a device (i.e. an ECU, fuse box etc). A group can be assigned a [Device Part](/parts/part-device).
+
+## Creating a Group
+
+Right-click on the canvas in the [Schematic](/quick-start/schematic) or [Layout](/quick-start/layout) view and select **Group**.  
+<br />  
+<img src="/components/group-add.png" width={187} style={{ borderRadius: '8px' }} />
+
+## Creating a Group from Existing Components
+
+Select multiple components using Shift + left click or using marquee selection, then right-click and select Create Group to form a new group.  
+<br />  
+<img src="/components/group-add-multiple.png" width={387} style={{ borderRadius: '8px' }} />
+
+## Adding Components to a Group
+
+Drag from the small box next to the group heading to the component you want to add.
+<br />  
+<img src="/components/group-add-component.png" width={586} style={{ borderRadius: '8px' }} />
+
+## Removing Components from a Group
+
+Right click on the component you want to remove and select **Remove from group**.
+<br />  
+<img src="/components/group-remove.png" width={383} style={{ borderRadius: '8px' }} />
+
+Components can be removed by clicking on the group heading to display the handles to sub components. Selecting one of these handles and press **Delete** or right clicking and selecting **Delete** will remove the component from the group.
+<br />  
+<img src="/components/group-remove-handle.png" width={330} style={{ borderRadius: '8px' }} />
+
+## Resizing a Group
+
+A group's size adjusts automatically to fit the contents. To adjust it move either the components in the group or the heading.
+<br />  
+<img src="/components/group-resize.png" width={430} style={{ borderRadius: '8px' }} />
+
+## Connections View and Groups
+
+If there are wires between two components in the same group, the wire will be considered part of the group. This information will be displayed on the **Connections View** and the **Wiring Table** export
+<br />  
+<img src="/components/group-connection.png" width={1192} style={{ borderRadius: '8px' }} />
+
+To display this information make sure **Group** is turned on in the **View Options** on the **Connections View**.
+<br />  
+<img src="/components/group-view.png" width={346} style={{ borderRadius: '8px' }} />
+
+<Callout>  
+A splice needs to be added manually to a group for the connections to and from it to be considered part of the group. Splices can be added in the same way as other components. See [Adding Components to a Group](#adding-components-to-a-group).
+</Callout>
