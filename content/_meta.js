@@ -14,5 +14,10 @@ export default {
     theme: {
       collapsed: true
     }
+  },
+  features: {
+    theme: {
+      collapsed: true
+    }
   }
 }
