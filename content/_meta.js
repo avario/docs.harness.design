@@ -19,5 +19,10 @@ export default {
     theme: {
       collapsed: true
     }
+  },
+  examples: {
+    theme: {
+      collapsed: true
+    }
   }
 }
