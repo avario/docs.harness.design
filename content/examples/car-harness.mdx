@@ -7,7 +7,7 @@ The following example shows a simplified car harness.
 
 ## Schematic
 
-The following demonstrates the correct use of [Groups](/components/component-group) as [Devices](/parts/part-device), [Mating](/features/feature-mates) of [Connectors](/components/component-connector), [Net Labels](/components/component-net-label), and [Hidden Wires](/components/component-wire#hide-wire-path), to create a clear and organized schematic.
+The following demonstrates the correct use of [Groups](/components/component-group) as [Devices](/parts/part-device), [Mating](/features/feature-mates) of [Connectors](/components/component-connector), and [Net Labels](/components/component-net-label), to create a clear and organized schematic.
 <br />  
 <ImageZoom src="/examples/car-harness-schematic.png" width={1920} style={{ borderRadius: '8px' }} />
 
@@ -34,48 +34,48 @@ The following are the exported files generated from the **Car Harness** example:
 <iframe
   src="/examples/car-harness-schematic.pdf"
   width="100%"
-  height="735"
+  height="580"
 />
 
 **Layout:**
 <iframe
   src="/examples/car-harness-layout.pdf"
   width="100%"
-  height="735"
+  height="580"
 />
 
 
 **Wiring Table:**
 ```csv
 Conductor,Part,Gauge,From ID,From Label,From Contact,To ID,To Label,To Contact,Length (mm)
-"Red Wire","No part number","22 AWG","C10.1","ECU 2.1","Con-22M","T11","ECU","","750"
+"Red Wire","No part number","22 AWG","C10.1","ECU 2.1","Con-22M","TT11","ECU","","750"
 "Orange Wire","No part number","22 AWG","C10.2","ECU 2.2","Con-22M","C15.1","Bulk Head C.1","Con-22M","1100"
 "Yellow Wire","No part number","22 AWG","C10.3","ECU 2.3","Con-22M","C15.2","Bulk Head C.2","Con-22M","1100"
 "Green Wire","No part number","22 AWG","C10.4","ECU 2.4","Con-22M","C15.3","Bulk Head C.3","Con-22M","1100"
 "Blue Wire","No part number","22 AWG","C10.5","ECU 2.5","Con-22M","C15.4","Bulk Head C.4","Con-22M","1100"
-"Black Wire","No part number","22 AWG","C10.6","ECU 2.6","Con-22M","T20","ECU","","750"
-"Red Wire","No part number","22 AWG","C11.1","Injector 1.1","Con-22M","S1","Splice 1","","200"
+"Black Wire","No part number","22 AWG","C10.6","ECU 2.6","Con-22M","TT20","ECU","","750"
+"Red Wire","No part number","22 AWG","C11.1","Injector 1.1","Con-22M","S1","S1","","200"
 "Orange Wire","No part number","22 AWG","C11.2","Injector 1.2","Con-22M","C16.1","Bulk Head E.1","Con-22F","1200"
-"Red Wire","No part number","22 AWG","C12.1","Injector 1.1","Con-22M","S2","Splice 2","","200"
+"Red Wire","No part number","22 AWG","C12.1","Injector 1.1","Con-22M","S2","S2","","200"
 "Yellow Wire","No part number","22 AWG","C12.2","Injector 1.2","Con-22M","C16.2","Bulk Head E.2","Con-22F","1200"
 "Green Wire","No part number","22 AWG","C13.1","Coil 1.1","Con-22M","C16.3","Bulk Head E.3","Con-22F","1200"
-"Black Wire","No part number","22 AWG","C13.2","Coil 1.2","Con-22M","T15","CYL HD L GND","","800"
-"Red Wire","No part number","22 AWG","C13.3","Coil 1.3","Con-22M","S1","Splice 1","","200"
+"Black Wire","No part number","22 AWG","C13.2","Coil 1.2","Con-22M","TT15","CYL HD L GND","","800"
+"Red Wire","No part number","22 AWG","C13.3","Coil 1.3","Con-22M","S1","S1","","200"
 "Blue Wire","No part number","22 AWG","C14.1","Coil 2.1","Con-22M","C16.4","Bulk Head E.4","Con-22F","1200"
-"Black Wire","No part number","22 AWG","C14.2","Coil 2.2","Con-22M","T3","CYL HD R GND","","800"
-"Red Wire","No part number","22 AWG","C14.3","Coil 2.3","Con-22M","S2","Splice 2","","200"
-"Red Wire","No part number","22 AWG","C15.5","Bulk Head C.5","Con-22M","T13","Engine Left","","650"
-"Red Wire","No part number","22 AWG","C15.6","Bulk Head C.6","Con-22M","T14","Engine Right","","650"
-"Black Wire","No part number","8 AWG","C15.7","Bulk Head C.7","Con-8M","T22","Engine","","650"
-"Red Wire","No part number","22 AWG","C16.5","Bulk Head E.5","Con-22F","S1","Splice 1","","1000"
-"Red Wire","No part number","22 AWG","C16.6","Bulk Head E.6","Con-22F","S2","Splice 2","","1000"
-"Black Wire","No part number","8 AWG","C16.7","Bulk Head E.7","Con-8F","T4","Engine BLk GND","","300"
-"Red Wire","No part number","22 AWG","C8.1","Dashboard.1","Con-22M","T12","Dashboard","","900"
+"Black Wire","No part number","22 AWG","C14.2","Coil 2.2","Con-22M","TT3","CYL HD R GND","","800"
+"Red Wire","No part number","22 AWG","C14.3","Coil 2.3","Con-22M","S2","S2","","200"
+"Red Wire","No part number","22 AWG","C15.5","Bulk Head C.5","Con-22M","TT13","Engine Left","","650"
+"Red Wire","No part number","22 AWG","C15.6","Bulk Head C.6","Con-22M","TT14","Engine Right","","650"
+"Black Wire","No part number","8 AWG","C15.7","Bulk Head C.7","Con-8M","TT22","Engine","","650"
+"Red Wire","No part number","22 AWG","C16.5","Bulk Head E.5","Con-22F","S1","S1","","1000"
+"Red Wire","No part number","22 AWG","C16.6","Bulk Head E.6","Con-22F","S2","S2","","1000"
+"Black Wire","No part number","8 AWG","C16.7","Bulk Head E.7","Con-8F","TT4","Engine BLk GND","","300"
+"Red Wire","No part number","22 AWG","C8.1","Dashboard.1","Con-22M","TT12","Dashboard","","900"
 "Violet Wire","No part number","22 AWG","C8.2","Dashboard.2","Con-22M","C9.1","ECU 1.1","Con-22M","1450"
 "Brown Wire","No part number","22 AWG","C8.3","Dashboard.3","Con-22M","C9.2","ECU 1.2","Con-22M","1450"
-"Black Wire","No part number","22 AWG","C8.4","Dashboard.4","Con-22M","T21","Dashboard","","900"
-"Red Wire","No part number","8 AWG","T10","Bat +","","T6","Bat +","","1500"
-"Black Wire","No part number","8 AWG","T19","Ground","","T5","Ground","","1500"
+"Black Wire","No part number","22 AWG","C8.4","Dashboard.4","Con-22M","TT21","Dashboard","","900"
+"Red Wire","No part number","8 AWG","TT10","Bat +","","TT6","Bat +","","1500"
+"Black Wire","No part number","8 AWG","TT19","Ground","","TT5","Ground","","1500"
 ```
 
 **BOM:**
