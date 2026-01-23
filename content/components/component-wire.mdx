@@ -12,33 +12,26 @@ In the [Schematic View](/quick-start/schematic), drag from the connection handle
 
 ## Assigning Colour
 
-If no part is assigned to a wire, you can manually set its colour. Right-click the wire in the Schematic, Layout, or Connection view and choose a colour from the menu.  
+If no part is assigned to a **Wire**, you can manually set its colour. Right-click the wire in the Schematic, Layout, or Connection view and choose a **Colour** from the menu. More colors can be selected by clicking **More** at the bottom of the color list. The **Stripe** color can be assigned in the same way but selecting **Stripe** from the menu.
 <br />  
 <img src="/components/wire-color.png" width={634} style={{ borderRadius: '8px' }} />
 
-## Layout Points
+## Layout a Wire
+To layout a **Wire** you use [Layout Points](/components/component-layout-point).
 
-Layout points can be added to **Wires** to manually route them. This will override the automatic routing. To add a **Layout point**, right-click on the wire in the **Schematic View** and select **Add layout point**.  
-<br />  
-<img src="/components/wire-layout.png" width={634} style={{ borderRadius: '8px' }} />
-You can then drag the **Layout point** to adjust the wire's path.
-<br />  
-<img src="/components/wire-layout-drag.png" width={634} style={{ borderRadius: '8px' }} />
+## Dimmed Wire Path
 
-<Callout>  
-More than one **Layout point** can be added to a wire for more complex routing.
-</Callout>
-
-## Hide wire path
-
-The **Hide Wire Path** feature improves schematic readability by visually breaking a **Wire**. This is useful when a **Wire** spans the full width of the schematic or crosses beneath other components. Hiding a wire has no effect on the physical harness and is purely for making the Schematic View visually cleaner.
+The **Dim path** feature improves schematic readability by visually breaking a **Wire**. This is useful when a **Wire** spans the full width of the schematic or crosses beneath other components. Dimming a wire has no effect on the physical harness and is purely for making the Schematic View visually cleaner.
 <br />
-To hide wire path, right-click a wire and select **Hide wire path** from the dropdown menu.  
+To dim a wire path, right-click a wire and select **Dim path** from the dropdown menu.  
 <br />  
 <img src="/components/wire-hide-path.png" width={611} style={{ borderRadius: '8px' }} />
-A **Hidden Wire** will show up as two arrows connected by a faint bezier line.
+A **Dimmed Wire** will show up as two arrows connected by a faint bezier line.
 <br />  
 <img src="/components/wire-hidden.png" width={611} style={{ borderRadius: '8px' }} />
+<Callout>  
+[Layout Points](/components/component-layout-point) can be added to dimmed wires.
+</Callout>
 
 ## Dashed Wires
 

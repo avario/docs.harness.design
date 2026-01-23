@@ -1,0 +1,54 @@
+import { Callout } from 'nextra/components'
+
+# Layout Point
+
+**Layout Points** are used to define custom layouts for [Wires](/components/component-wire), [Dimmed Wires](/components/component-wire#dimmed-wire-path), and [Cables](/components/component-cable) in the **Schematic View**, and for [Bundles](/components/component-bundle) in the **Layout View**.
+
+## Adding a Layout Point
+
+Double-click a **Wire**, **Dimmed Wire**, **Cable**, or **Bundle** to add a **Layout Point**. You can also right-click the item and select **Add layout point** from the context menu.
+<br />  
+<img src="/components/layout-point-add.png" width={634} style={{ borderRadius: '8px' }} />
+<Callout>  
+More than one **Layout Point** can be added to a wire for more complex routing.
+</Callout>
+
+## Moving Layout Points
+
+To move a **Layout Point**, click and drag it to the desired position.
+<br />  
+<img src="/components/wire-layout-drag.png" width={634} style={{ borderRadius: '8px' }} />
+<Callout>  
+You can shift-click to select, or marquee select, to move multiple **Layout Points** at once.
+</Callout>
+<Callout>  
+When moving a **Layout Point**, parallel guide lines will appear on the sides of the item being adjusted when it is aligned `horizontally`, `vertically`, or at `45°`.
+</Callout>
+
+## Deleting Layout Points
+
+To delete a **Layout Point**, select it and press the **Delete** key, or right-click the point and select **Delete**.
+<br />  
+<img src="/components/wire-layout-delete.png" width={190} style={{ borderRadius: '8px' }} />
+
+You can delete all layout points on a **Wire**, **Dimmed Wire**, **Cable**, or **Bundle** by right-clicking the item and selecting **Delete all layout points** from the context menu.
+<br />  
+<img src="/components/layout-point-delete-all.png" width={634} style={{ borderRadius: '8px' }} />
+
+You can delete all layout points from the **Schematic View** or **Layout View** by clicking **Clear all layout points** from the **View Options** menu.
+<br />  
+<img src="/components/layout-point-clear-all.png" width={400} style={{ borderRadius: '8px' }} />
+
+## Auto Layout
+
+To auto layout a **Wire**, **Dimmed Wire**, or **Cable** in an orthogonal manner, select the items you want to lay out, right-click, and select **Auto layout** from the context menu.
+<br /> 
+<img src="/components/layout-point-auto.png" width={634} style={{ borderRadius: '8px' }} />
+
+You can auto layout all wires on the schematic by clicking **Auto layout all paths** from the **View Options** menu in the **Schematic View**.
+<br /> 
+<img src="/components/layout-point-auto-all.png" width={400} style={{ borderRadius: '8px' }} />
+
+<Callout>  
+Auto layout only works in the **Schematic View**.
+</Callout>

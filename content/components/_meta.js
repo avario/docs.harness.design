@@ -2,6 +2,7 @@ export default {
   'component-connector': '',
   'component-terminal': '',
   'component-wire': '',
+  'component-layout-point': '',
   'component-splice': '',
   'component-cable': '',
   'component-diode': '',

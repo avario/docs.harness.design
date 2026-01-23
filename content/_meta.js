@@ -7,6 +7,6 @@ export default {
   examples: { theme: { collapsed: true } },
   preferences: {},
   shortcuts: {},
-  updates: {},
-  legal: { theme: { collapsed: true } }
+  updates: { theme: { collapsed: true } },
+  legal: { theme: { collapsed: true } },
 }
