@@ -12,6 +12,7 @@
     "url": "https://github.com/phucbm/nextra-docs-starter"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.36.1",
     "@vercel/analytics": "^1.5.0",
     "next": "15.3.6",
     "nextra": "^4.3.0",

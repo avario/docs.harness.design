@@ -2,7 +2,8 @@
 asIndexPage: true
 ---
 
-import { Callout } from 'nextra/components'
+import { Callout } from "nextra/components";
+import { IconEdit } from "@tabler/icons-react";
 
 # Parts
 
@@ -12,42 +13,62 @@ Each part can have specific properties like part number, manufacturer, colour, a
 
 ## Adding Parts
 
-In the Parts View, right-click on the canvas or click the `+` button in the bottom-left corner to add a new part.  
-<br />  
-<img src="/parts/part-add.png" width={222} style={{ borderRadius: '8px' }} />
+In the Parts View, right-click on the canvas or click the `+` button in the bottom-left corner to add a new part.
+
+<br />
+<img src="/parts/part-add.png" width={222} style={{ borderRadius: "8px" }} />
 
 ## Creating Part from Component
 
 Parts can be created by right-clicking a component in the **Schematic** or **Layout View** and selecting **Part** → **Create New Part**.
-<br />  
-<img src="/parts/part-add-from-component.png" width={535} style={{ borderRadius: '8px' }} />
+
+<br />
+<img src="/parts/part-add-from-component.png" width={535} style={{ borderRadius: "8px" }} />
+
+## Importing Parts
+
+You can import parts from any of your existing projects by using the **Import Parts** button in the **Parts View**.
+
+Select the project you want to import from, then choose the parts you want to import. The selected parts will be added to your current project. This will not affect the original parts in the project you are importing from.
+
+<br />
+<img src="/parts/part-import.png" width={634} style={{ borderRadius: "8px" }} />
+
+<Callout type="warning">
+  You will see a warning if any part numbers of the imported parts conflict with existing parts.
+</Callout>
 
 ## Editing Parts
 
-Click the dropdown arrow on the right side of a part row in the Parts table to expand it and edit its properties. 
-<br />  
-<img src="/parts/part-edit.png" width={634} style={{ borderRadius: '8px' }} />
+<span>
+Double click on a part name or click the **Edit** <IconEdit /> button to view and edit a part's properties.
+
+</span>
+
+<br />
+<img src="/parts/part-edit.png" width={634} style={{ borderRadius: "8px" }} />
 
 ## Assigning Parts
 
-Parts are assigned to components in the [Layout](/quick-start/layout) or [Schematic](/quick-start/schematic) view. Right-click a component, then select the appropriate part from the list.  
-<br />  
-<img src="/components/connector-assign.png" width={634} style={{ borderRadius: '8px' }} />
+Parts are assigned to components in the [Layout](/quick-start/layout) or [Schematic](/quick-start/schematic) view. Right-click a component, then select the appropriate part from the list.
 
-<Callout>  
-Quantities are automatically updated as parts are assigned to components.  
-</Callout>
+<br />
+<img src="/components/connector-assign.png" width={634} style={{ borderRadius: "8px" }} />
+
+<Callout>Quantities are automatically updated as parts are assigned to components.</Callout>
 
 ## Removing Parts from BOM
 
 Parts can be removed from the BOM by right-clicking a component in the **Layout** or **Schematic View** with a part assigned and deselecting **Include in BOM**.
-<br />  
-<img src="/parts/part-remove-bom.png" width={307} style={{ borderRadius: '8px' }} />
+
+<br />
+<img src="/parts/part-remove-bom.png" width={307} style={{ borderRadius: "8px" }} />
 
 ## Unassigned Parts
 
 To show components with unassigned parts, in the **View Options** at the bottom right of the Layout and Schematic Views select **Unassigned part warnings**.
+
 - **Red warning symbol:** No assigned part
 - **Orange warning symbol:** No assigned part (Excluded from BOM)
-<br />  
-<img src="/parts/part-unassigned.png" width={957} style={{ borderRadius: '8px' }} />
+  <br />
+  <img src="/parts/part-unassigned.png" width={957} style={{ borderRadius: "8px" }} />
