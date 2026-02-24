@@ -1,6 +1,13 @@
+import { Callout } from 'nextra/components'
+
 # Nets
 
 Select any part or component to quickly visualize where it is used across the views and the net it is connected to. The following are some examples:
+
+<Callout>  
+This feature can be disabled by selecting **Show nets for selection** in the **View Options** menu of the **Layout** and **Schematic** views. 
+<img src="/features/nets-disable.png" width={200} style={{ borderRadius: '8px' }} />
+</Callout>
 
 ## Connector Pinout
 Selecting a [Connector](/components/component-connector) will show all wires it is connected to and their path through the harness.  
@@ -27,3 +34,10 @@ Selecting a [Part](/parts) in the Parts screen will highlight where it is used i
 <br />
 <img src="/components/net-label-connections.png" width={800} style={{ borderRadius: '8px' }} />
 
+## Highlight Wires Attached to Selected Part
+There may be times when you do not want to see all the wires on the net. For example when you are selecting a connector you may only want to see the wires attached to that connector. To do this disable **Show nets for selection** in the **View Options** menu of the **Layout** and **Schematic** views.
+<br />
+<img src="/features/nets-disable.png" width={300} style={{ borderRadius: '8px' }} />
+Now when a part is selected only the wires attached to that part will be highlighted.
+<br />
+<img src="/features/nets-disable-result.png" width={800} style={{ borderRadius: '8px' }} />
