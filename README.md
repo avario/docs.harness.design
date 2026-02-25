@@ -1,5 +1,11 @@
 # Nextra Docs Starter 
 
+Run: npm run dev
+
+Icons: https://tabler.io/icons
+
+
+
 ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/nextra-docs-starter)
 
 This starter template includes the following features:
