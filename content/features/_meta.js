@@ -4,5 +4,6 @@ export default {
   "feature-validation": "",
   "feature-sharing": "",
   "feature-mobile": "",
+  "feature-split-screen": "",
   "feature-local-data": "",
 };

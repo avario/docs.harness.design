@@ -1,23 +1,26 @@
 import { Steps } from 'nextra/components'
 import { Callout } from 'nextra/components'
- 
+import { IconNut, IconEdit } from "@tabler/icons-react";
+
 # Create and Assign Parts
 
 <Steps>
-### Open the Parts View  
+### Open the <IconNut/> [Parts](/views/view-parts) View  
 Click the view dropdown and select **Parts**.  
 <br />  
 <img src="/quick-start/parts-view-open.png" width={256} style={{ borderRadius: '8px' }} />
 
 ### Add [Parts](/parts)  
-Right-click on the Parts view, then select a part from the dropdown.  
-<br />  
-<img src="/quick-start/right-add-part.png" width={147} style={{ borderRadius: '8px' }} />
+In the Parts View, right-click on the canvas or click the `+` button in the bottom-left corner to add a new part.
+
+<br />
+<img src="/parts/part-add.png" width={222} style={{ borderRadius: "8px" }} />
 
 ### Edit Part Properties  
-Click the chevron on the right side of a part row to adjust its properties.  
-<br />  
-<img src="/quick-start/edit-part.png" width={634} style={{ borderRadius: '8px' }} />
+Double click on a part name or click the **Edit** <IconEdit /> button to view and edit a part's properties.
+
+<br />
+<img src="/parts/part-edit.png" width={634} style={{ borderRadius: "8px" }} />
 
 ### Assign Parts  
 Right-click on a component in the Schematic or Layout view and select the part you want to assign. The quantities shown in the Parts view will be automatically updated as you assign parts.
@@ -26,7 +29,5 @@ Right-click on a component in the Schematic or Layout view and select the part y
 </Steps>
 
 <Callout>
-  Part properties can be shown or hidden by clicking **View Options** in the bottom right of the Parts view and selecting the properties you want to see.
-  <br />  
-  <img src="/quick-start/parts-properties.png" width={345} style={{ borderRadius: '8px' }} />
+  Part properties can be shown or hidden. [More info](/views/view-parts#view-options-menu-parts).
 </Callout>

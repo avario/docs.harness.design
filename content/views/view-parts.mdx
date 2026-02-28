@@ -1,0 +1,55 @@
+import { IconNut, IconFileImport, IconPlus, IconEye, IconCheck, IconLock, IconEdit } from "@tabler/icons-react";
+import { Callout } from "nextra/components";
+
+# Parts
+
+The <IconNut/> **Parts** view is a visual representation of the [Part](/parts) used in the harness. In this view you can add [Parts](/parts), modify their properties and see the how many times they are used in the harness. This is used to generate the **BOM**.
+
+<br />
+<img src="/views/parts.png" width={800} style={{ borderRadius: "8px" }} />
+
+## Table
+
+This is the list of all your [Parts](/parts) in the harness.
+
+Right-click anywhere on the canvas to add a [Part](/parts) or click the <IconPlus/> **Add part** button.
+
+Double-click a parts value to edit it.
+
+Double-click a parts icon or click the <IconEdit/> **Edit** button to edit the part's properties. [More Info](/parts#editing-parts)
+
+See [Keyboard Shortcuts & Mouse Gestures](/shortcuts) for how to navigate the **Parts** view.
+
+##  Buttons
+<br/>
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem"
+  }}
+>
+  <li><IconFileImport/> **Import parts** - Imports parts from an existing harness. [More Info](/parts#importing-parts)</li>
+  <li><IconPlus/> **Add part** - Adds a new part to the Parts view. [More Info](/parts)</li>
+  <li><IconEye/> **View options** - Opens the view options menu</li>
+</ul>
+
+## View Options Menu Parts
+<br/>
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem"
+  }}
+>
+  <li><IconCheck/> **Part Number** - Toggles the Part Number column on and off</li>
+  <li><IconCheck/> **Manufacturer** - Toggles the Manufacturer column on and off</li>
+  <li><IconCheck/> **Description** - Toggles the Description column on and off</li>
+  <li><IconCheck/> **Quantity** - Toggles the Quantity column on and off</li>
+  <li><IconLock/> **Read-only mode** - Toggles read-only mode, which prevents any changes from being made to the harness</li>
+</ul>

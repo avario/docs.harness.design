@@ -1,0 +1,86 @@
+import { IconSettings, IconMouse, IconHandClick, IconSun, IconMoon } from "@tabler/icons-react";
+
+# Settings
+
+The <IconSettings/>**Settings** panel allows you to set default global settings for the software.
+
+<br />
+<img src="/views/settings.png" width={400} style={{ borderRadius: "8px" }} />
+
+## Default length unit
+
+This sets the default length unit used throughout the software.
+
+<br />
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem"
+  }}
+>
+  <li>`mm` - Milimeter</li>
+  <li>`cm` - Centimeter</li>
+  <li>`m` - Meter</li>
+  <li>`in` - Inch</li>
+  <li>`ft` - Foot</li>
+  <li>`yd` - Yard</li>
+</ul>
+
+## Default gauge unit
+
+This sets the default gauge unit used throughout the software. For metric `mm²` is used, while for imperial `AWG` is used.
+
+<br />
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem"
+  }}
+>
+  <li>`mm²` - Milimeter squared</li>
+  <li>`AWG` - American Wire Gauge</li>
+</ul>
+
+## Input type
+
+This allows you to force the software to a certian input type.
+
+<br />
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem"
+  }}
+>
+  <li><IconMouse/> **Mouse** - Use mouse input</li>
+  <li><IconHandClick/> **Touch** - Use touch input</li>
+  <li>**Auto** - Automatically switch between mouse and touch input based on the current device</li>
+</ul>
+
+## Color scheme
+
+The software supports both light and dark color schemes. 
+
+<br />
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem"
+  }}
+>
+  <li><IconSun/> **Light** - Use light color scheme</li>
+  <li><IconMoon/> **Dark** - Use dark color scheme</li>
+  <li>**Auto** - Automatically switch between light and dark color schemes based on the system settings</li>
+</ul>

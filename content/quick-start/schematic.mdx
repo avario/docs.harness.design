@@ -1,9 +1,10 @@
 import { Steps } from 'nextra/components'
+import { IconManualGearbox } from "@tabler/icons-react";
  
 # Design your Schematic
 
 <Steps>
-### Open the Schematic View  
+### Open the <IconManualGearbox/> [Schematic](/views/view-schematic) View  
 Click the view dropdown and select **Schematic**.  
 <br />  
 <img src="/quick-start/schematic-view-open.png" width={256} style={{ borderRadius: '8px' }} />
@@ -17,4 +18,9 @@ Right-click on the canvas and choose a component from the dropdown menu.
 Drag from a connection handle on one component to another.  
 <br />
 <img src="/quick-start/add-wire.png" width={634} style={{ borderRadius: '8px' }} />
+
+### Add [Layout Points](/components/component-layout-point)  
+Double-click or right-click a **Wire** to add a **Layout Point**. More than one **Layout Point** can be added to a wire for more complex routing.
+<br />
+<img src="/components/layout-point-drag-wire.png" width={634} style={{ borderRadius: '8px' }} />
 </Steps>

@@ -1,10 +1,11 @@
 import { Steps } from 'nextra/components'
 import { Callout } from 'nextra/components'
+import { IconLine } from "@tabler/icons-react";
  
 # Review Connections
 
 <Steps>
-### Open the Connections View  
+### Open the <IconLine/> [Connections](/views/view-connections) View  
 Click the view dropdown and select **Connections**.  
 <br />  
 <img src="/quick-start/connection-view-open.png" width={256} style={{ borderRadius: '8px' }} />
@@ -15,10 +16,6 @@ The connections table lists all wires in your harness, including their source an
 <img src="/quick-start/connection-table.png" width={634} style={{ borderRadius: '8px' }} />
 </Steps>
 
-### Connections View, View Options
-
-  - **Show IDs instead of labels** will change the From and To columns to show either the component label or the automatically generated component ID.
-  - **Show contacts** will show the contact a connection is terminated with if applicable.
-  - The remaining options allow you to hide and show specific columns in the connections table.
-  <br />  
-  <img src="/quick-start/connection-properties.png" width={341} style={{ borderRadius: '8px' }} />
+<Callout>
+See [Connections](/views/view-connections) View for more information.
+</Callout>

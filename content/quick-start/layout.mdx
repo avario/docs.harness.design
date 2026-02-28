@@ -1,10 +1,11 @@
 import { Steps } from 'nextra/components'
 import { Callout } from 'nextra/components'
+import { IconBrandStackshare } from "@tabler/icons-react";
  
-# Lay Out your Harness
+# Layout your Harness
 
 <Steps>
-### Open the Layout View  
+### Open the <IconBrandStackshare/> [Layout](/views/view-layout) View  
 Click the view dropdown and select **Layout**.  
 <br />  
 <img src="/quick-start/layout-view-open.png" width={256} style={{ borderRadius: '8px' }} />
@@ -15,20 +16,23 @@ Drag from the connection point of a connector, terminal, or branch point to anot
   Wires from your schematic will be automatically routed using the shortest bundle path.
 </Callout>
 <br />  
-<img src="/quick-start/add-bundel.png" width={634} style={{ borderRadius: '8px' }} />
+<img src="/quick-start/add-bundle.png" width={634} style={{ borderRadius: '8px' }} />
+<Callout>
+  [Layout Points](/components/component-layout-point) can be added to **Bundles** in the same way as a **Wires**.
+</Callout>
 
 ### Add [Branch Points](/components/component-baranch-point)  
-Right-click on a bundle and select **Add Branch Point** from the dropdown.  
+Right-click on a **Bundle** and select **Add Branch Point** from the dropdown.  
 <br />
 <img src="/quick-start/add-branch-point.png" width={634} style={{ borderRadius: '8px' }} />
 
 ### Locate Internal Components
-Splices, diodes, and resistors are automatically positioned to minimise wire lengths. To place them manually, drag from a location handle to a specific branch point or component.  
+[Splices](/components/component-splice), [Diodes](/components/component-diode), and [Resistors](/components/component-resistor) are automatically positioned to minimise wire lengths. To place them manually, drag from a location handle to a specific branch point or component.  
 <br />  
 <img src="/quick-start/locate-splice.png" width={634} style={{ borderRadius: '8px' }} />
 
 ### Set Bundle Lengths
-Select a bundle, then double-click the input field to set its length.  
+Select a [Bundle](/components/component-bundle), then double-click the input field to set its length.  
 <br />
 <img src="/quick-start/add-dimensions.png" width={634} style={{ borderRadius: '8px' }} />
 </Steps>
