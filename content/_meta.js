@@ -9,5 +9,5 @@ export default {
   shortcuts: {},
   updates: { theme: { collapsed: true } },
   legal: { theme: { collapsed: true } },
-  about: { "display": "hidden" },
+  about: { },
 }
