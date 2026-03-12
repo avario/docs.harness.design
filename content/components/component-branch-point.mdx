@@ -1,10 +1,12 @@
 import { Steps } from 'nextra/components'
+import { IconArrowsSplit2 } from "@tabler/icons-react";
+
 
 # Branch Point
 
-A **branch point** is used to join multiple bundles together.
+A <IconArrowsSplit2/> `Branch Point` is used to join multiple bundles together.
 
-Inline components that are located within the harness—such as [splices](/components/component-splice), [diodes](/components/component-diode), and [resistors](/components/component-resistor)—can also be positioned at branch points.
+Inline components that are located within the harness—such as [Splices](/components/component-splice), [Diodes](/components/component-diode), and [Resistors](/components/component-resistor)—can also be positioned at branch points.
 
 Branch points can only be added in the [Layout View](/quick-start/layout).
 
@@ -14,25 +16,25 @@ There are several ways to add branch points to your harness:
 
 <Steps>
 ### Add a New Branch Point  
-Right-click on the canvas and select **Branch Point**. This will add a branch point with no connected bundles. Drag from the connection point of a connector, terminal, or another branch point to create a bundle to the new branch point.  
+`right-click` on the canvas and select <IconArrowsSplit2/> `Branch Point`. This will add a branch point with no connected bundles. `left-click-drag` from the connection point of a connector, terminal, or another branch point to create a bundle to the new branch point.  
 <br />  
 <img src="/components/branchpoint-add.png" width={634} style={{ borderRadius: '8px' }} />
 
 ### Add a Branch Point to a Bundle  
-Right-click on a bundle and select **Add Branch Point**. This splits the bundle into two, with each segment connecting to the new branch point.
+`right-click` on a bundle and select <IconArrowsSplit2/> `Add Branch Point`. This splits the bundle into two, with each segment connecting to the new branch point.
 
 ### Join Multiple Bundles with a Branch Point  
-Select multiple bundles, right-click, and choose **Add Branch Point**. The selected bundles will be merged at a new branch point.  
+`shift` `left-click` or `left-click-drag` select multiple bundles, `right-click`, and choose <IconArrowsSplit2/> `Add Branch Point`. The selected bundles will be merged at a new branch point.
 <br />  
 <img src="/components/branchpoint-add-wires.png" width={634} style={{ borderRadius: '8px' }} />
 </Steps>
 
 ## Positioning Branch Points
 
-Click and drag a branch point to position it on the canvas.  
+`left-click-drag` to position a **Branch Point** on the canvas.  
 <br />  
 <img src="/components/branchpoint-locate.png" width={634} style={{ borderRadius: '8px' }} />
 
 ## Merging Branch Points
 
-To merge two branch points, drag one onto the other.
+To merge two branch points, `left-click-drag` one onto the other.

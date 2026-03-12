@@ -4,6 +4,7 @@ asIndexPage: true
 
 import { Callout } from "nextra/components";
 import { IconEdit } from "@tabler/icons-react";
+import { IconPlus, IconSquareRoundedPlus, IconFileImport, IconNut, IconEye, IconAlertHexagon } from "@tabler/icons-react";
 
 # Parts
 
@@ -13,21 +14,21 @@ Each part can have specific properties like part number, manufacturer, colour, a
 
 ## Adding Parts
 
-In the Parts View, right-click on the canvas or click the `+` button in the bottom-left corner to add a new part.
+In the Parts View, `right-click` on the canvas or click the <IconPlus/> `Add part` button in the bottom-left corner to add a new part.
 
 <br />
 <img src="/parts/part-add.png" width={222} style={{ borderRadius: "8px" }} />
 
 ## Creating Part from Component
 
-Parts can be created by right-clicking a component in the **Schematic** or **Layout View** and selecting **Part** → **Create New Part**.
+Parts can be created by `right-click` a component in the **Schematic** or **Layout View** and selecting `Part` → <IconSquareRoundedPlus/> `Create New Part`.
 
 <br />
 <img src="/parts/part-add-from-component.png" width={535} style={{ borderRadius: "8px" }} />
 
 ## Importing Parts
 
-You can import parts from any of your existing projects by using the **Import Parts** button in the **Parts View**.
+You can import parts from any of your existing projects by using the <IconFileImport/> `Import Parts` button in the **Parts View**.
 
 Select the project you want to import from, then choose the parts you want to import. The selected parts will be added to your current project. This will not affect the original parts in the project you are importing from.
 
@@ -41,7 +42,7 @@ Select the project you want to import from, then choose the parts you want to im
 <Callout>
 **Part Library Workaround**
 
-1. Create a separate harness design and call it `Master Parts Library` or similar
+1. Create a separate harness design and call it `Master Parts Library` or similar
 2. Add Parts to the [Parts View](/views/view-parts) in this harness
 3. In the harness you want to add parts to simply import them from the `Master Parts Library` harness
 
@@ -50,14 +51,14 @@ Select the project you want to import from, then choose the parts you want to im
 
 ## Editing Parts
 
-Double click on a part name or click the **Edit** <IconEdit /> button to view and edit a part's properties.
+`left-double-click` on a part name or click the <IconEdit /> button to view and edit a part's properties.
 
 <br />
 <img src="/parts/part-edit.png" width={634} style={{ borderRadius: "8px" }} />
 
 ## Assigning Parts
 
-Parts are assigned to components in the [Layout](/quick-start/layout) or [Schematic](/quick-start/schematic) view. Right-click a component, then select the appropriate part from the list.
+Parts are assigned to components in the [Layout](/quick-start/layout) or [Schematic](/quick-start/schematic) view. `right-click` a component, then select the appropriate part from the list.
 
 <br />
 <img src="/components/connector-assign.png" width={634} style={{ borderRadius: "8px" }} />
@@ -66,16 +67,16 @@ Parts are assigned to components in the [Layout](/quick-start/layout) or [Schema
 
 ## Removing Parts from BOM
 
-Parts can be removed from the BOM by right-clicking a component in the **Layout** or **Schematic View** with a part assigned and deselecting **Include in BOM**.
+Parts can be removed from the BOM by `right-clicking` a component in the **Layout** or **Schematic View** with a part assigned and deselecting <IconNut/> `Include in BOM`.
 
 <br />
 <img src="/parts/part-remove-bom.png" width={307} style={{ borderRadius: "8px" }} />
 
 ## Unassigned Parts
 
-To show components with unassigned parts, in the **View Options** at the bottom right of the Layout and Schematic Views select **Unassigned part warnings**.
+To show components with unassigned parts, in the <IconEye/> `View Options` at the bottom right of the Layout and Schematic Views select <IconAlertHexagon/> `Unassigned part warnings`.
 
-- **Red warning symbol:** No assigned part
-- **Orange warning symbol:** No assigned part (Excluded from BOM)
-  <br />
-  <img src="/parts/part-unassigned.png" width={957} style={{ borderRadius: "8px" }} />
+- `Red warning symbol` No assigned part
+- `Orange warning symbol` No assigned part (Excluded from BOM)
+<br />
+<img src="/parts/part-unassigned.png" width={957} style={{ borderRadius: "8px" }} />

@@ -1,59 +1,73 @@
+export const IconOrthogonal = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="tabler-icon"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth="2"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M4 20 L10 20 A2 2 0 0 0 12 18 L12 6 A2 2 0 0 1 14 4 L20 4" />
+  </svg>
+);
 import { Callout } from 'nextra/components'
+import { IconTrash, IconMinus, IconEye, IconPlus } from "@tabler/icons-react";
+
 
 # Layout Point
 
-**Layout Points** are used to define custom layouts for [Wires](/components/component-wire), [Dimmed Wires](/components/component-wire#dimmed-wire-path), and [Cables](/components/component-cable) in the **Schematic View**, and for [Bundles](/components/component-bundle) in the **Layout View**.
+**Layout Points** are used to define custom layouts for [Wires](/components/component-wire), and [Cables](/components/component-cable) in the [Schematic](/views/view-schematic) View, and for [Bundles](/components/component-bundle) in the [Layout](/views/view-layout) View.
 
 ## Adding a Layout Point
 
-Double-click a **Wire**, **Dimmed Wire**, **Cable**, or **Bundle** to add a **Layout Point**. You can also right-click the item and select **Add layout point** from the context menu.
-<br />  
-<img src="/components/layout-point-add.png" width={634} style={{ borderRadius: '8px' }} />
+`Double-click` a [Wire](/components/component-wire), [Cable](/components/component-cable), or [Bundle](/components/component-bundle) to add a [Layout Point](/components/component-layout-point). You can also `right-click` the item and select <IconPlus/> `Add layout point` from the context menu.
 <Callout>  
-More than one **Layout Point** can be added to a wire for more complex routing.
+More than one [Layout Points](/components/component-layout-point) can be added to a wire for more complex routing.
 </Callout>
 
 ## Moving Layout Points
 
-To move a **Layout Point**, click and drag it to the desired position.
+To move a [Layout Point](/components/component-layout-point), `left-click` and `drag` it to the desired position.
 <br />  
 <img src="/components/wire-layout-drag.png" width={634} style={{ borderRadius: '8px' }} />
 
 <Callout>  
-You can shift-click to select, or marquee select, to move multiple **Layout Points** at once.
+You can `shift` + `left-click` to select, or marquee select, to move multiple **Layout Points** at once.
 </Callout>
 
 <Callout>  
-When moving a **Layout Point**, parallel guide lines will appear on the sides of the item being adjusted when it is aligned `horizontally`, `vertically`, or at `45°`.
+When moving a [Layout Point](/components/component-layout-point), parallel guide lines will appear on the sides of the item being adjusted when it is aligned `horizontally`, `vertically`, or at `45°`.
 </Callout>
 
-Left-clicking and dragging on a **Wire**, **Dimmed Wire**, or **Cable** will move the two layout points on either side of the dragged position.
+`Left-click` and `drag` on a [Wire](/components/component-wire) or [Cable](/components/component-cable) will move the two layout points on either side of the dragged position.
 <br />
 <img src="/components/layout-point-drag-wire.png" width={634} style={{ borderRadius: '8px' }} />
 
 ## Deleting Layout Points
 
-To delete a **Layout Point**, select it and press the **Delete** key, or right-click the point and select **Delete**.
-<br />  
-<img src="/components/wire-layout-delete.png" width={190} style={{ borderRadius: '8px' }} />
+Delete Layout Point:
+-  `Double-click` the [Layout Point](/components/component-layout-point)
+-  Select it and hit the `Delete` key
+-  `Right-click` and select <IconTrash/> `Delete`
 
-You can delete all layout points on a **Wire**, **Dimmed Wire**, **Cable**, or **Bundle** by right-clicking the item and selecting **Delete all layout points** from the context menu.
-<br />  
-<img src="/components/layout-point-delete-all.png" width={634} style={{ borderRadius: '8px' }} />
+## Deleting Layout Points on Wire, Cable or Bundle
 
-You can delete all layout points from the **Schematic View** or **Layout View** by clicking **Clear all layout points** from the **View Options** menu.
-<br />  
-<img src="/components/layout-point-clear-all.png" width={400} style={{ borderRadius: '8px' }} />
+`Right-click` a [Wire](/components/component-wire), [Cable](/components/component-cable), or [Bundle](/components/component-bundle) and select <IconMinus/> `Delete all layout points` from the context menu.
+
+## Deleting All Layout Points
+
+In the bottom right of the [Schematic](/views/view-schematic) or [Layout](/views/view-layout) Views go <IconEye/> `View Options` → <IconMinus/> `Clear all layout points`. This will delete all layout points on the corresponding view.
 
 ## Auto Layout
 
-To auto layout a **Wire**, **Dimmed Wire**, or **Cable** in an orthogonal manner, select the items you want to lay out, right-click, and select **Auto layout** from the context menu.
-<br /> 
-<img src="/components/layout-point-auto.png" width={634} style={{ borderRadius: '8px' }} />
+`Right-click` a [Wire](/components/component-wire) and select <IconOrthogonal/> `Auto layout` from the context menu or press the `A` key. This will lay these items out in an orthogonal manner using [Layout Points](/components/component-layout-point).
 
-You can auto layout all wires on the schematic by clicking **Auto layout all paths** from the **View Options** menu in the **Schematic View**.
-<br /> 
-<img src="/components/layout-point-auto-all.png" width={400} style={{ borderRadius: '8px' }} />
+## Auto Layout All Wires
+
+In the bottom right of the [Schematic](/views/view-schematic) View go <IconEye/> `View Options` → <IconOrthogonal/> `Auto layout all paths` or press `shift` `A`. This will lay out all [Wires](/components/component-wire) orthogonally.
 
 <Callout>  
 Auto layout only works in the **Schematic View**.

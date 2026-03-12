@@ -18,7 +18,7 @@ import { Callout } from "nextra/components";
 
 # Schematic
 
-The <IconManualGearbox/> **Schematic** view is a visual representation of all the electrical connections in your harness. In this view you can add **Connector**, **Terminal**, **Splice**, **Diode**, and **Resistor** [Components](/components) and connect them together with **Wires**, **Twisted Wires** or **Cables**. You can then assign specific [Parts](/parts) to each component.
+The <IconManualGearbox/> `Schematic` view is a visual representation of all the electrical connections in your harness. In this view you can add **Connector**, **Terminal**, **Splice**, **Diode**, and **Resistor** [Components](/components) and connect them together with **Wires**, **Twisted Wires** or **Cables**. You can then assign specific [Parts](/parts) to each component.
 
 <br />
 <img src="/views/schematic.png" width={800} style={{ borderRadius: "8px" }} />
@@ -27,9 +27,9 @@ The <IconManualGearbox/> **Schematic** view is a visual representation of all th
 
 This is where [Components](/components) are placed and connected together with [Wires](components/component-wire).
 
-Right-click anywhere on the canvas to open the context menu and add [Components](/components).
+`right-click` anywhere on the canvas to open the context menu and add [Components](/components).
 
-Right-click any component to assign a [Part](/parts).
+`right-click` any component to assign a [Part](/parts).
 
 See [Keyboard Shortcuts & Mouse Gestures](/shortcuts) for how to navigate the **Schematic** view.
 
@@ -44,11 +44,11 @@ See [Keyboard Shortcuts & Mouse Gestures](/shortcuts) for how to navigate the **
     gap: "0.5rem"
   }}
 >
-  <li><IconArrowBackUp/> **Undo** - Undoes the last action</li>
-  <li><IconArrowForwardUp/> **Redo** - Redoes the last undone action</li>
-  <li><IconArrowsMaximize/> **Fit to view** - Fits the entire schematic within the viewable area </li>
-  <li><IconArrowsMinimize/> **Fit to view** - If an item is selected, it will center and zoom in on the selected item</li>
-  <li><IconEye/> **View options** - Opens the view options menu</li>
+  <li><IconArrowBackUp/> `Undo` - Undoes the last action</li>
+  <li><IconArrowForwardUp/> `Redo` - Redoes the last undone action</li>
+  <li><IconArrowsMaximize/> `Fit to view` - Fits the entire schematic within the viewable area </li>
+  <li><IconArrowsMinimize/> `Fit to view` - If an item is selected, it will center and zoom in on the selected item</li>
+  <li><IconEye/> `View options` - Opens the view options menu</li>
 </ul>
 
 ## View Options Menu Schematic
@@ -62,12 +62,12 @@ See [Keyboard Shortcuts & Mouse Gestures](/shortcuts) for how to navigate the **
     gap: "0.5rem"
   }}
 >
-  <li><IconNut/> **Show parts** - Toggles the visibility of assigned parts</li>
-  <li><IconAlertHexagon/> **Unassigned part warnings** - Toggles warnings for components with unassigned parts</li>
-  <li><IconHash/> **Show component IDs** - Toggles visibility of the unique ID on and off for all components. [More info](/components/component-splice#viewing-splice-component-ids)</li>
-  <li><IconBolt/> **Show nets for selection** - Toggles between showing the complete path of conductance and showing what is directly connected to the selected component. [More info](/features/feature-nets#highlight-wires-attached-to-selected-part)</li>
-  <li><IconLineDashed/> **Dash undefined routes** - Toggles dashed lines for wires that have not been routed through a Bundle in the Layout view. [More info](/components/component-wire#dashed-wires)</li>
-  <li><IconOrthogonal/> **Auto layout all paths** - Automatically arranges all wires to be orthogonal (90-degree angles) [More info](/components/component-layout-point#auto-layout)</li>
-  <li><IconMinus/> **Clear all layout points** -  Deletes all layout points from wires</li>
-  <li><IconLock/> **Read-only mode** - Toggles read-only mode, which prevents any changes from being made to the harness</li> 
+  <li><IconNut/> `Show parts` - Toggles the visibility of assigned parts</li>
+  <li><IconAlertHexagon/> `Unassigned part warnings` - Toggles warnings for components with unassigned parts</li>
+  <li><IconHash/> `Show component IDs` - Toggles visibility of the unique ID on and off for all components. [More info](/components/component-splice#viewing-splice-component-ids)</li>
+  <li><IconBolt/> `Show nets for selection` - Toggles between showing the complete path of conductance and showing what is directly connected to the selected component. [More info](/features/feature-nets#highlight-wires-attached-to-selected-part)</li>
+  <li><IconLineDashed/> `Dash undefined routes` - Toggles dashed lines for wires that have not been routed through a Bundle in the Layout view. [More info](/components/component-wire#dashed-wires)</li>
+  <li><IconOrthogonal/> `Auto layout all paths` - Automatically arranges all wires to be orthogonal (90-degree angles) [More info](/components/component-layout-point#auto-layout)</li>
+  <li><IconMinus/> `Clear all layout points` -  Deletes all layout points from wires</li>
+  <li><IconLock/> `Read-only mode` - Toggles read-only mode, which prevents any changes from being made to the harness</li> 
 </ul>

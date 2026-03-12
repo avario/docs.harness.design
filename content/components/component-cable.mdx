@@ -1,24 +1,44 @@
+export const IconCable = () => (
+  <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="tabler-icon"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth="2"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <line x1={2} y1={9.5} x2={22} y2={9.5} />
+      <line x1={2} y1={14.5} x2={22} y2={14.5} />
+      <ellipse cx={12} cy={12} rx={4} ry={7} />
+    </svg>
+);
+import { Callout } from 'nextra/components'
+import { IconPlus, IconMinus, IconShield } from "@tabler/icons-react";
+
 # Cable
 
-A **cable** is a group of individual wires—called **cores**—wrapped in a sheath.
+A <IconCable/> `Cable` is a group of individual wires—called **cores**—wrapped in a sheath.
 
 [Cable parts](/parts/part-cable) can be assigned to cables created in the [Schematic View](/quick-start/schematic).
 
 ## Adding a Cable
 
-Right-click on the canvas in the Schematic View and select **Cable** to add a new cable.  
+`right-click` on the canvas in the Schematic View and select <IconCable/> `Cable` to add a new cable.  
 <br />  
 <img src="/components/cable-add.png" width={634} style={{ borderRadius: '8px' }} />
 
 ### Create a Cable from Wires
 
-Select multiple wires, right-click, and choose **Make cable**. This creates a cable with a core for each selected wire.  
+Select multiple wires, `right-click`, and choose <IconCable/> `Make cable`. This creates a cable with a core for each selected wire.  
 <br />  
 <img src="/components/cable-add-wires.png" width={634} style={{ borderRadius: '8px' }} />
 
 ## Creating Cable Connections
 
-Click and drag from a component's connection point to one of the cable's cores. Once two components are connected to the same core, a connection is established using that core as the conductor.
+`left-click-drag` from a component's connection point to one of the cable's cores. Once two components are connected to the same core, a connection is established using that core as the conductor.
 
 ## Layout a Cable
 To layout a **Cable** you use [Layout Points](/components/component-layout-point).
@@ -31,16 +51,16 @@ Cables are routed automatically based on connections and bundles. The cable leng
 
 ## Adding and Removing Cable Cores
 
-Select the cable in the Schematic View, then click the `+` button to add cores, or the `–` button to remove them. Enter the desired number of cores directly into the core count box.
+Select the cable in the Schematic View, then click the <IconPlus/> button to add cores, or the <IconMinus/> button to remove them. Enter the desired number of cores directly into the core count box.
 <br />  
 <img src="/components/cable-add-wire.png" width={141} style={{ borderRadius: '8px' }} />
 
 ## Adding a Shield to a Cable
 
-Right-click the cable in the Schematic View and select **Add Shield**.  
+`right-click` the cable in the Schematic View and select <IconShield/> `Add Shield`.  
 <br />  
 <img src="/components/cable-sheild.png" width={634} style={{ borderRadius: '8px' }} />
 
-Shields can be connected to components just like wires.  
+Shields can be connected to components just like the other wires in the cable.  
 <br />  
 <img src="/components/cable-shield-example.png" width={634} style={{ borderRadius: '8px' }} />
