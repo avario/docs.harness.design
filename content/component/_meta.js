@@ -1,0 +1,15 @@
+export default {
+  "connector": "",
+  "terminal": "",
+  "wire": "",
+  "layout-point": "",
+  "splice": "",
+  "cable": "",
+  "twisted-wires": "",
+  "diode": "",
+  "resistor": "",
+  "bundle": "",
+  "branch-point": "",
+  "group": "",
+  "net-label": "",
+};
