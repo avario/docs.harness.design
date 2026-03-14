@@ -1,3 +1,9 @@
+---
+title: "Cable — Schematic Design | harness.design"
+sidebarTitle: "Cable"
+description: "Design multi-core cables in the harness schematic. Add cores, assign shields, create cables from existing wires, and assign cable parts for accurate BOM output."
+---
+
 export const IconCable = () => (
   <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -28,13 +34,13 @@ A <IconCable/> `Cable` is a group of individual wires—called **cores**—wrapp
 
 `right-click` on the canvas in the Schematic View and select <IconCable/> `Cable` to add a new cable.  
 <br />  
-<img src="/components/cable-add.png" width={634} style={{ borderRadius: '8px' }} />
+<img src="/component/cable-add.png" width={634} style={{ borderRadius: '8px' }} />
 
 ### Create a Cable from Wires
 
 Select multiple wires, `right-click`, and choose <IconCable/> `Make cable`. This creates a cable with a core for each selected wire.  
 <br />  
-<img src="/components/cable-add-wires.png" width={634} style={{ borderRadius: '8px' }} />
+<img src="/component/cable-add-wires.png" width={634} style={{ borderRadius: '8px' }} />
 
 ## Creating Cable Connections
 
@@ -47,20 +53,20 @@ To layout a **Cable** you use [Layout Points](/component/layout-point).
 
 Cables are routed automatically based on connections and bundles. The cable length is determined by its longest core.  
 <br />  
-<img src="/components/cable-route.png" width={634} style={{ borderRadius: '8px' }} />
+<img src="/component/cable-route.png" width={634} style={{ borderRadius: '8px' }} />
 
 ## Adding and Removing Cable Cores
 
 Select the cable in the Schematic View, then click the <IconPlus/> button to add cores, or the <IconMinus/> button to remove them. Enter the desired number of cores directly into the core count box.
 <br />  
-<img src="/components/cable-add-wire.png" width={141} style={{ borderRadius: '8px' }} />
+<img src="/component/cable-add-wire.png" width={141} style={{ borderRadius: '8px' }} />
 
 ## Adding a Shield to a Cable
 
 `right-click` the cable in the Schematic View and select <IconShield/> `Add Shield`.  
 <br />  
-<img src="/components/cable-sheild.png" width={634} style={{ borderRadius: '8px' }} />
+<img src="/component/cable-sheild.png" width={634} style={{ borderRadius: '8px' }} />
 
 Shields can be connected to components just like the other wires in the cable.  
 <br />  
-<img src="/components/cable-shield-example.png" width={634} style={{ borderRadius: '8px' }} />
+<img src="/component/cable-shield-example.png" width={634} style={{ borderRadius: '8px' }} />

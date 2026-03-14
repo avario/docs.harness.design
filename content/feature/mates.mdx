@@ -1,3 +1,9 @@
+---
+title: "Mates — Wire Harness CAD | harness.design"
+sidebarTitle: "Mates"
+description: "Mate connectors and terminals to model bulkheads and pass-throughs. Validates cavity count, gender, and terminal compatibility — errors shown in schematic."
+---
+
 import { Table } from 'nextra/components'
 import { Callout } from 'nextra/components'
 
@@ -8,12 +14,12 @@ A mate is when a [Connector](/component/connector) or [Terminal](/component/term
 ## Add a Mate
 In the [Schematic View](/quick-start/schematic) mate a Connector or Terminal by `left-click-drag` from the handle on the left or right side of the component label to the corresponding handle of another Connector or Terminal.
 <br />  
-<img src="/features/mates-add.png" width={631} style={{ borderRadius: '8px' }} />
+<img src="/feature/mates-add.png" width={631} style={{ borderRadius: '8px' }} />
 
 ## Mates on the Layout View
 Mates can be viewed and deleted on the [Layout View](/quick-start/layout) but cannot be added. Go to the [Schematic View](/quick-start/schematic) to add mates.
 <br />  
-<img src="/features/mates-layout.png" width={631} style={{ borderRadius: '8px' }} />
+<img src="/feature/mates-layout.png" width={631} style={{ borderRadius: '8px' }} />
 
 ## Mating Connectors
 When connectors are mated together the cavities are mapped one to one and are considered on the same electrical net. If the mate doesn't follow the following rules an error will be displayed:

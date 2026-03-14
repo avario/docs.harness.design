@@ -1,7 +1,34 @@
 {
   "permissions": {
     "allow": [
-      "Bash(xargs sed:*)"
+      "Bash(xargs sed:*)",
+      "Bash(node verify-fm.js)",
+      "Bash(node add-sidebar-titles.js)",
+      "Bash(find c:UsersAdminOneDriveDocumentsGitHubdocs.harness.design -type f \\\\\\(-name *.png -o -name *.jpg -o -name *.jpeg -o -name *.gif -o -name *.svg -o -name *.webp \\\\\\))",
+      "Bash(cp -r public/components/. public/component/)",
+      "Bash(cp -r public/features/. public/feature/)",
+      "Bash(cp public/views/connections.png public/view/connections.png)",
+      "Bash(cp public/views/layout.png public/view/layout.png)",
+      "Bash(cp public/views/parts.png public/view/parts.png)",
+      "Bash(cp public/views/schematic.png public/view/schematic.png)",
+      "Bash(cp public/views/split-screen.png public/view/split-screen.png)",
+      "Bash(cp public/views/main-menu.png public/view/main-menu/main-menu.png)",
+      "Bash(cp public/views/open.png public/view/main-menu/open.png)",
+      "Bash(cp public/views/settings.png public/view/main-menu/settings.png)",
+      "Bash(cp public/views/share.png public/view/main-menu/share.png)",
+      "Bash(cp public/views/export.png public/view/main-menu/export.png)",
+      "Bash(cp public/parts/part-add.png public/part/part-add.png)",
+      "Bash(cp public/parts/part-add-from-component.png public/part/part-add-from-component.png)",
+      "Bash(cp public/parts/part-edit.png public/part/part-edit.png)",
+      "Bash(cp public/parts/part-import.png public/part/part-import.png)",
+      "Bash(cp public/parts/part-remove-bom.png public/part/part-remove-bom.png)",
+      "Bash(cp public/parts/part-unassigned.png public/part/part-unassigned.png)",
+      "Bash(cp public/parts/part-backshell.png public/part/connector/backshell.png)",
+      "Bash(cp public/parts/part-boot.png public/part/connector/boot.png)",
+      "Bash(cp public/parts/part-contact-all.png public/part/connector/contact-all.png)",
+      "Bash(cp public/parts/part-contact-single.png public/part/connector/contact-single.png)",
+      "Bash(cp public/parts/part-dust-cover.png public/part/connector/dust-cover.png)",
+      "Bash(cp public/parts/part-lock.png public/part/connector/lock.png)"
     ]
   }
 }

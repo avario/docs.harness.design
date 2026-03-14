@@ -1,3 +1,9 @@
+---
+title: "Branch Point — Harness Layout | harness.design"
+sidebarTitle: "Branch Point"
+description: "Add and position branch points in the layout view to join bundles. Supports splitting, merging, and locating inline splices, diodes, and resistors."
+---
+
 import { Steps } from 'nextra/components'
 import { IconArrowsSplit2 } from "@tabler/icons-react";
 
@@ -18,7 +24,7 @@ There are several ways to add branch points to your harness:
 ### Add a New Branch Point  
 `right-click` on the canvas and select <IconArrowsSplit2/> `Branch Point`. This will add a branch point with no connected bundles. `left-click-drag` from the connection point of a connector, terminal, or another branch point to create a bundle to the new branch point.  
 <br />  
-<img src="/components/branchpoint-add.png" width={634} style={{ borderRadius: '8px' }} />
+<img src="/component/branchpoint-add.png" width={634} style={{ borderRadius: '8px' }} />
 
 ### Add a Branch Point to a Bundle  
 `right-click` on a bundle and select <IconArrowsSplit2/> `Add Branch Point`. This splits the bundle into two, with each segment connecting to the new branch point.
@@ -26,14 +32,14 @@ There are several ways to add branch points to your harness:
 ### Join Multiple Bundles with a Branch Point  
 `shift` `left-click` or `left-click-drag` select multiple bundles, `right-click`, and choose <IconArrowsSplit2/> `Add Branch Point`. The selected bundles will be merged at a new branch point.
 <br />  
-<img src="/components/branchpoint-add-wires.png" width={634} style={{ borderRadius: '8px' }} />
+<img src="/component/branchpoint-add-wires.png" width={634} style={{ borderRadius: '8px' }} />
 </Steps>
 
 ## Positioning Branch Points
 
 `left-click-drag` to position a **Branch Point** on the canvas.  
 <br />  
-<img src="/components/branchpoint-locate.png" width={634} style={{ borderRadius: '8px' }} />
+<img src="/component/branchpoint-locate.png" width={634} style={{ borderRadius: '8px' }} />
 
 ## Merging Branch Points
 

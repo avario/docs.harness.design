@@ -1,5 +1,8 @@
 ---
 asIndexPage: true
+title: "Parts — Wire Harness CAD | harness.design"
+sidebarTitle: "Parts"
+description: "Create, edit, import, and assign parts in the harness.design parts library. Track part numbers, manufacturers, and quantities to build an accurate harness BOM."
 ---
 
 import { Callout } from "nextra/components";
@@ -17,14 +20,14 @@ Each part can have specific properties like part number, manufacturer, colour, a
 In the Parts View, `right-click` on the canvas or click the <IconPlus/> `Add part` button in the bottom-left corner to add a new part.
 
 <br />
-<img src="/parts/part-add.png" width={222} style={{ borderRadius: "8px" }} />
+<img src="/part/part-add.png" width={222} style={{ borderRadius: "8px" }} />
 
 ## Creating Part from Component
 
 Parts can be created by `right-click` a component in the **Schematic** or **Layout View** and selecting `Part` → <IconSquareRoundedPlus/> `Create New Part`.
 
 <br />
-<img src="/parts/part-add-from-component.png" width={535} style={{ borderRadius: "8px" }} />
+<img src="/part/part-add-from-component.png" width={535} style={{ borderRadius: "8px" }} />
 
 ## Importing Parts
 
@@ -33,7 +36,7 @@ You can import parts from any of your existing projects by using the <IconFileIm
 Select the project you want to import from, then choose the parts you want to import. The selected parts will be added to your current project. This will not affect the original parts in the project you are importing from.
 
 <br />
-<img src="/parts/part-import.png" width={634} style={{ borderRadius: "8px" }} />
+<img src="/part/part-import.png" width={634} style={{ borderRadius: "8px" }} />
 
 <Callout type="warning">
   You will see a warning if any part numbers of the imported parts conflict with existing parts.
@@ -54,14 +57,14 @@ Select the project you want to import from, then choose the parts you want to im
 `left-double-click` on a part name or click the <IconEdit /> button to view and edit a part's properties.
 
 <br />
-<img src="/parts/part-edit.png" width={634} style={{ borderRadius: "8px" }} />
+<img src="/part/part-edit.png" width={634} style={{ borderRadius: "8px" }} />
 
 ## Assigning Parts
 
 Parts are assigned to components in the [Layout](/quick-start/layout) or [Schematic](/quick-start/schematic) view. `right-click` a component, then select the appropriate part from the list.
 
 <br />
-<img src="/components/connector-assign.png" width={634} style={{ borderRadius: "8px" }} />
+<img src="/component/connector-assign.png" width={634} style={{ borderRadius: "8px" }} />
 
 <Callout>Quantities are automatically updated as parts are assigned to components.</Callout>
 
@@ -70,7 +73,7 @@ Parts are assigned to components in the [Layout](/quick-start/layout) or [Schema
 Parts can be removed from the BOM by `right-clicking` a component in the **Layout** or **Schematic View** with a part assigned and deselecting <IconNut/> `Include in BOM`.
 
 <br />
-<img src="/parts/part-remove-bom.png" width={307} style={{ borderRadius: "8px" }} />
+<img src="/part/part-remove-bom.png" width={307} style={{ borderRadius: "8px" }} />
 
 ## Unassigned Parts
 
@@ -79,4 +82,4 @@ To show components with unassigned parts, in the <IconEye/> `View Options` at th
 - `Red warning symbol` No assigned part
 - `Orange warning symbol` No assigned part (Excluded from BOM)
 <br />
-<img src="/parts/part-unassigned.png" width={957} style={{ borderRadius: "8px" }} />
+<img src="/part/part-unassigned.png" width={957} style={{ borderRadius: "8px" }} />
