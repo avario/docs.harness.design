@@ -11,5 +11,4 @@ export default {
   "bundle": "",
   "branch-point": "",
   "group": "",
-  "net-label": "",
 };

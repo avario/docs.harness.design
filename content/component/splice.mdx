@@ -30,7 +30,7 @@ A <IconSplice/> `Splice` connects two or more wires within the harness. Each **S
 
 ## Adding a Splice
 
-`right-click` on the canvas in the [Schematic View](/quick-start/schematic) and select <IconSplice/> `Splice`.  
+`right-click` on the canvas in the [Schematic](/quick-start/schematic) view and select <IconSplice/> `Splice`.  
 <br />  
 <img src="/component/splice-add-right-click.png" width={634} style={{ borderRadius: '8px' }} />
 
@@ -42,21 +42,10 @@ You can also add a **Splice** by selecting multiple wires in the Schematic View,
 
 **Splices** are automatically positioned based on the most efficient wiring path. To position a **Splice** manually, drag its location handle in the **Layout** view to any [Branch Point](/component/branch-point), [Connector](/component/connector), or [Terminal](/component/terminal).  
 <br />  
-<img src="/component/splice-locate-manual.png" width={634} style={{ borderRadius: '8px' }} />
-
-<Callout>  
-To reset a **Splice** to automatic placement, select its location line and press `Delete`.
+<video src="/quick-start/locate-splice.mp4" width={634} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
+<Callout>
+  There is no official support for offset splices, however you can add additional branch points and assign the Splice to this branch point to achieve a staggered splice.
 </Callout>
-
-## Offsetting Splices/ Staggering Splices
-
-**Splices** can be staggered by adding additional branchpoints in the **Layout View**.
-<br />  
-<img src="/component/splice-offset.png" width={634} style={{ borderRadius: '8px' }} />
-
-Image below shows the staggered **Splice**. 
-<br />  
-<img src="/component/splice-offset-high.png" width={634} style={{ borderRadius: '8px' }} />
 
 ## Viewing Splice Component IDs
 

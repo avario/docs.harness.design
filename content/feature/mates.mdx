@@ -11,15 +11,15 @@ import { Callout } from 'nextra/components'
 
 A mate is when a [Connector](/component/connector) or [Terminal](/component/terminal) is plugged into each other. Mates are used to split harness into smaller sub-harness or to plug a harness into a [Device](/part/device) represented by a [Group](/component/group). A bulkhead connector is a common example of a mate. Matted connectors are sometimes called pass-through connectors.
 
-## Add a Mate
-In the [Schematic View](/quick-start/schematic) mate a Connector or Terminal by `left-click-drag` from the handle on the left or right side of the component label to the corresponding handle of another Connector or Terminal.
+## Add a Mate on the Schematic view
+`left-click-drag` from the handle on the left or right side of the component label to the corresponding handle of another Connector or Terminal.
 <br />  
-<img src="/feature/mates-add.png" width={631} style={{ borderRadius: '8px' }} />
+<video src="/feature/mates-add2.mp4" width={634} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
 
-## Mates on the Layout View
-Mates can be viewed and deleted on the [Layout View](/quick-start/layout) but cannot be added. Go to the [Schematic View](/quick-start/schematic) to add mates.
+## Add a Mate on the Layout view
+`left-click-drag` from the handle on the connection side of a Connector or Terminal to the another Connector or Terminal.
 <br />  
-<img src="/feature/mates-layout.png" width={631} style={{ borderRadius: '8px' }} />
+<video src="/feature/mates-add.mp4" width={634} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
 
 ## Mating Connectors
 When connectors are mated together the cavities are mapped one to one and are considered on the same electrical net. If the mate doesn't follow the following rules an error will be displayed:

@@ -9,25 +9,13 @@ import { IconMaximize, IconMaximizeOff, IconCheck, IconEye } from "@tabler/icons
 
 # Group
 
-A <IconMaximize/> `Group` contains a selection of components. It is commonly used to represent a device (i.e. an ECU, fuse box etc). A group can be assigned a [Device Part](/part/device).
+A <IconMaximize/> `Group` contains a selection of components. It is commonly used to organise connects that plug into a device (i.e. an ECU, fuse box etc). A group can be assigned a [Device Part](/part/device).
 
 ## Creating a Group
 
-`right-click` on the canvas in the [Schematic](/quick-start/schematic) or [Layout](/quick-start/layout) view and select <IconMaximize/> `Group`.  
-<br />  
-<img src="/component/group-add.png" width={187} style={{ borderRadius: '8px' }} />
-
-## Creating a Group from Existing Components
-
 Select multiple components using `shift` `left-click` or `left-click-drag` selection, then `right-click` and select <IconMaximize/> `Create Group` to form a new group.  
 <br />  
-<img src="/component/group-add-multiple.png" width={387} style={{ borderRadius: '8px' }} />
-
-## Adding Components to a Group
-
-`left-click-drag` from the `+` icon next to the group heading to the component you want to add.
-<br />  
-<img src="/component/group-add-component.png" width={500} style={{ borderRadius: '8px' }} />
+<video src="/component/group-add.mp4" width={400} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
 
 ## Removing Components from a Group
 
@@ -35,28 +23,8 @@ Select multiple components using `shift` `left-click` or `left-click-drag` selec
 <br />  
 <img src="/component/group-remove.png" width={350} style={{ borderRadius: '8px' }} />
 
-## Resizing a Group
-
-A group's size adjusts automatically to fit the contents. To adjust it move any of the components in the group.
-<br />  
-<img src="/component/group-resize.png" width={500} style={{ borderRadius: '8px' }} />
-
 ## Moving a Group
 
 The move a group `left-click-drag` the group heading.
 <br />  
 <img src="/component/group-move.png" width={300} style={{ borderRadius: '8px' }} />
-
-## Connections View and Groups
-
-If there are wires between two components in the same group, the wire will be considered part of the group. This information will be displayed on the **Connections View** and the **Wiring Table** export
-<br />  
-<img src="/component/group-connection.png" width={1192} style={{ borderRadius: '8px' }} />
-
-To display this information make sure <IconCheck/> `Group` is turned enabled in the <IconEye/> `View Options` on the [Connections](/view/connections) view.
-<br />  
-<img src="/component/group-view.png" width={346} style={{ borderRadius: '8px' }} />
-
-<Callout>  
-If a Splice, Wire or Net Label is inside the frame of the group it will will be considred part of the group.
-</Callout>
