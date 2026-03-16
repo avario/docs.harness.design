@@ -1,0 +1,56 @@
+---
+asIndexPage: true
+title: "Connector Part — Connector Parts | harness.design"
+sidebarTitle: "Connector Part"
+description: "Define connector housing parts with cavity count, gender, colour, and shell. Assign to connectors in your schematic for cavity count validation and BOM."
+---
+
+import { Table } from 'nextra/components'
+
+# Connector Part
+This represents the **housing** of a connector. A connector contains cavities to which contacts can be assigned. It can accept accessories such as locks, dust covers, boots, and backshells.
+<br />
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique identifier for the connector part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that produces the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Description</Table.Td>
+      <Table.Td>Description of the connector part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Cavities</Table.Td>
+      <Table.Td>Total number of cavities in the connector</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Gender</Table.Td>
+      <Table.Td>Specifies whether the connector is male or female</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Shell</Table.Td>
+      <Table.Td>Allows a wire to be directly connected to the housing of the connector (ie the ground connection on a coaxial connector)</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Color</Table.Td>
+      <Table.Td>Color of the connector housing</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Assigning a Connector Part
+
+`right-click` on a connector in the Schematic or Layout View and select the `Part` you want to assign.  
+<br />  
+<img src="/component/connector-assign.png" width={634} style={{ borderRadius: '8px' }} />

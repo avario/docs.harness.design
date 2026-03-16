@@ -1,0 +1,55 @@
+---
+title: "Validation — Wire Harness CAD | harness.design"
+sidebarTitle: "Validation"
+description: "Built-in harness validation checks wire gauge, cavity counts, contact compatibility, unassigned wires and lengths, and connector/terminal mate errors."
+---
+
+import { Callout } from 'nextra/components'
+
+# Validation
+
+harness.design has several built-in tools to make sure your harness is built correctly.
+
+## Wire Gauge
+If the [Wire](/part/wire) gauge does not match the properties of the [Contact](/part/connector/contact), a warning is shown in the Schematic view.  
+<br />  
+<img src="/feature/validate-guage.png" width={432} style={{ borderRadius: '8px' }} />  
+If multiple wires go into one contact, the sizes will be summed to calculate the total gauge.  
+<br />  
+<img src="/feature/validate-guage-multiple.png" width={397} style={{ borderRadius: '8px' }} />  
+<Callout>  
+Multiple wire gauges are calculated by converting `AWG` to `mm²`, adding them together, then converting back to `AWG`.  
+</Callout>
+
+## Connector Cavities
+If the [Connector](/component/connector) and [Connector Part](/part/connector) do not match the number of cavities, a warning is shown in the Schematic view.  
+<br />  
+<img src="/feature/validate-cavities.png" width={262} style={{ borderRadius: '8px' }} />  
+Parts with the same cavity count are suggested at the top of the parts list when assigning a part to a connector.  
+<br />  
+<img src="/feature/validate-cavities-suggested.png" width={508} style={{ borderRadius: '8px' }} />
+
+## Contact Compatibility
+[Contacts](/part/connector/contact) from the same manufacturer are suggested at the top of the parts list when assigning a contact to a connector.  
+<br />  
+<img src="/feature/validate-contacts.png" width={572} style={{ borderRadius: '8px' }} />
+
+## Unassigned Wires
+[Wires](/component/wire) with no part assigned to them are highlighted in the Connection view as `No Part`.  
+<br />  
+<img src="/feature/validate-wire-part.png" width={800} style={{ borderRadius: '8px' }} />
+
+## Unassigned Lengths
+[Wires](/component/wire) routed through [Bundles](/component/bundle) that have no length assigned to them are highlighted in the Connection view as `No Length`. Wires that are routed through bundles where one length is missing are prefixed with `≥` to indicate that the length is at least the length of the wire.  
+<br />  
+<img src="/feature/validate-wire-length.png" width={800} style={{ borderRadius: '8px' }} />
+
+## Unassigned Parts
+[Parts](/part) that have not been assigned to components are highlighted in the Parts view as `Not Used`.  
+<br />  
+<img src="/feature/validate-parts.png" width={800} style={{ borderRadius: '8px' }} />
+
+## Connector and Terminal Mates
+Terminal and Connectors are validated to ensure that they are compatible mates. See:
+- [Mating Connectors](/feature/mates#mating-connectors)
+- [Mating Terminals](/feature/mates#mating-terminals)

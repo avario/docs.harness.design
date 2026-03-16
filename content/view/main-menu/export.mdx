@@ -1,0 +1,41 @@
+---
+title: "Export Options — Wire Harness CAD | harness.design"
+sidebarTitle: "Export Options"
+description: "Export your harness as PDF schematic, PDF layout, CSV wiring table, CSV BOM, or raw JSON data. Reference for all export formats in harness.design."
+---
+
+import { IconFileExport, IconFile, IconTable, IconBraces } from "@tabler/icons-react";
+import { Callout } from 'nextra/components'
+
+# Export
+
+<IconFileExport/> `Export` allows you to output documents for manufacturing your harnesses or to save a local copy of your harness data.
+
+<br />
+<img src="/view/main-menu/export.png" width={200} style={{ borderRadius: "8px" }} />
+
+## <IconFile/> Schematic
+
+Exports a `PDF` version of the [Schematic](/view/schematic) view.
+
+<Callout> Parts are not currently shown on the PDF exports </Callout>
+
+## <IconFile/> Layout
+
+Exports a `PDF` version of the [Layout](/view/layout) view.
+
+<Callout> Parts are not currently shown on the PDF exports </Callout>
+
+## <IconTable/> Wiring table
+
+Exports a `CSV` version of the [Connections](/view/connections) view.
+
+## <IconTable/> BOM
+
+Exports a `CSV` version of the [Parts](/view/parts) view.
+
+## <IconBraces/> Raw data
+
+Exports a `JSON` file containing all the data of the harness to local storage.
+
+Click here to see how to [open local data](/view/main-menu/open#local-data)

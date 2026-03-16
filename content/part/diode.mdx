@@ -1,0 +1,47 @@
+---
+title: "Diode Part — Wire Harness CAD | harness.design"
+sidebarTitle: "Diode Part"
+description: "Define diode parts with reverse breakdown voltage and forward current rating. Assign to diode components in the schematic for accurate BOM output."
+---
+
+import { Table } from 'nextra/components'
+
+# Diode Part
+A part that allows current to flow in only one direction and blocks it in the opposite direction.
+<br />
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique identifier for the diode part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that produces the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Description</Table.Td>
+      <Table.Td>Description of the diode part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>V<sub>BR</sub></Table.Td>
+      <Table.Td>Reverse breakdown voltage, measured in volts (`mV`, `V`, or `kV`)</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>I<sub>F</sub></Table.Td>
+      <Table.Td>Forward current rating, measured in amps (`mA`, `A`, or `kA`)</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Assigning a Diode Part
+
+`right-click` a diode in the **Schematic** or **Layout View** and select the desired `Part` to assign.
+<br />
+<img src="/component/diode-assign.png" width={634} style={{ borderRadius: '8px' }} />

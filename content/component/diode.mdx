@@ -1,0 +1,42 @@
+---
+title: "Diode — Schematic Design | harness.design"
+sidebarTitle: "Diode"
+description: "Place diodes in your wire harness schematic. Auto-positioned at branch points or manually located in the layout view. Assign diode parts for BOM tracking."
+---
+
+import { Callout } from 'nextra/components'
+import { IconCircuitDiode, IconArrowsRightLeft } from "@tabler/icons-react";
+
+# Diode
+
+A <IconCircuitDiode/> `Diode` is an electrical component that allows current to flow in only one direction. Each diode can be assigned a [diode part](/part/diode).
+
+## Adding a Diode
+
+`right-click` on the canvas in the [Schematic View](/quick-start/schematic) and select <IconCircuitDiode/> `Diode`.  
+<br />  
+<img src="/component/diode-add.png" width={634} style={{ borderRadius: '8px' }} />
+
+## Locating a Diode
+
+Diodes are automatically positioned at branch points based on the most efficient wiring path. An automatically placed diode is shown with a dashed arrow line.  
+<br />  
+<img src="/component/diode-locate-automatic.png" width={634} style={{ borderRadius: '8px' }} />
+
+You can manually position a diode by dragging its handle in Layout View to any branch point, connector, or terminal in the harness. 
+<br />  
+<img src="/component/diode-locate-manual.png" width={634} style={{ borderRadius: '8px' }} />
+
+<Callout>  
+To reset a diode to automatic placement, select its location line and press `Delete`.  
+</Callout>
+
+## Flipping Diode Direction
+
+`right-click` a diode in the Schematic or Layout View and select <IconArrowsRightLeft/> `Flip direction` to reverse its orientation.  
+<br />  
+<img src="/component/diode-flip.png" width={634} style={{ borderRadius: '8px' }} />
+
+## View Diode Component IDs
+
+Viewing the component ID of a diode on the **Layout** and **Schematic** is done the same way as for a [Splice](/component/splice#viewing-splice-component-ids).

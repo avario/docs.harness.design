@@ -1,0 +1,43 @@
+---
+title: "Terminal — Schematic Design | harness.design"
+sidebarTitle: "Terminal"
+description: "Add ring, spade, ferrule, and quick-connect terminals to your harness schematic or layout. Assign terminal parts and edit labels for your wiring build."
+---
+
+export const IconTerminal = () => (
+  <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="tabler-icon"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth="2"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <line x1={3} y1={12} x2={14} y2={12} />
+      <circle cx={18} cy={12} r={3} />
+    </svg>
+);
+import { IconArrowAutofitWidth } from "@tabler/icons-react";
+
+# Terminal
+
+A <IconTerminal/> `Terminal` is a single electrical connection point and serves as a termination point in the harness. Each terminal can be assigned a [Terminal Part](/part/terminal).
+
+## Adding a Terminal
+
+`right-click` on the canvas in the [Schematic](/quick-start/schematic) or [Layout](/quick-start/layout) view and go <IconTerminal/> `Terminal` and select the terminal type from the submenu.
+<br />  
+<img src="/component/terminal-add.png" width={368} style={{ borderRadius: '8px' }} />
+
+## Editing Terminal Labels
+
+`left-double-click` any terminal label to edit it.
+
+## Adjust View Width of Terminal
+
+If the name or cavity labels are too long, `right-click` the **Terminal**, select <IconArrowAutofitWidth/> `Width`, and set the desired width.
+<br />  
+<img src="/component/terminal-width.png" width={426} style={{ borderRadius: '8px' }} />

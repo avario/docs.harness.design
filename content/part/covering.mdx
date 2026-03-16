@@ -1,0 +1,67 @@
+---
+title: "Covering Part — Harness Layout | harness.design"
+sidebarTitle: "Covering Part"
+description: "Add covering parts — heatshrink, tape, braided sleeve, or conduit — to bundles in the layout view. Set min/max diameter properties for sizing and BOM."
+---
+
+import { Table } from 'nextra/components'
+import { Callout } from 'nextra/components'
+import { IconMenu2, IconSettings } from "@tabler/icons-react";
+
+# Covering Part
+A covering part is used to wrap or cover a bundle of wires or cables. These parts are applied and can be seen in the **Layout View**.
+<br />
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique identifier for the covering part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that produces the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Description</Table.Td>
+      <Table.Td>Description of the covering part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Min Diameter</Table.Td>
+      <Table.Td>Minimum diameter of the covering</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Max Diameter</Table.Td>
+      <Table.Td>Maximum diameter of the covering</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Color</Table.Td>
+      <Table.Td>Color of the covering material</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+<Callout>
+For the covering diameters, you can enter units such as `mm`, `cm`, or `in`.  
+Set the default unit under <IconMenu2/> `Main Menu` → <IconSettings/> `Settings`.
+</Callout>
+
+## Covering Types
+
+- `Heatshrink`  
+- `Tape`  
+- `Corrugated Tubing`
+- `Spiral Wrap`
+- `Tubing`
+- `Braided Sleeve`
+
+## Assigning a Covering Part
+
+`right-click` a bundle in the **Layout View** and select `Coverings` and select the desired covering part you wish to assign. You can assign multiple coverings to a single bundle.
+<br />
+<img src="/component/bundle-assign.png" width={634} style={{ borderRadius: '8px' }} />

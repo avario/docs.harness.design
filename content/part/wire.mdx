@@ -1,0 +1,56 @@
+---
+title: "Wire Part — Wire Harness CAD | harness.design"
+sidebarTitle: "Wire Part"
+description: "Define wire parts with gauge, insulation colour, and stripe. Assign in schematic, layout, or connections view to drive BOM quantities and wire lengths."
+---
+
+import { Table } from 'nextra/components'
+import { Callout } from 'nextra/components'
+import { IconMenu2, IconSettings } from "@tabler/icons-react";
+
+# Wire Part
+A single insulated conductor used to carry electrical current or signals between connection points.
+<br />
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique identifier for the wire part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that produces the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Description</Table.Td>
+      <Table.Td>Description of the wire part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Gauge</Table.Td>
+      <Table.Td>Cross-sectional size of the inner conductor</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Color</Table.Td>
+      <Table.Td>Color of the wire's insulation</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Stripe</Table.Td>
+      <Table.Td>Color of the stripe on the wire's insulation (if any)</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+<Callout>  
+You can enter `mm` or `AWG` for gauge values. Set the default unit under <IconMenu2/> `Main Menu` → <IconSettings/> `Settings`.  
+</Callout>
+
+## Assigning a Wire Part
+
+`right-click` a wire in the **Schematic**, **Layout**, or **Connection View** and select the desired `Part`.
+<br />
+<img src="/quick-start/assign-part.png" width={634} style={{ borderRadius: '8px' }} />

@@ -1,0 +1,48 @@
+---
+title: "Resistor Part — Wire Harness CAD | harness.design"
+sidebarTitle: "Resistor Part"
+description: "Define resistor parts with resistance and power dissipation values. Assign to resistor components in the schematic for documentation and BOM output."
+---
+
+import { Table } from 'nextra/components'
+
+# Resistor Part
+A passive electrical component that limits current flow and produces a specified voltage drop.
+
+<br />
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique identifier for the resistor part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that produces the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Description</Table.Td>
+      <Table.Td>Description of the resistor part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Resistance</Table.Td>
+      <Table.Td>Resistance value in ohms (`mΩ`, `Ω`, `kΩ`, or `MΩ`)</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Power</Table.Td>
+      <Table.Td>Power dissipation in watts (`mW`, `W`, or `kW`)</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Assigning a Resistor Part
+
+`right-click` a resistor in the **Schematic** or **Layout View** and select the desired `Part` to assign.
+<br />
+<img src="/component/resistor-assign.png" width={634} style={{ borderRadius: '8px' }} />

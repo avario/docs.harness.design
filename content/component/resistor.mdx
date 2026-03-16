@@ -1,0 +1,36 @@
+---
+title: "Resistor — Schematic Design | harness.design"
+sidebarTitle: "Resistor"
+description: "Place resistors in your wire harness schematic. Auto-positioned at branch points or manually located in the layout view. Assign resistor parts for BOM tracking."
+---
+
+import { Callout } from 'nextra/components'
+import { IconCircuitResistor } from "@tabler/icons-react";
+
+# Resistor
+
+A <IconCircuitResistor/> `Resistor` limits electrical current and reduces voltage in a circuit. Resistors can be assigned a [resistor part](/part/resistor).
+
+## Adding a Resistor
+
+`right-click` on the canvas in the [Schematic View](/quick-start/schematic) and select <IconCircuitResistor/> `Resistor`.  
+<br />  
+<img src="/component/resistor-add.png" width={634} style={{ borderRadius: '8px' }} />
+
+## Locating a Resistor
+
+Resistors are automatically positioned at branch points based on the most efficient wiring path. An automatically placed resistor is shown with a dashed arrow line.  
+<br />  
+<img src="/component/resistor-locate-automatic.png" width={634} style={{ borderRadius: '8px' }} />
+
+You can manually position a resistor by dragging its location handle in the Layout View to any branch point, connector, or terminal in the harness.  
+<br />  
+<img src="/component/resistor-locate-manual.png" width={634} style={{ borderRadius: '8px' }} />
+
+<Callout>  
+To reset a resistor to automatic placement, select its location line and press **Delete**.  
+</Callout>
+
+## View Resistor Component IDs
+
+Viewing the component ID of a resistor on the **Layout** and **Schematic** is done the same way as for a [Splice](/component/splice#viewing-splice-component-ids).

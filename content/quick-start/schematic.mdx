@@ -1,26 +1,32 @@
+---
+title: "Design a Schematic — Schematic Design | harness.design"
+sidebarTitle: "Design a Schematic"
+description: "Step-by-step guide to drawing your wire harness schematic: open the view, place connectors, drag wires between cavities, and add layout points for neat routing."
+---
+
 import { Steps } from 'nextra/components'
 import { IconManualGearbox } from "@tabler/icons-react";
  
 # Design your Schematic
 
 <Steps>
-### Open the <IconManualGearbox/> [Schematic](/views/view-schematic) View  
+### Open the <IconManualGearbox/> [Schematic](/view/schematic) View  
 Click the view dropdown and select **Schematic**.  
 <br />  
 <img src="/quick-start/schematic-view-open.png" width={256} style={{ borderRadius: '8px' }} />
 
-### Add [Components](/components)  
-Right-click on the canvas and choose a component from the dropdown menu.  
+### Add [Components](/component)  
+`right-click` on the canvas and choose a component from the dropdown menu.  
 <br />  
 <img src="/quick-start/right-add-component.png" width={147} style={{ borderRadius: '8px' }} />
 
-### Add [Wires](/components/component-wire)  
-Drag from a connection handle on one component to another.  
+### Add [Wires](/component/wire) 
+`left-click-drag` from a connection handle on one component to another.  
 <br />
 <video src="/quick-start/add-wire.mp4" width={634} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
 
-### Add [Layout Points](/components/component-layout-point)  
-Double-click or right-click a **Wire** to add a **Layout Point**. More than one **Layout Point** can be added to a wire for more complex routing.
+### Add [Layout Points](/component/layout-point)  
+`left-double-click` or `right-click` a [Wire](/component/wire) to add a **Layout Point**. More than one **Layout Point** can be added to a wire for more complex routing.
 <br />
 <video src="/quick-start/add-layout-point.mp4" width={634} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
 </Steps>
