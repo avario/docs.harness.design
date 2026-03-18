@@ -20,11 +20,128 @@ export const IconTerminal = () => (
       <circle cx={18} cy={12} r={3} />
     </svg>
 );
-import { IconArrowAutofitWidth } from "@tabler/icons-react";
+
+export const IconFerrule = () => (
+  <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="tabler-icon"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth="2"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <polygon points="1,8 8,8 11,12 8,16 1,16" />
+      <line x1={11} y1={12} x2={23} y2={12} />
+    </svg>
+);
+
+export const IconRing = () => (
+  <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="tabler-icon"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth="2"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <line x1={2} y1={12} x2={11} y2={12} />
+      <circle cx={16} cy={12} r={5} />
+    </svg>
+);
+export const IconSpade = () => (
+  <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="tabler-icon"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth="2"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <line x1={2} y1={12} x2={12} y2={12} />
+      <path
+        d="M 16 8
+       A 4 4 0 0 0 16 16"
+      />
+      <line x1={16} y1={8} x2={22} y2={8} />
+      <line x1={16} y1={16} x2={22} y2={16} />
+    </svg>
+);
+export const IconMaleQuickConnect = () => (
+  <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="tabler-icon"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth="2"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <line x1={1} y1={12} x2={10} y2={12} />
+      <polygon points="10,7 20,7 23,10 23,14 20,17 10,17" />
+      <line x1={15} y1={12} x2={17} y2={12} />
+    </svg>
+);
+export const IconFemaleQuickConnect = () => (
+  <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="tabler-icon"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth="2"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <line x1={1} y1={12} x2={10} y2={12} />
+      <polygon points="23,6 13,6 10,10 10,14 13,18 23,18" />
+      <line x1={18} y1={11} x2={18} y2={13} />
+      {/* <line x1={16} y1={10} x2={23} y2={10} />
+      <line x1={16} y1={14} x2={23} y2={14} /> */}
+    </svg>
+);
+export const IconLooseWireEnd = () => (
+  <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="tabler-icon"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth="2"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <line x1={2} y1={12} x2={22} y2={12} />
+      <line x1={17} y1={12} x2={22} y2={8} />
+      <line x1={17} y1={12} x2={22} y2={16} />
+    </svg>
+);
+import { IconArrowAutofitWidth, IconRotate } from "@tabler/icons-react";
 
 # Terminal
 
 A <IconTerminal/> `Terminal` is a single electrical connection point and serves as a termination point in the harness. Each terminal can be assigned a [Terminal Part](/part/terminal).
+
+The following are the supported terminal types:
+
+- <IconFerrule/> `Ferrule`
+- <IconRing/> `Ring`
+- <IconSpade/> `Spade`
+- <IconMaleQuickConnect/> `Male Quick Connect`
+- <IconFemaleQuickConnect/> `Female Quick Connect`
+- <IconLooseWireEnd/> `Loose Wire End`
 
 ## Adding a Terminal
 
@@ -41,3 +158,11 @@ A <IconTerminal/> `Terminal` is a single electrical connection point and serves 
 If the name or cavity labels are too long, `right-click` the **Terminal**, select <IconArrowAutofitWidth/> `Width`, and set the desired width.
 <br />  
 <img src="/component/terminal-width.png" width={426} style={{ borderRadius: '8px' }} />
+
+## Rotating a Terminal
+
+**Terminals** can be rotated 90° in the **Schematic** view to improve complex layouts. To rotate , `right-click` a **Terminal** and select <IconRotate/> `Rotate`.
+
+## Mating a Terminal
+
+To mate a **Terminal** to a connector or another terminal see [Mates](/feature/mates).

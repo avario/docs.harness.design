@@ -1,0 +1,48 @@
+---
+title: "Generic Part — Wire Harness CAD | harness.design"
+sidebarTitle: "Generic Part"
+description: "Define generic parts to represent components your harness connects to. Assign to groups in your schematic to track them in the BOM."
+---
+
+import { Table } from 'nextra/components'
+import { Callout } from 'nextra/components'
+
+# Generic Part
+A generic part represents something the harness is connected to that you want tracked in the BOM. Generic parts can only be assigned to [Groups](/component/group).
+<br />
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique identifier for the generic part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that produces the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Description</Table.Td>
+      <Table.Td>Description of the generic part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>URL</Table.Td>
+      <Table.Td>Link to datasheet or manufacturer website</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Color</Table.Td>
+      <Table.Td>Color of the part</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Assigning a Generic Part
+
+`right-click` on the heading of a [Group](/component/group) in the Schematic or Layout View and select the `Part` you want to assign.
+<br />
+<video src="/part/device-assign.mp4" width={300} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />

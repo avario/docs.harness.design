@@ -11,5 +11,5 @@ export default {
   'diode': '',
   'resistor': '',
   'covering': '',
-  'device': '',
+  'generic': '',
 }

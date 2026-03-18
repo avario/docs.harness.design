@@ -25,7 +25,7 @@ export const IconConnector = () => (
   </svg>
 );
 
-import { IconX, IconPlus, IconMinus, IconArrowUp, IconArrowDown, IconRowInsertTop, IconTrash, IconCircuitGround, IconArrowAutofitWidth, IconSpacingHorizontal } from "@tabler/icons-react";
+import { IconX, IconPlus, IconMinus, IconArrowUp, IconArrowDown, IconRowInsertTop, IconTrash, IconCircuitGround, IconArrowAutofitWidth, IconSpacingHorizontal, IconRotate } from "@tabler/icons-react";
 
 
 # Connector
@@ -79,6 +79,10 @@ If the name or cavity labels are too long to fit, `right-click` the connector, s
 <br />  
 <img src="/component/connector-width.png" width={426} style={{ borderRadius: '8px' }} />
 
+## Rotating a Connector
+
+**Connectors** can be rotated 90° in the **Schematic** view to improve complex layouts. To rotate, `right-click` a **Connector** and select <IconRotate/> `Rotate`.
+
 ## Adding Inline Connector to Wires
 
 You can add inline connectors by selecting the [Wires](/component/wire) you would like add the inline connectors to, `right-click`, and selecting <IconSpacingHorizontal/> `Add inline connectors`.
@@ -96,3 +100,7 @@ You can add inline connectors by selecting the [Bundle](/component/bundle) you w
 
 <br />  
 <img src="/component/connector-inline-bundle.png" width={634} style={{ borderRadius: '8px' }} />
+
+## Mating a Connector
+
+To mate a **Connector** to another connector see [Mates](/feature/mates).

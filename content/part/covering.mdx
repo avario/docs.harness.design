@@ -9,7 +9,7 @@ import { Callout } from 'nextra/components'
 import { IconMenu2, IconSettings } from "@tabler/icons-react";
 
 # Covering Part
-A covering part is used to wrap or cover a bundle of wires or cables. These parts are applied and can be seen in the **Layout View**.
+A covering part is used to wrap or cover a [Bundle](/component/bundle) or [Branch Point](/component/branch-point). These parts are applied and can be seen in the **Layout View**.
 <br />
 <Table>
   <thead>
@@ -32,6 +32,10 @@ A covering part is used to wrap or cover a bundle of wires or cables. These part
       <Table.Td>Description of the covering part</Table.Td>
     </Table.Tr>
     <Table.Tr>
+      <Table.Td>URL</Table.Td>
+      <Table.Td>Link to datasheet or manufacturer website</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
       <Table.Td>Min Diameter</Table.Td>
       <Table.Td>Minimum diameter of the covering</Table.Td>
     </Table.Tr>
@@ -47,8 +51,13 @@ A covering part is used to wrap or cover a bundle of wires or cables. These part
 </Table>
 
 <Callout>
-For the covering diameters, you can enter units such as `mm`, `cm`, or `in`.  
-Set the default unit under <IconMenu2/> `Main Menu` → <IconSettings/> `Settings`.
+For diameter, you can enter the following units (set the default unit under <IconMenu2/> `Main Menu` → <IconSettings/> `Settings`):
+  - `mm` - Milimeter
+  - `cm` - Centimeter
+  - `m` - Meter
+  - `in` `"` - Inch
+  - `ft` `'` - Foot
+  - `yd` - Yard
 </Callout>
 
 ## Covering Types
@@ -62,6 +71,6 @@ Set the default unit under <IconMenu2/> `Main Menu` → <IconSettings/> `Setting
 
 ## Assigning a Covering Part
 
-`right-click` a bundle in the **Layout View** and select `Coverings` and select the desired covering part you wish to assign. You can assign multiple coverings to a single bundle.
+`right-click` a [Bundle](/component/bundle) or [Branch Point](/component/branch-point) in the **Layout View** and select `Coverings` and select the desired covering part you wish to assign. You can assign multiple coverings to a single **Bundle** or **Branch Point**.
 <br />
 <img src="/component/bundle-assign.png" width={634} style={{ borderRadius: '8px' }} />

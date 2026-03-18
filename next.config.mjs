@@ -38,6 +38,7 @@ export default withNextra({
             { source: '/parts/part-cable', destination: '/part/cable', permanent: true },
             { source: '/parts/part-covering', destination: '/part/covering', permanent: true },
             { source: '/parts/part-device', destination: '/part/device', permanent: true },
+            { source: '/part/device', destination: '/part/generic', permanent: true },
             { source: '/parts/part-diode', destination: '/part/diode', permanent: true },
             { source: '/parts/part-resistor', destination: '/part/resistor', permanent: true },
             { source: '/parts/part-splice', destination: '/part/splice', permanent: true },

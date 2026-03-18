@@ -1,6 +1,7 @@
 export default {
   "nets": "",
   "mates": "",
+  "signals": "",
   "validation": "",
   "sharing": "",
   "mobile": "",

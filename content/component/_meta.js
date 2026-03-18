@@ -11,4 +11,5 @@ export default {
   "bundle": "",
   "branch-point": "",
   "group": "",
+  "note": "",
 };

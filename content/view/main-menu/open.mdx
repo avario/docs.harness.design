@@ -4,7 +4,7 @@ sidebarTitle: "Open Harness"
 description: "Open your saved harnesses, view harnesses shared with you, or load a design directly from a local JSON file using the harness.design open panel."
 ---
 
-import { IconFolder, IconUserCircle, IconShare2, IconBraces, IconDotsVertical, IconTrash, IconWorld, IconCircleMinus, IconLockFilled } from "@tabler/icons-react";
+import { IconFolder, IconUserCircle, IconShare2, IconBraces, IconDotsVertical, IconTrash, IconWorld, IconCircleMinus, IconLockFilled, IconPencil } from "@tabler/icons-react";
 import { Callout } from 'nextra/components'
 
 # Open
@@ -20,7 +20,10 @@ Harnesses you own.
 
 To open a harness click on the thumbnail of the harness you wish to open.
 
-Click on the <IconDotsVertical/> three dots next to the thumbnail of a harness to <IconShare2/> `Share harness` or <IconTrash/> `Delete harness`.
+Click on the <IconDotsVertical/> three dots next to the thumbnail of a harness to:
+- <IconPencil/> `Rename` - Opens a modal to rename the selected harness
+- <IconShare2/> `Share` - Opens the [Share](/view/main-menu/share) modal
+- <IconTrash/> `Delete` - Deletes the selected harness
 
 <Callout> <IconWorld/> `PUBLIC` Will be shown on the thumbnail of any harness that is shared publicly. </Callout>
 

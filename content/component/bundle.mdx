@@ -5,10 +5,11 @@ description: "A bundle groups wires running the same path on your formboard. Set
 ---
 
 import { Callout } from 'nextra/components'
+import { IconLabel, IconColorSwatch } from "@tabler/icons-react";
 
 # Bundle
 
-A `Bundle` represents a group of wires. It can have a defined length and optional [coverings](/part/covering) applied.
+A `Bundle` represents a group of wires. It can have a defined length and assigned [coverings](/part/covering).
 
 Bundles can only be added in the [Layout View](/quick-start/layout).
 
@@ -36,6 +37,12 @@ The default length unit can be set under **Main Menu → Preferences**.
 
 ## Layout a Bundle
 To layout a **Bundle** you use [Layout Points](/component/layout-point).
+
+## Bundle Label
+
+`right-click` a **Bundle** and type the label name in the <IconLabel/> `Label` box. `left-click` the <IconColorSwatch/> button to select a color.
+<br />  
+<video src="/component/bundle-label.mp4" width={634} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
 
 ## Empty Bundles
 
