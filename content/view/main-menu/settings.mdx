@@ -24,10 +24,10 @@ This sets the default length unit used throughout the software.
     paddingLeft: 0,
     display: "flex",
     flexDirection: "column",
-    gap: "0.5rem"
+    gap: "0.5rem",
   }}
 >
-  <li>`mm` - Milimeter</li>
+  <li>`mm` - Millimeter</li>
   <li>`cm` - Centimeter</li>
   <li>`m` - Meter</li>
   <li>`in` - Inch</li>
@@ -46,16 +46,16 @@ This sets the default gauge unit used throughout the software. For metric `mm²`
     paddingLeft: 0,
     display: "flex",
     flexDirection: "column",
-    gap: "0.5rem"
+    gap: "0.5rem",
   }}
 >
-  <li>`mm²` - Milimeter squared</li>
+  <li>`Metric` - Millimeters squared (mm²)</li>
   <li>`AWG` - American Wire Gauge</li>
 </ul>
 
 ## Input type
 
-This allows you to force the software to a certian input type.
+This allows you to force the software to a certain input type.
 
 <br />
 <ul
@@ -64,17 +64,22 @@ This allows you to force the software to a certian input type.
     paddingLeft: 0,
     display: "flex",
     flexDirection: "column",
-    gap: "0.5rem"
+    gap: "0.5rem",
   }}
 >
-  <li><IconMouse/> **Mouse** - Use mouse input</li>
-  <li><IconHandClick/> **Touch** - Use touch input</li>
-  <li>**Auto** - Automatically switch between mouse and touch input based on the current device</li>
+  <li>
+    <IconMouse /> **Mouse** - Scrolling will zoom the canvas. Click and drag the middle mouse button
+    to pan.
+  </li>
+  <li>
+    <IconHandClick /> **Trackpad** - Scrolling will pan the canvas. Pinch to zoom in and out.
+  </li>
+  <li>**Auto** - Automatically detect the input device</li>
 </ul>
 
 ## Color scheme
 
-The software supports both light and dark color schemes. 
+The software supports both light and dark color schemes.
 
 <br />
 <ul
@@ -83,10 +88,14 @@ The software supports both light and dark color schemes.
     paddingLeft: 0,
     display: "flex",
     flexDirection: "column",
-    gap: "0.5rem"
+    gap: "0.5rem",
   }}
 >
-  <li><IconSun/> **Light** - Use light color scheme</li>
-  <li><IconMoon/> **Dark** - Use dark color scheme</li>
-  <li>**Auto** - Automatically switch between light and dark color schemes based on the system settings</li>
+  <li>
+    <IconSun /> **Light** - Use light color scheme
+  </li>
+  <li>
+    <IconMoon /> **Dark** - Use dark color scheme
+  </li>
+  <li>**Auto** - Set light or dark color schemes based on the system settings</li>
 </ul>

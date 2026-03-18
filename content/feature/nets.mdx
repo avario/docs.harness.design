@@ -4,33 +4,81 @@ sidebarTitle: "Nets"
 description: "Visualise nets across schematic, layout, and connections views. Select any wire, connector, or part to highlight its full net path through the harness."
 ---
 
-import { Callout } from 'nextra/components'
-import { IconEye, IconBolt, IconManualGearbox, IconBrandStackshare, IconMinus, IconCheck } from "@tabler/icons-react";
+import { Callout } from "nextra/components";
+import {
+  IconEye,
+  IconBolt,
+  IconManualGearbox,
+  IconBrandStackshare,
+  IconMinus,
+  IconCheck,
+} from "@tabler/icons-react";
 
 # Nets
 
 Select any part or component to quickly visualize where it is used across the views and the net it is connected to.
 
-## View a Connectors Wires
-Selecting a [Connector](/component/connector) will show all wires it is connected to and their path through the harness.  
-<br/>
-<video src="/feature/nets-connector.mp4" width={800} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
-
-## Looking inside a Bundle
-Selecting a [Bundle](/component/bundle) will highlight the wires going through it and show the nets they are connected to.  
-<br />  
-<video src="/feature/nets-bundle.mp4" width={800} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
-
-## See a Wire's Net
-A [Wire](/component/wire) selected in any view will carry through to all the other views, showing both the wire and the net it is connected to.  
-<br />  
-<video src="/feature/nets-wire.mp4" width={800} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
-
-<Callout>  
-Toggle <IconEye/> `View Options` → <IconBolt/> `Show nets for selection` to show the entire net or just individual components.
+<Callout>
+  Toggle <IconEye /> `View Options` → <IconBolt /> `Show nets for selection` to show the entire net
+  or just individual components.
 </Callout>
 
+## View a Connector's Wires
+
+Selecting a [Connector](/component/connector) will show all wires it is connected to and their path through the harness.
+
+<br />
+<video
+  src="/feature/nets-connector.mp4"
+  width={800}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+## Looking inside a Bundle
+
+Selecting a [Bundle](/component/bundle) will highlight the wires going through it.
+
+<br />
+<video
+  src="/feature/nets-bundle.mp4"
+  width={800}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+## See a Wire's Net
+
+A [Wire](/component/wire) selected in any view will carry through to all the other views, showing both the wire and the net it is connected to.
+
+<br />
+<video
+  src="/feature/nets-wire.mp4"
+  width={800}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
 ## View where Parts are used
-Selecting a [Part](/part) in the Parts screen will highlight where it is used in the other views.  
-<br />  
-<video src="/feature/nets-part.mp4" width={800} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
+
+Selecting a [Part](/part) in the Parts screen will highlight where it is used in the other views.
+
+<br />
+<video
+  src="/feature/nets-part.mp4"
+  width={800}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>

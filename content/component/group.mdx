@@ -4,27 +4,40 @@ sidebarTitle: "Group"
 description: "Group components to represent devices like ECUs and fuse boxes in your schematic. Assign device parts and control which internal parts appear in your BOM."
 ---
 
-import { Callout } from 'nextra/components'
+import { Callout } from "nextra/components";
 import { IconMaximize, IconMaximizeOff, IconCheck, IconEye } from "@tabler/icons-react";
 
 # Group
 
-A <IconMaximize/> `Group` contains a selection of components. It is commonly used to organise connects that plug into a device (i.e. an ECU, fuse box etc). A group can be assigned a [Device Part](/part/device).
+A <IconMaximize/> `Group` contains a selection of components. It is commonly used to organise connectors that plug into a device (i.e. an ECU, fuse box etc). A group can be assigned a [Generic Part](/part/generic).
+
+Groups can only be used in the [Schematic View](/view/schematic).
 
 ## Creating a Group
 
-Select multiple components using `shift` `left-click` or `left-click-drag` selection, then `right-click` and select <IconMaximize/> `Create Group` to form a new group.  
-<br />  
-<video src="/component/group-add.mp4" width={400} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
+Select multiple components using `shift` `left-click` or `left-click-drag` selection, then `right-click` and select <IconMaximize/> `Create Group` to form a new group.
+
+<br />
+<video
+  src="/component/group-add.mp4"
+  width={400}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
 
 ## Removing Components from a Group
 
 `right-click` on the component you want to remove and select <IconMaximizeOff/> `Remove from group`.
-<br />  
-<img src="/component/group-remove.png" width={350} style={{ borderRadius: '8px' }} />
+
+<br />
+<img src="/component/group-remove.png" width={350} style={{ borderRadius: "8px" }} />
 
 ## Moving a Group
 
 The move a group `left-click-drag` the group heading.
-<br />  
-<img src="/component/group-move.png" width={300} style={{ borderRadius: '8px' }} />
+
+<br />
+<img src="/component/group-move.png" width={300} style={{ borderRadius: "8px" }} />

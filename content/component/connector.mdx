@@ -6,33 +6,45 @@ description: "Add and configure connectors in your wire harness schematic. Manag
 
 export const IconConnector = () => (
   <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="tabler-icon"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth="2"
-      fill="none"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <line x1={2} y1={12} x2={12} y2={12} />
-      <line x1={6} y1={6} x2={12} y2={12} />
-      <line x1={6} y1={18} x2={12} y2={12} />
-      <line x1={12} y1={6} x2={18} y2={12} />
-      <line x1={12} y1={18} x2={18} y2={12} />
-      <line x1={18} y1={12} x2={22} y2={12} />
+    xmlns="http://www.w3.org/2000/svg"
+    className="tabler-icon"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth="2"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <line x1={2} y1={12} x2={12} y2={12} />
+    <line x1={6} y1={6} x2={12} y2={12} />
+    <line x1={6} y1={18} x2={12} y2={12} />
+    <line x1={12} y1={6} x2={18} y2={12} />
+    <line x1={12} y1={18} x2={18} y2={12} />
+    <line x1={18} y1={12} x2={22} y2={12} />
   </svg>
 );
 
-import { IconX, IconPlus, IconMinus, IconArrowUp, IconArrowDown, IconRowInsertTop, IconTrash, IconCircuitGround, IconArrowAutofitWidth, IconSpacingHorizontal, IconRotate } from "@tabler/icons-react";
-
+import {
+  IconX,
+  IconPlus,
+  IconMinus,
+  IconArrowUp,
+  IconArrowDown,
+  IconRowInsertTop,
+  IconTrash,
+  IconCircuitGround,
+  IconArrowAutofitWidth,
+  IconSpacingHorizontal,
+  IconRotate,
+} from "@tabler/icons-react";
 
 # Connector
 
 A <IconConnector/> `Connector` joins electrical parts, allowing easy connection and disconnection of circuits. It serves as a termination point in the harness. Connectors can be assigned a [Connector Part](/part/connector).
 
 The following parts can be assigned to a **Connector**:
+
 - [Contact Part](/part/connector/contact) - **Connectors** can have multiple **cavities**, and each cavity can be assigned a **contact**.
 - [Lock Part](/part/connector/lock) - Some **connectors** require a **lock** to secure the contacts in place.
 - [Dust Cover Part](/part/connector/dust-cover) - A **dust cover** can be added to **connectors** to protect the contacts when unmated.
@@ -41,65 +53,73 @@ The following parts can be assigned to a **Connector**:
 
 ## Adding a Connector
 
-`right-click` on the canvas in the [Schematic](/quick-start/schematic) or [Layout](/quick-start/layout) view and select <IconConnector/> `Connector`.  
-<br />  
-<img src="/component/connector-add.png" width={634} style={{ borderRadius: '8px' }} />
+`right-click` on the canvas in the [Schematic](/quick-start/schematic) or [Layout](/quick-start/layout) view and select <IconConnector/> `Connector`.
+
+<br />
+<img src="/component/connector-add.png" width={634} style={{ borderRadius: "8px" }} />
 
 ## Adding and Removing Cavities
 
 Select a connector in the Schematic view, then click the <IconPlus/> or <IconMinus/> buttons to add or remove cavities. Type in the number of cavities you want directly into the cavity count box to quickly set the number of cavities.
-<br />  
-<img src="/component/connector-cavities.png" width={233} style={{ borderRadius: '8px' }} />
+
+<br />
+<img src="/component/connector-cavities.png" width={233} style={{ borderRadius: "8px" }} />
 
 ## Reordering, Inserting and Deleting Cavities
 
 `right-click` on the cavity you want to reorder and select <IconArrowUp/> `Move cavity up`, <IconArrowDown/> `Move cavity down`, <IconRowInsertTop/> `Add cavity below` or <IconTrash/> `Delete` cavity.
-<br />  
-<img src="/component/connector-cavity-reorder.png" width={336} style={{ borderRadius: '8px' }} />
 
-## Connecting to Shell of Connector
+<br />
+<img src="/component/connector-cavity-reorder.png" width={336} style={{ borderRadius: "8px" }} />
+
+## Connecting to the Shell of a Connector
 
 `right-click` on the connector and select <IconCircuitGround/> `Add Shell`
-<br />  
-<img src="/component/connector-shell-add.png" width={336} style={{ borderRadius: '8px' }} />
+
+<br />
+<img src="/component/connector-shell-add.png" width={336} style={{ borderRadius: "8px" }} />
 
 Shells can be connected to just like cavities.
-<br />  
-<img src="/component/connector-shell-connection.png" width={534} style={{ borderRadius: '8px' }} />
 
-## Editing Connector, Cavity Number and Cavity Labels
+<br />
+<img src="/component/connector-shell-connection.png" width={534} style={{ borderRadius: "8px" }} />
 
-`left-double-click` any **Connector**, **Cavity Number** or **Cavity Label** to edit it. Pressing `tab` will move to the next label, pressing `shift` `tab` will move to the previous label.
-<br />  
-<img src="/component/connector-label.png" width={336} style={{ borderRadius: '8px' }} />
+## Editing Connector Names and Cavities
 
-## Adjust View Width of Connector
+`left-double-click` any **Connector Name**, **Cavity Number** or **Cavity Label** to edit it. Pressing `tab` will move to the next label, pressing `shift` `tab` will move to the previous label.
+
+<br />
+<img src="/component/connector-label.png" width={336} style={{ borderRadius: "8px" }} />
+
+## Adjusting the Width of a Connector
 
 If the name or cavity labels are too long to fit, `right-click` the connector, select <IconArrowAutofitWidth/> `Width`, and select the desired width `%`.
-<br />  
-<img src="/component/connector-width.png" width={426} style={{ borderRadius: '8px' }} />
+
+<br />
+<img src="/component/connector-width.png" width={426} style={{ borderRadius: "8px" }} />
 
 ## Rotating a Connector
 
 **Connectors** can be rotated 90° in the **Schematic** view to improve complex layouts. To rotate, `right-click` a **Connector** and select <IconRotate/> `Rotate`.
 
-## Adding Inline Connector to Wires
+## Adding Inline Connectors to Wires
 
 You can add inline connectors by selecting the [Wires](/component/wire) you would like add the inline connectors to, `right-click`, and selecting <IconSpacingHorizontal/> `Add inline connectors`.
 
-<br />  
-<img src="/component/connector-inline.png" width={800} style={{ borderRadius: '8px' }} />
+<br />
+<img src="/component/connector-inline.png" width={800} style={{ borderRadius: "8px" }} />
 
 This will add inline connectors to all selected wires.
-<br />
-<img src="/component/connector-inline-result.png" width={800} style={{ borderRadius: '8px' }} />
 
-## Adding Inline Connector to Bundle
+<br />
+<img src="/component/connector-inline-result.png" width={800} style={{ borderRadius: "8px" }} />
+
+## Adding Inline Connectors to a Bundle
 
 You can add inline connectors by selecting the [Bundle](/component/bundle) you would like add the inline connectors to, `right-click`, and selecting <IconSpacingHorizontal/> `Add inline connectors`.
 
-<br />  
-<img src="/component/connector-inline-bundle.png" width={634} style={{ borderRadius: '8px' }} />
+<br />
+<img src="/component/connector-inline-bundle.png" width={634} style={{ borderRadius: "8px" }} />
 
 ## Mating a Connector
 
