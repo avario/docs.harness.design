@@ -5,7 +5,7 @@ description: "A bundle groups wires running the same path on your formboard. Set
 ---
 
 import { Callout } from "nextra/components";
-import { IconLabel, IconColorSwatch, IconEye, IconLineDashed } from "@tabler/icons-react";
+import { IconLabel, IconColorSwatch, IconEye, IconLineDashed, IconMenu2, IconSettings } from "@tabler/icons-react";
 
 # Bundle
 
@@ -28,17 +28,12 @@ Bundles can only be added in the [Layout View](/quick-start/layout).
   playsInline
 />
 <Callout>
-  [Layout Points](/component/layout-point) can be added to **Bundles** in the same way as a
-  **Wires**.
+  [Layout Points](/component/layout-point) can be added to **Bundles** in the same way as **Wires**.
 </Callout>
 
 ## Setting Bundle Lengths
 
 Select a bundle, then `left-double-click` the input field to set its length.
-
-You can enter units such as `mm`, `cm`, `m`, `in`, `ft`, or `yd`. The appropriate unit will be applied to the length.
-
-<Callout>The default length unit can be set under **Main Menu → Preferences**.</Callout>
 
 <br />
 <video
@@ -50,6 +45,16 @@ You can enter units such as `mm`, `cm`, `m`, `in`, `ft`, or `yd`. The appropriat
   muted
   playsInline
 />
+
+<Callout>
+For length, you can enter the following units (set the default unit under <IconMenu2/> `Main Menu` → <IconSettings/> `Settings`):
+  - `mm` - Milimeter
+  - `cm` - Centimeter
+  - `m` - Meter
+  - `in` `"` - Inch
+  - `ft` `'` - Foot
+  - `yd` - Yard
+</Callout>
 
 ## Setting the Bundle Path
 
