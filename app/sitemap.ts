@@ -29,6 +29,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${BASE_URL}${path}`,
     lastModified: new Date(),
     changeFrequency: 'weekly',
-    priority: path === '' || path === '/' ? 1.0 : 0.8,
+    priority: path === '' || path === '/' ? 1.0 : path === '/faq' ? 0.9 : path.startsWith('/legal') ? 0.1 : 0.8,
   }))
 }

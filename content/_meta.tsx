@@ -6,6 +6,7 @@ export default {
   part: { theme: { collapsed: true } },
   feature: { theme: { collapsed: true } },
   examples: { theme: { collapsed: true } },
+  faq: {},
   shortcuts: {},
   updates: { theme: { collapsed: true } },
   legal: { theme: { collapsed: true } },

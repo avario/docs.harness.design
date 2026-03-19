@@ -1,0 +1,438 @@
+---
+title: "FAQ — Wire Harness CAD | harness.design"
+sidebarTitle: "FAQ"
+description: "Answers to common questions about harness.design wire harness CAD software — parts library, connectors, wires, PDF export, sharing, pricing, and more."
+---
+
+import { Callout } from 'nextra/components'
+import {
+  IconArrowBackUp,
+  IconArrowForwardUp,
+  IconArrowAutofitWidth,
+  IconRotate,
+  IconTrash,
+  IconRowInsertTop,
+  IconNote,
+  IconShare2,
+  IconFileExport,
+  IconFile,
+  IconTable,
+  IconBraces,
+  IconMouse,
+  IconHandClick,
+  IconFileImport,
+  IconLineDashed,
+  IconArrowsSplit2,
+  IconMenu2,
+  IconPlus,
+} from "@tabler/icons-react";
+
+export const IconTwistedWires = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="tabler-icon"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth="2"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path
+      d="M22,7 C20.6570756,7 19.6184946,7.91306566 18.7003301,9.18739532 M15.394791,14.6792674 C14.4532882,16.0227603 13.3897059,17 12.0003896,17 C7.55611833,17 6.44427128,7 2,7"
+      transform="translate(12, 12) scale(1, -1) translate(-12, -12)"
+    ></path>
+    <path
+      d="M22,7 C20.6570756,7 19.6184946,7.91306566 18.7003301,9.18739532 M15.394791,14.6792674 C14.4532882,16.0227603 13.3897059,17 12.0003896,17 C7.55611833,17 6.44427128,7 2,7"
+      transform="translate(12, 12) scale(-1, 1) translate(-12, -12)"
+    ></path>
+  </svg>
+);
+
+export const IconSplice = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="tabler-icon"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    strokeWidth="2"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <line x1={2} y1={12} x2={9} y2={12} />
+    <circle cx={12} cy={12} r={3} />
+    <line x1={15} y1={12} x2={22} y2={12} />
+  </svg>
+);
+
+# Frequently asked questions
+
+Answers to the questions we hear most often. If you can't find what you're looking for, reach out to us at [harness.design.nz@gmail.com](mailto:harness.design.nz@gmail.com) or join our [Discord community](https://discord.com/invite/eTv6ph4Uzg).
+
+<script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is there a global parts library I can reuse across projects?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not yet. A master parts library is our most-requested feature and is actively in development. In the meantime, the best workaround is to create a dedicated harness called something like \"Master Parts Library\", build all your common parts there, and then import them into any new harness using the Import Parts button in the Parts View."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I have to recreate parts for every new harness?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You don't have to start from scratch. Until the global library is released, you can import parts from any existing harness."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there built-in connector libraries (e.g. Deutsch, TE)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pre-built global libraries of common connectors and parts are planned. This will likely roll out alongside the master parts library feature."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When will harness.design stop being free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "harness.design is currently in beta. Pricing will be introduced once we're happy with where the product is."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will there be a free tier?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We're planning a tiered pricing model. Our goal is to keep the software accessible, and a free plan is part of that thinking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much will it cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We're still figuring this out. We want to keep it affordable. If you have thoughts on what you'd pay and what features matter most to you, we'd genuinely love to hear from you. Email us or drop into Discord."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a one-time lifetime purchase an option?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We've heard this request from several users. We're primarily thinking about subscription tiers, but we're taking all feedback into account as we plan pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I zoom in and out?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To zoom, use the scroll wheel on a mouse or pinch on a trackpad. To pan, press down the middle mouse button (scroll wheel) and drag, or use a two-finger drag on a trackpad."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I share my harness with someone else?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Shared users get read-only access; only the harness owner can edit it. Anyone viewing a shared harness can duplicate it to make their own editable copy. Open the Share panel from the Main Menu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I set a wire gauge or cross-section (e.g. 22 AWG)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You need to create a Wire Part first. Go to the Parts View, add a Wire Part, and set the gauge in the part properties. You can then assign that wire part to any wire on the schematic."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I prevent a long connector label from being cut off?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Right-click on the connector in the Schematic View and select Width to adjust it."
+      }
+    },
+  ]
+})}} />
+
+---
+
+## Parts library
+
+### Is there a global parts library I can reuse across projects?
+
+Not yet. A master parts library is our most-requested feature and is actively in development. In the meantime, the best workaround is to create a dedicated harness called something like "Master Parts Library", build all your common parts there, and then import them into any new harness using the <IconFileImport/> `Import Parts` button in the **Parts View**.
+
+### Do I have to recreate parts for every new harness?
+
+You don't have to start from scratch. Until the global library is released, you can import parts from any existing harness. See [Importing Parts](/part#importing-parts) for the step-by-step guide.
+
+### Are there built-in connector libraries (e.g. Deutsch, TE)?
+
+We're planning to offer pre-built global libraries of common connectors and parts that all users can draw from. This will likely roll out alongside the master parts library feature.
+
+---
+
+## Navigation & controls
+
+### How do I zoom in and out?
+
+Use the **scroll wheel** on a mouse, or **pinch** on a trackpad.
+
+### How do I pan around the schematic or layout?
+
+Press down the **middle mouse button** (scroll wheel) and drag, or use a **two-finger drag** on a trackpad.
+
+### How do I undo and redo?
+
+- <IconArrowBackUp/> **Undo:** `Ctrl + Z` (Windows) `⌘ + Z` (Mac)
+- <IconArrowForwardUp/> **Redo:** `Ctrl + Shift + Z` or `Ctrl + Y` (Windows) `⌘ + Shift + Z` or `⌘ + Y` (Mac)
+
+See the full list of keyboard [shortcuts](/shortcuts).
+
+### The scroll wheel/ trackpad is not working as expected. How do I fix it?
+
+Open **Main Menu → Settings** and set **Input type** to the type you are using. This forces behaviour regardless of what input device is detected. See [Input type](/view/main-menu/settings#input-type).
+
+---
+
+## Wires & cables
+
+### How do I set a wire gauge or cross-section (e.g. 22 AWG)?
+
+You need to create a **Wire Part** first. Go to the Parts View, add a Wire Part, and set the gauge in the part properties. You can then assign that wire part to any wire on the schematic. See [Wire Part](/part/wire) and [Wire](/component/wire) for full details.
+
+### Why does my wire show as a dashed line?
+
+A dashed wire means it hasn't been routed through a bundle on the Layout View yet. Once you add the wire to a bundle, it will display as a solid line. See [Dashed Wires](/component/wire#dashed-wires) for more information.
+
+### Can I add shielded cables?
+
+Yes. Shields are supported on both cables and connectors. See:
+- [Adding a shield to a cable](/component/cable#adding-a-shield-to-a-cable)
+- [Connecting to the shell of a connector](/component/connector#connecting-to-shell-of-connector)
+
+### Can I use twisted pairs?
+
+Yes, twisted pairs are supported. `right-click` the canvas in Schematic View and select <IconTwistedWires/> `Twisted wires` to add a new group, or select multiple existing wires, `right-click`, and choose <IconTwistedWires/> `Twist together`. You can see which wires are twisted together in the Connections View via the **Twisted With** column. See [Twisted Wires](/component/twisted-wires) for full details.
+
+### Can I add a custom colour picker?
+
+We can't offer a freeform colour picker because wire colours need to work correctly across selected, deselected, light mode, and dark mode states. We do regularly add new preset colours. If there's a specific colour missing for you, let us know.
+
+---
+
+## Connectors
+
+### How do I prevent a long connector label from being cut off?
+
+`right-click` on the connector in the **Schematic View** and select <IconArrowAutofitWidth/> `Width`.
+
+### How do I add custom cavity numbering?
+
+Double click on the cavity number and enter a desired value.
+
+### Can I rotate connectors?
+
+Yes, connectors can be rotated 90° in the Schematic View. `right-click` a connector and select <IconRotate/> `Rotate`, or select a connector and press the `R` key. See [Rotating a Connector](/component/connector#rotating-a-connector).
+
+### Can I delete a single cavity/pin from a connector?
+
+Yes. `right-click` the cavity you want to remove and select <IconTrash/> `Delete`. You can also reorder cavities or insert new ones above an existing cavity from the same `right-click` menu. See [Reordering, Inserting and Deleting Cavities](/component/connector#reordering-inserting-and-deleting-cavities).
+
+### Can I paste a list of pin names into a connector?
+
+Not yet, but this is a feature we would like to add. For now, use the **Tab** key to move between cavities quickly while naming them, and **Shift + Tab** to go backwards.
+
+### Can I change the colour of a connector on the schematic?
+
+No, colour cannot be assigned directly to a connector. Colour is a property of the [Connector Part](/part/connector) — the housing part assigned to a connector. To set a colour, edit the connector part and set its **Color** field to reflect the physical housing colour.
+
+---
+
+## Layout view
+
+### How do I set or edit bundle lengths?
+
+Lengths are set in the **Layout View**, not the Schematic View. See [Setting bundle lengths](/component/bundle#setting-bundle-lengths).
+
+### How do I control which side of a connector a wire exits from?
+
+Add **Layout Points** to a wire to define its routing. See [Layout Points](/component/layout-point) for documentation and examples.
+
+### Can I section off or hide part of the harness in the layout view?
+
+Not yet. The ability to mark areas, create sections, or hide groups is a planned feature.
+
+### How do I position a splice?
+
+Splices are automatically positioned based on the most efficient wiring path. To move one manually, drag its location handle in the **Layout View** to any **Branch Point**, **Connector**, or **Terminal**. For staggered or offset splices, add an extra branch point and assign the splice there. See [Locating a splice](/component/splice#locating-a-splice).
+
+---
+
+## Idents & wire labelling
+
+### Can I add coloured idents to wire ends?
+
+Yes. `right-click` a wire and click the <IconPlus/> button next to `Ident` to add a colour band. You can add multiple colour bands and they display in the order added. See [Assigning Idents](/component/wire#assigning-idents).
+
+### Can I add numbered wire idents?
+
+Yes. `right-click` a wire and click on the **Ident** placeholder text in the menu to add a text label. The label background colour can be set by adding colour ident bands alongside it. See [Assigning Idents](/component/wire#assigning-idents).
+
+### How do I name or number a splice?
+
+Splice naming is not currently supported. Each splice has a unique component ID that can be displayed on the schematic and layout views via `View Options` → `Show component IDs`.
+
+### How do I add labels to wires?
+
+`right-click` on a wire in the Schematic View, then click on the **Ident** placeholder text in the menu to add a text label. You can also add a <IconNote/> **Note** to the canvas near a wire for more detailed annotations. See [Note](/component/note).
+
+### Can I show ident labels in the PDF export?
+
+Part names and ident labels are not currently included in the PDF export. This is a known gap and is on the roadmap.
+
+---
+
+## Schematic features
+
+### How do I use auto layout?
+
+Press `Shift + A` to auto layout all wires, or select specific wires and press `A` to auto layout just those. See the full list of [keyboard shortcuts](/shortcuts).
+
+### What does a dashed/dotted wire mean?
+
+A dashed wire means it has not yet been routed through a bundle in the Layout View. See [Dashed Wires](/component/wire#dashed-wires).
+
+### Can I add text boxes or notes to the schematic?
+
+Yes, Notes are supported in both Schematic and Layout views. `right-click` the canvas and select <IconNote/> `Note`, then `left-double-click` to enter text. You can adjust the width and text alignment via the `right-click` menu. See [Note](/component/note) for full details.
+
+### Is there a search function to find a connector or wire in a large project?
+
+Not yet. It has been requested by several users and is on our development list.
+
+If you have a component selected you can use the **Fit to View** button in the toolbar on either the Schematic or Layout screen to zoom in and center the view on that component.
+
+### Can I add connector cavity drawings or pinout images?
+
+Not yet, but adding pinout images to connectors is high on our priority list.
+
+### Can I add photos or images to the schematic to help with routing?
+
+This has been requested and is something we're exploring. If you have a specific use case, get in touch and let us know how you'd use it.
+
+---
+
+## PDF & export
+
+### How do I export to PDF?
+
+Go to <IconMenu2/> `Main Menu` → <IconFileExport/> `Export`, then select <IconFile/> `Schematic` or <IconFile/> `Layout` to export as PDF. See [Export documentation](/view/main-menu/export) for full details on what's included in each export type.
+
+### Why are component/resistor labels missing from my PDF export?
+
+Part names and some component labels are not yet included in the PDF export. This is a known limitation on the roadmap.
+
+### Can I get a dark mode PDF?
+
+This is not currently planned. The PDF is intended as a technical drawing document suitable for printing, so it will remain in light mode. Title blocks and other print-ready features are planned for the future.
+
+### Can I rescale the schematic before exporting?
+
+Manual pre-export scaling is not yet available. This is on the roadmap. In the meantime, tidying up the layout before exporting gives the best results.
+
+### How do I export the wiring table?
+
+The wiring table can be exported to CSV from <IconMenu2/> `Main Menu` → <IconFileExport/> `Export` → <IconTable/> `Wiring table`. See [Export documentation](/view/main-menu/export) for full details.
+
+---
+
+## Sharing & collaboration
+
+### Can I share my harness with someone else?
+
+Yes. Shared users get read-only access; only the harness owner can edit it. Anyone viewing a shared harness can duplicate it to make their own editable copy. Open the <IconShare2/> `Share` panel from the Main Menu. See [Sharing documentation](/feature/sharing) for full details.
+
+### Is there a read-only share link?
+
+Yes. All shared access is read-only. Shared users can view and navigate the harness but cannot edit it. They can duplicate the harness to make their own editable copy. See [Sharing documentation](/feature/sharing) for full details.
+
+---
+
+## Saving & autosave
+
+### How does saving work? I closed the tab and lost progress.
+
+The app autosaves approximately every 15 seconds while you're online. If your internet connection drops and the app can't reach the server, changes since the last successful save may be lost. However, you can save your harness as a local JSON file via <IconFileExport/> `Export` → <IconBraces/> `Raw data`, and reload it later via `Open` → `Local data`. See [Local Data](/feature/local-data) for details.
+
+<Callout type="warning">
+  If you close the tab while offline, you may lose recent changes. Keep an eye on the save status indicator in the app.
+</Callout>
+
+### Can I save files locally or run the app offline?
+
+harness.design is a web-based application, so it requires an internet connection to use. However, you can save your harness as a local JSON file via <IconFileExport/> `Export` → <IconBraces/> `Raw data`, and reload it later via `Open` → `Local data`. See [Local Data](/feature/local-data) for details.
+
+---
+
+## Account & sign-in
+
+### I signed up with Apple but can't sign back in. What do I do?
+
+If you originally signed up using Sign in with Apple, you must use the **Apple button** on the sign-in page, not the email/password fields. Apple may relay a private email address during sign-up, so entering your real email won't work.
+
+### How do I change my password?
+
+Password change is available in your account settings. If you're experiencing issues, make sure you're signed in first.
+
+### Can I use harness.design on an iPad or phone?
+
+The app works in **read-only mode** on iPad and mobile browsers. Our assumption is that most users prefer to design on a desktop and then reference their harness on a tablet or phone while building or troubleshooting in the workshop.
+
+---
+
+## Pricing & beta
+
+### When will harness.design stop being free?
+
+We're currently in beta and working hard to get the software to a place where it's reliable and feature-complete. Pricing will be introduced once we're happy with where the product is.
+
+### Will there be a free tier?
+
+We're planning a tiered pricing model. Our goal is to keep the software accessible, and a free plan is part of that thinking.
+
+### How much will it cost?
+
+We're still figuring this out. We want to keep it affordable. If you have thoughts on what you'd pay and what features matter most to you, we'd genuinely love to hear from you. Email us or drop into Discord.
+
+### Is a one-time lifetime purchase an option?
+
+We've heard this request from several users. We're primarily thinking about subscription tiers, but we're taking all feedback into account as we plan pricing.
+
+### Where can I see what's been added recently?
+
+Check the [Updates](/updates) for a history of updates. For the most up-to-date news and early previews, join our [Discord server](https://discord.com/invite/eTv6ph4Uzg).
+
+---
+
+## Still have questions?
+
+If your question isn't covered here, we're happy to help directly.
+
+- **Email:** [harness.design.nz@gmail.com](mailto:harness.design.nz@gmail.com)
+- **Discord:** [discord.com/invite/eTv6ph4Uzg](https://discord.com/invite/eTv6ph4Uzg)
+
+We read every message and genuinely appreciate the feedback. It directly shapes what we build next.
