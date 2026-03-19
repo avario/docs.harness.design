@@ -6,7 +6,23 @@ export const generateStaticParams = generateStaticParamsFor('mdxPath')
 export async function generateMetadata(props) {
     const params = await props.params
     const { metadata } = await importPage(params.mdxPath)
-    return metadata
+    const ogPath = params.mdxPath?.join('/') ?? ''
+    return {
+        ...metadata,
+        openGraph: {
+            type: 'article',
+            siteName: 'harness.design docs',
+            title: metadata.title,
+            description: metadata.description,
+            images: [`/og?path=${ogPath}`],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: metadata.title,
+            description: metadata.description,
+            images: [`/og?path=${ogPath}`],
+        },
+    }
 }
 
 const Wrapper = getMDXComponents().wrapper
