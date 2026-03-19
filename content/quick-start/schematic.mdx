@@ -4,6 +4,24 @@ sidebarTitle: "Design a Schematic"
 description: "Step-by-step guide to drawing your wire harness schematic: open the view, place connectors, drag wires between cavities, and add layout points for neat routing."
 ---
 
+export const IconSplice = () => (
+  <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="tabler-icon"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth="2"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <line x1={2} y1={12} x2={9} y2={12} />
+      <circle cx={12} cy={12} r={3} />
+      <line x1={15} y1={12} x2={22} y2={12} />
+    </svg>
+);
+
 import { Steps } from 'nextra/components'
 import { IconManualGearbox } from "@tabler/icons-react";
  
@@ -24,6 +42,11 @@ Click the view dropdown and select **Schematic**.
 `left-click-drag` from a connection handle on one component to another.  
 <br />
 <video src="/quick-start/add-wire.mp4" width={634} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
+
+### Add [Splices](/component/splice) 
+`right-click` a wire and select <IconSplice/> `Add splice`. 
+<br />
+<video src="/quick-start/add-splice.mp4" width={634} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
 
 ### Add [Layout Points](/component/layout-point)  
 `left-double-click` or `right-click` a [Wire](/component/wire) to add a **Layout Point**. More than one **Layout Point** can be added to a wire for more complex routing.

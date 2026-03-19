@@ -8,7 +8,23 @@ import { Table } from 'nextra/components'
 import { Callout } from 'nextra/components'
 import { IconMenu2, IconSettings } from "@tabler/icons-react";
 
-# Wire Part
+export function IconWire({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 60 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <rect x="0" y="17" width="60" height="6" rx="2" fill="#E67700" />
+      <rect x="0" y="14" width="55" height="12" rx="2" fill="#868E96" />
+    </svg>
+  );
+}
+
+# <IconWire/> Wire Part
 A single insulated conductor used to carry electrical current or signals between connection points.
 <br />
 <Table>
@@ -32,6 +48,10 @@ A single insulated conductor used to carry electrical current or signals between
       <Table.Td>Description of the wire part</Table.Td>
     </Table.Tr>
     <Table.Tr>
+      <Table.Td>URL</Table.Td>
+      <Table.Td>Link to datasheet or manufacturer website</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
       <Table.Td>Gauge</Table.Td>
       <Table.Td>Cross-sectional size of the inner conductor</Table.Td>
     </Table.Tr>
@@ -45,12 +65,14 @@ A single insulated conductor used to carry electrical current or signals between
     </Table.Tr>
   </tbody>
 </Table>
-<Callout>  
-You can enter `mm` or `AWG` for gauge values. Set the default unit under <IconMenu2/> `Main Menu` → <IconSettings/> `Settings`.  
+<Callout>
+For gauge, you can enter the following units (set the default unit under <IconMenu2/> `Main Menu` → <IconSettings/> `Settings`):
+  - `mm` - Milimeters Squared (mm²)
+  - `awg` - American Wire Gauge (AWG)
 </Callout>
 
 ## Assigning a Wire Part
 
 `right-click` a wire in the **Schematic**, **Layout**, or **Connection View** and select the desired `Part`.
 <br />
-<img src="/quick-start/assign-part.png" width={634} style={{ borderRadius: '8px' }} />
+<video src="/part/wire-assign.mp4" width={634} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />

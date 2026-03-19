@@ -18,16 +18,18 @@
   display: inline;
   padding: 0.15em;
   border-radius: 4px;
+  margin-right: 0.3em;
+  transform: translateY(1px);
 
   /* Light mode */
-  background: #f3f3f3;
-  border: 1px solid #d0d0d0;
+  /* background: #f3f3f3;
+  border: 1px solid #d0d0d0; */
   stroke: #222;
 }
 
 /* Dark mode override */
 .dark .tabler-icon {
-  background: #2e2e2e;
-  border: 1px solid #424242;
+  /* background: #2e2e2e;
+  border: 1px solid #424242; */
   stroke: #fff;
 }

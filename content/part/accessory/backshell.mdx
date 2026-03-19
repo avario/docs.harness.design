@@ -1,0 +1,67 @@
+---
+title: "Backshell Part — Connector Parts | harness.design"
+sidebarTitle: "Backshell Part"
+description: "Add rigid backshell parts to connectors in your wire harness for cable strain relief and environmental protection. Includes part number and colour fields."
+---
+
+import { Table } from 'nextra/components';
+import { Callout } from 'nextra/components';
+export function IconBackshell({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 80 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <g transform="translate(15, 0)" fill="#868E96">
+        <rect x="0" y="10" width="30" height="20" rx="4" />
+        <rect x="20" y="6" width="20" height="28" />
+        <rect x="35" y="0" width="15" height="40" rx="4" fill="#656B71" />
+        <rect x="16" y="3" width="8" height="34" rx="4" fill="#656B71" />
+      </g>
+    </svg>
+  );
+}
+
+# <IconBackshell/> Backshell Part
+A rigid or semi-rigid enclosure fitted to the rear of a connector for cable termination, strain relief, shielding, and environmental protection.
+<br />
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique identifier for the Backshell Part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that produces the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Description</Table.Td>
+      <Table.Td>Description of the Backshell Part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>URL</Table.Td>
+      <Table.Td>Link to datasheet or manufacturer website</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Color</Table.Td>
+      <Table.Td>Color of the Backshell Part</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Assigning a Backshell Part
+
+`right-click` on a connector in the **Schematic** or **Layout View**, click `Accessories` → `Backshell` and select the backshell part you want to assign.
+<br />
+<img src="/part/connector/backshell.png" width={589} style={{ borderRadius: '8px' }} />

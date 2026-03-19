@@ -1,0 +1,67 @@
+---
+title: "Dust Cover Part — Connector Parts | harness.design"
+sidebarTitle: "Dust Cover Part"
+description: "Add dust cover parts to protect connector contacts when unmated. Assign from the accessories menu in the schematic or layout view and include them in your BOM."
+---
+
+import { Table } from 'nextra/components';
+import { Callout } from 'nextra/components';
+export function IconDustCover({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 80 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <g fill="#868E96">
+        <rect x="3" y="3" width="18" height="34" rx="6" fill="none" stroke="#868E96" strokeWidth="5" />
+        <rect x="21" y="17" width="40" height="6" fill="#656B71" />
+        <rect x="45" y="0" width="35" height="40" rx="6" />
+        <rect x="60" y="3" width="17" height="34" rx="4" fill="#656B71" />
+      </g>
+    </svg>
+  );
+}
+
+# <IconDustCover/> Dust Cover Part
+A protective component used to protect the contacts, when the connector is unmated.
+<br />
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique identifier for the Dust Cover Part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that produces the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Description</Table.Td>
+      <Table.Td>Description of the Dust Cover Part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>URL</Table.Td>
+      <Table.Td>Link to datasheet or manufacturer website</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Color</Table.Td>
+      <Table.Td>Color of the Dust Cover Part</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+## Assigning a Dust Cover Part
+
+`right-click` on a connector in the **Schematic** or **Layout View**, click `Accessories` → `Dust Cover`, and select the dust cover part you want to assign.
+<br />  
+<img src="/part/connector/dust-cover.png" width={590} style={{ borderRadius: '8px' }} />

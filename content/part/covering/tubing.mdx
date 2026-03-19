@@ -1,0 +1,81 @@
+---
+title: "Tubing Covering Part — Covering Parts | harness.design"
+sidebarTitle: "Tubing"
+description: "Define tubing covering parts with min/max diameter for smooth-walled flexible wire bundle protection."
+---
+
+import { Table } from 'nextra/components';
+import { Callout } from 'nextra/components';
+import {
+  IconMenu2,
+  IconSettings,
+} from "@tabler/icons-react";
+export function IconTubing({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 80 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <g transform="translate(10, 0)" fill="#868E96">
+        <ellipse cx="4" cy="20" rx="4" ry="15" />
+        <rect x="4" y="5" width="52" height="30" />
+        <ellipse cx="56" cy="20" rx="4" ry="15" fill="#656B71" />
+      </g>
+    </svg>
+  );
+}
+
+# <IconTubing/> Tubing
+A smooth-walled flexible sleeve that encloses a wire bundle for protection and organisation.
+<br />
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique identifier for the tubing part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that produces the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Description</Table.Td>
+      <Table.Td>Description of the tubing part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>URL</Table.Td>
+      <Table.Td>Link to datasheet or manufacturer website</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Min Diameter</Table.Td>
+      <Table.Td>Minimum inner diameter of the tubing</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Max Diameter</Table.Td>
+      <Table.Td>Maximum inner diameter of the tubing</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Color</Table.Td>
+      <Table.Td>Color of the tubing material</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+<Callout>
+For diameter, you can enter the following units (set the default unit under <IconMenu2/> `Main Menu` → <IconSettings/> `Settings`):
+  - `mm` - Milimeter
+  - `cm` - Centimeter
+  - `m` - Meter
+  - `in` `"` - Inch
+  - `ft` `'` - Foot
+  - `yd` - Yard
+</Callout>

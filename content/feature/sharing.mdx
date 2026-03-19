@@ -4,10 +4,19 @@ sidebarTitle: "Sharing"
 description: "Share wire harness designs with teammates or clients. Make a harness public or invite specific email addresses — shared viewers get read-only access by default."
 ---
 
-import { IconMenu2, IconShare2, IconCircleMinus } from "@tabler/icons-react";
 import { Callout } from "nextra/components";
+import {
+  IconMenu2,
+  IconShare2,
+  IconFile,
+  IconLink,
+  IconCopy,
+  IconToggleLeft,
+  IconMail,
+  IconCircleMinus,
+} from "@tabler/icons-react";
 
-# Sharing
+# <IconShare2/> Sharing
 
 To let other people view your harness, go to <IconMenu2 /> `Main Menu` → <IconShare2 /> `Share`.
 
@@ -15,22 +24,24 @@ To let other people view your harness, go to <IconMenu2 /> `Main Menu` → <Icon
 <img src="/view/main-menu/share.png" width={400} style={{ borderRadius: "8px" }} />
 
 <Callout>
-  Only the harness owner can edit the harness. Anyone the harness is shared with will only be able to view it in
-  read-only mode.
+  Only the harness owner can edit the harness. Anyone the harness is shared with will only be able
+  to view it in read-only mode.
 </Callout>
+
+## Harness Link
+
+If the harness is not public, only users shared via email will be able to open this link. Click the <IconCopy/> `copy` button to copy the link to your clipboard.
 
 ## Make your Harness Public
 
-See [here](/view/main-menu/share#-make-your-harness-public)
+Toggle to make your harness public. Anyone with the link will be able to view your harness as read-only.
 
-## Share your Harness with an Email
+## Email Sharing
 
-See [here](/view/main-menu/share#-link-to-harness)
+Enter an email address and click `Send Invite` to allow the user with that email address to view your harness.
+
+An email will be sent to the address with a link to view the harness. They will need to create an account if they don't already have one.
 
 ## Revoke Email Access
 
-See [here](/view/main-menu/share#-revoke-email-access)
-
-## Viewing Harnesses Shared with You
-
-See [here](/view/main-menu/open#-shared-with-you)
+Click <IconCircleMinus /> `Revoke access` next to an email to revoke a user's access to view your harness.

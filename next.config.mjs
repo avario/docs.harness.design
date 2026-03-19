@@ -38,17 +38,33 @@ export default withNextra({
             { source: '/parts/part-cable', destination: '/part/cable', permanent: true },
             { source: '/parts/part-covering', destination: '/part/covering', permanent: true },
             { source: '/parts/part-device', destination: '/part/device', permanent: true },
+            { source: '/part/device', destination: '/part/generic', permanent: true },
             { source: '/parts/part-diode', destination: '/part/diode', permanent: true },
             { source: '/parts/part-resistor', destination: '/part/resistor', permanent: true },
             { source: '/parts/part-splice', destination: '/part/splice', permanent: true },
             { source: '/parts/part-terminal', destination: '/part/terminal', permanent: true },
             { source: '/parts/part-wire', destination: '/part/wire', permanent: true },
             { source: '/parts/connector', destination: '/part/connector', permanent: true },
-            { source: '/parts/connector/part-backshell', destination: '/part/connector/backshell', permanent: true },
-            { source: '/parts/connector/part-boot', destination: '/part/connector/boot', permanent: true },
-            { source: '/parts/connector/part-contact', destination: '/part/connector/contact', permanent: true },
-            { source: '/parts/connector/part-dust-cover', destination: '/part/connector/dust-cover', permanent: true },
-            { source: '/parts/connector/part-lock', destination: '/part/connector/lock', permanent: true },
+            { source: '/parts/connector/part-backshell', destination: '/part/accessory/backshell', permanent: true },
+            { source: '/parts/connector/part-boot', destination: '/part/accessory/boot', permanent: true },
+            { source: '/parts/connector/part-contact', destination: '/part/accessory/contact', permanent: true },
+            { source: '/parts/connector/part-dust-cover', destination: '/part/accessory/dust-cover', permanent: true },
+            { source: '/parts/connector/part-lock', destination: '/part/accessory/lock', permanent: true },
+
+            // Connector accessories (connector folder → accessory folder)
+            { source: '/part/connector/backshell', destination: '/part/accessory/backshell', permanent: true },
+            { source: '/part/connector/boot', destination: '/part/accessory/boot', permanent: true },
+            { source: '/part/connector/contact', destination: '/part/accessory/contact', permanent: true },
+            { source: '/part/connector/dust-cover', destination: '/part/accessory/dust-cover', permanent: true },
+            { source: '/part/connector/lock', destination: '/part/accessory/lock', permanent: true },
+
+            // accessories → accessory
+            { source: '/part/accessories', destination: '/part/accessory', permanent: true },
+            { source: '/part/accessories/backshell', destination: '/part/accessory/backshell', permanent: true },
+            { source: '/part/accessories/boot', destination: '/part/accessory/boot', permanent: true },
+            { source: '/part/accessories/contact', destination: '/part/accessory/contact', permanent: true },
+            { source: '/part/accessories/dust-cover', destination: '/part/accessory/dust-cover', permanent: true },
+            { source: '/part/accessories/lock', destination: '/part/accessory/lock', permanent: true },
 
             // Components → Component
             { source: '/components', destination: '/component', permanent: true },

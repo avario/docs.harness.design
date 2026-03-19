@@ -1,0 +1,126 @@
+---
+title: "March 19, 2026 — Wire Harness CAD | harness.design"
+sidebarTitle: "March 19, 2026"
+description: "harness.design release for 19 March 2026: redesigned Layout view, Signals, notes, branch point parts, bundle labels, connector rotation, and open harness thumbnails."
+---
+
+# March 19, 2026
+
+This release brings a completely redesigned Layout view, new Signals functionality, and a range of improvements to how you build and annotate your harnesses, including bundle labels, branch point parts, notes, connector rotation, and a refreshed Open Harness interface.
+
+### New Layout View
+
+<br />
+<video
+  src="/updates/2026.03.19/layout.mp4"
+  width={800}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+The Layout screen has had a ground-up redesign. We've replaced the box-based connector system with diagrammatic connector and terminal representations, added vertical bundle routing, and thicker bundle lines. The result is a layout that actually resembles the physical harness you're building.
+
+[Read more...](/view/layout)
+
+### Signals
+
+<br />
+<video
+  src="/updates/2026.03.19/signals.mp4"
+  width={800}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+Label the electrical signals on your conductors (e.g. VCC, CAN H). Assign a signal to a cavity or terminal and it automatically propagates across the same net — no more entering the same label at every connection point. Signals replace net labels. Check out the docs for a more detailed description and walkthrough videos.
+
+[Read more...](/feature/signals)
+
+### Notes
+
+<br />
+<video
+  src="/updates/2026.03.19/notes.mp4"
+  width={600}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+You can add notes directly to your Layout and Schematic views to capture any additional information alongside your design.
+
+[Read more...](/component/note)
+
+### Branch Point Parts
+
+<br />
+<video
+  src="/updates/2026.03.19/branch-point-parts.mp4"
+  width={600}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+Assign boots and coverings directly to branch points in your harness layout. Multiple coverings can be assigned to a single branch point, giving you an accurate representation of how the harness is built.
+
+[Read more...](/component/branch-point)
+
+### Bundle Labels
+
+<br />
+<video
+  src="/updates/2026.03.19/bundle-label.mp4"
+  width={600}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+Add labels to bundles anywhere on your harness. Call out connector function, mark the main trunk with a harness model name, or identify where a section routes to in the vehicle. If it needs a label, now you can add one.
+
+[Read more...](/component/bundle#bundle-label)
+
+### Open Harness Interface
+
+<br/>
+<img src="/updates/2026.03.19/open.png" width={600} style={{ borderRadius: "8px" }} />
+
+Harnesses are now displayed with thumbnails for easier selection. You can rename, share, and delete harnesses directly from this view.
+
+[Read more...](/component/view/main-menu/open)
+
+### Connector / Terminal Rotation
+
+<br/>
+<img src="/updates/2026.03.19/rotate.png" width={600} style={{ borderRadius: "8px" }} />
+
+Connectors and terminals can now be rotated 90° in the Schematic view, giving you more flexibility in how you arrange your schematic and making it easier to read.
+
+[Read more...](/component/connector#rotating-a-connector)
+
+### Other Improvements
+
+- Loose wire end has been added as a terminal type — [Read more...](/component/terminal)
+- Terminals have been simplified to reduce their size on the schematic
+- Splices are on the layout view and easier to locate — [Read more...](/component/splice#locating-a-splice)
+- URL link field added to all parts for linking to manufacturer, supplier, or datasheet
+- The ID of branch points can be shown on the layout and schematic views — [Read more...](/component/branch-point#viewing-branch-point-component-ids)
+- Alternative measurement units can be entered, such as the US screw gauge
+- Stud has been removed as a terminal type, as studs are not part of a harness but rather what it connects to; these have been migrated to ring terminals
+
+### Privacy Policy & Terms of Service
+
+The [Privacy Policy](/legal/privacy-policy) and [Terms of Service](/legal/terms-of-service) have been updated to reflect the sharing features introduced in the February 2026 release. Both documents now describe public link sharing, email-based sharing, read-only access for shared users, and access revocation.

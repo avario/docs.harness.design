@@ -4,44 +4,82 @@ sidebarTitle: "Nets"
 description: "Visualise nets across schematic, layout, and connections views. Select any wire, connector, or part to highlight its full net path through the harness."
 ---
 
-import { Callout } from 'nextra/components'
-import { IconEye, IconBolt, IconManualGearbox, IconBrandStackshare, IconMinus } from "@tabler/icons-react";
+import { Callout } from "nextra/components";
+import {
+  IconTopologyRing3,
+  IconEye,
+  IconBolt,
+  IconManualGearbox,
+  IconBrandStackshare,
+  IconMinus,
+  IconCheck,
+} from "@tabler/icons-react";
 
-# Nets
+# <IconTopologyRing3/> Nets
 
-Select any part or component to quickly visualize where it is used across the views and the net it is connected to. The following are some examples:
+Select any part or component to quickly visualize where it is used across the views and the net it is connected to.
 
-<Callout>  
-This feature can be disabled. To do this, on the **Schematic** and **Layout** views goto <IconEye/> `View Options` → <IconBolt/> `Show nets for selection` and <IconMinus/> **disable** it.
+<Callout>
+  Toggle <IconEye /> `View Options` → <IconBolt /> `Show nets for selection` to show the entire net
+  or just individual components.
 </Callout>
 
-## Connector Pinout
-Selecting a [Connector](/component/connector) will show all wires it is connected to and their path through the harness.  
-<br />  
-<img src="/feature/nets-connector.png" width={800} style={{ borderRadius: '8px' }} />
+## View a Connector's Wires
 
-## Looking Inside a Bundle
-Selecting a [Bundle](/component/bundle) will highlight the wires going through it and show the nets they are connected to.  
-<br />  
-<img src="/feature/nets-bundle.png" width={800} style={{ borderRadius: '8px' }} />
+Selecting a [Connector](/component/connector) will show all wires it is connected to and their path through the harness.
 
-## Viewing a Wire's Net
-A [Wire](/component/wire) selected in any view will carry through to all the other views, showing both the wire and the net it is connected to.  
-<br />  
-<img src="/feature/nets-wire.png" width={800} style={{ borderRadius: '8px' }} />
-
-## Part Usage
-Selecting a [Part](/part) in the Parts screen will highlight where it is used in the other views.  
-<br />  
-<img src="/feature/nets-part.png" width={800} style={{ borderRadius: '8px' }} />
-
-## Net Labels
-**Net Labels** can be used to label nets. See [Net Labels](/component/net-label) for more information.
 <br />
-<img src="/component/net-label-connections.png" width={800} style={{ borderRadius: '8px' }} />
+<video
+  src="/feature/nets-connector.mp4"
+  width={800}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
 
-## Highlight Wires Attached to Selected Part
-There may be times when you do not want to see all the wires on the net. For example when you are selecting a connector you may only want to see the wires attached to that connector. To do this, on the **Schematic** and **Layout** views goto <IconEye/> `View Options` → <IconBolt/> `Show nets for selection` and <IconMinus/> disable it. Now when a part is selected only the wires attached to that part will be highlighted.
+## Looking inside a Bundle
+
+Selecting a [Bundle](/component/bundle) will highlight the wires going through it.
+
 <br />
-<img src="/feature/nets-disable-result.png" width={800} style={{ borderRadius: '8px' }} />
+<video
+  src="/feature/nets-bundle.mp4"
+  width={800}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
 
+## See a Wire's Net
+
+A [Wire](/component/wire) selected in any view will carry through to all the other views, showing both the wire and the net it is connected to.
+
+<br />
+<video
+  src="/feature/nets-wire.mp4"
+  width={800}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+## View where Parts are used
+
+Selecting a [Part](/part) in the Parts screen will highlight where it is used in the other views.
+
+<br />
+<video
+  src="/feature/nets-part.mp4"
+  width={800}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>

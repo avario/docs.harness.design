@@ -4,9 +4,25 @@ sidebarTitle: "Splice Part"
 description: "Define splice parts that join two or more wires in a bundle. Add part number, manufacturer, and colour, then assign to splice components to drive BOM."
 ---
 
-import { Table } from 'nextra/components'
+import { Table } from 'nextra/components';
 
-# Splice Part
+export function IconSplice({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 60 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <rect x="0" y="17" width="60" height="6" rx="2" fill="#696969" />
+      <circle cx="30" cy="20" r="12" fill="#868E96" />
+    </svg>
+  );
+}
+
+# <IconSplice/> Splice Part
 A joint that connects two or more wires both electrically and mechanically.
 
 <br />
@@ -29,6 +45,10 @@ A joint that connects two or more wires both electrically and mechanically.
     <Table.Tr>
       <Table.Td>Description</Table.Td>
       <Table.Td>Description of the splice part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>URL</Table.Td>
+      <Table.Td>Link to datasheet or manufacturer website</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>Color</Table.Td>

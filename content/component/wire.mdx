@@ -5,23 +5,30 @@ description: "Add wires to your harness schematic with colour, stripe, and ident
 ---
 
 import { Callout } from "nextra/components";
-import { IconPlus, IconEye, IconLineDashed } from "@tabler/icons-react";
-
+import { IconMinus, IconPlus, IconEye, IconLineDashed } from "@tabler/icons-react";
 
 # Wire
 
-A `Wire` represents an electrical connection between two components in the harness. Each wire can be assigned a [wire part](/part/wire).
+A <IconMinus/> `Wire` represents an electrical connection between two components in the harness. Each wire can be assigned a [wire part](/part/wire).
 
 ## Adding a Wire
 
 In the [Schematic View](/quick-start/schematic), `left-click-drag` from the connection handle of one component to another to create a **Wire**.
 
 <br />
-<img src="/quick-start/add-wire.png" width={634} style={{ borderRadius: "8px" }} />
+<video
+  src="/quick-start/add-wire.mp4"
+  width={634}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
 
 ## Assigning Color
 
-If no part is assigned to a **Wire**, you can manually set its color. `right-click` the **Wire** in the [Schematic](/view/schematic), [Layout](/view/layout), or [Conection](/view/connections) view and choose a **Color** from the `Color` menu. More colors can be selected by clicking `More` at the bottom of the color list. The **Stripe** color can be assigned in the same way but selecting **Stripe** from the `Stripe` menu.
+If no part is assigned to a **Wire**, you can manually set its color. `right-click` the **Wire** in the [Schematic](/view/schematic), [Layout](/view/layout), or [Conection](/view/connections) view and choose a **Color** from the `Color` menu. More colors can be selected by clicking `More` at the bottom of the color list. The **Stripe** color can be assigned in the same way.
 
 <br />
 <img src="/component/wire-color.png" width={634} style={{ borderRadius: "8px" }} />
@@ -31,42 +38,38 @@ If no part is assigned to a **Wire**, you can manually set its color. `right-cli
 To add a color **Ident** band to a **Wire**, `right-click` the wire and then click the <IconPlus/> button next to `Ident`. You can add multiple color **Ident** bands to a **Wire** and they will be displayed in the order they were added. To remove a color band, `right-click` on the wire and then click the color square for that **Ident**.
 
 <br />
-<img src="/component/wire-ident.png" width="40%" style={{ borderRadius: "8px", minWidth: "300px" }} />
+<img
+  src="/component/wire-ident.png"
+  width="40%"
+  style={{ borderRadius: "8px", minWidth: "300px" }}
+/>
 <br />
 
 To add a label ident to a **Wire**, `right-click` the **Wire** and then click on the **Ident** placeholder text in the menu.
 
-The label background color can be set by `left-click` the <IconPlus/> button and adding a color ident. If the number of color idents matches the number of characters in the label, each character will be displayed with a background color corresponding to the color ident.
+The label background color can be set by adding a color ident with the <IconPlus/> button. If the number of color idents matches the number of characters in the label, each character will be displayed with a background color corresponding to the color ident.
 
 <br />
-<img src="/component/wire-label.png" width="40%" style={{ borderRadius: "8px", minWidth: "300px" }} />
+<img
+  src="/component/wire-label.png"
+  width="40%"
+  style={{ borderRadius: "8px", minWidth: "300px" }}
+/>
 
-## Layout a Wire
+## Adjusting the Wire Path
 
-To layout a **Wire** you use [Layout Points](/component/layout-point).
-
-## Dimmed Wire Path
-
-The **Dim path** feature improves schematic readability by visually breaking a **Wire**. This is useful when a **Wire** spans the full width of the schematic or crosses beneath other components. Dimming a wire has no effect on the physical harness and is purely for making the Schematic View visually cleaner.
-
-<br />
-To dim a wire path, right-click a wire and select **Dim path** from the dropdown menu.
-<br />
-<img src="/component/wire-hide-path.png" width={611} style={{ borderRadius: "8px" }} />
-A **Dimmed Wire** will show up as two arrows connected by a faint bezier line.
-<br />
-<img src="/component/wire-hidden.png" width={611} style={{ borderRadius: "8px" }} />
-<Callout>[Layout Points](/component/layout-point) can be added to dimmed wires.</Callout>
+You can set a custom path for a **Wire** using [Layout Points](/component/layout-point).
 
 ## Dashed Wires
 
-**Wires** appear as dashed lines in the [Schematic](/view/schematic) view when they are not yet routed through a [Bundle](/component/bundle) in the [Layout](/view/layout) view.
+**Wires** can appear as dashed lines in the [Schematic](/view/schematic) view when they are not yet routed through a [Bundle](/component/bundle) in the [Layout](/view/layout) view.
 
 <br />
 <img src="/component/wire-dashed.png" width={634} style={{ borderRadius: "8px" }} />
 
 <Callout>
-  To hide dashed lines deselect <IconLineDashed/> `Dash undefined routes` in the <IconEye/> `View options` menu in the bottom right corner of the **Schematic** view.
+  To hide dashed lines deselect <IconLineDashed /> `Dash undefined routes` in the <IconEye /> `View
+  options` menu in the bottom right corner of the **Schematic** view.
   <img src="/component/wire-dashed-hide.png" width={326} style={{ borderRadius: "8px" }} />
 </Callout>
 
@@ -78,6 +81,6 @@ A `Jumper Wire` (loopback wire) can be created by `left-click-drag` from one cav
 <img src="/component/wire-jumper.png" width={326} style={{ borderRadius: "8px" }} />
 
 <Callout>
-  A **Jumper Wire** is considered to have a length of **zero**. You may need to account for this when generating length
-  reports.
+  A **Jumper Wire** is considered to have a length of **zero**. You may need to account for this
+  when generating length reports.
 </Callout>

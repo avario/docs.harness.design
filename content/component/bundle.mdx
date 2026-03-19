@@ -4,38 +4,78 @@ sidebarTitle: "Bundle"
 description: "A bundle groups wires running the same path on your formboard. Set lengths in mm, cm, in, or ft and apply coverings like heatshrink or tape in the Layout view."
 ---
 
-import { Callout } from 'nextra/components'
+import { Callout } from "nextra/components";
+import { IconMinus, IconLabel, IconColorSwatch, IconEye, IconLineDashed, IconMenu2, IconSettings } from "@tabler/icons-react";
 
-# Bundle
+# <IconMinus/> Bundle
 
-A `Bundle` represents a group of wires. It can have a defined length and optional [coverings](/part/covering) applied.
+A <IconMinus/> `Bundle` represents a group of wires. It can have a defined length and assigned [coverings](/part/covering).
 
 Bundles can only be added in the [Layout View](/quick-start/layout).
 
 ## Adding Bundle
 
-In the Layout View, `left-click-drag` from the connection point of a connector, terminal, or branch point to another.  
-<br />  
-<img src="/component/bundle-add.png" width={634} style={{ borderRadius: '8px' }} />
+`left-click-drag` from the connection point of a [Connector](/component/connector), [Terminal](/component/terminal), or [Branch Point](/component/branch-point) to another.
+
+<br />
+<video
+  src="/quick-start/add-bundle.mp4"
+  width={634}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+<Callout>
+  [Layout Points](/component/layout-point) can be added to **Bundles** in the same way as **Wires**.
+</Callout>
 
 ## Setting Bundle Lengths
 
 Select a bundle, then `left-double-click` the input field to set its length.
 
-You can enter units such as `mm`, `cm`, `m`, `in`, `ft`, or `yd`. The appropriate unit will be applied to the length.
+<br />
+<video
+  src="/quick-start/add-dimension.mp4"
+  width={634}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
 
 <Callout>
-The default length unit can be set under **Main Menu → Preferences**.
+For length, you can enter the following units (set the default unit under <IconMenu2/> `Main Menu` → <IconSettings/> `Settings`):
+  - `mm` - Milimeter
+  - `cm` - Centimeter
+  - `m` - Meter
+  - `in` `"` - Inch
+  - `ft` `'` - Foot
+  - `yd` - Yard
 </Callout>
 
-<br />  
-<img src="/component/bundle-dimension.png" width={634} style={{ borderRadius: '8px' }} />
+## Setting the Bundle Path
 
-## Layout a Bundle
-To layout a **Bundle** you use [Layout Points](/component/layout-point).
+You can use [Layout Points](/component/layout-point) to adjust the path of a **Bundle**.
 
-## Empty Bundles
+## Bundle Label
 
-A bundle with no wires running through it will show up with a dotted line.  
-<br />  
-<img src="/component/bundle-empty.png" width={634} style={{ borderRadius: '8px' }} />
+`right-click` a **Bundle** and type the label name in the <IconLabel/> `Label` box. `left-click` the <IconColorSwatch/> button to select a color.
+
+<br />
+<video
+  src="/component/bundle-label.mp4"
+  width={634}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+## Dashed Bundle Lines
+
+A bundle with no wires running through it will be shown as a dashed line if <IconLineDashed /> `Dash undefined routes` is enabled in the <IconEye /> `View
+  options`.
