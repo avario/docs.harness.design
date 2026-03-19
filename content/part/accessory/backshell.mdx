@@ -4,10 +4,29 @@ sidebarTitle: "Backshell Part"
 description: "Add rigid backshell parts to connectors in your wire harness for cable strain relief and environmental protection. Includes part number and colour fields."
 ---
 
-import { Table } from 'nextra/components'
-import { Callout } from 'nextra/components'
+import { Table } from 'nextra/components';
+import { Callout } from 'nextra/components';
+export function IconBackshell({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 80 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <g transform="translate(15, 0)" fill="#868E96">
+        <rect x="0" y="10" width="30" height="20" rx="4" />
+        <rect x="20" y="6" width="20" height="28" />
+        <rect x="35" y="0" width="15" height="40" rx="4" fill="#656B71" />
+        <rect x="16" y="3" width="8" height="34" rx="4" fill="#656B71" />
+      </g>
+    </svg>
+  );
+}
 
-# Backshell Part
+# <IconBackshell/> Backshell Part
 A rigid or semi-rigid enclosure fitted to the rear of a connector for cable termination, strain relief, shielding, and environmental protection.
 <br />
 <Table>

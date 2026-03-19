@@ -28,7 +28,16 @@
       "Bash(cp public/parts/part-contact-all.png public/part/connector/contact-all.png)",
       "Bash(cp public/parts/part-contact-single.png public/part/connector/contact-single.png)",
       "Bash(cp public/parts/part-dust-cover.png public/part/connector/dust-cover.png)",
-      "Bash(cp public/parts/part-lock.png public/part/connector/lock.png)"
+      "Bash(cp public/parts/part-lock.png public/part/connector/lock.png)",
+      "Bash(cp \"c:/Users/Admin/OneDrive/Documents/GitHub/docs.harness.design/content/part/connector/index.mdx\" \"c:/Users/Admin/OneDrive/Documents/GitHub/docs.harness.design/content/part/connector.mdx\")",
+      "Bash(mv \"c:/Users/Admin/OneDrive/Documents/GitHub/docs.harness.design/content/part/connector\" \"c:/Users/Admin/OneDrive/Documents/GitHub/docs.harness.design/content/part/accessories\")",
+      "Bash(rm \"c:/Users/Admin/OneDrive/Documents/GitHub/docs.harness.design/content/part/accessories/index.mdx\")",
+      "Read(//tmp/**)",
+      "Bash(grep -rho href=[''][^'']*[''] c:UsersAdminOneDriveDocumentsGitHubdocs.harness.designcontent)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Admin\\OneDrive\\Documents\\GitHub\\docs.harness.design\\content\\part\\accessories",
+      "\\tmp"
     ]
   }
 }

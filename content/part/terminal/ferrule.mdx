@@ -1,0 +1,90 @@
+---
+title: "Ferrule Part — Terminal Parts | harness.design"
+sidebarTitle: "Ferrule Part"
+description: "Define ferrule terminal parts with wire gauge range and size for secure crimped wire end connections."
+---
+
+import { Table } from 'nextra/components';
+import { Callout } from 'nextra/components';
+import {
+  IconMenu2,
+  IconSettings,
+} from "@tabler/icons-react";
+export function IconFerrule({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 80 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <g transform="translate(10, 0)">
+        <rect x="10" y="14" width="50" height="12" rx="2" fill="#696969" />
+        <rect x="0" y="10" width="20" height="20" rx="4" fill="#B8B8B8" />
+      </g>
+    </svg>
+  );
+}
+
+# <IconFerrule/> Ferrule Part
+A simple metal tube that is crimped onto the end of a wire to provide a secure connection point. Ferrules prevent wire strands from fraying and ensure a reliable connection in screw terminal blocks or similar attachment points.
+<br />
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique identifier for the ferrule part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that produces the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Description</Table.Td>
+      <Table.Td>Description of the ferrule part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>URL</Table.Td>
+      <Table.Td>Link to datasheet or manufacturer website</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Size</Table.Td>
+      <Table.Td>Ferrule size can be gauge or diameter</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Min Gauge</Table.Td>
+      <Table.Td>Minimum wire size supported</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Max Gauge</Table.Td>
+      <Table.Td>Maximum wire size supported</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Color</Table.Td>
+      <Table.Td>Color of the ferrule's insulator</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+<Callout>
+For size, you can enter the following units (set the default unit under <IconMenu2/> `Main Menu` → <IconSettings/> `Settings`):
+  - `mm` - Milimeter
+  - `cm` - Centimeter
+  - `m` - Meter
+  - `in` `"` - Inch
+  - `ft` `'` - Foot
+  - `yd` - Yard
+  - `other` - You can enter strings for other usecase i.e. #8 for US Screw Gauge
+</Callout>
+<Callout>
+For gauge, you can enter the following units (set the default unit under <IconMenu2/> `Main Menu` → <IconSettings/> `Settings`):
+  - `mm` - Milimeters Squared (mm²)
+  - `awg` - American Wire Gauge (AWG)
+</Callout>

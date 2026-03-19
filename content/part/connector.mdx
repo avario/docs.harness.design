@@ -1,13 +1,30 @@
 ---
-asIndexPage: true
 title: "Connector Part — Connector Parts | harness.design"
 sidebarTitle: "Connector Part"
 description: "Define connector housing parts with cavity count, gender, colour, and shell. Assign to connectors in your schematic for cavity count validation and BOM."
 ---
 
 import { Table } from 'nextra/components'
+export function IconConnector({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 60 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <g transform="translate(12, 0)">
+        <rect x="28" y="4" width="8" height="32" rx="1" fill="#696969" />
+        <rect x="0" y="0" width="28" height="40" rx="16" ry="16" fill="#B8B8B8" />
+        <rect x="14" y="0" width="16" height="40" fill="#B8B8B8" />
+      </g>
+    </svg>
+  );
+}
 
-# Connector Part
+# <IconConnector/> Connector Part
 This represents the **housing** of a connector. A connector contains cavities to which contacts can be assigned. It can accept accessories such as locks, dust covers, boots, and backshells.
 <br />
 <Table>

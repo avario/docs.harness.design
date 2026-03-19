@@ -6,7 +6,27 @@ description: "Define resistor parts with resistance and power dissipation values
 
 import { Table } from 'nextra/components'
 
-# Resistor Part
+export function IconResistor({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 60 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <rect x="0" y="17" width="60" height="6" rx="2" fill="#696969" />
+      <g fill="#CEB58C" transform="translate(30, 10)">
+        <rect x="-10" y="0" width="20" height="20" />
+        <ellipse cx="-10" cy="10" rx="12" ry="12" />
+        <ellipse cx="10" cy="10" rx="12" ry="12" />
+      </g>
+    </svg>
+  );
+}
+
+# <IconResistor/> Resistor Part
 A passive electrical component that limits current flow and produces a specified voltage drop.
 
 <br />

@@ -5,11 +5,15 @@ description: "Assign signal labels to connector cavities. Signals propagate acro
 ---
 
 import { Callout } from "nextra/components";
-import { IconBolt, IconBoltOff, IconWorldBolt } from "@tabler/icons-react";
+import {
+  IconBolt,
+  IconBoltOff,
+  IconWorldBolt,
+} from "@tabler/icons-react";
 
-# Signals
+# <IconBolt/> Signals
 
-A signal is a custom text label that identifies the electrical signal carried by a conductor. For example `VCC` or `CAN H`.
+A <IconBolt/> `Signal` is a custom text label that identifies the electrical signal carried by a conductor. For example `VCC` or `CAN H`.
 
 Signals can be entered into the cavity of a connector or terminal. When a signal is assigned to a cavity, it automatically propagates to all other cavities/ terminals on the same [Net](/feature/nets), eliminating the need to manually enter the same label at every connection point.
 

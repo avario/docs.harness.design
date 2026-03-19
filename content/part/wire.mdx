@@ -8,7 +8,23 @@ import { Table } from 'nextra/components'
 import { Callout } from 'nextra/components'
 import { IconMenu2, IconSettings } from "@tabler/icons-react";
 
-# Wire Part
+export function IconWire({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 60 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <rect x="0" y="17" width="60" height="6" rx="2" fill="#E67700" />
+      <rect x="0" y="14" width="55" height="12" rx="2" fill="#868E96" />
+    </svg>
+  );
+}
+
+# <IconWire/> Wire Part
 A single insulated conductor used to carry electrical current or signals between connection points.
 <br />
 <Table>

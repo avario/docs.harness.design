@@ -7,7 +7,25 @@ description: "Define generic parts to represent components your harness connects
 import { Table } from 'nextra/components'
 import { Callout } from 'nextra/components'
 
-# Generic Part
+export function IconDevice({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 60 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <rect x="6" y="11" width="48" height="6" rx="2" fill="#696969" />
+      <rect x="6" y="23" width="48" height="6" rx="2" fill="#696969" />
+      <rect x="15" y="5" width="30" height="30" rx="2" fill="#495057" />
+      <rect x="22" y="12" width="16" height="16" rx="2" fill="#373C41" />
+    </svg>
+  );
+}
+
+# <IconDevice/> Generic Part
 A generic part represents something the harness is connected to that you want tracked in the BOM. Generic parts can only be assigned to [Groups](/component/group).
 <br />
 <Table>

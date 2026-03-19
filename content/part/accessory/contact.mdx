@@ -4,11 +4,33 @@ sidebarTitle: "Contact Part"
 description: "Define crimp or solder contact parts with min/max wire gauge and gender. Assign to individual cavities or all at once for gauge validation and BOM output."
 ---
 
-import { Table } from 'nextra/components'
-import { Callout } from 'nextra/components'
-import { IconMenu2, IconSettings } from "@tabler/icons-react";
+import { Table } from 'nextra/components';
+import { Callout } from 'nextra/components';
+import {
+  IconMenu2,
+  IconSettings,
+} from "@tabler/icons-react";
+export function IconContact({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 60 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <g fill="#F08C00" stroke="none">
+        <g transform="translate(0, 0)">
+          <polygon points="0,20 15,15 35,15 35,25 0,25" />
+          <rect x="30" y="15" width="30" height="10" rx="2" />
+        </g>
+      </g>
+    </svg>
+  );
+}
 
-# Contact Part
+# <IconContact/> Contact Part
 A conductive element installed in a connector housing that forms the electrical interface between mating connectors. This is often crimped or soldered to a wire and has a specific shape to fit into a corresponding connector housing.
 <br />
 <Table>

@@ -6,8 +6,26 @@ description: "Add wedge lock or secondary lock parts to connectors to prevent co
 
 import { Table } from 'nextra/components'
 import { Callout } from 'nextra/components'
+export function IconLock({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 80 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <g transform="translate(10, 0)" fill="#868E96">
+        <rect x="25" y="18" width="30" height="12" rx="4" />
+        <rect x="0" y="24" width="35" height="6" rx="4" />
+        <rect x="50" y="0" width="10" height="40" rx="4" fill="#656B71" />
+      </g>
+    </svg>
+  );
+}
 
-# Lock Part
+# <IconLock/> Lock Part
 A lock part, also known as a secondary lock or wedge lock, is used to prevent contacts from backing out after insertion.
 <br />
 <Table>

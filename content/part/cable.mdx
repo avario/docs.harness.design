@@ -6,9 +6,32 @@ description: "Define cable parts with core count, gauge, colour, and shield. Ass
 
 import { Table } from 'nextra/components'
 import { Callout } from 'nextra/components'
-import { IconMenu2, IconSettings } from "@tabler/icons-react";
+import {
+  IconMenu2,
+  IconSettings,
+} from "@tabler/icons-react";
 
-# Cable Part
+export function CableIcon({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 60 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <rect x="10" y="11.5" width="50" height="5" rx="2" fill="#E67700" />
+      <rect x="10" y="9" width="45" height="10" rx="2" fill="#FFFFFF" />
+      <rect x="10" y="23.5" width="50" height="5" rx="2" fill="#E67700" />
+      <rect x="10" y="21" width="45" height="10" rx="2" fill="#FFFFFF" />
+      <rect x="10" y="7" width="40" height="26" rx="2" fill="#868E96" />
+      <rect x="0" y="5" width="45" height="30" rx="2" fill="#495057" />
+    </svg>
+  );
+}
+
+# <CableIcon/> Cable Part
 
 A bundled assembly of one or more conductors with insulation and protective layers, used to transmit power or signals between components. A cable can have a shield assigned to it.
 

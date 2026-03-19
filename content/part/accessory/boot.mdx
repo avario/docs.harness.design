@@ -4,10 +4,29 @@ sidebarTitle: "Boot Part"
 description: "Add flexible boot parts to connectors in your wire harness for strain relief and environmental sealing. Assign from the accessories menu for BOM tracking."
 ---
 
-import { Table } from 'nextra/components'
-import { Callout } from 'nextra/components'
+import { Table } from 'nextra/components';
+import { Callout } from 'nextra/components';
+export function IconBoot({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 80 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <g transform="translate(15, 0)" fill="#868E96">
+        <rect x="0" y="13" width="30" height="14" rx="4" />
+        <polygon points="20,15 40,5 40,35 20,25" />
+        <rect x="40" y="0" width="10" height="40" rx="4" fill="#656B71" />
+        <rect x="0" y="10" width="10" height="20" rx="4" fill="#656B71" />
+      </g>
+    </svg>
+  );
+}
 
-# Boot Part
+# <IconBoot/> Boot Part
 A flexible protective sleeve fitted over a [Connector](/component/connector) or [Branch Point](/component/branch-point) for strain relief, environmental sealing, and abrasion resistance.
 <br />
 <Table>

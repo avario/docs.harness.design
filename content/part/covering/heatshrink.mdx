@@ -1,0 +1,82 @@
+---
+title: "Heatshrink Covering Part — Covering Parts | harness.design"
+sidebarTitle: "Heatshrink"
+description: "Define heatshrink covering parts with min/max diameter for insulation and strain relief on wire bundles."
+---
+
+import { Table } from 'nextra/components';
+import { Callout } from 'nextra/components';
+import {
+  IconMenu2,
+  IconSettings,
+} from "@tabler/icons-react";
+export function IconHeatshrink({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 80 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <g transform="translate(10, 0)" fill="#868E96">
+        <path d="M20,29 C14.6,29 8,29 2,29 L2,11 C8,11 14.6,11 20,11 C28,11 34,0 40,0 C44,0 50.6,0 55,0 L55,40 C50.6,40 44,40 40,40 C34,40 28,29 20,29 Z" />
+        <ellipse cx="2" cy="20" rx="5" ry="9" />
+        <ellipse cx="55" cy="20" rx="5" ry="20" fill="#656B71" />
+      </g>
+    </svg>
+  );
+}
+
+# <IconHeatshrink/> Heatshrink
+A heat-activated sleeve that shrinks to conform tightly around wires or bundles for insulation and strain relief.
+<br />
+<Table>
+  <thead>
+    <Table.Tr>
+      <Table.Th>Property</Table.Th>
+      <Table.Th>Description</Table.Th>
+    </Table.Tr>
+  </thead>
+  <tbody>
+    <Table.Tr>
+      <Table.Td>Part Number</Table.Td>
+      <Table.Td>Unique identifier for the heatshrink part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Manufacturer</Table.Td>
+      <Table.Td>Company that produces the part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Description</Table.Td>
+      <Table.Td>Description of the heatshrink part</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>URL</Table.Td>
+      <Table.Td>Link to datasheet or manufacturer website</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Min Diameter</Table.Td>
+      <Table.Td>Minimum diameter of the heatshrink</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Max Diameter</Table.Td>
+      <Table.Td>Maximum diameter of the heatshrink</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Color</Table.Td>
+      <Table.Td>Color of the heatshrink material</Table.Td>
+    </Table.Tr>
+  </tbody>
+</Table>
+
+<Callout>
+For diameter, you can enter the following units (set the default unit under <IconMenu2/> `Main Menu` → <IconSettings/> `Settings`):
+  - `mm` - Milimeter
+  - `cm` - Centimeter
+  - `m` - Meter
+  - `in` `"` - Inch
+  - `ft` `'` - Foot
+  - `yd` - Yard
+</Callout>
