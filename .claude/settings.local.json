@@ -33,7 +33,10 @@
       "Bash(mv \"c:/Users/Admin/OneDrive/Documents/GitHub/docs.harness.design/content/part/connector\" \"c:/Users/Admin/OneDrive/Documents/GitHub/docs.harness.design/content/part/accessories\")",
       "Bash(rm \"c:/Users/Admin/OneDrive/Documents/GitHub/docs.harness.design/content/part/accessories/index.mdx\")",
       "Read(//tmp/**)",
-      "Bash(grep -rho href=[''][^'']*[''] c:UsersAdminOneDriveDocumentsGitHubdocs.harness.designcontent)"
+      "Bash(grep -rho href=[''][^'']*[''] c:UsersAdminOneDriveDocumentsGitHubdocs.harness.designcontent)",
+      "WebSearch",
+      "WebFetch(domain:help.producthunt.com)",
+      "WebFetch(domain:www.producthunt.com)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Admin\\OneDrive\\Documents\\GitHub\\docs.harness.design\\content\\part\\accessories",
