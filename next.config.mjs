@@ -11,7 +11,8 @@ export default withNextra({
     async redirects() {
         return [
             // Features → Feature
-            { source: '/features', destination: '/feature', permanent: true },
+            { source: '/feature', destination: '/feature/nets', permanent: true },
+            { source: '/features', destination: '/feature/nets', permanent: true },
             { source: '/features/feature-local-data', destination: '/feature/local-data', permanent: true },
             { source: '/features/feature-mates', destination: '/feature/mates', permanent: true },
             { source: '/features/feature-mobile', destination: '/feature/mobile', permanent: true },
