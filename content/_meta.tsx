@@ -11,5 +11,5 @@ export default {
   updates: { theme: { collapsed: true } },
   legal: { theme: { collapsed: true } },
   about: { },
-  'full-release': { title: <span style={{ color: '#F49F00' }}>Full Release</span> },
+  'beta-end': { title: <span style={{ color: '#F49F00' }}>Beta Ending Soon</span> },
 }
