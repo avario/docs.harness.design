@@ -11,6 +11,7 @@ import {
 import {
   IconCircleCheck,
   IconCircleMinus,
+  IconLine,
 } from "@tabler/icons-react";
 
 # Beta Ending Soon
@@ -49,8 +50,8 @@ With the full release, we're introducing a **Pro plan** to support continued dev
       <Table.Td><IconCircleCheck style={{ verticalAlign: 'top', stroke: '#48A95F' }}/>Unlimited connections</Table.Td>
     </Table.Tr>
     <Table.Tr>
-      <Table.Td><IconCircleCheck style={{ verticalAlign: 'top', stroke: '#48A95F' }}/>Unlimited Parts</Table.Td>
-      <Table.Td><IconCircleCheck style={{ verticalAlign: 'top', stroke: '#48A95F' }}/>Unlimited Parts</Table.Td>
+      <Table.Td><IconCircleCheck style={{ verticalAlign: 'top', stroke: '#48A95F' }}/>Unlimited parts</Table.Td>
+      <Table.Td><IconCircleCheck style={{ verticalAlign: 'top', stroke: '#48A95F' }}/>Unlimited parts</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td><IconCircleCheck style={{ verticalAlign: 'top', stroke: '#48A95F' }}/>Open and inspect Pro harnesses</Table.Td>
@@ -69,10 +70,17 @@ A **connection** is a single conductor running between two components, such as a
 
 Some examples:
 - A single wire = **1 connection**
-- A 4-core cable = **4 connections**
-- A twisted pair = **1 connection per wire**
+- A 4-core cable with a shield = **5 connections**
+- Twisted wires = **1 connection per wire**
 
-## What happens if I cancel the pro plan?
+## How do I see the number of connections?
+
+Go to the <IconLine/>[Connections](/view/connections) view and scroll to the bottom to see the number of connections in the harness.
+
+<br />
+<video src="/video/connections.mp4" width={800} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
+
+## What happens if I cancel the Pro plan?
 
 If you cancel your Pro subscription, your plan will remain active until the end of your current billing period. Once the period ends, your account will revert to the Free plan, and any harnesses exceeding 100 connections will no longer accept new connections until the total is reduced below the limit. You can still use and edit those harnesses, but adding new connections will be restricted.
 
