@@ -36,7 +36,8 @@
       "Bash(grep -rho href=[''][^'']*[''] c:UsersAdminOneDriveDocumentsGitHubdocs.harness.designcontent)",
       "WebSearch",
       "WebFetch(domain:help.producthunt.com)",
-      "WebFetch(domain:www.producthunt.com)"
+      "WebFetch(domain:www.producthunt.com)",
+      "Bash(find c:/Users/Admin/OneDrive/Documents/GitHub/docs.harness.design/content -type f \\\\\\(-name *.md -o -name *.mdx -o -name *.txt \\\\\\))"
     ],
     "additionalDirectories": [
       "c:\\Users\\Admin\\OneDrive\\Documents\\GitHub\\docs.harness.design\\content\\part\\accessories",
