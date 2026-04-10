@@ -1,7 +1,7 @@
 ---
-title: "Beta has Ended — Wire Harness CAD | harness.design"
-sidebarTitle: "Beta has Ended"
-description: "harness.design moved out of beta on April 10th, 2026. Learn what changed, what stays free, and what's included in the Pro plan."
+title: "Pro Plan — Wire Harness CAD | harness.design"
+sidebarTitle: "Pro Plan"
+description: "Upgrade to Pro for unlimited connections per harness. Compare plans and learn how to upgrade."
 ---
 
 import {
@@ -12,32 +12,27 @@ import {
   IconCircleCheck,
   IconCircleMinus,
   IconLine,
+  IconMenu2,
+  IconUserCircle,
 } from "@tabler/icons-react";
 
-export function IconPro({ size = "1.5em", className = "" }) {
+export function IconPro({ size = "1.4em", className = "" }) {
   return (
     <img
       src="/images/general/pro.svg"
-      style={{ display: "inline", verticalAlign: "top", width: size, height: size, marginRight: "0.5em", marginTop: "0em", }}
+      style={{ display: "inline", verticalAlign: "middle", width: size, height: size, marginRight: "0.0em", marginBottom: "0.3em" }}
       className={className}
       alt="Pro"
     />
   );
 }
 
-# Beta has Ended
 
-<Callout type="warning">
-    The **harness.design** beta ended on **April 10th, 2026**. A **Pro** subscription is now required to add more than **100 connections** per harness.
-</Callout>
+# <IconPro/> Pro Plan
 
-## What Changed
+Two plans, one simple difference. Unlimited connections per harness.
 
-**harness.design** launched in beta at the end of October 2025. Since then, we've been building and refining the tool based on feedback from the community. On **April 10th, 2026**, we moved to full release.
-
-With the full release, we introduced a **Pro plan** to support continued development of the tool.
-
-## The Plans
+## What you get
 
 <br/>
 <Table>
@@ -71,11 +66,15 @@ With the full release, we introduced a **Pro plan** to support continued develop
   </tbody>
 </Table>
 
-## What happens to my existing harnesses?
+## How to Upgrade
 
-All harnesses created during the beta will remain fully accessible. If a harness exceeds 100 connections and you are not on the Pro plan, you will not be able to add new connections until the total drops below 100. You can still use and edit your harness, but adding new connections is restricted. To free up capacity, simply delete connections until you are back under the limit.
+In the app go to <IconMenu2/> `Main Menu` → <IconUserCircle/> `Account` and select <span style={{ color: '#F49F00' }}><IconPro/>Upgrade to Pro</span> or simply click [app.harness.design.com/upgrade](app.harness.design.com/upgrade).
 
-## What is a connection?
+Choose whether you want to pay Monthly or Annually and select <span style={{ color: '#F49F00' }}>`Upgrade now`</span>
+
+This will take you to a Stripe payment window where your payment will be processed.
+
+## What is a Connection
 
 A **connection** is a single conductor running between two components, such as a connector cavity, terminal, splice, resistor, or diode.
 
@@ -84,12 +83,16 @@ Some examples:
 - A 4-core cable with a shield = **5 connections**
 - Twisted wires = **1 connection per wire**
 
-## How do I see the number of connections?
+## How to see the Number of Connections
 
 Go to the <IconLine/>[Connections](/view/connections) view and scroll to the bottom to see the number of connections in the harness.
 
 <br />
 <video src="/video/connections.mp4" width={800} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
+
+## How to cancel the Pro Plan
+
+Go to the <IconMenu2/> `Main Menu` → <IconUserCircle/> `Account` select `Manage subscription`. Stripe will open up automatically. Select `Cancel subscription`.
 
 ## What happens if I cancel the Pro plan?
 
