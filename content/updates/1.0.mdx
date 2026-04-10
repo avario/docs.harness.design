@@ -1,0 +1,91 @@
+---
+title: "Release 1.0 — Wire Harness CAD | harness.design"
+sidebarTitle: "Release 1.0"
+description: "harness.design 1.0: out of beta, Pro Plan, select wires on net, wires routing through connectors, and updated Privacy Policy & Terms of Service."
+---
+
+import {
+  IconBolt,
+} from "@tabler/icons-react";
+
+export function IconPro({ size = "1.4em", className = "" }) {
+  return (
+    <img
+      src="/images/general/pro.svg"
+      style={{ display: "inline", verticalAlign: "middle", width: size, height: size, marginRight: "0.0em", marginBottom: "0.3em" }}
+      className={className}
+      alt="Pro"
+    />
+  );
+}
+
+
+# Release 1.0
+
+**harness.design** is no longer in Beta!
+
+We launched the beta at the end of October 2025. Since then, we've been building and refining the tool based on feedback from the community.
+
+With the full release, we're introduced a **Pro plan** to support continued development of the tool.
+
+### <span style={{ color: '#F49F00' }}><IconPro/> Pro Plan</span>
+
+**harness.design** now has a **Pro Plan** for larger harnesses.
+
+The **Free Plan** remains available with unlimited harnesses and parts, but is limited to **100 connections per harness**.
+
+[Read more...](/pro-plan)
+
+### Part Pricing
+
+Parts can now have a **price** assigned. For parts sold by length, a per-unit price can be set. The **Unit Price** and **Total Price** columns in the Parts View show the cost per part and the total cost across the harness.
+
+The currency symbol can be customised under [Harness Settings](/view/main-menu/settings#currency).
+
+<br/>
+<img src="/part/part-price.png" width={600} style={{ borderRadius: "8px" }} />
+
+[Read more...](/part#part-price)
+
+### Select Wires on Net
+
+All the wires on the same net can be selected. This makes assigning a Wire Part across a net significantly easier.
+
+<br />
+<video
+  src="/feature/nets-select.mp4"
+  width={800}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+[Read more...](/feature/nets#select-wires-on-net)
+
+### Wires Route through Connectors
+
+In the old system wires would not route through a [Connector](/component/connector), a [Branch Point](/component/branch-point) was required. See example below:
+
+<br/>
+<img src="/updates/1.0/wire-route-old.png" width={600} style={{ borderRadius: "8px" }} />
+
+In the new system wires eoute through a [Connector](/component/connector). See example below:
+
+<br/>
+<img src="/updates/1.0/wire-route-old.png" width={600} style={{ borderRadius: "8px" }} />
+
+### Privacy Policy & Terms of Service
+
+The [Privacy Policy](/legal/privacy-policy) and [Terms of Service](/legal/terms-of-service) have been updated.
+
+Here's a summary of what's changed.
+
+-  Paid plans are now live. harness.design is now free with a Pro upgrade. Free accounts are limited to 100 connections per harness. Pro is $29/month or $288/year (billed annually) for unlimited connections.
+
+-  Our Terms now explicitly state that harness.design is a documentation tool only. All designs should be independently verified for safety and compliance before manufacture or installation.
+
+-  By having an account, you may receive product updates and marketing emails from us. You can unsubscribe at any time using the link in any email.
+
+-  We've named our data processors explicitly — Supabase (storage), Stripe (payments), and Resend (email). NZ users also now have documented rights under the Privacy Act 2020.
