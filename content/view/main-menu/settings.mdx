@@ -4,16 +4,20 @@ sidebarTitle: "Settings"
 description: "Configure global defaults in harness.design: length units (mm, in, ft), gauge units (AWG or mm²), mouse or touch input type, and light or dark theme."
 ---
 
-import { IconSettings, IconMouse, IconHandClick, IconSun, IconMoon } from "@tabler/icons-react";
+import { IconSettings, IconUserCircle, IconMouse, IconHandClick, IconSun, IconMoon, IconFile } from "@tabler/icons-react";
 
 # <IconSettings/> Settings
 
 The <IconSettings/> `Settings` panel allows you to set default global settings for the software.
 
-<br />
-<img src="/view/main-menu/settings.png" width={400} style={{ borderRadius: "8px" }} />
+## <IconUserCircle/>User settings
 
-## Default length unit
+Settings in the panel affect all harnesses.
+
+<br />
+<img src="/view/main-menu/settings_1.png" width={400} style={{ borderRadius: "8px" }} />
+
+### Default length unit
 
 This sets the default length unit used throughout the software.
 
@@ -35,7 +39,7 @@ This sets the default length unit used throughout the software.
   <li>`yd` - Yard</li>
 </ul>
 
-## Default gauge unit
+### Default gauge unit
 
 This sets the default gauge unit used throughout the software. For metric `mm²` is used, while for imperial `AWG` is used.
 
@@ -53,7 +57,7 @@ This sets the default gauge unit used throughout the software. For metric `mm²`
   <li>`AWG` - American Wire Gauge</li>
 </ul>
 
-## Input type
+### Input type
 
 This allows you to force the software to a certain input type.
 
@@ -77,7 +81,7 @@ This allows you to force the software to a certain input type.
   <li>**Auto** - Automatically detect the input device</li>
 </ul>
 
-## Color scheme
+### Color scheme
 
 The software supports both light and dark color schemes.
 
@@ -98,4 +102,31 @@ The software supports both light and dark color schemes.
     <IconMoon /> **Dark** - Use dark color scheme
   </li>
   <li>**Auto** - Set light or dark color schemes based on the system settings</li>
+</ul>
+
+## <IconFile/>Harness settings
+
+Settings in the panel affect only the current harness.
+
+<br />
+<img src="/view/main-menu/settings_2.png" width={400} style={{ borderRadius: "8px" }} />
+
+### Currency
+
+Lets you select the currency symbol used in the document.
+
+<br />
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem",
+  }}
+>
+  <li>**$** - Dollar</li>
+  <li>**€** - Euro</li>
+  <li>**£** - Pound</li>
+  <li>**¥** - Yen</li>
 </ul>

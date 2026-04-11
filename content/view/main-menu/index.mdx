@@ -5,7 +5,32 @@ sidebarTitle: "Main Menu"
 description: "Overview of the main menu in harness.design: create, open, export, share, and manage harness projects. Access settings, account, and documentation here."
 ---
 
-import { IconMenu2, IconFile, IconFolder, IconFiles, IconFileExport, IconShare2, IconTrash, IconBook2, IconBrandDiscord, IconMessageReport, IconSettings, IconUserCircle, IconLogout } from "@tabler/icons-react";
+import {
+  IconMenu2,
+  IconFile,
+  IconFolder,
+  IconFiles,
+  IconFileExport,
+  IconShare2,
+  IconTrash,
+  IconBook2,
+  IconBrandDiscord,
+  IconMessageReport,
+  IconSettings,
+  IconUserCircle,
+  IconLogout
+} from "@tabler/icons-react";
+
+export function IconPro({ size = "1em", className = "" }) {
+  return (
+    <img
+      src="/images/general/pro.svg"
+      style={{ display: "inline", verticalAlign: "middle", width: size, height: size, marginRight: "0.5em" }}
+      className={className}
+      alt="Pro"
+    />
+  );
+}
 
 # <IconMenu2/> Main Menu
 
@@ -33,4 +58,5 @@ Click the <IconMenu2/> `Main Menu` icon in the top left corner.
   <li><IconSettings/> `Settings` - [Settings](/view/main-menu/settings) Opens the Settings panel</li>
   <li><IconUserCircle/> `Account` - [Account](/view/main-menu/account) opens the Account window</li>
   <li><IconLogout/> `Log out` - Logs out of the current account</li>
+  <li><IconPro/> `Upgrade to Pro` - Opens the upgrade plan screen. See [Pro Plan](/pro-plan) for more details</li>
 </ul>

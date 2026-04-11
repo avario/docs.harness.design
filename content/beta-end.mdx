@@ -1,7 +1,7 @@
 ---
-title: "Beta Ending Soon — Wire Harness CAD | harness.design"
-sidebarTitle: "Beta Ending Soon"
-description: "harness.design is moving out of beta on April 10th, 2026. Learn what's changing, what stays free, and what's included in the Pro plan."
+title: "Beta has Ended — Wire Harness CAD | harness.design"
+sidebarTitle: "Beta has Ended"
+description: "harness.design moved out of beta on April 10th, 2026. Learn what changed, what stays free, and what's included in the Pro plan."
 ---
 
 import {
@@ -14,17 +14,28 @@ import {
   IconLine,
 } from "@tabler/icons-react";
 
-# Beta Ending Soon
+export function IconPro({ size = "1.5em", className = "" }) {
+  return (
+    <img
+      src="/images/general/pro.svg"
+      style={{ display: "inline", verticalAlign: "top", width: size, height: size, marginRight: "0.5em", marginTop: "0em", }}
+      className={className}
+      alt="Pro"
+    />
+  );
+}
+
+# Beta has Ended
 
 <Callout type="warning">
-  The **harness.design** beta ends on **April 10th, 2026**. After that date, a **Pro** subscription will be required to add more than **100 connections** per harness.
+    The **harness.design** beta ended on **April 10th, 2026**. A **Pro** subscription is now required to add more than **100 connections** per harness.
 </Callout>
 
-## What's Changing
+## What Changed
 
-**harness.design** launched in beta at the end of October 2025. Since then, we've been building and refining the tool based on feedback from the community. On **April 10th, 2026**, we're moving to full release.
+**harness.design** launched in beta at the end of October 2025. Since then, we've been building and refining the tool based on feedback from the community. On **April 10th, 2026**, we moved to full release.
 
-With the full release, we're introducing a **Pro plan** to support continued development of the tool.
+With the full release, we introduced a **Pro plan** to support continued development of the tool.
 
 ## The Plans
 
@@ -33,7 +44,7 @@ With the full release, we're introducing a **Pro plan** to support continued dev
   <thead>
     <Table.Tr>
       <Table.Th>Free Plan</Table.Th>
-      <Table.Th><span style={{ color: '#F49F00' }}>Pro Plan</span></Table.Th>
+      <Table.Th><span style={{ color: '#F49F00' }}><IconPro/>Pro Plan</span></Table.Th>
     </Table.Tr>
   </thead>
   <tbody>

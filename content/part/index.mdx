@@ -6,8 +6,18 @@ description: "Create, edit, import, and assign parts in the harness.design parts
 ---
 
 import { Callout } from "nextra/components";
-import { IconEdit } from "@tabler/icons-react";
-import { IconPlus, IconSquareRoundedPlus, IconFileImport, IconNut, IconEye, IconAlertHexagon } from "@tabler/icons-react";
+import {
+  IconEdit,
+  IconPlus,
+  IconSquareRoundedPlus,
+  IconFileImport,
+  IconNut,
+  IconEye,
+  IconAlertHexagon,
+  IconMenu2,
+  IconSettings,
+  IconFile,
+} from "@tabler/icons-react";
 
 # Parts
 
@@ -50,11 +60,12 @@ Select the project you want to import from, then choose the parts you want to im
 3. In the harness you want to add parts to simply import them from the `Master Parts Library` harness
 
 **Note:** You can have multiple tabs of **harness.design** open at once. This means you can have your `Master Parts Library` harness and current harness open at the same time
+
 </Callout>
 
 ## Editing Parts
 
-`left-double-click` on a part name or click the <IconEdit /> button to view and edit a part's properties.
+`left-double-click` on a part name or click the <IconEdit/> button to view and edit a part's properties.
 
 <br />
 <img src="/part/part-edit.png" width={634} style={{ borderRadius: "8px" }} />
@@ -68,9 +79,26 @@ Parts are assigned to components in the [Layout](/quick-start/layout) or [Schema
 
 <Callout>Quantities are automatically updated as parts are assigned to components.</Callout>
 
+## Part Price
+
+Part price can be entered by double clicking a part to edit it properties and setting the **Price** value. Parts that have a length can be assigned a length unit.
+
+Total price of the individual parts and entire harness can be seen on the [Parts](/view/parts) view. Enable the **Unit Price** and **Total Price** under the <IconEye/>`View Options` menu on the **Parts** view.
+
+<br />
+<img src="/part/part-price.png" width={600} style={{ borderRadius: "8px" }} />
+
+<Callout>
+  You can change the currency symbol used in the document by going to <IconMenu2 />
+  `Main Menu` → <IconSettings />
+  `Settings` → <IconFile />
+  `Harness settings` → `Currency` and selecting the desired symbol. [Learn
+  more](/view/main-menu/settings#currency)
+</Callout>
+
 ## Removing Parts from BOM
 
-Parts can be removed from the BOM by `right-clicking` a component in the **Layout** or **Schematic View** with a part assigned and deselecting <IconNut/> `Include in BOM`.
+Parts can be removed from the BOM by `right-clicking` a component in the **Layout** or **Schematic View** with a part assigned and deselecting <IconNut/>`Include in BOM`.
 
 <br />
 <img src="/part/part-remove-bom.png" width={307} style={{ borderRadius: "8px" }} />
@@ -81,5 +109,5 @@ To show components with unassigned parts, in the <IconEye/> `View Options` at th
 
 - `Red warning symbol` No assigned part
 - `Orange warning symbol` No assigned part (Excluded from BOM)
-<br />
-<img src="/part/part-unassigned.png" width={957} style={{ borderRadius: "8px" }} />
+  <br />
+  <img src="/part/part-unassigned.png" width={957} style={{ borderRadius: "8px" }} />
