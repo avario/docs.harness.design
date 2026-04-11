@@ -4,10 +4,7 @@ sidebarTitle: "Pro Plan"
 description: "Upgrade to Pro for unlimited connections per harness. Compare plans and learn how to upgrade."
 ---
 
-import {
-  Callout,
-  Table,
-} from 'nextra/components'
+import { Callout, Table } from "nextra/components";
 import {
   IconCircleCheck,
   IconCircleMinus,
@@ -20,13 +17,19 @@ export function IconPro({ size = "1.4em", className = "" }) {
   return (
     <img
       src="/images/general/pro.svg"
-      style={{ display: "inline", verticalAlign: "middle", width: size, height: size, marginRight: "0.0em", marginBottom: "0.3em" }}
+      style={{
+        display: "inline",
+        verticalAlign: "middle",
+        width: size,
+        height: size,
+        marginRight: "0.0em",
+        marginBottom: "0.3em",
+      }}
       className={className}
       alt="Pro"
     />
   );
 }
-
 
 # <IconPro/> Pro Plan
 
@@ -34,41 +37,67 @@ Two plans, one simple difference. Unlimited connections per harness.
 
 ## What you get
 
-<br/>
+<br />
 <Table>
   <thead>
     <Table.Tr>
       <Table.Th>Free Plan</Table.Th>
-      <Table.Th><span style={{ color: '#F49F00' }}><IconPro/>Pro Plan</span></Table.Th>
+      <Table.Th>
+        <span style={{ color: "#F49F00" }}>
+          <IconPro /> Pro Plan
+        </span>
+      </Table.Th>
     </Table.Tr>
   </thead>
   <tbody>
     <Table.Tr>
       <Table.Td>$0 USD</Table.Td>
-      <Table.Td>$29 USD per month (billed monthly)<br/> $24 USD per month (billed annually)</Table.Td>
+      <Table.Td>
+        $29 USD per month (billed monthly)
+        <br /> $24 USD per month (billed annually)
+      </Table.Td>
     </Table.Tr>
     <Table.Tr>
-      <Table.Td><IconCircleCheck style={{ verticalAlign: 'top', stroke: '#48A95F' }}/>Unlimited harnesses</Table.Td>
-      <Table.Td><IconCircleCheck style={{ verticalAlign: 'top', stroke: '#48A95F' }}/>Unlimited harnesses</Table.Td>
+      <Table.Td>
+        <IconCircleCheck style={{ verticalAlign: "top", stroke: "#48A95F" }} /> Unlimited harnesses
+      </Table.Td>
+      <Table.Td>
+        <IconCircleCheck style={{ verticalAlign: "top", stroke: "#48A95F" }} /> Unlimited harnesses
+      </Table.Td>
     </Table.Tr>
     <Table.Tr>
-      <Table.Td><IconCircleMinus style={{ verticalAlign: 'top', stroke: '#808080' }}/>100 connections per harness</Table.Td>
-      <Table.Td><IconCircleCheck style={{ verticalAlign: 'top', stroke: '#48A95F' }}/>Unlimited connections</Table.Td>
+      <Table.Td>
+        <IconCircleMinus style={{ verticalAlign: "top", stroke: "#808080" }} /> 100 connections per
+        harness
+      </Table.Td>
+      <Table.Td>
+        <IconCircleCheck style={{ verticalAlign: "top", stroke: "#48A95F" }} /> Unlimited
+        connections Unlimited connections
+      </Table.Td>
     </Table.Tr>
     <Table.Tr>
-      <Table.Td><IconCircleCheck style={{ verticalAlign: 'top', stroke: '#48A95F' }}/>Unlimited parts</Table.Td>
-      <Table.Td><IconCircleCheck style={{ verticalAlign: 'top', stroke: '#48A95F' }}/>Unlimited parts</Table.Td>
+      <Table.Td>
+        <IconCircleCheck style={{ verticalAlign: "top", stroke: "#48A95F" }} /> Unlimited parts
+      </Table.Td>
+      <Table.Td>
+        <IconCircleCheck style={{ verticalAlign: "top", stroke: "#48A95F" }} /> Unlimited parts
+      </Table.Td>
     </Table.Tr>
     <Table.Tr>
-      <Table.Td><IconCircleCheck style={{ verticalAlign: 'top', stroke: '#48A95F' }}/>Open and inspect Pro harnesses</Table.Td>
-      <Table.Td><IconCircleCheck style={{ verticalAlign: 'top', stroke: '#48A95F' }}/>Cancel anytime</Table.Td>
+      <Table.Td>
+        <IconCircleCheck style={{ verticalAlign: "top", stroke: "#48A95F" }} /> Open and inspect Pro
+        harnesses
+      </Table.Td>
+      <Table.Td>
+        <IconCircleCheck style={{ verticalAlign: "top", stroke: "#48A95F" }} /> Cancel anytime
+      </Table.Td>
     </Table.Tr>
   </tbody>
 </Table>
 
 ## How to Upgrade
 
-In the app go to <IconMenu2/> `Main Menu` → <IconUserCircle/> `Account` and select <span style={{ color: '#F49F00' }}><IconPro/>Upgrade to Pro</span> or simply click [app.harness.design.com/upgrade](app.harness.design.com/upgrade).
+In the app go to <IconMenu2/> `Main Menu` → <IconUserCircle/> `Account` and select <span style={{ color: '#F49F00' }}><IconPro/>Upgrade to Pro</span> or simply click [https://app.harness.design/upgrade](https://app.harness.design/upgrade).
 
 Choose whether you want to pay Monthly or Annually and select <span style={{ color: '#F49F00' }}>`Upgrade now`</span>
 
@@ -79,6 +108,7 @@ This will take you to a Stripe payment window where your payment will be process
 A **connection** is a single conductor running between two components, such as a connector cavity, terminal, splice, resistor, or diode.
 
 Some examples:
+
 - A single wire = **1 connection**
 - A 4-core cable with a shield = **5 connections**
 - Twisted wires = **1 connection per wire**
@@ -88,7 +118,15 @@ Some examples:
 Go to the <IconLine/>[Connections](/view/connections) view and scroll to the bottom to see the number of connections in the harness.
 
 <br />
-<video src="/video/connections.mp4" width={800} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
+<video
+  src="/video/connections.mp4"
+  width={800}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
 
 ## How to cancel the Pro Plan
 
