@@ -24,4 +24,5 @@ export default {
   about: { },
   'beta-end': { title: <span style={{ color: '#F49F00' }}>Beta has Ended</span> },
   'pro-plan': { title: <span style={{ color: '#F49F00' }}><IconPro/>Pro Plan</span> },
+  'partnership-program': { display: 'hidden' },
 }

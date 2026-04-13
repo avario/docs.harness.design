@@ -7,8 +7,10 @@ export async function generateMetadata(props) {
     const params = await props.params
     const { metadata } = await importPage(params.mdxPath)
     const ogPath = params.mdxPath?.join('/') ?? ''
+    const isHidden = params.mdxPath?.join('/') === 'partnership-program'
     return {
         ...metadata,
+        ...(isHidden && { robots: { index: false, follow: false } }),
         openGraph: {
             type: 'article',
             siteName: 'harness.design docs',

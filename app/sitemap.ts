@@ -23,7 +23,7 @@ function getMdxFiles(dir: string, base = ''): string[] {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const contentDir = join(process.cwd(), 'content')
-  const paths = getMdxFiles(contentDir)
+  const paths = getMdxFiles(contentDir).filter(p => p !== '/partnership-program')
 
   return paths.map((path) => ({
     url: `${BASE_URL}${path}`,
