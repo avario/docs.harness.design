@@ -33,3 +33,10 @@
   border: 1px solid #424242; */
   stroke: #fff;
 }
+
+/* Word wrap for plain text code blocks */
+.wrap-code pre {
+  overflow-x: visible !important;
+  white-space: pre-wrap;
+  word-break: break-word;
+}

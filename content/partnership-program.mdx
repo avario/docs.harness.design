@@ -124,6 +124,70 @@ If you'd like to mention us in a post or use our branding on your race car as pa
   </div>
 </div>
 
+### Brand Colors
+
+<br/>
+<table className="not-prose" style={{ width: "100%", borderCollapse: "collapse" }}>
+  <thead>
+    <tr>
+      <th style={{ textAlign: "left", padding: "8px 12px", borderBottom: "1px solid var(--x-color-border)" }}></th>
+      <th style={{ textAlign: "left", padding: "8px 12px", borderBottom: "1px solid var(--x-color-border)" }}>Hex</th>
+      <th style={{ textAlign: "left", padding: "8px 12px", borderBottom: "1px solid var(--x-color-border)" }}>RGB</th>
+      <th style={{ textAlign: "left", padding: "8px 12px", borderBottom: "1px solid var(--x-color-border)" }}>CMYK</th>
+    </tr>
+  </thead>
+  <tbody>
+    {[
+      { hex: "#40C057", rgb: "64, 192, 87",   cmyk: "67, 0, 55, 25" },
+      { hex: "#FCC419", rgb: "252, 196, 25",  cmyk: "0, 22, 90, 1" },
+      { hex: "#FB7E15", rgb: "251, 126, 21",  cmyk: "0, 50, 92, 2" },
+      { hex: "#FB5252", rgb: "251, 82, 82",   cmyk: "0, 79, 67, 2" },
+      { hex: "#7A50F3", rgb: "122, 80, 243",  cmyk: "49, 67, 0, 5" },
+    ].map(({ hex, rgb, cmyk }) => (
+      <tr key={hex}>
+        <td style={{ padding: "8px 12px" }}>
+          <span style={{ display: "inline-block", width: "32px", height: "32px", borderRadius: "6px", backgroundColor: hex }} />
+        </td>
+        <td style={{ padding: "8px 12px", fontFamily: "monospace" }}>{hex}</td>
+        <td style={{ padding: "8px 12px", fontFamily: "monospace" }}>rgb({rgb})</td>
+        <td style={{ padding: "8px 12px", fontFamily: "monospace" }}>cmyk({cmyk})</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+
+
+### Copy
+
+Use any of these if you need them. Adapt them to your own voice, or ignore them entirely and just say what feels natural.
+
+#### Short description
+
+For bios, link-in-bio pages, and forum signatures.
+<br/>
+
+<div className="wrap-code">
+```txt
+harness.design is a web-based CAD tool for designing wire harnesses. Fast, visual, and nothing to install, just open a browser and start designing.
+```
+</div>
+
+#### Long description
+
+For video descriptions, forum posts, or anywhere you have more space.
+<br/>
+
+<div className="wrap-code">
+```txt
+harness.design is a web-based CAD tool for designing wire harnesses, built for home builders, garage fabricators, race teams, and professional wiring shops. You work directly on the canvas, dragging, connecting, and arranging your harness interactively, and the result is a clean, readable design you can produce in a fraction of the time. No install required, just open a browser and start designing.
+```
+</div>
+
+#### Hashtags
+
+Brand tag: `#harnessdotdesign`
+
 ## Our Socials
 
 In case you want to tag us in a post.
