@@ -5,7 +5,7 @@ description: "Add wires to your harness schematic with colour, stripe, and ident
 ---
 
 import { Callout } from "nextra/components";
-import { IconMinus, IconPlus, IconEye, IconLineDashed } from "@tabler/icons-react";
+import { IconMinus, IconPlus, IconEye, IconLineDashed, IconMenu2, IconSettings } from "@tabler/icons-react";
 
 # Wire
 
@@ -32,6 +32,10 @@ If no part is assigned to a **Wire**, you can manually set its color. `right-cli
 
 <br />
 <img src="/component/wire-color.png" width={634} style={{ borderRadius: "8px" }} />
+
+<Callout>
+  Wire stripe style can be changed under <IconMenu2/>`Main Menu` → <IconSettings/>`Settings`. [Click here](/view/main-menu/settings#wire-stripes) for more information
+</Callout>
 
 ## Assigning Idents
 
