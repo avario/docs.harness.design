@@ -34,6 +34,62 @@
   stroke: #fff;
 }
 
+/* App screenshot carousel */
+.ac-root {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+.ac-viewport { overflow: hidden; }
+.ac-track { display: flex; }
+.ac-slide { flex: 0 0 100%; min-width: 0; }
+.ac-img { display: block; width: 100%; border-radius: 8px; }
+
+.ac-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.15s;
+}
+.ac-btn:hover { background: rgba(0, 0, 0, 0.7); }
+.ac-btn--prev { left: 12px; }
+.ac-btn--next { right: 12px; }
+
+.ac-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 0 4px;
+  background: transparent;
+}
+.ac-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: #ccc;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+}
+.dark .ac-dot { background: #555; }
+.ac-dot--active { background: #40C057; }
+.dark .ac-dot--active { background: #40C057; }
+
 /* Word wrap for plain text code blocks */
 .wrap-code pre {
   overflow-x: visible !important;
