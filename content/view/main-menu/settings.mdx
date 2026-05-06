@@ -1,7 +1,7 @@
 ---
 title: "Settings — Wire Harness CAD | harness.design"
 sidebarTitle: "Settings"
-description: "Configure global defaults in harness.design: length units (mm, in, ft), gauge units (AWG or mm²), mouse or touch input type, and light or dark theme."
+description: "Configure settings in harness.design: set your input type and color scheme globally, or set default length units, gauge units, and currency per harness."
 ---
 
 import { IconSettings, IconUserCircle, IconMouse, IconHandClick, IconSun, IconMoon, IconFile } from "@tabler/icons-react";
@@ -16,46 +16,6 @@ Settings in the panel affect all harnesses.
 
 <br />
 <img src="/view/main-menu/settings_1.png" width={400} style={{ borderRadius: "8px" }} />
-
-### Default length unit
-
-This sets the default length unit used throughout the software.
-
-<br />
-<ul
-  style={{
-    listStyleType: "none",
-    paddingLeft: 0,
-    display: "flex",
-    flexDirection: "column",
-    gap: "0.5rem",
-  }}
->
-  <li>`mm` - Millimeter</li>
-  <li>`cm` - Centimeter</li>
-  <li>`m` - Meter</li>
-  <li>`in` - Inch</li>
-  <li>`ft` - Foot</li>
-  <li>`yd` - Yard</li>
-</ul>
-
-### Default gauge unit
-
-This sets the default gauge unit used throughout the software. For metric `mm²` is used, while for imperial `AWG` is used.
-
-<br />
-<ul
-  style={{
-    listStyleType: "none",
-    paddingLeft: 0,
-    display: "flex",
-    flexDirection: "column",
-    gap: "0.5rem",
-  }}
->
-  <li>`Metric` - Millimeters squared (mm²)</li>
-  <li>`AWG` - American Wire Gauge</li>
-</ul>
 
 ### Input type
 
@@ -113,6 +73,46 @@ Settings in the panel affect only the current harness.
 
 <br />
 <img src="/view/main-menu/settings_2.png" width={400} style={{ borderRadius: "8px" }} />
+
+### Default length unit
+
+This sets the default length unit used in the harness.
+
+<br />
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem",
+  }}
+>
+  <li>`mm` - Millimeter</li>
+  <li>`cm` - Centimeter</li>
+  <li>`m` - Meter</li>
+  <li>`in` - Inch</li>
+  <li>`ft` - Foot</li>
+  <li>`yd` - Yard</li>
+</ul>
+
+### Default gauge unit
+
+This sets the default gauge unit in the harness. For metric `mm²` is used, while for imperial `AWG` is used.
+
+<br />
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem",
+  }}
+>
+  <li>`Metric` - Millimeters squared (mm²)</li>
+  <li>`AWG` - American Wire Gauge</li>
+</ul>
 
 ### Currency
 
