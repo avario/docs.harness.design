@@ -5,6 +5,12 @@ description: "Define splice parts that join two or more wires in a bundle. Add p
 ---
 
 import { Table } from 'nextra/components';
+import { Callout } from 'nextra/components';
+import {
+  IconMenu2,
+  IconSettings,
+  IconFile,
+} from "@tabler/icons-react";
 
 export function IconSplice({ size = "1em", className = "" }) {
   return (
@@ -22,7 +28,7 @@ export function IconSplice({ size = "1em", className = "" }) {
   );
 }
 
-# <IconSplice/>Splice Part
+# <IconSplice/> Splice Part
 A joint that connects two or more wires both electrically and mechanically.
 
 <br />
@@ -58,8 +64,27 @@ A joint that connects two or more wires both electrically and mechanically.
       <Table.Td>Color</Table.Td>
       <Table.Td>Color of the splice housing or insulation</Table.Td>
     </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Min Gauge</Table.Td>
+      <Table.Td>Minimum wire size supported</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Max Gauge</Table.Td>
+      <Table.Td>Maximum wire size supported</Table.Td>
+    </Table.Tr>
   </tbody>
 </Table>
+
+<Callout>
+For size, you can enter the following units (set the default unit under <IconMenu2/>`Main Menu` → <IconSettings/>`Settings` → <IconFile/>`Harness settings`):
+  - `mm` - Milimeter
+  - `cm` - Centimeter
+  - `m` - Meter
+  - `in` `"` - Inch
+  - `ft` `'` - Foot
+  - `yd` - Yard
+  - `other` - You can enter strings for other usecase i.e. #8 for US Screw Gauge
+</Callout>
 
 ## Assigning a Splice Part
 
