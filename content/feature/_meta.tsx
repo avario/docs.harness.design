@@ -1,4 +1,13 @@
-import { IconTopologyRing3, IconPlugConnected, IconBolt, IconCopyCheck, IconShare2, IconDeviceMobile, IconBraces } from "@tabler/icons-react";
+import {
+  IconTopologyRing3,
+  IconPlugConnected,
+  IconBolt,
+  IconCopyCheck,
+  IconShare2,
+  IconDeviceMobile,
+  IconBraces,
+  IconPointer,
+} from "@tabler/icons-react";
 
 const IconSplitScreen = () => (
   <svg
@@ -25,6 +34,7 @@ export default {
   "nets": { title: <><IconTopologyRing3 className="tabler-icon"/> Nets</> },
   "mates": { title: <><IconPlugConnected className="tabler-icon"/> Mates</> },
   "signals": { title: <><IconBolt className="tabler-icon"/> Signals</> },
+  "selection-info": { title: <><IconPointer className="tabler-icon"/> Selection Info</> },
   "validation": { title: <><IconCopyCheck className="tabler-icon"/> Validation</> },
   "sharing": { title: <><IconShare2 className="tabler-icon"/> Sharing</> },
   "mobile": { title: <><IconDeviceMobile className="tabler-icon"/> Mobile Support</> },

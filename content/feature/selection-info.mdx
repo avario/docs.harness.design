@@ -1,0 +1,40 @@
+---
+title: "Selection Information — Wire Harness CAD | harness.design"
+sidebarTitle: "Selection Information"
+description: "Built-in harness validation checks wire gauge, cavity counts, contact compatibility, unassigned wires and lengths, and connector/terminal mate errors."
+---
+
+import { Callout } from 'nextra/components';
+import {
+  IconPointer,
+} from "@tabler/icons-react";
+
+# <IconPointer/>Selection Information
+
+Real-time summary of the selected items. Shows counts, gauge totals, and key properties without opening any panels.
+
+<br />
+<video
+  src="\feature\selection-info.mp4"
+  width={800}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+## How It Works
+
+The information shown updates based on what is selected. The table below describes what to expect for each selection type.
+
+| Selection | Information Shown |
+|-----------|-------------------|
+| Any single component | Component ID |
+| Multiple components | Number of components selected |
+| One or more wires | Total gauge; length (single wire only) |
+| Single splice | Number of connected wires; total gauge |
+| Single bundle | Total number of wires; total gauge |
+| Single connector | Number of connected wires |
+| Single terminal | Number of connected wires; total gauge |
+
