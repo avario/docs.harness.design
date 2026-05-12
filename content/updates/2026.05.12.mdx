@@ -1,20 +1,37 @@
 ---
-title: "April 28, 2026 — Wire Harness CAD | harness.design"
-sidebarTitle: "April 28, 2026"
-description: "harness.design release for 28 April 2026: note color customization for improved schematic organization and visual clarity."
+title: "May 12, 2026 — Wire Harness CAD | harness.design"
+sidebarTitle: "May 12, 2026"
+description: "harness.design release for 12 May 2026: selection info panel, adding components to existing groups, preset covering lengths, and multi-select shortcuts."
 ---
 
-# April 28, 2026
+# May 12, 2026
 
-This release introduces the ability to customize note colors in schematics and layouts.
+This release introduces real-time selection info, the ability to add components to existing groups, preset covering lengths, and several smaller improvements.
 
-### Adjusting Note Color
+### Selection Info
 
-Notes can now be colored to help organize and visually distinguish information in your schematics and layouts. Right-click a note and select Color to choose from available color options.
+Real-time summary of the selected items. Shows counts, gauge totals, and key properties without opening any panels.
 
 <br />
 <video
-  src="/component/note-add.mp4"
+  src="\feature\selection-info.mp4"
+  width={800}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+[Read more...](\feature\selection-info.mdx)
+
+### Add component to pre existing group
+
+You can now add components to an existing group.
+
+<br />
+<video
+  src="/component/group-add-to.mp4"
   width={600}
   style={{ borderRadius: "8px" }}
   autoPlay
@@ -23,4 +40,26 @@ Notes can now be colored to help organize and visually distinguish information i
   playsInline
 />
 
-[Read more...](/component/note#adjusting-note-color)
+[Read more...](/component/group#adding-components-to-a-group)
+
+### Preset covering lengths
+
+The lengths of coverings can be pre set for assigning to branch points, connectors and terminals.
+
+<br />
+<video
+  src="/updates/2026.05.12/preset.mp4"
+  width={600}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+### Other Improvements
+
+- Coverings can now be added to connectors and terminals
+- Added min max gage logic to splices
+- Updated multi select shortcuts (ctrl now works on windows)
+- Duplicate harness added to open menu
