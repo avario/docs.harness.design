@@ -12,8 +12,7 @@ import {
   IconSquareRoundedPlus,
   IconFileImport,
   IconNut,
-  IconEye,
-  IconAlertHexagon,
+  IconColumns3,
   IconMenu2,
   IconSettings,
   IconFile,
@@ -83,7 +82,7 @@ Parts are assigned to components in the [Layout](/quick-start/layout) or [Schema
 
 Part price can be entered by double clicking a part to edit it properties and setting the **Price** value. Parts that have a length can be assigned a length unit.
 
-Total price of the individual parts and entire harness can be seen on the [Parts](/view/parts) view. Enable the **Unit Price** and **Total Price** under the <IconEye/>`View Options` menu on the **Parts** view.
+Total price of the individual parts and entire harness can be seen on the [Parts](/view/parts) view. Show the **Unit Price** and **Total Price** under the <IconColumns3/>`Columns` menu.
 
 <br />
 <img src="/part/part-price.png" width={600} style={{ borderRadius: "8px" }} />
@@ -99,12 +98,3 @@ Parts can be removed from the BOM by `right-clicking` a component in the **Layou
 
 <br />
 <img src="/part/part-remove-bom.png" width={307} style={{ borderRadius: "8px" }} />
-
-## Unassigned Parts
-
-To show components with unassigned parts, in the <IconEye/>`View Options` at the bottom right of the Layout and Schematic Views select <IconAlertHexagon/>`Unassigned part warnings`.
-
-- `Red warning symbol` No assigned part
-- `Orange warning symbol` No assigned part (Excluded from BOM)
-  <br />
-  <img src="/part/part-unassigned.png" width={957} style={{ borderRadius: "8px" }} />

@@ -4,7 +4,16 @@ sidebarTitle: "Connections View"
 description: "The connections view shows every wire as a sortable wiring table. Assign wire parts, add idents, switch direction, and export as a CSV wiring table."
 ---
 
-import { IconLine, IconSwitchHorizontal, IconArrowDown, IconEye, IconNut, IconCheck, IconLock, IconTable } from "@tabler/icons-react";
+import {
+  IconLine,
+  IconSwitchHorizontal,
+  IconArrowDown,
+  IconTimeline,
+  IconSparkle2,
+  IconColumns3,
+  IconTable,
+} from "@tabler/icons-react";
+
 import { Callout } from "nextra/components";
 
 # <IconLine/>Connections
@@ -21,8 +30,6 @@ This is the list of all your **Connections** in the harness.
 `right-click` a connection to assign a [Wire Part](/part/wire), add an [Ident](/component/wire#assigning-idents) or <IconSwitchHorizontal/>`Switch direction` of the from/to.
 
 Click the <IconArrowDown/> arrow in the column header to sort the table by that column.
-
-See [Keyboard Shortcuts & Mouse Gestures](/shortcuts) for how to navigate the **Connections** view.
 
 ## Assign Connections
 
@@ -50,28 +57,7 @@ Type in the to or from to change the assigned location of a connection.
     gap: "0.5rem"
   }}
 >
-  <li><IconEye/>`View options` - Opens the view options menu</li>
-</ul>
-
-## View Options Menu Parts
-<br/>
-<ul
-  style={{
-    listStyleType: "none",
-    paddingLeft: 0,
-    display: "flex",
-    flexDirection: "column",
-    gap: "0.5rem"
-  }}
->
-  <li><IconNut/>`Show Contacts` - Toggles visibility of the Contacts that are used to terminate connections</li>
-  <li><IconCheck/>`Conductor` - Toggles the Conductor column on and off</li>
-  <li><IconCheck/>`Part Number` - Toggles the Part Number column on and off</li>
-  <li><IconCheck/>`From` - Toggles the From column on and off</li>
-  <li><IconCheck/>`To` - Toggles the To column on and off</li>
-  <li><IconCheck/>`Twisted With` - Toggles the Twisted With column on and off</li>
-  <li><IconCheck/>`Ident` - Toggles the Ident column on and off</li>
-  <li><IconCheck/>`Group` - Toggles the Group column on and off</li>
-  <li><IconCheck/>`Net` - Toggles the Net column on and off</li>
-  <li><IconCheck/>`Length` - Toggles the Length column on and off</li>
+  <li><IconTimeline/>`Highlight nets` - Toggles between showing the complete path of conductance and showing what is directly connected to the selected component. [More info](/feature/nets#highlight-wires-attached-to-selected-part)</li>
+  <li><IconSparkle2/>`Show only highlighted connections` - Filters the list to only show connections that are currently selected</li>
+  <li><IconColumns3/>`Columns` - Hide/ show connection details in the table</li>
 </ul>

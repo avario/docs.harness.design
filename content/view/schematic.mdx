@@ -21,18 +21,14 @@ export const IconOrthogonal = () => (
 );
 import {
   IconManualGearbox,
-  IconArrowBackUp,
-  IconArrowForwardUp,
   IconArrowsMaximize,
   IconArrowsMinimize,
-  IconEye,
-  IconLock,
-  IconNut,
-  IconAlertHexagon,
-  IconHash,
-  IconBolt,
+  IconTimeline,
   IconLineDashed,
-  IconMinus,
+  IconNut,
+  IconLabel,
+  IconHash,
+  IconAlertCircle,
 } from "@tabler/icons-react";
 import { Callout } from "nextra/components";
 
@@ -51,8 +47,6 @@ This is where [Components](/component) are placed and connected together with [W
 
 `right-click` any component to assign a [Part](/part).
 
-See [Keyboard Shortcuts & Mouse Gestures](/shortcuts) for how to navigate the **Schematic** view.
-
 ## Buttons
 
 <br />
@@ -66,12 +60,6 @@ See [Keyboard Shortcuts & Mouse Gestures](/shortcuts) for how to navigate the **
   }}
 >
   <li>
-    <IconArrowBackUp/>`Undo` - Undoes the last action
-  </li>
-  <li>
-    <IconArrowForwardUp/>`Redo` - Redoes the last undone action
-  </li>
-  <li>
     <IconArrowsMaximize/>`Fit to view` - Fits the entire schematic within the viewable area{" "}
   </li>
   <li>
@@ -79,35 +67,7 @@ See [Keyboard Shortcuts & Mouse Gestures](/shortcuts) for how to navigate the **
     selected item
   </li>
   <li>
-    <IconEye/>`View options` - Opens the view options menu
-  </li>
-</ul>
-
-## View Options Menu
-
-<br />
-<ul
-  style={{
-    listStyleType: "none",
-    paddingLeft: 0,
-    display: "flex",
-    flexDirection: "column",
-    gap: "0.5rem",
-  }}
->
-  <li>
-    <IconNut/>`Show parts` - Toggles the visibility of assigned parts
-  </li>
-  <li>
-    <IconAlertHexagon/>`Unassigned part warnings` - Toggles warnings for components with
-    unassigned parts
-  </li>
-  <li>
-    <IconHash/>`Show component IDs` - Toggles visibility of the unique ID on and off for all
-    components. [More info](/component/splice#viewing-splice-component-ids)
-  </li>
-  <li>
-    <IconBolt/>`Show nets for selection` - Toggles between showing the complete path of
+    <IconTimeline/>`Highlight nets` - Toggles between showing the complete path of
     conductance and showing what is directly connected to the selected component. [More
     info](/feature/nets#highlight-wires-attached-to-selected-part)
   </li>
@@ -116,11 +76,15 @@ See [Keyboard Shortcuts & Mouse Gestures](/shortcuts) for how to navigate the **
     routed through a Bundle in the Layout view. [More info](/component/wire#dashed-wires)
   </li>
   <li>
-    <IconOrthogonal/>`Make all paths orthogonal` - Automatically adds layout points to all wires
-    make them orthogonal (90-degree angles) [More
-    info](/component/layout-point#make-all-paths-orthogonal)
+    <IconNut/>`Show parts` - Toggles visibility of assigned parts
   </li>
   <li>
-    <IconMinus/>`Clear all layout points` - Deletes all layout points from wires
+    <IconLabel/>`Show destinations` - Toggles the visibility of destinations. [More info](/feature/destinations)
+  </li>
+  <li>
+    <IconHash/>`Show component IDs` - Toggles the visibility of ID's on components
+  </li>
+  <li>
+    <IconAlertCircle/>`Show warnings` - Toggles the visibility of errors on the harness
   </li>
 </ul>
