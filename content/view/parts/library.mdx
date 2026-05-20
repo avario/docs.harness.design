@@ -1,0 +1,105 @@
+---
+title: "Part Library — BOM | harness.design"
+sidebarTitle: "Parts Library"
+description: "Manage a shared parts library across all your harnesses. Add, push, and pull parts by part number to keep your harness and library in sync."
+---
+
+import { 
+  IconPackage,
+  IconPackageOff,
+  IconPlus,
+  IconColumns3,
+  IconMenu2Filled,
+  IconFileOff,
+  IconAlertHexagon,
+  IconPackageImport,
+  IconFileImport,
+  IconFile,
+} from "@tabler/icons-react";
+import { Callout } from "nextra/components";
+
+# <IconPackage/>Parts Library
+
+
+
+The <IconPackage/>`Parts Library` contains parts that are shared across all your harnesses. Parts in the part library can be added to your harness, or parts in your harness can be added to the library.
+
+The part library uses the part number to keep track of parts.
+
+<Callout>
+  If there is a duplicate part number in your harness, you will get a <IconAlertHexagon style={{ stroke: "#FB5252" }}/>`Duplicate part number` warning.
+</Callout>
+
+<br />
+<video
+  src="/view/parts/library.mp4"
+  width={800}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+## Buttons
+<br/>
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem"
+  }}
+>
+  <li><IconPlus/>`Add part` - Adds a new part to the Parts library</li>
+  <li><IconColumns3/>`Columns` - Hide/ show part details in the library</li>
+</ul>
+
+##  Opening the Parts Library
+
+To open the parts library, either open it through the <IconMenu2Filled/>`Main Menu` -> <IconPackage/>`Parts Library`, click the <IconPackage/>`Parts Library` button at the bottom left of the **Parts** view, or press the `L` key on the keyboard.
+
+##  Adding a Part to the Library
+
+To add a part to the parts library, click the <IconPlus/>`Plus` button in the bottom left corner
+
+##  Adding a Part from your harness to the Parts Library
+
+- Click the <IconPackageOff/>`Not in Parts Library` button on the part you wish to add in the Parts view
+- `right click` on the part you wish to add in the Parts view and select `Add to Parts Library`
+
+## Adding a part from the Parts Library to your harness
+
+Open the Parts Library
+
+- Click the <IconFileOff/>`Not in harness document` button on the part you wish to add to your harness
+- `right click` on the part you wish to add to your harness and `Add to harness document`
+
+## Part Syncing
+
+If a part has the same part number in your harness and the parts library, it is considered the same part.
+
+A part is considered in sync if all the properties are the same.
+
+### In Sync
+
+If a part in your harness is **in sync** with the Parts Library it will show
+
+- <IconPackage style={{ stroke: "#40C057" }}/>`Synced with Parts Library` in your harness
+- <IconFile style={{ stroke: "#40C057" }}/>`Synced with harness document` in your Parts Library
+
+### Out of Sync
+
+If a part in your harness is **out of sync** with the Parts Library it will show
+
+- <IconPackage style={{ stroke: "#FCC419" }}/>`Out of sync with Parts Library` in your harness
+- <IconFile style={{ stroke: "#FCC419" }}/>`Out of sync with Parts Library` in your Parts Library
+
+## Part Updating
+
+If a part in your harness is out of sync with the parts library you can either push or pull it
+
+<IconPackageImport/>`Push to Parts Library` Updates the parts library to match this part in your harness
+
+<IconFileImport/>`Pull from Parts Library` Updates this part in your harness to match the parts library
