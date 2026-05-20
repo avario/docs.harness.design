@@ -7,6 +7,7 @@ import {
   IconDeviceMobile,
   IconBraces,
   IconPointer,
+  IconLabel,
 } from "@tabler/icons-react";
 
 const IconSplitScreen = () => (
@@ -35,6 +36,7 @@ export default {
   "mates": { title: <><IconPlugConnected className="tabler-icon"/> Mates</> },
   "signals": { title: <><IconBolt className="tabler-icon"/> Signals</> },
   "selection-info": { title: <><IconPointer className="tabler-icon"/> Selection Info</> },
+  "destinations": { title: <><IconLabel className="tabler-icon"/> Destinations</> },
   "validation": { title: <><IconCopyCheck className="tabler-icon"/> Validation</> },
   "sharing": { title: <><IconShare2 className="tabler-icon"/> Sharing</> },
   "mobile": { title: <><IconDeviceMobile className="tabler-icon"/> Mobile Support</> },
