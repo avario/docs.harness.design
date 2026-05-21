@@ -8,6 +8,7 @@ import {
   IconBraces,
   IconPointer,
   IconLabel,
+  IconSearch,
 } from "@tabler/icons-react";
 
 const IconSplitScreen = () => (
@@ -37,6 +38,7 @@ export default {
   "signals": { title: <><IconBolt className="tabler-icon"/> Signals</> },
   "selection-info": { title: <><IconPointer className="tabler-icon"/> Selection Info</> },
   "destinations": { title: <><IconLabel className="tabler-icon"/> Destinations</> },
+  "search": { title: <><IconSearch className="tabler-icon"/> Search</> },
   "validation": { title: <><IconCopyCheck className="tabler-icon"/> Validation</> },
   "sharing": { title: <><IconShare2 className="tabler-icon"/> Sharing</> },
   "mobile": { title: <><IconDeviceMobile className="tabler-icon"/> Mobile Support</> },

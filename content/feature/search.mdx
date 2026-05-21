@@ -1,0 +1,45 @@
+---
+title: "Search — Wire Harness CAD | harness.design"
+sidebarTitle: "Search"
+description: "Search across all views to instantly find and jump to any component, connection, or part. Filters the active view and highlights matches on the canvas."
+---
+
+import { Callout } from 'nextra/components';
+import {
+  IconSearch,
+} from "@tabler/icons-react";
+
+# <IconSearch/>Search
+
+Search filters what is visible and, on the canvas views, lets you jump directly to any component.
+
+<br />
+<video
+  src="/feature/search.mp4"
+  width={800}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+## Opening Search
+
+Click the <IconSearch/> icon in the top right of any view, or press `Space` to bring the search bar into focus.
+
+<Callout>
+  In [Split Screen](/feature/split-screen), `Space` opens search in whichever view your cursor is currently hovering over.
+</Callout>
+
+Press `Escape` to dismiss the search bar and clear the current query.
+
+## Schematic & Layout
+
+Typing a query on the [Schematic](/view/schematic) or [Layout](/view/layout) view dims any components that do not match, and shows all matching components in a list below the search bar.
+
+Click any result in the list to select that component and centre it on the canvas. This is the fastest way to locate a specific component in a large harness without panning around.
+
+## Connections & Parts
+
+On the [Connections](/view/connections) and [Parts](/view/parts) views, search filters the table rows in real time. Every property of each row is searched, so you can match on any field.
