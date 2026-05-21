@@ -1,7 +1,7 @@
 ---
 title: "Export Options — Wire Harness CAD | harness.design"
 sidebarTitle: "Export Options"
-description: "Export your harness as PDF schematic, PDF layout, CSV wiring table, CSV BOM, or raw JSON data. Reference for all export formats in harness.design."
+description: "Export your harness as PDF schematic, PDF layout, Excel wiring table, CSV BOM, or raw JSON data. Reference for all export formats in harness.design."
 ---
 
 import { IconFileExport, IconFile, IconTable, IconBraces } from "@tabler/icons-react";
@@ -25,7 +25,10 @@ Exports a `PDF` version of the [Layout](/view/layout) view.
 
 ## <IconTable/>Wiring table
 
-Exports a `CSV` version of the [Connections](/view/connections) view.
+Exports an Excel `.xlsx` file based on the [Connections](/view/connections) view. The file contains a complete list of all connections, followed by individual sheets that break down connections per connector.
+
+<br />
+<img src="/view/main-menu/export-xlsx.png" width={800} style={{ borderRadius: "8px" }} />
 
 ## <IconTable/>BOM
 
