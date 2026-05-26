@@ -21,6 +21,7 @@ import {
   IconMenu2,
   IconPlus,
   IconHash,
+  IconPencil,
 } from "@tabler/icons-react";
 
 export const IconTwistedWires = () => (
@@ -77,7 +78,7 @@ Answers to the questions we hear most often. If you can't find what you're looki
       "name": "Is there a global parts library I can reuse across projects?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not yet. A master parts library is our most-requested feature and is actively in development. In the meantime, the best workaround is to create a dedicated harness called something like \"Master Parts Library\", build all your common parts there, and then import them into any new harness using the Import Parts button in the Parts View."
+        "text": "Yes. The Parts Library lets you manage a shared collection of parts across all your harnesses. Parts can be pushed to or pulled from the library by part number. See the Parts Library documentation for full details."
       }
     },
     {
@@ -85,7 +86,7 @@ Answers to the questions we hear most often. If you can't find what you're looki
       "name": "Do I have to recreate parts for every new harness?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You don't have to start from scratch. Until the global library is released, you can import parts from any existing harness."
+        "text": "No. The Parts Library lets you maintain a shared collection of parts that can be added to any harness. See the Parts Library documentation for full details."
       }
     },
     {
@@ -93,7 +94,7 @@ Answers to the questions we hear most often. If you can't find what you're looki
       "name": "Are there built-in connector libraries (e.g. Deutsch, TE)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We're planning to offer pre-built global libraries of common connectors and parts that all users can draw from. This will likely roll out alongside the master parts library feature."
+        "text": "Not yet. The Parts Library lets you build and maintain your own shared library, but pre-built libraries of common connectors (e.g. Deutsch, TE) are not currently included. This is something we may look at in the future."
       }
     },
     {
@@ -160,6 +161,14 @@ Answers to the questions we hear most often. If you can't find what you're looki
         "text": "right-click on the connector in the Schematic View and select Width."
       }
     },
+    {
+      "@type": "Question",
+      "name": "How do I add custom cavity numbering?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Custom cavity labels are set via the Connector Part assigned to the connector. Edit the connector part and click the pencil button next to the Designations property to open the designations editor. See the Cavity Designations documentation for full details."
+      }
+    },
   ]
 })}} />
 
@@ -169,15 +178,15 @@ Answers to the questions we hear most often. If you can't find what you're looki
 
 ### Is there a global parts library I can reuse across projects?
 
-Not yet. A master parts library is our most-requested feature and is actively in development. In the meantime, the best workaround is to create a dedicated harness called something like "Master Parts Library", build all your common parts there, and then import them into any new harness using the <IconFileImport/>`Import Parts` button in the **Parts View**.
+Yes. The [Parts Library](/view/parts/library) lets you manage a shared collection of parts across all your harnesses. Parts can be pushed to or pulled from the library by part number, keeping everything in sync.
 
 ### Do I have to recreate parts for every new harness?
 
-You don't have to start from scratch. Until the global library is released, you can import parts from any existing harness. See [Importing Parts](/part#importing-parts) for the step-by-step guide.
+No. The [Parts Library](/view/parts/library) lets you maintain a shared collection of parts that can be added to any harness. See [Parts Library](/view/parts/library) for full details.
 
 ### Are there built-in connector libraries (e.g. Deutsch, TE)?
 
-We're planning to offer pre-built global libraries of common connectors and parts that all users can draw from. This will likely roll out alongside the master parts library feature.
+Not yet. The [Parts Library](/view/parts/library) lets you build and maintain your own shared library, but pre-built libraries of common connectors (e.g. Deutsch, TE) are not currently included. This is something we may look at in the future.
 
 ---
 
@@ -238,7 +247,7 @@ We can't offer a freeform colour picker because wire colours need to work correc
 
 ### How do I add custom cavity numbering?
 
-Double click on the cavity number and enter a desired value.
+Custom cavity labels are set via the **Connector Part** assigned to the connector. Edit the connector part and click the <IconPencil/> button next to the **Designations** property to open the designations editor. See [Cavity Designations](/part/connector#cavity-designations) for full details.
 
 ### Can I rotate connectors?
 

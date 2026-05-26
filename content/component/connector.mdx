@@ -42,7 +42,7 @@ import {
 
 A <IconConnector/>`Connector` joins electrical parts, allowing easy connection and disconnection of circuits. It serves as a termination point in the harness. Connectors can be assigned a [Connector Part](/part/connector).
 
-The following parts can be assigned to a **Connector**:
+The following parts can be assigned through a [Connector Configuration](/part/connector#connector-configurations) and are automatically applied to any [Connector Component](/component/connector) when that [Connector Part](/part/connector) is assigned.
 
 - [Contact Part](/part/accessory/contact) - **Connectors** can have multiple **cavities**, and each cavity can be assigned a **contact**.
 - [Lock Part](/part/accessory/lock) - Some **connectors** require a **lock** to secure the contacts in place.
@@ -84,12 +84,18 @@ Shells can be connected to just like cavities.
 <br />
 <img src="/component/connector-shell-connection.png" width={534} style={{ borderRadius: "8px" }} />
 
-## Editing Connector Names and Cavities
+## Editing Connector and Cavity Names
 
 `left-double-click` any **Connector Name**, **Cavity Number** or **Cavity Label** to edit it. Pressing `tab` will move to the next label, pressing `shift` `tab` will move to the previous label.
 
 <br />
 <img src="/component/connector-label.png" width={336} style={{ borderRadius: "8px" }} />
+
+## Editing Cavity Designations
+
+Cavity Designations are the labels used to identify each cavity in a connector. When a [Connector Part](/connector/part) is assigned to a **Connector Component**, the connector inherits these designations.
+
+To edit the [Cavity Designations](/part/connector#cavity-designations) you will need to assign a [Connector Part](/connector/part) and change it's **Designations** under the parts properties
 
 ## Adjusting the Width of a Connector
 

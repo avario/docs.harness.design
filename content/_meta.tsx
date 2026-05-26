@@ -22,7 +22,6 @@ export default {
   legal: { theme: { collapsed: true } },
   'brand-assets': { },
   about: {},
-  'beta-end': { title: <span style={{ color: '#F49F00' }}>Beta has Ended</span> },
   'pro-plan': { title: <span style={{ color: '#F49F00', pointerEvents: 'none' }}><IconPro/>Pro Plan</span>, theme: { collapsed: true } },
   'partnership-program': { display: 'hidden' },
 }

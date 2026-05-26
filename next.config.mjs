@@ -67,6 +67,9 @@ export default withNextra({
             { source: '/part/accessories/dust-cover', destination: '/part/accessory/dust-cover', permanent: true },
             { source: '/part/accessories/lock', destination: '/part/accessory/lock', permanent: true },
 
+            // Beta End → Pro Plan
+            { source: '/beta-end', destination: '/pro-plan', permanent: true },
+
             // Shortcuts → Main Menu
             { source: '/shortcuts', destination: '/view/main-menu', permanent: true },
 
