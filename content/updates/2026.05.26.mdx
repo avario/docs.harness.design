@@ -1,31 +1,23 @@
 ---
-title: "May 21, 2026 — Wire Harness CAD | harness.design"
-sidebarTitle: "May 21, 2026"
-description: ""
+title: "May 26, 2026 — Wire Harness CAD | harness.design"
+sidebarTitle: "May 26, 2026"
+description: "harness.design release for 26 May 2026: shared parts library, tabular editing for fast wiring, search across all views, connector configurations, cavity designations, and Excel wiring table export."
 ---
 
-# May 21, 2026
+# May 26, 2026
 
-
+This release introduces the parts library, along with tabular editing for faster wiring, global search, connector configurations, cavity designations, and an upgraded Excel export.
 
 ### Parts Library
 
 Our most requested feature is here. Build and maintain a shared parts catalog that works across all your harnesses. Reuse parts without re-entering data, and keep everything in sync as your library evolves.
 
 <br />
-<video
-  src="/view/parts/library.mp4"
-  width={800}
-  style={{ borderRadius: "8px" }}
-  autoPlay
-  loop
-  muted
-  playsInline
-/>
+<img src="/updates/2026.05.26/parts-library.png" width={800} style={{ borderRadius: "8px" }} />
 
 [Read more...](/view/parts/library)
 
-### Destinations
+### Tabular Editing
 
 A faster way to wire large harnesses. Search for any connector or cavity by name and create a connection instantly, without dragging across the schematic.
 
@@ -58,6 +50,24 @@ Find any component, connection, or part across all views. On the canvas, jump di
 />
 
 [Read more...](\feature\search)
+
+### Connector Configurations
+
+Define a set of default parts to bundle with a connector. Add multiple configurations to represent different assembly variants, such as sealed and unsealed, and they apply automatically when the connector part is assigned.
+
+<br />
+<img src="/part/connector.png" width={600} style={{ borderRadius: "8px" }} />
+
+[Read more...](/part/connector#connector-configurations)
+
+### Cavity Designations
+
+Define how each cavity in a connector is labeled. Choose from sequential numbers, letters, a row-column grid, or enter labels individually for each cavity.
+
+<br />
+<img src="/part/connector-designations.png" width={400} style={{ borderRadius: "8px" }} />
+
+[Read more...](/part/connector#cavity-designations)
 
 ### Excel Wiring Table
 

@@ -24,8 +24,18 @@ export function IconConnector({ size = "1em", className = "" }) {
   );
 }
 
+import {
+  IconPlus,
+  IconTrash,
+  IconNut,
+  IconHexagonOff,
+  IconPencil,
+} from "@tabler/icons-react";
+
 # <IconConnector/> Connector Part
+
 This represents the **housing** of a connector. A connector contains cavities to which contacts can be assigned. It can accept accessories such as locks, dust covers, boots, and backshells.
+
 <br />
 <Table>
   <thead>
@@ -60,6 +70,10 @@ This represents the **housing** of a connector. A connector contains cavities to
       <Table.Td>Total number of cavities in the connector</Table.Td>
     </Table.Tr>
     <Table.Tr>
+      <Table.Td>Designations</Table.Td>
+      <Table.Td>Labels used to identify each cavity (e.g. 1, 2, 3 or A1, B2). [Read more...](/part/connector#cavity-designations)</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
       <Table.Td>Gender</Table.Td>
       <Table.Td>Specifies whether the connector is male or female</Table.Td>
     </Table.Tr>
@@ -73,3 +87,44 @@ This represents the **housing** of a connector. A connector contains cavities to
     </Table.Tr>
   </tbody>
 </Table>
+
+## Connector Configurations
+
+A **Connector Configuration** defines a set of default parts to bundle with a connector part. When a connector part is assigned to a [Connector](/component/connector), any parts defined in the selected configuration are automatically applied to it.
+
+Each connector part includes a **Default Configuration**. Additional configurations can be added to represent different assembly variants, for example, a sealed variant with a boot and backshell and an unsealed variant without.
+
+<br />
+<img src="/part/connector.png" width={600} style={{ borderRadius: "8px" }} />
+
+### Adding a Configuration
+
+Click <IconPlus/>`Add configuration` to create a new configuration and give it a name.
+
+### Deleting a Configuration
+
+Click <IconTrash/>`Delete` next to the configuration you wish to remove.
+
+### Adding Parts to a Configuration
+
+Click <IconNut/>`Part` button to select or search for a part from the drop down.
+
+### Unassign Parts to a Configuration
+
+Click the part you wish to remove and select <IconHexagonOff/>`Unassign part`.
+
+## Cavity Designations
+
+**Cavity Designations** are the labels used to identify each cavity in a connector. When a connector part is assigned to a [Connector](/component/connector), the connector inherits these designations.
+
+Click the <IconPencil/> button next to the **Designations** property to open the designations editor.
+
+<br />
+<img src="/part/connector-designations.png" width={400} style={{ borderRadius: "8px" }} />
+
+The following templates are available:
+
+- **Numbers**: Sequential numbers (e.g. 1, 2, 3, 4).
+- **Alphabetical**: Sequential letters (e.g. A, B, C, D). Letters that may be confused with numbers can be optionally skipped.
+- **Grid**: A row and column grid (e.g. A1, A2, B1, B2). The count and label style for rows and columns are configured independently.
+- **Custom**: Enter a label for each cavity individually.
