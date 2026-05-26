@@ -69,16 +69,4 @@ export default {
   "cable": { title: <><IconCable/> Cable Part</> },
   "generic": { title: <><IconGeneric/> Generic Part</> },
   "connector": { title: <><IconConnector/> Connector Part</> },
-  "accessory": {
-    title: <> Accessories</>,
-    theme: { collapsed: true }
-  },
-  "terminal": {
-    title: <> Terminals</>,
-    theme: { collapsed: true }
-  },
-  "covering": {
-    title: <> Coverings</>,
-    theme: { collapsed: true }
-  },
 };

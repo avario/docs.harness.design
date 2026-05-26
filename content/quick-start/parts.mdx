@@ -6,33 +6,40 @@ description: "Step-by-step guide to creating parts in harness.design, editing pr
 
 import { Steps } from 'nextra/components'
 import { Callout } from 'nextra/components'
-import { IconNut, IconEdit, IconPlus } from "@tabler/icons-react";
+import { IconNut, IconPencil, IconPlus } from "@tabler/icons-react";
 
 # Create and Assign Parts
 
 <Steps>
 ### Open the <IconNut/>[Parts](/view/parts) View  
+
 Click the view dropdown and select **Parts**.  
 <br />  
 <img src="/quick-start/parts-view-open.png" width={256} style={{ borderRadius: '8px' }} />
 
-### Add [Parts](/part)  
+### Add [Parts](/part)
+
 In the Parts View, `right-click` on the canvas or click the <IconPlus/>`Add part` button in the bottom-left corner to add a new [Part](/part) .
 
 <br />
 <img src="/part/part-add.png" width={222} style={{ borderRadius: "8px" }} />
 
 ### Edit Part Properties  
-`left-double-click` on a part name or click the <IconEdit /> button to view and edit a part's properties.
+
+`left-double-click` on a part name or `right-click` the part and select  the <IconPencil />`Edit`.
 
 <br />
 <img src="/part/part-edit.png" width={634} style={{ borderRadius: "8px" }} />
 
 ### Assign Parts  
-`right-click` on a component in the [Schematic](/view/schematic) or [Layout](/view/layout) view and select the part you want to assign. The quantities shown in the [Parts](/view/parts) View will be automatically updated as you assign parts.
+
+`right-click` on a component in the [Schematic](/view/schematic) or [Layout](/view/layout) and select <IconNut/>`Assign Part`. Search for or select that part you would like to assign. The quantities shown in the [Parts](/view/parts) View will be automatically updated as you assign parts.
+
 <br />  
 <video src="/quick-start/assign-part.mp4" width={634} style={{ borderRadius: '8px' }} autoPlay loop muted playsInline />
+
 <Callout>
-  [left-double-click] a part to edit its properties.
+  The visibility of parts can be toggled on the **Layout** and **Schematic** screens by `left-clicking` <IconNut/>`Show parts` in the bottom right hand corner of the view.
 </Callout>
+
 </Steps>
