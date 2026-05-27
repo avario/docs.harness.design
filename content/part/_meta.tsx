@@ -6,11 +6,19 @@ const IconWire = () => (
 );
 
 const IconConnector = () => (
-  <svg width={20} height={20} viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" style={{ display: "inline", verticalAlign: "middle", marginRight: "0.4em" }}>
+  <svg width={20} height={20} viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg" style={{ display: "inline", verticalAlign: "middle", marginRight: "0.4em" }}>
     <g transform="translate(12, 0)">
-      <rect x="28" y="4" width="8" height="32" rx="1" fill="#696969" />
-      <rect x="0" y="0" width="28" height="40" rx="16" ry="16" fill="#B8B8B8" />
-      <rect x="14" y="0" width="16" height="40" fill="#B8B8B8" />
+      <rect x="18" y="0" width="20" height="30" rx="3" fill="#868E96" />
+      <rect x="0" y="5" width="56" height="35" rx="10" fill="#868E96" />
+      <rect x="4" y="9" width="48" height="27" rx="6" fill="#575C62" />
+      <rect x="9.5" y="14" width="7" height="7" rx="2" fill="#868E96" />
+      <rect x="19.5" y="14" width="7" height="7" rx="2" fill="#868E96" />
+      <rect x="29.5" y="14" width="7" height="7" rx="2" fill="#868E96" />
+      <rect x="39.5" y="14" width="7" height="7" rx="2" fill="#868E96" />
+      <rect x="9.5" y="24" width="7" height="7" rx="2" fill="#868E96" />
+      <rect x="19.5" y="24" width="7" height="7" rx="2" fill="#868E96" />
+      <rect x="29.5" y="24" width="7" height="7" rx="2" fill="#868E96" />
+      <rect x="39.5" y="24" width="7" height="7" rx="2" fill="#868E96" />
     </g>
   </svg>
 );

@@ -10,15 +10,23 @@ export function IconConnector({ size = "1em", className = "" }) {
     <svg
       width={size}
       height={size}
-      viewBox="0 0 60 40"
+      viewBox="0 0 80 40"
       xmlns="http://www.w3.org/2000/svg"
       style={{ display: "inline", verticalAlign: "middle" }}
       className={className}
     >
       <g transform="translate(12, 0)">
-        <rect x="28" y="4" width="8" height="32" rx="1" fill="#696969" />
-        <rect x="0" y="0" width="28" height="40" rx="16" ry="16" fill="#B8B8B8" />
-        <rect x="14" y="0" width="16" height="40" fill="#B8B8B8" />
+        <rect x="18" y="0" width="20" height="30" rx="3" fill="#868E96" />
+        <rect x="0" y="5" width="56" height="35" rx="10" fill="#868E96" />
+        <rect x="4" y="9" width="48" height="27" rx="6" fill="#575C62" />
+        <rect x="9.5" y="14" width="7" height="7" rx="2" fill="#868E96" />
+        <rect x="19.5" y="14" width="7" height="7" rx="2" fill="#868E96" />
+        <rect x="29.5" y="14" width="7" height="7" rx="2" fill="#868E96" />
+        <rect x="39.5" y="14" width="7" height="7" rx="2" fill="#868E96" />
+        <rect x="9.5" y="24" width="7" height="7" rx="2" fill="#868E96" />
+        <rect x="19.5" y="24" width="7" height="7" rx="2" fill="#868E96" />
+        <rect x="29.5" y="24" width="7" height="7" rx="2" fill="#868E96" />
+        <rect x="39.5" y="24" width="7" height="7" rx="2" fill="#868E96" />
       </g>
     </svg>
   );
@@ -30,6 +38,7 @@ import {
   IconNut,
   IconHexagonOff,
   IconPencil,
+  IconCopy,
 } from "@tabler/icons-react";
 
 # <IconConnector/> Connector Part
@@ -104,6 +113,10 @@ Each connector part includes a **Default Configuration**. Additional configurati
 ### Adding a Configuration
 
 Click <IconPlus/>`Add configuration` to create a new configuration and give it a name.
+
+### Duplicating a Configuration
+
+Click <IconCopy/>`Duplicate configuration` to duplicate the selected configuration.
 
 ### Deleting a Configuration
 

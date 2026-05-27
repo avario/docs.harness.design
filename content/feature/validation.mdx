@@ -7,11 +7,14 @@ description: "Built-in harness validation checks wire gauge, cavity counts, cont
 import { Callout } from 'nextra/components';
 import {
   IconCopyCheck,
+  IconExclamationCircle,
 } from "@tabler/icons-react";
 
 # <IconCopyCheck/>Validation
 
 harness.design has several built-in tools to make sure your harness is built correctly.
+
+To use the validation tools make sure warnings are enabled by `left-clicking` the <IconExclamationCircle/>`Show warnings` button at the bottom right of the [Schematic](/view/schematic) or [Layout](/view/layout) views.
 
 ## Wire Gauge
 If the [Wire](/part/wire) gauge does not match the properties of the [Contact](/part/accessory/contact), a warning is shown in the Schematic view.  
@@ -21,7 +24,7 @@ If multiple wires go into one contact, the sizes will be summed to calculate the
 <br />  
 <img src="/feature/validate-guage-multiple.png" width={397} style={{ borderRadius: '8px' }} />  
 <Callout>  
-Multiple wire gauges are calculated by converting `AWG` to `mm²`, adding them together, then converting back to `AWG`.  
+Multiple wire gauges are calculated by converting all units to `mm²`, adding them together, then converting back to the harness's default gauge unit.  
 </Callout>
 
 ## Connector Cavities
