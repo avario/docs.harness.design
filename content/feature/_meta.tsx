@@ -43,5 +43,5 @@ export default {
   "sharing": { title: <><IconShare2 className="tabler-icon"/> Sharing</> },
   "mobile": { title: <><IconDeviceMobile className="tabler-icon"/> Mobile Support</> },
   "split-screen": { title: <><IconSplitScreen/> Split Screen</> },
-  "local-data": { title: <><IconBraces className="tabler-icon"/> Local Data</> },
+  "local-data": { title: <span style={{ pointerEvents: 'none' }}><IconBraces className="tabler-icon"/> Local Data</span> },
 };
