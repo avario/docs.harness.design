@@ -15,6 +15,11 @@ import {
   IconPackageImport,
   IconFileImport,
   IconFile,
+  IconArrowBigUp,
+  IconArrowBigDown,
+  IconSettings,
+  IconArrowUp,
+  IconArrowDown,
 } from "@tabler/icons-react";
 import { Callout } from "nextra/components";
 
@@ -53,6 +58,9 @@ The part library uses the part number to keep track of parts.
   }}
 >
   <li><IconPlus/>`Add part` - Adds a new part to the Parts library</li>
+  <li><IconArrowBigUp/>`Add all parts from harness` - Adds all the parts in your **Harness** to your **Parts Library**</li>
+  <li><IconArrowBigDown/>`Add all parts to harness` - Adds all the parts in your **Parts Library** to your **Harness**</li>
+  <li><IconSettings/>`Library Settings` - Edit library settings</li>
   <li><IconColumns3/>`Columns` - Hide/ show part details in the library</li>
 </ul>
 
@@ -100,6 +108,6 @@ If a part in your harness is **out of sync** with the Parts Library it will show
 
 If a part in your harness is out of sync with the parts library you can either push or pull it
 
-<IconPackageImport/>`Push to Parts Library` Updates the parts library to match this part in your harness
+<IconArrowUp/>`Push to Parts Library` or `Pull from Harness` - Updates the **Parts Library** to match the part in your **Harness**
 
-<IconFileImport/>`Pull from Parts Library` Updates this part in your harness to match the parts library
+<IconArrowDown/>`Push to Parts Harness` or `Pull from Parts` -  Updates this part in your **Harness** to match the **Parts Library**
