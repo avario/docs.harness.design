@@ -34,6 +34,14 @@
   stroke: #fff;
 }
 
+/* Sidebar and mobile-nav menu items are flex-aligned, so they already center the
+   icon with the text. The baseline nudge above (which helps inline body icons)
+   just pushes these too high — reset it in the menus. */
+.nextra-sidebar .tabler-icon,
+.nextra-mobile-nav .tabler-icon {
+  transform: none;
+}
+
 /* App screenshot carousel */
 .ac-root {
   position: relative;
