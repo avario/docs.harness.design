@@ -1,8 +1,8 @@
 ---
 asIndexPage: true
-title: "Pro Plan — Wire Harness CAD | harness.design"
-sidebarTitle: "Pro Plan"
-description: "Upgrade to Pro for unlimited connections per harness. Compare plans and learn how to upgrade."
+title: "Plans — Wire Harness CAD | harness.design"
+sidebarTitle: "Plans"
+description: "Compare the Free, Pro, and Enterprise plans for harness.design. Pro unlocks unlimited connections per harness; Enterprise adds the 1:1 scale formboard layout."
 ---
 
 import { Callout, Table } from "nextra/components";
@@ -32,75 +32,129 @@ export function IconPro({ size = "1.4em", className = "" }) {
   );
 }
 
-# <IconPro/>Pro Plan
+export function EnterpriseIcon({ size = "1.4em" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 80 80"
+      style={{ display: "inline", verticalAlign: "middle" }}
+    >
+      <g
+        transform="translate(44, 44) rotate(30) translate(-44, -44)translate(18.5, 6)"
+        strokeWidth="6"
+        strokeLinecap="round"
+        fill="none"
+      >
+        <line x1="0.5" y1="16" x2="0.5" y2="66" stroke="#9FE153" />
+        <line x1="10.5" y1="1" x2="10.5" y2="76" stroke="#69D574" />
+        <g transform="translate(20, 6)" stroke="#20C899">
+          <path d="M0.5,20.6085758 C0.5,37.4991638 20.5,34.186197 20.5,49.5932537 C20.5,49.5932537 20.5,53.0621691 20.5,60" />
+          <line x1="0.5" y1="0" x2="0.5" y2="60" />
+        </g>
+        <g stroke="#2EA8D3">
+          <line x1="35.5" y1="0" x2="35.5" y2="20" />
+          <circle cx="35.5" cy="26" r="6" />
+        </g>
+        <line x1="50.5" y1="26" x2="50.5" y2="56" stroke="#349BEF" />
+      </g>
+    </svg>
+  );
+}
 
-Two plans, one simple difference. Unlimited connections per harness.
+export const Check = () => (
+  <IconCircleCheck style={{ verticalAlign: "middle", stroke: "#48A95F" }} />
+);
+export const Minus = () => (
+  <IconCircleMinus style={{ verticalAlign: "middle", stroke: "#808080" }} />
+);
 
-## What you get
+# Plans
+
+Three plans to suit how you work. **Free** is great for getting started, **Pro** removes the connection limit, and **Enterprise** adds the 1:1 scale [formboard layout](/feature/formboard).
+
+## Compare plans
 
 <br />
 <Table>
   <thead>
     <Table.Tr>
-      <Table.Th>Free Plan</Table.Th>
+      <Table.Th></Table.Th>
+      <Table.Th>Free</Table.Th>
       <Table.Th>
         <span style={{ color: "#F49F00" }}>
-          <IconPro /> Pro Plan
+          <IconPro /> Pro
+        </span>
+      </Table.Th>
+      <Table.Th>
+        <span style={{ color: "#20C899" }}>
+          <EnterpriseIcon /> Enterprise
         </span>
       </Table.Th>
     </Table.Tr>
   </thead>
   <tbody>
     <Table.Tr>
+      <Table.Td>**Price** (billed monthly)</Table.Td>
       <Table.Td>$0 USD</Table.Td>
+      <Table.Td>**$29** / mo</Table.Td>
+      <Table.Td>**$99** / mo</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>**Price** (billed annually)</Table.Td>
+      <Table.Td>$0 USD</Table.Td>
+      <Table.Td>**$24** / mo (annually)</Table.Td>
+      <Table.Td>**$79** / mo (annually)</Table.Td>
+    </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Harnesses</Table.Td>
       <Table.Td>
-        $29 USD per month (billed monthly)
-        <br /> $24 USD per month (billed annually)
+        <Check /> Unlimited
+      </Table.Td>
+      <Table.Td>
+        <Check /> Unlimited
+      </Table.Td>
+      <Table.Td>
+        <Check /> Unlimited
       </Table.Td>
     </Table.Tr>
     <Table.Tr>
+      <Table.Td>Connections per harness</Table.Td>
       <Table.Td>
-        <IconCircleCheck style={{ verticalAlign: "top", stroke: "#48A95F" }} /> Unlimited harnesses
+        <Minus /> 100
       </Table.Td>
       <Table.Td>
-        <IconCircleCheck style={{ verticalAlign: "top", stroke: "#48A95F" }} /> Unlimited harnesses
-      </Table.Td>
-    </Table.Tr>
-    <Table.Tr>
-      <Table.Td>
-        <IconCircleMinus style={{ verticalAlign: "top", stroke: "#808080" }} /> 100 connections per
-        harness
+        <Check /> Unlimited
       </Table.Td>
       <Table.Td>
-        <IconCircleCheck style={{ verticalAlign: "top", stroke: "#48A95F" }} /> Unlimited
-        connections Unlimited connections
+        <Check /> Unlimited
       </Table.Td>
     </Table.Tr>
     <Table.Tr>
+      <Table.Td>Layout</Table.Td>
       <Table.Td>
-        <IconCircleCheck style={{ verticalAlign: "top", stroke: "#48A95F" }} /> Unlimited parts
+        <Minus /> Simple
       </Table.Td>
       <Table.Td>
-        <IconCircleCheck style={{ verticalAlign: "top", stroke: "#48A95F" }} /> Unlimited parts
-      </Table.Td>
-    </Table.Tr>
-    <Table.Tr>
-      <Table.Td>
-        <IconCircleCheck style={{ verticalAlign: "top", stroke: "#48A95F" }} /> Open and inspect Pro
-        harnesses
+        <Minus /> Simple
       </Table.Td>
       <Table.Td>
-        <IconCircleCheck style={{ verticalAlign: "top", stroke: "#48A95F" }} /> Cancel anytime
+        <Check /> [1:1 scale formboard](/feature/formboard)
       </Table.Td>
     </Table.Tr>
   </tbody>
 </Table>
 
+<Callout>
+  All paid plans can be cancelled anytime, and a Free account can always open and inspect harnesses
+  created on a paid plan.
+</Callout>
+
 ## How to Upgrade
 
 In the app go to <IconMenu2/>**Main Menu** → <IconUserCircle/>**Account** and select <span style={{ color: '#F49F00' }}><IconPro/>Upgrade to Pro</span> or simply click [https://app.harness.design/upgrade](https://app.harness.design/upgrade).
 
-Choose whether you want to pay Monthly or Annually and select <span style={{ color: '#F49F00' }}>`Upgrade now`</span>
+Pick the <span style={{ color: '#F49F00' }}>Pro</span> or <span style={{ color: '#20C899' }}>Enterprise</span> plan, choose whether you want to pay Monthly or Annually, and select **Upgrade now**.
 
 This will take you to a Stripe payment window where your payment will be processed.
 
@@ -129,13 +183,20 @@ Go to the <IconLine/>[Connections](/view/connections) view and scroll to the bot
   playsInline
 />
 
-## How to cancel the Pro Plan
+## What is the Formboard Layout
 
-Go to the <IconMenu2/>**Main Menu** → <IconUserCircle/>**Account** select `Manage subscription`. Stripe will open up automatically. Select `Cancel subscription`.
+The [formboard layout](/feature/formboard) is exclusive to the <span style={{ color: '#20C899' }}><EnterpriseIcon/> Enterprise</span> plan. It turns the layout view into a 1:1 physical scale drawing of your harness so it can be printed and used as a manufacturing template.
 
-## What happens if I cancel the Pro plan?
+## How to cancel a paid plan
 
-If you cancel your Pro subscription, your plan will remain active until the end of your current billing period. Once the period ends, your account will revert to the Free plan, and any harnesses exceeding 100 connections will no longer accept new connections until the total is reduced below the limit. You can still use and edit those harnesses, but adding new connections will be restricted.
+Go to the <IconMenu2/>**Main Menu** → <IconUserCircle/>**Account** and select **Manage subscription**. Stripe will open up automatically. Select **Cancel subscription**.
+
+## What happens if I cancel?
+
+If you cancel, your plan stays active until the end of your current billing period. Once the period ends, your account reverts to the Free plan:
+
+- Any harnesses exceeding 100 connections will no longer accept new connections until the total is reduced below the limit. You can still use and edit those harnesses.
+- If you were on Enterprise, formboard harnesses become read-only — you can still view and turn off formboard mode, but not edit it or turn it back on.
 
 ## Student Discount
 

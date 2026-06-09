@@ -1,14 +1,3 @@
-export function IconPro({ size = "1.5em", className = "" }) {
-  return (
-    <img
-      src="/images/general/pro.svg"
-      style={{ display: "inline", verticalAlign: "middle", width: size, height: size, marginRight: "0.5em", marginBottom: "0.3em", pointerEvents: "none" }}
-      className={className}
-      alt="Pro"
-    />
-  );
-}
-
 export default {
   index: {},
   'quick-start': { theme: { collapsed: true } },
@@ -22,6 +11,6 @@ export default {
   legal: { theme: { collapsed: true } },
   'brand-assets': { },
   about: {},
-  'pro-plan': { title: <span style={{ color: '#F49F00', pointerEvents: 'none' }}><IconPro/>Pro Plan</span>, theme: { collapsed: true } },
+  'pro-plan': { title: 'Plans', theme: { collapsed: true } },
   'partnership-program': { display: 'hidden' },
 }
