@@ -1,0 +1,220 @@
+---
+title: "Formboard — Wire Harness CAD | harness.design"
+sidebarTitle: "Formboard"
+description: "Lay out your wire harness on a 1:1 scale formboard. Set bundle lengths to scale, snap components into place, and export each panel as a to-scale manufacturing template."
+---
+
+import { Callout } from "nextra/components";
+import {
+  IconChalkboardTeacher,
+  IconMenu2,
+  IconSettings,
+  IconFileExport,
+  IconLayoutGrid,
+  IconRadiusBottomLeft,
+  IconArrowsMoveHorizontal,
+} from "@tabler/icons-react";
+
+export function EnterpriseIcon({ size = "1em" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 80 80"
+      style={{ display: "inline", verticalAlign: "middle" }}
+    >
+      <g
+        transform="translate(44, 44) rotate(30) translate(-44, -44)translate(18.5, 6)"
+        strokeWidth="6"
+        strokeLinecap="round"
+        fill="none"
+      >
+        <line x1="0.5" y1="16" x2="0.5" y2="66" stroke="#9FE153" />
+        <line x1="10.5" y1="1" x2="10.5" y2="76" stroke="#69D574" />
+        <g transform="translate(20, 6)" stroke="#20C899">
+          <path d="M0.5,20.6085758 C0.5,37.4991638 20.5,34.186197 20.5,49.5932537 C20.5,49.5932537 20.5,53.0621691 20.5,60" />
+          <line x1="0.5" y1="0" x2="0.5" y2="60" />
+        </g>
+        <g stroke="#2EA8D3">
+          <line x1="35.5" y1="0" x2="35.5" y2="20" />
+          <circle cx="35.5" cy="26" r="6" />
+        </g>
+        <line x1="50.5" y1="26" x2="50.5" y2="56" stroke="#349BEF" />
+      </g>
+    </svg>
+  );
+}
+
+export function EnterpriseBadge() {
+  return (
+    <span
+      style={{
+        display: "inline-flex",
+        alignItems: "center",
+        gap: "0.35em",
+        verticalAlign: "middle",
+        marginLeft: "1.5em",
+        padding: "0.2em 0.6em",
+        fontSize: "0.5em",
+        fontWeight: 600,
+        lineHeight: 1,
+        borderRadius: "999px",
+        border: "1px solid var(--x-color-gray-300, #e0e0e0)",
+        color: "var(--x-color-gray-700, #555)",
+      }}
+    >
+      <EnterpriseIcon size="1.4em" />
+      Enterprise Feature
+    </span>
+  );
+}
+
+# <IconChalkboardTeacher/>Formboard<EnterpriseBadge/>
+
+Formboard mode turns the [Layout](/view/layout) view into a **1:1 physical scale** drawing of your harness. The lengths you see on the canvas correspond directly to real-world measurements.
+
+When formboard mode is on, the layout view changes to support physical assembly: snapping to grid is removed, bundles bend with a real corner radius, and bundles can be set to their actual lengths.
+
+<br />
+<img src="/feature/formboard.png" width={800} style={{ borderRadius: "8px" }} />
+
+<Callout type="warning">
+  Formboard layout is an **Enterprise** feature. You need an Enterprise subscription to enable it
+  and to edit a formboard harness. Without Enterprise you can still open and view a harness that is
+  already in formboard mode, but the layout is read-only. See the [Pro Plan](/pro-plan) page or
+  visit [app.harness.design/upgrade](https://app.harness.design/upgrade) to upgrade.
+</Callout>
+
+## Turning on Formboard Mode
+
+1. Open <IconMenu2/>`Main Menu` → <IconSettings/>`Settings` → <IconChalkboardTeacher/>`Formboard`.
+2. Turn on **Use formboard for layout**.
+
+The layout view immediately re-renders at 1:1 scale, centered on the formboard panel.
+
+## Formboard Settings
+
+<br />
+<img src="/feature/formboard-settings.png" width={400} style={{ borderRadius: "8px" }} />
+
+### Panel size
+
+The physical size of a single panel. Panels are the sections your formboard is divided into.
+
+<br />
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem",
+  }}
+>
+  <li>
+    **Preset** - Choose a standard panel size (`A4`, `A3`, `A2`, `A1`) or `Custom` to enter your own
+    dimensions.
+  </li>
+  <li>
+    **Orientation** - Set a preset panel to `Landscape` or `Portrait`. (Hidden when the preset is
+    `Custom`.)
+  </li>
+  <li>
+    **Width** / **Height** - The exact panel dimensions. Editable only when the preset is set to
+    `Custom`; otherwise they follow the chosen preset and orientation.
+  </li>
+</ul>
+
+### Panel grid
+
+Arranges multiple panels side by side in a grid to make up the full formboard. The overall board size is the panel size multiplied by the grid.
+
+<br />
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem",
+  }}
+>
+  <li>**Rows** - Number of panels down (1–64).</li>
+  <li>**Columns** - Number of panels across (1–64).</li>
+</ul>
+
+### Default bend radius
+
+The default corner radius applied where a bundle bends. You can override this for individual bundles — see [Changing the Radius of a Bundle](#changing-the-radius-of-a-bundle).
+
+### Scale
+
+The physical length represented by a single canvas pixel. This effectively changes how large the component previews and labels are compared to the board.
+
+## Setting a Bundle to 1:1 Scale
+
+Bundles that are not to scale, or that have no set length, are drawn as **yellow lines with black dashes** so you can spot them at a glance.
+
+There are two ways to make a bundle's drawn length match its set length so it renders to scale.
+
+### Use the match button
+
+Whenever a bundle isn't to scale, a yellow <IconArrowsMoveHorizontal/> button appears on its length label. Click it and the bundle's path is automatically adjusted so it is drawn at exactly its set length.
+
+<br />
+<video
+  src="/feature/formboard-match-button.mp4"
+  width={634}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+### Drag a component into place
+
+As you drag a component, a **blue line** previews where the connected component needs to be placed for the bundle to be to scale. The component snaps to that location. When the bundle is to scale, the line turns **green**.
+
+<br />
+<video
+  src="/feature/formboard-drag-snap.mp4"
+  width={634}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+<Callout>
+  When you edit a bundle's [length](/component/bundle#setting-bundle-lengths), the layout is
+  automatically adjusted so the bundle is drawn to scale at the new value.
+</Callout>
+
+## Changing the Radius of a Bundle
+
+`right-click` a bundle and set a value in the <IconRadiusBottomLeft/>`Radius` field to change how tightly that bundle bends. Leave it empty to fall back to the **Default bend radius** from the formboard settings.
+
+<br />
+<video
+  src="/feature/formboard-radius.mp4"
+  width={634}
+  style={{ borderRadius: "8px" }}
+  autoPlay
+  loop
+  muted
+  playsInline
+/>
+
+## Exporting your Formboard
+
+From <IconMenu2/>**Main Menu** → <IconFileExport/>**Export**, a formboard harness gains an extra <IconLayoutGrid/>**Formboard Panels** option.
+
+It exports a `PDF` with **one page per panel** in the [grid](#panel-grid), each page sized to your panel size and drawn to scale. Print the pages, lay them out in the same grid arrangement, and build the harness directly on top — for example, an `A3` panel with a `2 × 4` grid prints as 8 to-scale A3 pages.
+
+<Callout>
+  The number of pages equals the **Rows × Columns** set under [Panel grid](#panel-grid). The
+  standard <IconFileExport />
+  `Export` → `Layout` PDF still renders the whole formboard onto a single 1:1 page.
+</Callout>

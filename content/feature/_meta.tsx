@@ -9,6 +9,7 @@ import {
   IconPointer,
   IconLabel,
   IconSearch,
+  IconChalkboardTeacher,
 } from "@tabler/icons-react";
 
 const IconSplitScreen = () => (
@@ -33,15 +34,88 @@ const IconSplitScreen = () => (
 );
 
 export default {
-  "nets": { title: <><IconTopologyRing3 className="tabler-icon"/> Nets</> },
-  "mates": { title: <><IconPlugConnected className="tabler-icon"/> Mates</> },
-  "signals": { title: <><IconBolt className="tabler-icon"/> Signals</> },
-  "selection-info": { title: <><IconPointer className="tabler-icon"/> Selection Info</> },
-  "destinations": { title: <><IconLabel className="tabler-icon"/> Destinations</> },
-  "search": { title: <><IconSearch className="tabler-icon"/> Search</> },
-  "validation": { title: <><IconCopyCheck className="tabler-icon"/> Validation</> },
-  "sharing": { title: <><IconShare2 className="tabler-icon"/> Sharing</> },
-  "mobile": { title: <><IconDeviceMobile className="tabler-icon"/> Mobile Support</> },
-  "split-screen": { title: <><IconSplitScreen/> Split Screen</> },
-  "local-data": { title: <span style={{ pointerEvents: 'none' }}><IconBraces className="tabler-icon"/> Local Data</span> },
+  nets: {
+    title: (
+      <>
+        <IconTopologyRing3 className="tabler-icon" /> Nets
+      </>
+    ),
+  },
+  mates: {
+    title: (
+      <>
+        <IconPlugConnected className="tabler-icon" /> Mates
+      </>
+    ),
+  },
+  signals: {
+    title: (
+      <>
+        <IconBolt className="tabler-icon" /> Signals
+      </>
+    ),
+  },
+  "selection-info": {
+    title: (
+      <>
+        <IconPointer className="tabler-icon" /> Selection Info
+      </>
+    ),
+  },
+  destinations: {
+    title: (
+      <>
+        <IconLabel className="tabler-icon" /> Destinations
+      </>
+    ),
+  },
+  search: {
+    title: (
+      <>
+        <IconSearch className="tabler-icon" /> Search
+      </>
+    ),
+  },
+  validation: {
+    title: (
+      <>
+        <IconCopyCheck className="tabler-icon" /> Validation
+      </>
+    ),
+  },
+  sharing: {
+    title: (
+      <>
+        <IconShare2 className="tabler-icon" /> Sharing
+      </>
+    ),
+  },
+  mobile: {
+    title: (
+      <>
+        <IconDeviceMobile className="tabler-icon" /> Mobile Support
+      </>
+    ),
+  },
+  "split-screen": {
+    title: (
+      <>
+        <IconSplitScreen /> Split Screen
+      </>
+    ),
+  },
+  "local-data": {
+    title: (
+      <span style={{ pointerEvents: "none" }}>
+        <IconBraces className="tabler-icon" /> Local Data
+      </span>
+    ),
+  },
+  formboard: {
+    title: (
+      <span style={{ pointerEvents: "none" }}>
+        <IconChalkboardTeacher className="tabler-icon" /> Formboard
+      </span>
+    ),
+  },
 };

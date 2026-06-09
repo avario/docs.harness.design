@@ -19,7 +19,7 @@
   padding: 0.15em;
   border-radius: 4px;
   margin-right: 0.3em;
-  transform: translateY(1px);
+  transform: translateY(-0.125em);
 
   /* Light mode */
   /* background: #f3f3f3;
