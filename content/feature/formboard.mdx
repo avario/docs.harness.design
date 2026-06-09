@@ -59,8 +59,9 @@ export function EnterpriseBadge() {
         fontWeight: 600,
         lineHeight: 1,
         borderRadius: "999px",
-        border: "1px solid var(--x-color-gray-300, #e0e0e0)",
-        color: "var(--x-color-gray-700, #555)",
+        border: "1px solid color-mix(in srgb, currentColor 25%, transparent)",
+        color: "currentColor",
+        opacity: 0.85,
       }}
     >
       <EnterpriseIcon size="1.4em" />
