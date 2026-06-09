@@ -37,6 +37,7 @@ import {
   IconSpacingHorizontal,
   IconRotate,
 } from "@tabler/icons-react";
+import { Callout } from "nextra/components";
 
 # <IconConnector/>Connector
 
@@ -93,9 +94,18 @@ Shells can be connected to just like cavities.
 
 ## Editing Cavity Designations
 
-Cavity Designations are the labels used to identify each cavity in a connector. When a [Connector Part](/connector/part) is assigned to a **Connector Component**, the connector inherits these designations.
+Cavity Designations are the labels used to identify each cavity in a connector (the pin numbers, e.g. `1`, `2`, `3` or `A1`, `B2`).
 
-To edit the [Cavity Designations](/part/connector#cavity-designations) you will need to assign a [Connector Part](/connector/part) and change it's **Designations** under the parts properties
+How you edit them depends on whether a [Connector Part](/part/connector) is assigned:
+
+- **No part assigned** - `left-click` a designation label and type any value. Each cavity can be set individually.
+- **Part assigned** - the connector inherits its designations from the part, so they can no longer be edited directly on the component. To change them, edit the part's **Designations** property — see [Cavity Designations](/part/connector#cavity-designations).
+
+<Callout>
+  Assigning an existing [Connector Part](/part/connector) overwrites any designations you entered
+  manually with the designations defined on the part. However, if you create a new part from the
+  connector, your manually entered designations are copied across to the new part.
+</Callout>
 
 ## Adjusting the Width of a Connector
 
