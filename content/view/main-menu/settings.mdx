@@ -1,47 +1,37 @@
 ---
 title: "Settings — Wire Harness CAD | harness.design"
 sidebarTitle: "Settings"
-description: "Configure settings in harness.design: set your input type and color scheme globally, or set default length units, gauge units, and currency per harness."
+description: "Configure harness.design in the Settings modal: appearance and input preferences for your account, plus per-harness read-only, units, and formboard settings."
 ---
 
-import { IconSettings, IconUserCircle, IconMouse, IconHandClick, IconSun, IconMoon, IconFile } from "@tabler/icons-react";
+import {
+  IconSettings,
+  IconCircleHalf2,
+  IconMouse,
+  IconHandClick,
+  IconSun,
+  IconMoon,
+  IconLock,
+  IconRuler2,
+  IconChalkboardTeacher,
+} from "@tabler/icons-react";
+import { Callout } from "nextra/components";
 
 # <IconSettings/>Settings
 
-The <IconSettings/>**Settings** panel allows you to set default global settings for the software.
+The <IconSettings/>**Settings** modal is organised into vertical tabs down the left side, split into two groups:
 
-## <IconUserCircle/>User settings
-
-Settings in the panel affect all harnesses.
-
-<br />
-<img src="/view/main-menu/settings_1.png" width={400} style={{ borderRadius: "8px" }} />
-
-### Input type
-
-This allows you to force the software to a certain input type.
+- **User settings** apply to your account.
+- **Harness settings** apply only to the harness you currently have open.
 
 <br />
-<ul
-  style={{
-    listStyleType: "none",
-    paddingLeft: 0,
-    display: "flex",
-    flexDirection: "column",
-    gap: "0.5rem",
-  }}
->
-  <li>
-    <IconMouse /> **Mouse** - Scrolling will zoom the canvas. Click and drag the middle mouse button
-    to pan.
-  </li>
-  <li>
-    <IconHandClick /> **Trackpad** - Scrolling will pan the canvas. Pinch to zoom in and out.
-  </li>
-  <li>**Auto** - Automatically detect the input device</li>
-</ul>
+<img src="/view/main-menu/settings.png" width={600} style={{ borderRadius: "8px" }} />
 
-### Color scheme
+## User settings
+
+### <IconCircleHalf2/>Appearance
+
+#### Color scheme
 
 The software supports both light and dark color schemes.
 
@@ -56,27 +46,78 @@ The software supports both light and dark color schemes.
   }}
 >
   <li>
-    <IconSun /> **Light** - Use light color scheme
+    <IconSun /> **Light** - Use the light color scheme
   </li>
   <li>
-    <IconMoon /> **Dark** - Use dark color scheme
+    <IconMoon /> **Dark** - Use the dark color scheme
   </li>
-  <li>**Auto** - Set light or dark color schemes based on the system settings</li>
+  <li>**Auto** - Match the color scheme to your system setting</li>
 </ul>
 
-### Wire Stripes
+#### Wire stripes
 
-Toggles the visual style of striped wires between two display modes: parallel stripes (which follow the wire's length for a more realistic appearance) and perpendicular dashes (which cross the wire for improved readability at a glance).
-## <IconFile/>Harness settings
+The **Show wire stripes as dashed lines** checkbox toggles how striped wires are drawn. When on, stripes are shown as dashes along the wire for easier reading at a glance. When off, stripes run parallel along the wire's length for a more realistic appearance.
 
-Settings in the panel affect only the current harness.
+### <IconMouse/>Input
+
+#### Input type
+
+Forces the software to interpret scrolling for a specific input device.
 
 <br />
-<img src="/view/main-menu/settings_2.png" width={400} style={{ borderRadius: "8px" }} />
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem",
+  }}
+>
+  <li>
+    <IconMouse /> **Mouse** - Scrolling zooms the canvas. Click and drag the middle mouse button to
+    pan.
+  </li>
+  <li>
+    <IconHandClick /> **Trackpad** - Scrolling pans the canvas. Pinch to zoom in and out.
+  </li>
+  <li>**Auto** - Automatically detect the input device</li>
+</ul>
 
-### Default length unit
+## Harness settings
 
-This sets the default length unit used in the harness.
+These tabs only affect the harness you currently have open, and are hidden while the harness is read-only.
+
+### <IconLock/>Read-only
+
+Toggle **Make this harness read-only** to disable all editing of the harness.
+
+### <IconRuler2/>Units
+
+#### Currency
+
+Sets the currency symbol used throughout the harness.
+
+<br />
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem",
+  }}
+>
+  <li>**$** - Dollar</li>
+  <li>**€** - Euro</li>
+  <li>**£** - Pound</li>
+  <li>**¥** - Yen</li>
+  <li>**₹** - Rupee</li>
+</ul>
+
+#### Default length unit
+
+Sets the default length unit used in the harness.
 
 <br />
 <ul
@@ -96,9 +137,9 @@ This sets the default length unit used in the harness.
   <li>`yd` - Yard</li>
 </ul>
 
-### Default gauge unit
+#### Default gauge unit
 
-This sets the default gauge unit in the harness. The following units are supported:
+Sets the default gauge unit used in the harness.
 
 <br />
 <ul
@@ -113,30 +154,9 @@ This sets the default gauge unit in the harness. The following units are support
   <li>`mm²` - Millimeters squared (Metric)</li>
   <li>`AWG` - American Wire Gauge</li>
   <li>`cmil` - Circular Mil</li>
-  <li>`kmil` - Kilo Circular Mil</li>
+  <li>`kcmil` - Kilo Circular Mil</li>
 </ul>
 
-### Currency
+### <IconChalkboardTeacher/>Formboard
 
-Lets you select the currency symbol used in the document.
-
-<br />
-<ul
-  style={{
-    listStyleType: "none",
-    paddingLeft: 0,
-    display: "flex",
-    flexDirection: "column",
-    gap: "0.5rem",
-  }}
->
-  <li>**$** - Dollar</li>
-  <li>**€** - Euro</li>
-  <li>**£** - Pound</li>
-  <li>**¥** - Yen</li>
-  <li>**₹** - Rupee</li>
-</ul>
-
-### Read-only
-
-Toggles enabling and disabling the editing of the document.
+The **Formboard** tab turns the layout view into a 1:1 physical scale drawing of your harness. It's an Enterprise feature with its own settings for panel size, grid, bend radius, and scale. [Read more...](/feature/formboard)
