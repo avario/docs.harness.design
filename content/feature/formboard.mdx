@@ -14,6 +14,7 @@ import {
   IconRadiusBottomLeft,
   IconArrowsMoveHorizontal,
 } from "@tabler/icons-react";
+import { LoopingVideo } from "../../app/LoopingVideo";
 
 export function EnterpriseIcon({ size = "1em" }) {
   return (
@@ -207,6 +208,20 @@ As you drag a component, a **blue line** previews where the connected component 
   muted
   playsInline
 />
+
+## Bending Branches
+
+Drag a single branch point and the entire branch connected to it moves with it — every
+component keeps its position and angle relative to that branch point, so the whole section
+swings as one rigid unit. Use this to bend and reposition entire runs of the harness at once.
+
+<br />
+<LoopingVideo src="/feature/formboard-branch-bending.mp4" />
+
+<Callout>
+  To move connected components **without** rotating them, select them all with a click-and-drag box
+  and move them together — dragging a multi-node selection translates only, with no rotation.
+</Callout>
 
 ## Exporting your Formboard
 
