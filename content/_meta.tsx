@@ -11,6 +11,7 @@ export default {
   legal: { theme: { collapsed: true } },
   'brand-assets': { },
   about: {},
-  'pro-plan': { title: 'Plans', theme: { collapsed: true } },
+  'plan': { title: 'Plans', theme: { collapsed: true } },
   'partnership-program': { display: 'hidden' },
+  'fsae-program': { display: 'hidden' },
 }

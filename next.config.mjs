@@ -28,7 +28,8 @@ export default withNextra({
             { source: '/views/view-parts', destination: '/view/parts', permanent: true },
             { source: '/views/view-schematic', destination: '/view/schematic', permanent: true },
             { source: '/views/main-menu', destination: '/view/main-menu', permanent: true },
-            { source: '/views/main-menu/account', destination: '/view/main-menu/account', permanent: true },
+            { source: '/views/main-menu/account', destination: '/view/main-menu', permanent: true },
+            { source: '/view/main-menu/account', destination: '/view/main-menu', permanent: true },
             { source: '/views/main-menu/export', destination: '/view/main-menu/export', permanent: true },
             { source: '/views/main-menu/open', destination: '/view/main-menu/open', permanent: true },
             { source: '/views/main-menu/settings', destination: '/view/main-menu/settings', permanent: true },
@@ -67,8 +68,12 @@ export default withNextra({
             { source: '/part/accessories/dust-cover', destination: '/part/accessory/dust-cover', permanent: true },
             { source: '/part/accessories/lock', destination: '/part/accessory/lock', permanent: true },
 
-            // Beta End → Pro Plan
-            { source: '/beta-end', destination: '/pro-plan', permanent: true },
+            // Beta End → Plan
+            { source: '/beta-end', destination: '/plan', permanent: true },
+
+            // Pro Plan → Plan
+            { source: '/pro-plan', destination: '/plan', permanent: true },
+            { source: '/pro-plan/student', destination: '/plan/student', permanent: true },
 
             // Shortcuts → Main Menu
             { source: '/shortcuts', destination: '/view/main-menu', permanent: true },
