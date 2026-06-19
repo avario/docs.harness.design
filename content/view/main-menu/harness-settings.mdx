@@ -1,0 +1,71 @@
+---
+title: "Harness Settings — Wire Harness CAD | harness.design"
+sidebarTitle: "Harness Settings"
+description: "Per-harness settings in harness.design: read-only mode, units (currency, length, gauge), sharing, formboard, team, and deleting the harness."
+---
+
+import {
+  IconSettings,
+  IconMenu2,
+  IconLock,
+  IconRuler2,
+  IconShare2,
+  IconChalkboardTeacher,
+  IconUsersGroup,
+  IconTrash,
+} from "@tabler/icons-react";
+import { Callout } from "nextra/components";
+
+# <IconSettings/>Harness Settings
+
+Open <IconMenu2/>**Main Menu** → <IconSettings/>**Harness settings**. These settings apply only to the **harness you currently have open**.
+
+## <IconLock/>Read-only
+
+Toggle **Make this harness read-only** to disable all editing of the harness. A read-only harness can still be viewed and exported, and you can switch editing back on from the same tab.
+
+## <IconRuler2/>Units
+
+#### Currency
+
+Sets the currency symbol used throughout the harness.
+
+#### Default length unit
+
+Sets the default length unit used in the harness.
+
+#### Default gauge unit
+
+Sets the default gauge unit used in the harness.
+
+<br />
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem",
+  }}
+>
+  <li>`mm²` - Millimeters squared (Metric)</li>
+  <li>`AWG` - American Wire Gauge</li>
+  <li>`cmil` - Circular Mil</li>
+  <li>`kcmil` - Kilo Circular Mil</li>
+</ul>
+
+## <IconShare2/>Sharing
+
+The **Sharing** tab is the same as the [Share](/view/main-menu/share) dialog — make the harness public or invite people to it by email. See [Sharing](/feature/sharing) for the full guide.
+
+## <IconChalkboardTeacher/>Formboard
+
+The **Formboard** tab turns the layout view into a 1:1 physical scale drawing of your harness. It's an Enterprise feature with its own settings for panel size, grid, bend radius, and scale. [Read more...](/feature/formboard)
+
+## <IconUsersGroup/>Team
+
+Shown when you belong to a [team](/feature/teams). Use **Move to team** to share the harness with your team so seated members can edit it alongside you, or **Remove from team** to return it to personal ownership. See [Collaborating on harnesses](/feature/teams/collaborating).
+
+## <IconTrash/>Delete
+
+The **Delete** button at the bottom of the tab list permanently deletes the harness. This can't be undone.

@@ -1,0 +1,67 @@
+---
+title: "Collaborating on Harnesses — harness.design"
+sidebarTitle: "Collaborating on Harnesses"
+description: "Move a harness into your team so every seated member can open and edit it together, with live presence and automatic updates."
+---
+
+import { Callout } from "nextra/components";
+import {
+  IconMenu2,
+  IconSettings,
+  IconUsersGroup,
+  IconFolder,
+  IconUserCircle,
+  IconDotsVertical,
+} from "@tabler/icons-react";
+
+# Collaborating on Harnesses
+
+A harness that belongs to a team can be opened and edited by **every seated member** — not just its original owner.
+
+## Moving a harness into your team
+
+Moving a harness into your team **doesn't change who owns it**. You keep ownership and full control — you can still rename, share, restore, or remove it from the team whenever you like. Moving it simply lets the team's other seated members open and edit it alongside you.
+
+There are two ways to move one of your personal harnesses into the team — you need to hold a seat for either:
+
+- **From the open harness** — go to <IconMenu2/>**Main Menu** → <IconSettings/>**Harness settings** → <IconUsersGroup/>**Team** and choose **Move to team**.
+- **From the Open dialog** — go to <IconMenu2/>**Main Menu** → <IconFolder/>**Open**, find the harness in the <IconUserCircle/>**Your harnesses** tab, open its <IconDotsVertical/>**options** menu and choose **Move to team**.
+
+<br />
+<img src="/feature/move-to-team.png" width={600} style={{ borderRadius: "8px" }} />
+
+You can also create a team harness from scratch: in <IconMenu2/>**Main Menu** → <IconFolder/>**Open**, switch to the **Team** tab and use the **New team harness** tile.
+
+<Callout>
+  Team harnesses appear in the **Team** tab of the Open dialog for everyone on the team, alongside
+  the name of the member who owns each one.
+</Callout>
+
+## Editing together
+
+Everyone with a seat can have a team harness open at the same time — there's no checking out or locking to work around. You always know what your teammates are up to:
+
+- When someone else has the harness open, an indicator shows who's also working on it.
+- A **syncing indicator** appears whenever a teammate is making changes, and your view updates automatically when they save — no need to refresh.
+
+<br />
+<img src="/feature/presence-indicator.png" width={600} style={{ borderRadius: "8px" }} />
+
+Because of this, editing together stays smooth even when you're both in the same harness at once — the indicators make it easy to see what's happening and stay out of each other's way.
+
+<Callout>
+  If two people edit the same harness at the very same moment, the most recent save is the one
+  that's kept — so it's worth a quick glance at the indicators before reworking something a teammate
+  is actively editing.
+</Callout>
+
+<Callout type="info">
+  To safeguard a finished piece of work from later changes — and to keep a record of how the harness
+  evolved — create a [revision](/feature/revisions). A revision is a named snapshot you can always
+  restore, independent of anyone's later edits, making it the best way to mark milestones on a shared
+  harness.
+</Callout>
+
+## Removing a harness from the team
+
+From the same <IconUsersGroup/>**Team** settings, choose **Remove from team** to return the harness to personal ownership. A document's owner can always do this; the team owner can remove any of the team's harnesses.

@@ -1,0 +1,79 @@
+---
+title: "Preferences — Wire Harness CAD | harness.design"
+sidebarTitle: "Preferences"
+description: "Your personal harness.design preferences: appearance (colour scheme, wire stripes), input device behaviour, and keyboard shortcuts."
+---
+
+import {
+  IconAdjustments,
+  IconMenu2,
+  IconCircleHalf2,
+  IconMouse,
+  IconHandClick,
+  IconSun,
+  IconMoon,
+  IconKeyboard,
+} from "@tabler/icons-react";
+
+# <IconAdjustments/>Preferences
+
+Open <IconMenu2/>**Main Menu** → <IconAdjustments/>**Preferences**. Preferences apply to **your account** across every harness.
+
+## <IconCircleHalf2/>Appearance
+
+### Color scheme
+
+The software supports both light and dark color schemes.
+
+<br />
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem",
+  }}
+>
+  <li>
+    <IconSun /> **Light** - Use the light color scheme
+  </li>
+  <li>
+    <IconMoon /> **Dark** - Use the dark color scheme
+  </li>
+  <li>**Auto** - Match the color scheme to your system setting</li>
+</ul>
+
+### Wire stripes
+
+The **Show wire stripes as dashed lines** checkbox toggles how striped wires are drawn. When on, stripes are shown as dashes along the wire for easier reading at a glance. When off, stripes run parallel along the wire's length for a more realistic appearance.
+
+## <IconMouse/>Input
+
+### Input type
+
+Forces the software to interpret scrolling for a specific input device.
+
+<br />
+<ul
+  style={{
+    listStyleType: "none",
+    paddingLeft: 0,
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.5rem",
+  }}
+>
+  <li>
+    <IconMouse /> **Mouse** - Scrolling zooms the canvas. Click and drag the middle mouse button to
+    pan.
+  </li>
+  <li>
+    <IconHandClick /> **Trackpad** - Scrolling pans the canvas. Pinch to zoom in and out.
+  </li>
+  <li>**Auto** - Automatically detect the input device</li>
+</ul>
+
+## <IconKeyboard/>Hotkeys
+
+A reference list of every keyboard shortcut available in the editor — undo/redo, fit view, focus search, delete, rotate, and the view-toggle shortcuts.

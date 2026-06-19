@@ -1,0 +1,50 @@
+---
+title: "Revisions — Wire Harness CAD | harness.design"
+sidebarTitle: "Revisions"
+description: "Save named snapshots of your wire harness and roll back to them at any time. View a revision read-only in a new tab, or restore it to your working version."
+---
+
+import { Callout } from "nextra/components";
+import { IconMenu2, IconHistory, IconPlus, IconExternalLink } from "@tabler/icons-react";
+import { ProBadge } from "../../app/PlanBadges";
+
+# <IconHistory/>Revisions<ProBadge/>
+
+Revisions are named snapshots that mark milestones in your harness's history. Create one each time you finish a meaningful piece of work — a completed subsystem, a design review, a released version — to capture that point and label what it represents. You can always come back to a revision later to review it, or roll your working version back to it.
+
+Open them from <IconMenu2/>**Main Menu** → <IconHistory/>**Revisions**.
+
+<br />
+<img src="/feature/revisions.png" width={640} style={{ borderRadius: "8px" }} />
+
+<Callout>
+  Revisions are available to anyone who can **edit** the harness. Viewers with read-only access
+  don't see the Revisions menu. **Creating** a revision additionally requires a Pro or Enterprise
+  plan — on the Free plan you can still view and restore existing revisions.
+</Callout>
+
+## Current working version
+
+The top of the list is always your live, editable harness. A badge tells you whether it has changes that aren't captured in your most recent revision:
+
+- **New changes** — you've edited the harness since the last revision was created.
+- **No new changes** — your work matches the latest revision.
+
+## Creating a revision
+
+When you've finished a piece of work, click <IconPlus/>**Create revision** on the current working version, add an optional message describing what you've completed, and confirm. The snapshot captures the harness exactly as it is at that moment.
+
+## Viewing a revision
+
+Click <IconExternalLink/>**View revision** to open it in a new browser tab. The revision opens **read-only** — you can pan, inspect parts and export it, but not edit it — so opening one never affects your working version.
+
+## Restoring a revision
+
+Click <IconHistory/>**Restore revision** to roll your working version back to that snapshot. You'll be asked to confirm, because **your current work is overwritten**.
+
+<Callout type="warning">
+  Restoring replaces your current working version. To keep your current work, create a revision
+  before restoring.
+</Callout>
+
+Each revision shows the date and time it was created and the name of the team member who created it.

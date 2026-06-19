@@ -11,6 +11,7 @@ import {
   IconCopy,
   IconCircleMinus,
 } from "@tabler/icons-react";
+import { ProBadge } from "../../app/PlanBadges";
 
 # <IconShare2/>Sharing
 
@@ -32,11 +33,17 @@ If the harness is not public, only users shared via email will be able to open t
 
 Toggle to make your harness public. Anyone with the link will be able to view your harness as read-only.
 
-## Email Sharing
+## Email Sharing<ProBadge/>
 
 Enter an email address and click `Send Invite` to allow the user with that email address to view your harness.
 
 An email will be sent to the address with a link to view the harness. They will need to create an account if they don't already have one.
+
+<Callout>
+  Inviting people by email requires a Pro or Enterprise plan. On the Free plan the invite form is
+  replaced by an upgrade prompt — but you can still see any existing email shares and **revoke** them,
+  and those shares keep working.
+</Callout>
 
 ## Revoke Email Access
 
