@@ -4,7 +4,7 @@ export default {
   view: { theme: { collapsed: true } },
   component: { theme: { collapsed: true } },
   part: { theme: { collapsed: true } },
-  feature: { theme: { collapsed: true } },
+  feature: { title: 'Features', theme: { collapsed: true } },
   examples: { theme: { collapsed: true } },
   faq: {},
   updates: { theme: { collapsed: true } },
