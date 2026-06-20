@@ -13,6 +13,7 @@ import {
   IconLayoutGrid,
   IconRadiusBottomLeft,
   IconArrowsMoveHorizontal,
+  IconRulerMeasure,
 } from "@tabler/icons-react";
 import { LoopingVideo } from "../../app/LoopingVideo";
 import { EnterpriseIcon } from "../../app/PlanIcons";
@@ -104,7 +105,7 @@ The physical length represented by a single canvas pixel. This effectively chang
 
 Bundles that are not to scale, or that have no set length, are drawn as **yellow lines with black dashes** so you can spot them at a glance.
 
-There are two ways to make a bundle's drawn length match its set length so it renders to scale.
+There are a few ways to make a bundle's drawn length match its set length so it renders to scale — adjust one at a time, or set the whole harness at once.
 
 ### Use the match button
 
@@ -140,6 +141,12 @@ As you drag a component, a **blue line** previews where the connected component 
   When you edit a bundle's [length](/component/bundle#setting-bundle-lengths), the layout is
   automatically adjusted so the bundle is drawn to scale at the new value.
 </Callout>
+
+### Set the whole harness to scale at once
+
+A <IconRulerMeasure/>**Set all bundle lengths to scale** button in the
+controls at the bottom-right of the layout view does the whole harness in a single step: it moves
+components so that every bundle is drawn at its set length, exactly as if you had clicked the <IconArrowsMoveHorizontal /> match button on each one.
 
 ## Changing the Radius of a Bundle
 
