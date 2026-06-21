@@ -28,11 +28,11 @@ export default withNextra({
             { source: '/views/view-parts', destination: '/view/parts', permanent: true },
             { source: '/views/view-schematic', destination: '/view/schematic', permanent: true },
             { source: '/views/main-menu', destination: '/view/main-menu', permanent: true },
-            { source: '/views/main-menu/account', destination: '/view/main-menu', permanent: true },
-            { source: '/view/main-menu/account', destination: '/view/main-menu', permanent: true },
+            { source: '/views/main-menu/account', destination: '/view/main-menu/account', permanent: true },
             { source: '/views/main-menu/export', destination: '/view/main-menu/export', permanent: true },
             { source: '/views/main-menu/open', destination: '/view/main-menu/open', permanent: true },
-            { source: '/views/main-menu/settings', destination: '/view/main-menu/settings', permanent: true },
+            { source: '/views/main-menu/settings', destination: '/view/main-menu/harness-settings', permanent: true },
+            { source: '/view/main-menu/settings', destination: '/view/main-menu/harness-settings', permanent: true },
             { source: '/views/main-menu/share', destination: '/view/main-menu/share', permanent: true },
 
             // Parts → Part

@@ -10,6 +10,8 @@ import {
   IconLabel,
   IconSearch,
   IconChalkboardTeacher,
+  IconHistory,
+  IconUsersGroup,
 } from "@tabler/icons-react";
 
 const IconSplitScreen = () => (
@@ -90,6 +92,20 @@ export default {
       </>
     ),
   },
+  revisions: {
+    title: (
+      <>
+        <IconHistory className="tabler-icon" /> Revisions
+      </>
+    ),
+  },
+  teams: {
+    title: (
+      <span style={{ pointerEvents: "none" }}>
+        <IconUsersGroup className="tabler-icon" /> Teams
+      </span>
+    ),
+  },
   mobile: {
     title: (
       <>
@@ -107,7 +123,7 @@ export default {
   "local-data": {
     title: (
       <span style={{ pointerEvents: "none" }}>
-        <IconBraces className="tabler-icon" /> Local Data
+        <IconBraces className="tabler-icon" /> Harness Data
       </span>
     ),
   },

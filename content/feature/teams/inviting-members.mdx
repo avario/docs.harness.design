@@ -1,0 +1,39 @@
+---
+title: "Inviting Members — harness.design"
+sidebarTitle: "Inviting Members"
+description: "Invite people to your team by email, optionally reserving an Enterprise seat for them. Invitees accept the invitation from their own account."
+---
+
+import { Callout } from "nextra/components";
+import { IconUsersGroup, IconUserPlus, IconDotsVertical } from "@tabler/icons-react";
+
+# Inviting Members
+
+As the team owner, open the <IconUsersGroup/>**Team** tab in your Account and click <IconUserPlus/>**Invite member**. Enter the person's email address and send the invitation.
+
+<Callout type="info">
+  Inviting **doesn't send an email**. The person you invite sees a notification inside harness.design
+  the next time they open it while signed in with that email address. If they don't have an account
+  yet, they'll need to create one using that same email address before they can see the invitation.
+</Callout>
+
+## Reserving a seat with the invitation
+
+If your team has a free seat, the invite dialog shows an **Assign an Enterprise seat** switch. Turn it on to reserve a seat for the invitee — the seat is held from the moment you send the invite and is allocated to them automatically when they accept.
+
+<Callout>
+  A reserved seat counts against your seat pool right away, just like an allocated member seat.
+</Callout>
+
+## Accepting an invitation
+
+The invited person is notified the next time they open harness.design. They review and accept the invitation from <IconUsersGroup/>**Account → Team**. On accepting, they join the team — and receive the reserved seat if you assigned one.
+
+<Callout>
+  A user can belong to only one team. They must leave their current team before accepting an
+  invitation to a different one.
+</Callout>
+
+## Managing pending invitations
+
+Pending invitations are listed in the Team tab. Use the <IconDotsVertical/>**options** menu next to an invitation to assign or unassign its seat, or to revoke it.

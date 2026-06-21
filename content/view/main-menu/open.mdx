@@ -13,15 +13,16 @@ import {
   IconTrash,
   IconWorld,
   IconCircleMinus,
-  IconLockFilled,
+  IconLock,
   IconPencil,
   IconFiles,
+  IconUsersGroup,
 } from "@tabler/icons-react";
 import { Callout } from "nextra/components";
 
 # <IconFolder/>Open
 
-The <IconFolder/>**Open** panel allows you to open <IconUserCircle/>**Your harnesses** created by you, harnesses <IconShare2/>**Shared with you** or directly from <IconBraces/>**Local data**.
+The <IconFolder/>**Open** panel allows you to open <IconUserCircle/>**Your harnesses** created by you, your <IconUsersGroup/>**Team**'s shared harnesses, harnesses <IconShare2/>**Shared with you** or directly from <IconBraces/>**Harness data**.
 
 <br />
 <img src="/view/main-menu/open.png" width={600} style={{ borderRadius: "8px" }} />
@@ -34,14 +35,35 @@ To open a harness click on the thumbnail of the harness you wish to open.
 
 Click on the <IconDotsVertical/> three dots next to the thumbnail of a harness to:
 
-- <IconPencil/>**Rename** - Opens a modal to rename the selected harness
-- <IconShare2/>**Share** - Opens the [Share](/view/main-menu/share) modal
-- <IconTrash/>**Delete** - Deletes the selected harness
-- <IconFiles/>**Duplicate** - Duplicates the selected harness
+- <IconPencil />
+  **Rename** - Opens a modal to rename the selected harness
+- <IconShare2 />
+  **Share** - Opens the [Share](/view/main-menu/share) modal
+- <IconTrash />
+  **Delete** - Deletes the selected harness
+- <IconFiles />
+  **Duplicate** - Duplicates the selected harness
+- <IconUsersGroup />
+  **Move to team** - Shares the harness with your [team](/feature/teams) (available to seated team members). See [Collaborating on harnesses](/feature/teams/collaborating).
 
 <Callout>
-  <IconWorld/>**PUBLIC** Will be shown on the thumbnail of any harness that is shared publicly.{" "}
+  <IconWorld /> **PUBLIC** Will be shown on the thumbnail of any harness that is shared publicly.
 </Callout>
+
+## <IconUsersGroup/>Team
+
+If you belong to a [team](/feature/teams), a **Team** tab lists every harness shared with your team. Each thumbnail shows the name of the member who owns it.
+
+To open a harness click on its thumbnail.
+
+If you hold a [seat](/feature/teams/seats), use the **New team harness** tile at the end of the grid to create a new harness that's assigned to the team right away.
+
+Click on the <IconDotsVertical/> three dots next to a harness for the actions available to you:
+
+- On harnesses **you own**, you get the same options as in <IconUserCircle/>**Your harnesses**, plus **Remove from team**.
+- The **team owner** can **Remove from team** for any of the team's harnesses.
+
+See [Collaborating on harnesses](/feature/teams/collaborating) for how editing a shared team harness works.
 
 ## <IconShare2/>Shared with you
 
@@ -52,14 +74,14 @@ To open a harness click on the thumbnail of the harness you wish to open.
 Click on the <IconCircleMinus/>**Revoke access** button next to the thumbnail of a harness to revoke your access to the harness. You will need to be re-invited by the owner to regain access to the harness.
 
 <Callout>
-  <IconLockFilled/>**READ_ONLY** Will be shown on the thumbnail of all harnesses that are shared
-  with you. To edit you need to duplicate the harness once open to make your own personal copy.{" "}
+  <IconLock /> **READ ONLY** Will be shown on the thumbnail of all harnesses that are shared with
+  you. To edit you need to duplicate the harness once open to make your own personal copy.{" "}
 </Callout>
 
-## <IconBraces/>Local data
+## <IconBraces/>Harness data
 
 Open a harness directly from your computer's local storage.
 
-`left-click-drag` the raw data file from your computer onto the box to open the harness.
+`left-click-drag` the harness data file from your computer onto the box to open the harness.
 
-[Learn how to export local data](/view/main-menu/export#raw-data)
+[Learn how to export harness data](/view/main-menu/export#-harness-data)
