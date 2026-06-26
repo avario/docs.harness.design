@@ -14,5 +14,5 @@ export default {
   'plan': { title: 'Plans', theme: { collapsed: true } },
   'partnership-program': { display: 'hidden' },
   'fsae-program': { display: 'hidden' },
-  'test': { display: 'hidden' },
+  'embedded': { display: 'hidden' },
 }
