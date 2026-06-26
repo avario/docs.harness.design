@@ -59,7 +59,8 @@ A harness document is a JSON object with a `version` field and optional arrays o
   "lockParts": [],
   "dustCoverParts": [],
   "backshellParts": [],
-  "bootParts": []
+  "bootParts": [],
+  "cavitySealParts": []
 }
 ```
 

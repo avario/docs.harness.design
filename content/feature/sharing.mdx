@@ -5,12 +5,7 @@ description: "Share wire harness designs with teammates or clients. Make a harne
 ---
 
 import { Callout } from "nextra/components";
-import {
-  IconMenu2,
-  IconShare2,
-  IconCopy,
-  IconCircleMinus,
-} from "@tabler/icons-react";
+import { IconMenu2, IconShare2, IconCopy, IconCircleMinus, IconCode } from "@tabler/icons-react";
 import { ProBadge } from "../../app/PlanBadges";
 
 # <IconShare2/>Sharing
@@ -33,6 +28,36 @@ If the harness is not public, only users shared via email will be able to open t
 
 Toggle to make your harness public. Anyone with the link will be able to view your harness as read-only.
 
+## Embedding
+
+Once your harness is public, you can embed an interactive copy of it on another website — this is how the live diagram on our [home page](https://harness.design) works. Click <IconCode/>**Embed** in the Share dialog to open the embed settings.
+
+<Callout>
+  The <IconCode /> **Embed** button is disabled until the harness is
+  [public](#make-your-harness-public).
+</Callout>
+
+<br />
+<img src="/feature/sharing-embed.png" width={700} style={{ borderRadius: "8px" }} />
+
+As you adjust the settings, the **Link** and **Embed code** on the right update in real time. Copy the <IconCopy/>**Embed code** and paste the `<iframe>` snippet into your site, or copy the **Link** to open the demo directly.
+
+Embedded harnesses open in **demo mode** — visitors can explore the harness, but any edits they make are never saved.
+
+### Embed Settings
+
+- **Show harness title** — show or hide the title bar.
+- **Views** — which views (Schematic, Layout, Parts, Connections) are shown when the embed first loads. At least one is required.
+- **View options** — the on-canvas toggles (show parts, coverings, highlight nets, component IDs, warnings, and so on) and whether each is enabled by default.
+- **Show view options** — whether visitors can change those view options themselves.
+- **Color scheme** — display the embed in **Light**, **Dark**, or **Auto** (matching the visitor's device).
+- **Interaction** — control what visitors can do with the embed:
+  - **Allow interaction** — when turned off, the embed is a static, non-interactive image and the options below are disabled.
+  - **Allow editing** — let visitors modify the harness (changes are never saved).
+  - **Allow view switching** — show the view selector so visitors can change views.
+  - **Allow search** — show the search control.
+  - **Allow zoom** and **Allow pan** — let visitors zoom and pan the canvas.
+
 ## Email Sharing<ProBadge/>
 
 Enter an email address and click `Send Invite` to allow the user with that email address to view your harness.
@@ -41,8 +66,8 @@ An email will be sent to the address with a link to view the harness. They will 
 
 <Callout>
   Inviting people by email requires a Pro or Enterprise plan. On the Free plan the invite form is
-  replaced by an upgrade prompt — but you can still see any existing email shares and **revoke** them,
-  and those shares keep working.
+  replaced by an upgrade prompt — but you can still see any existing email shares and **revoke**
+  them, and those shares keep working.
 </Callout>
 
 ## Revoke Email Access

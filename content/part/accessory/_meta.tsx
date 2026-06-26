@@ -50,8 +50,20 @@ const IconBackshell = () => (
   </svg>
 );
 
+const IconCavitySeal = () => (
+  <svg width={20} height={20} viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" style={{ display: "inline", verticalAlign: "middle", marginRight: "0.4em" }}>
+    <g transform="translate(6, 0)">
+      <rect x="0" y="12" width="48" height="16" rx="4" fill="#868E96" />
+      <rect x="6" y="6" width="7" height="28" rx="3" fill="#656B71" />
+      <rect x="16" y="6" width="7" height="28" rx="3" fill="#656B71" />
+      <rect x="26" y="6" width="7" height="28" rx="3" fill="#656B71" />
+    </g>
+  </svg>
+);
+
 export default {
   "contact": { title: <><IconContact/> Contact Part</> },
+  "cavity-seal": { title: <><IconCavitySeal/> Cavity Seal Part</> },
   "lock": { title: <><IconLock/> Lock Part</> },
   "dust-cover": { title: <><IconDustCover/> Dust Cover Part</> },
   "boot": { title: <><IconBoot/> Boot Part</> },

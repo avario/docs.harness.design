@@ -80,6 +80,10 @@ A conductive element installed in a connector housing that forms the electrical 
       <Table.Td>Max Gauge</Table.Td>
       <Table.Td>Maximum wire size the contact supports</Table.Td>
     </Table.Tr>
+    <Table.Tr>
+      <Table.Td>Cavity Seal</Table.Td>
+      <Table.Td>Optional [Cavity Seal Part](/part/accessory/cavity-seal) assigned to this contact, counted in the BOM whenever the contact is used</Table.Td>
+    </Table.Tr>
   </tbody>
 </Table>
 
@@ -109,3 +113,9 @@ To manually assign or override contacts, `left-click` the <IconNut/> terminal pa
 ## Remove/ Assign No Contact
 
 To remove a **Contact** part from a particular cavity that has been assigned a contact automatically from a connector part being applied, `left-click` the <IconContact/> **Contact Part** you wish to remove and select <IconHexagonsOff/>**Don't use default part**
+
+## Cavity Seal
+
+A contact can carry a [Cavity Seal Part](/part/accessory/cavity-seal)—a per-contact seal for environmental sealing where the wire enters the connector cavity. To assign one, edit the contact part and `left-click` the <IconNut/>**Cavity Seal** field, then select or create the seal.
+
+Once assigned, the cavity seal is counted in the [BOM](/view/parts) wherever the contact is used, so its quantity always matches the total usage of that contact.
