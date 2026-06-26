@@ -87,9 +87,9 @@ export default {
   },
   sharing: {
     title: (
-      <>
+      <span style={{ pointerEvents: "none" }}>
         <IconShare2 className="tabler-icon" /> Sharing
-      </>
+      </span>
     ),
   },
   revisions: {
