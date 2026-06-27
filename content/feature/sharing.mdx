@@ -42,7 +42,7 @@ Once your harness is public, you can embed an interactive copy of it on another 
 
 As you adjust the settings, the **Link** and **Embed code** on the right update in real time. Copy the <IconCopy/>**Embed code** and paste the `<iframe>` snippet into your site, or copy the **Link** to open the demo directly.
 
-Embedded harnesses open in **demo mode** — visitors can explore the harness, but any edits they make are never saved.
+Embedded harnesses open in **demo mode** — visitors can explore the harness, but any edits they make are never saved. They pan by dragging the canvas and zoom with the on-canvas controls (or with scroll gestures, if you've enabled them).
 
 ### Embed Settings
 
@@ -52,11 +52,12 @@ Embedded harnesses open in **demo mode** — visitors can explore the harness, b
 - **Show view options** — whether visitors can change those view options themselves.
 - **Color scheme** — display the embed in **Light**, **Dark**, or **Auto** (matching the visitor's device).
 - **Interaction** — control what visitors can do with the embed:
-  - **Allow interaction** — when turned off, the embed is a static, non-interactive image and the options below are disabled.
+  - **Allow interaction** — when turned off, the embed is a static, non-interactive image (no panning, zooming, or selecting) and the options below are disabled.
   - **Allow editing** — let visitors modify the harness (changes are never saved).
   - **Allow view switching** — show the view selector so visitors can change views.
   - **Allow search** — show the search control.
-  - **Allow zoom** and **Allow pan** — let visitors zoom and pan the canvas.
+  - **Capture scroll gestures for pan/zoom** — when off (the default), scrolling over the embed scrolls the surrounding page instead of panning or zooming the harness. Turn it on to let scroll gestures control the canvas.
+  - **Show zoom controls** — show zoom in/out buttons on the canvas (on by default).
 
 ## Email Sharing<ProBadge/>
 
