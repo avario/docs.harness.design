@@ -1,7 +1,7 @@
 ---
 title: "Preferences — Wire Harness CAD | harness.design"
 sidebarTitle: "Preferences"
-description: "Your personal harness.design preferences: appearance (colour scheme, wire stripes), input device behaviour, and keyboard shortcuts."
+description: "Your personal harness.design preferences: appearance (colour scheme, wire stripes, schematic rendering), input device behaviour, and keyboard shortcuts."
 ---
 
 import {
@@ -47,6 +47,10 @@ The software supports both light and dark color schemes.
 ### Wire stripes
 
 The **Show wire stripes as dashed lines** checkbox toggles how striped wires are drawn. When on, stripes are shown as dashes along the wire for easier reading at a glance. When off, stripes run parallel along the wire's length for a more realistic appearance.
+
+### Schematic rendering
+
+The **Only render visible components on the schematic screen** checkbox controls whether the schematic view skips drawing components that are outside the visible area. It is on by default and may help with performance on some devices, especially for large harnesses. Turn it off if components appear to pop in while panning or zooming.
 
 ## <IconMouse/>Input
 
