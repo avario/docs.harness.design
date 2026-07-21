@@ -1,3 +1,7 @@
 .next
 node_modules
 /.idea
+# Generated LLM exports (built by scripts/generate-llms.mjs)
+public/llms.json
+public/llms.txt
+public/llms-full.txt
