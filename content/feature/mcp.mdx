@@ -35,7 +35,7 @@ Open <IconAdjustments/>**Preferences** → <IconSparkles/>**AI** and expand the 
 Wherever an assistant asks for the **MCP server URL**, use:
 
 ```
-https://app.harness.design/api/mcp
+https://app.harness.design/mcp
 ```
 
 <Tabs
@@ -53,18 +53,19 @@ https://app.harness.design/api/mcp
 
     Claude is available in the browser and as a desktop app, and both work the same way once the
     connector is added.
+
   </Tabs.Tab>
 
-  <Tabs.Tab>
-    In ChatGPT, open **Settings → Apps & Connectors** and turn on developer mode (under
-    **Advanced**). Create a new connector, paste in the MCP server URL above, then sign in with your
-    harness.design account when prompted.
-  </Tabs.Tab>
+<Tabs.Tab>
+  In ChatGPT, open **Settings → Apps & Connectors** and turn on developer mode (under **Advanced**).
+  Create a new connector, paste in the MCP server URL above, then sign in with your harness.design
+  account when prompted.
+</Tabs.Tab>
 
-  <Tabs.Tab>
-    In the Gemini web app, open **Settings → Connected apps** and add a custom app using the MCP
-    server URL above, then sign in with your harness.design account when prompted.
-  </Tabs.Tab>
+<Tabs.Tab>
+  In the Gemini web app, open **Settings → Connected apps** and add a custom app using the MCP
+  server URL above, then sign in with your harness.design account when prompted.
+</Tabs.Tab>
 
   <Tabs.Tab>
     Any MCP-compatible agent — including coding agents and self-hosted tools — can connect using the
@@ -72,6 +73,7 @@ https://app.harness.design/api/mcp
 
     Assistants connected this way are grouped under **Other** in the AI preferences, where you can
     see how many are connected and disconnect any of them.
+
   </Tabs.Tab>
 </Tabs>
 
@@ -133,8 +135,6 @@ A few things that make a real difference to the results:
 ## While an assistant is editing
 
 When a connected assistant starts changing a harness you have open, an indicator appears in the editor bar — for example **Claude is editing this harness…** — so you always know when a change isn't yours. It clears itself shortly after the assistant finishes.
-
-You can keep working while an assistant edits. Your changes and its changes are merged as they're saved, the same way two teammates editing together are.
 
 ## Disconnecting
 
