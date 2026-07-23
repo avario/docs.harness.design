@@ -4,16 +4,16 @@ sidebarTitle: "AI Assistants"
 description: "Connect Claude, ChatGPT, Gemini or any MCP-compatible AI assistant to your harness.design account so it can read, explain and edit your wire harnesses. Changes appear in the editor live."
 ---
 
-import { Callout } from "nextra/components";
+import { Callout, Tabs } from "nextra/components";
 import {
   IconSparkles,
   IconMenu2,
   IconAdjustments,
   IconPlugConnected,
   IconPlugConnectedX,
-  IconHistory,
   IconArrowBackUp,
 } from "@tabler/icons-react";
+import { ClaudeLogo, OpenAiLogo, GeminiLogo, OtherAgentLogo } from "../../app/AiLogos";
 
 # <IconSparkles/>AI Assistants
 
@@ -32,27 +32,48 @@ Set it up from <IconMenu2/>**Main Menu** → <IconAdjustments/>**Preferences** �
 
 Open <IconAdjustments/>**Preferences** → <IconSparkles/>**AI** and expand the assistant you want to connect. Each one shows whether it's currently **Connected**, along with the steps to set it up.
 
-### Claude
-
-Click <IconPlugConnected/>**Add connector to Claude**. Claude opens with the connector details filled in — confirm it, then sign in with your harness.design account when prompted.
-
-### ChatGPT
-
-In ChatGPT, open **Settings → Apps & Connectors**, turn on developer mode (under Advanced), then create a connector using the server URL below and sign in when prompted.
-
-### Gemini
-
-In the Gemini web app, open **Settings → Connected apps**, add a custom app using the server URL below, then sign in when prompted.
-
-### Any other assistant
-
-Any MCP-compatible agent — including coding agents and self-hosted tools — can connect using the server URL:
+Wherever an assistant asks for the **MCP server URL**, use:
 
 ```
 https://app.harness.design/api/mcp
 ```
 
-Sign in with your harness.design account when the assistant prompts you. Assistants connected this way are listed under **Other** in the AI preferences.
+<Tabs
+  items={[
+    <><ClaudeLogo/>Claude</>,
+    <><OpenAiLogo/>ChatGPT</>,
+    <><GeminiLogo/>Gemini</>,
+    <><OtherAgentLogo/>Other</>,
+  ]}
+>
+  <Tabs.Tab>
+    In the AI preferences, click <IconPlugConnected/>**Add connector to Claude**. Claude opens with
+    the connector details already filled in — confirm it, then sign in with your harness.design
+    account when prompted.
+
+    Claude is available in the browser and as a desktop app, and both work the same way once the
+    connector is added.
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    In ChatGPT, open **Settings → Apps & Connectors** and turn on developer mode (under
+    **Advanced**). Create a new connector, paste in the MCP server URL above, then sign in with your
+    harness.design account when prompted.
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    In the Gemini web app, open **Settings → Connected apps** and add a custom app using the MCP
+    server URL above, then sign in with your harness.design account when prompted.
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    Any MCP-compatible agent — including coding agents and self-hosted tools — can connect using the
+    MCP server URL above. Sign in with your harness.design account when the assistant prompts you.
+
+    Assistants connected this way are grouped under **Other** in the AI preferences, where you can
+    see how many are connected and disconnect any of them.
+  </Tabs.Tab>
+</Tabs>
 
 ## Starting a session on a harness
 
