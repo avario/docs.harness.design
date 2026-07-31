@@ -1,0 +1,142 @@
+---
+title: "AI Assistants (MCP) — Wire Harness CAD | harness.design"
+sidebarTitle: "AI Assistants"
+description: "Connect Claude, ChatGPT or any MCP-compatible AI assistant to your harness.design account so it can read, explain and edit your wire harnesses. Changes appear in the editor live."
+---
+
+import { Callout, Tabs } from "nextra/components";
+import {
+  IconSparkles,
+  IconMenu2,
+  IconAdjustments,
+  IconPlugConnected,
+  IconPlugConnectedX,
+  IconArrowBackUp,
+} from "@tabler/icons-react";
+import { ClaudeLogo, OpenAiLogo, OtherAgentLogo } from "../../app/AiLogos";
+
+# <IconSparkles/>AI Assistants
+
+<Callout type="warning">
+  This is an experimental beta feature. AI assistants can make mistakes. Review what they change,
+  and [create a revision](/feature/revisions) before a large edit so you can roll back.
+</Callout>
+
+Connect an AI assistant to your harness.design account and it can work on your harnesses with you: look one up, explain how it's wired, add connectors and wires, assign parts, and answer questions about how the software works. Anything it changes appears in your editor **live**, while you watch.
+
+The connection uses **MCP** (Model Context Protocol), the standard way an AI assistant connects to an outside service. harness.design runs an MCP server, so any assistant that speaks MCP can connect to it.
+
+Set it up from <IconMenu2/>**Main Menu** → <IconAdjustments/>**Preferences** → <IconSparkles/>**AI**.
+
+<Callout>
+  The assistant signs in **as you**, so it sees exactly the harnesses you see: your own, plus any
+  shared with you or belonging to your team. It can never reach anyone else's work.
+</Callout>
+
+## Connecting an assistant
+
+Open <IconAdjustments/>**Preferences** → <IconSparkles/>**AI** and expand the assistant you want to connect. Each one shows whether it's currently **Connected**, along with the steps to set it up.
+
+Wherever an assistant asks for the **MCP server URL**, use:
+
+```
+https://app.harness.design/mcp
+```
+
+<Tabs
+  items={[
+    <span key="claude"><ClaudeLogo/>Claude</span>,
+    <span key="chatgpt"><OpenAiLogo/>ChatGPT</span>,
+    <span key="other"><OtherAgentLogo/>Other</span>,
+  ]}
+>
+  <Tabs.Tab>
+    In the AI preferences, click <IconPlugConnected/>**Add connector to Claude**. Claude opens with
+    the connector details already filled in. Confirm it, then sign in with your harness.design
+    account when prompted.
+
+    To add it by hand instead, open **Customize → Connectors** in Claude, add a custom connector,
+    and paste in the MCP server URL above.
+
+    Claude is available in the browser and as a desktop app, and both work the same way once the
+    connector is added.
+
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    1. In ChatGPT, open **Settings → Security and login** and turn on **Developer mode**.
+    2. Open **Settings → Plugins** and click **+**. Name the connector `harness.design`, paste in
+       the MCP server URL above, and sign in with your harness.design account when prompted.
+
+    The image ChatGPT asks for is optional, so you can skip it.
+
+  </Tabs.Tab>
+
+  <Tabs.Tab>
+    Any MCP-compatible agent, including coding agents and self-hosted tools, can connect using the
+    MCP server URL above. Sign in with your harness.design account when the assistant prompts you.
+
+    Assistants connected this way are grouped under **Other** in the AI preferences, where you can
+    see how many are connected and disconnect any of them.
+
+  </Tabs.Tab>
+</Tabs>
+
+## Starting a session on a harness
+
+Once an assistant is connected, an **Edit with …** entry appears for it in the <IconMenu2/>**Main Menu**. Choosing it opens that assistant with the harness you're currently working on already loaded, ready for your first question.
+
+For assistants with a desktop app (currently Claude), an **Open in Browser / Open in Desktop app** switch in the AI preferences controls which one that entry opens.
+
+You don't have to start from the menu. You can also just ask the assistant directly ("list my harnesses", or "open my Engine Bay harness") and it will find it.
+
+## Example prompts
+
+You talk to an assistant in plain English. Here are some example prompts to give a sense of what you can ask for. Use them as starting points and swap in your own parts and harnesses.
+
+### Adding parts to your library
+
+> Add the full catalog of Deutsch DTM connectors to my parts library. Be sure to include required
+> accessories such as wedgelocks, and include the compatible contacts.
+
+### Adding a device
+
+> Add the Link G5 Voodoo Neo 4 ECU to my harness. Use the correct connectors from TE, referring to
+> Link's documentation.
+
+### Importing from Excel
+
+> Import this harness into harness.design. It was created in Excel.
+
+Attach the spreadsheet to your message and the assistant reads it and recreates the harness.
+
+### Support questions
+
+> In harness.design I have a connector with different gauge wires coming into it. How do I assign
+> different contact sizes to a single connector?
+
+Assistants answer questions like this by reading these documentation pages.
+
+<Callout>
+  Everything an assistant writes goes through the same validation and the same plan limits as the
+  editor. On the **Free** plan the 100-connection limit per harness still applies, and creating
+  revisions still requires **Pro**.
+</Callout>
+
+## Working with an assistant
+
+A few things that make a real difference to the results:
+
+- **Name components the way the editor does.** Component IDs like `C1`, `W3` and `S2` are exactly what the assistant uses to find things, so "change W12 to blue" or "what's connected to C4 pin 7?" lands precisely.
+- **Say which harness**, or say "the harness I have open". The assistant can see which one you're working on and will confirm the name back to you.
+- **Ask for a checkpoint before a big change**: "create a revision first, then rewire the ground circuit." It won't create one unless you ask.
+- **Be specific about parts.** If you name a real part number, the assistant will look it up and create a part matching the actual specification. If you don't, it follows whatever convention the rest of the harness already uses.
+- **Watch it work.** Because changes appear in the editor live, you can see each one land. If you don't like a change, <IconArrowBackUp/>**Undo** works exactly as it does for your own edits. Each thing the assistant does is one step in your history. (Restoring a revision is the exception, just as it is when you restore one yourself.)
+
+## While an assistant is editing
+
+When a connected assistant starts changing a harness you have open, an indicator appears in the editor bar (for example **Claude is editing this harness…**) so you always know when a change isn't yours. It clears itself shortly after the assistant finishes.
+
+## Disconnecting
+
+In <IconAdjustments/>**Preferences** → <IconSparkles/>**AI**, expand the assistant and click <IconPlugConnectedX/>**Disconnect**. It immediately loses all access to your account and harnesses until you connect it again.

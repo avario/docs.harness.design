@@ -1,7 +1,8 @@
 import type { CSSProperties } from "react";
+import { IconFlask } from "@tabler/icons-react";
 import { EnterpriseIcon, ProIcon } from "./PlanIcons";
 
-// A small pill placed next to a page title to mark a plan-gated feature.
+// A small pill placed next to a page title to mark a plan-gated or beta feature.
 const badgeStyle: CSSProperties = {
   display: "inline-flex",
   alignItems: "center",

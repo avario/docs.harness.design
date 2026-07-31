@@ -1,0 +1,49 @@
+---
+title: "July 31, 2026 — Wire Harness CAD | harness.design"
+sidebarTitle: "July 31, 2026"
+description: "harness.design release for 31 Jul 2026: connect Claude, ChatGPT or any MCP-compatible AI assistant to your account so it can read, explain and edit your wire harnesses while you watch."
+---
+
+import { Callout } from "nextra/components";
+
+# July 31, 2026
+
+This release lets you connect an AI assistant to your harness.design account, so it can work on your harnesses alongside you.
+
+### AI Assistants
+
+Connect [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com) or any MCP-compatible assistant from **Preferences → AI**. The assistant signs in **as you**, so it sees exactly the harnesses you see — your own, plus anything shared with you or belonging to your team — and never anyone else's work.
+
+Once it's connected, anything the assistant changes appears in your editor **live**, while you watch. An indicator shows when an assistant is editing, and **Undo** works exactly as it does for your own changes.
+
+This is an experimental **beta** feature. Assistants can make mistakes, so review what they change, and create a [revision](/feature/revisions) before a large edit so you can roll back.
+
+[Read more...](/feature/mcp)
+
+### Example prompts
+
+**Adding parts to your library**
+
+> Add the full catalog of Deutsch DTM connectors to my parts library. Be sure to include required
+> accessories such as wedgelocks, and include the compatible contacts.
+
+**Adding a device**
+
+> Add the Link G5 Voodoo Neo 4 ECU to my harness. Use the correct connectors from TE, referring to
+> Link's documentation.
+
+**Importing from Excel**
+
+> Import this harness into harness.design. It was created in Excel.
+
+Attach the spreadsheet to your message and the assistant reads it and recreates the harness.
+
+**Support questions**
+
+> In harness.design I have a connector with different gauge wires coming into it. How do I assign
+> different contact sizes to a single connector?
+
+<Callout>
+  Assistants can also answer questions about how harness.design itself works, by reading this
+  documentation.
+</Callout>

@@ -12,6 +12,7 @@ import {
   IconChalkboardTeacher,
   IconHistory,
   IconUsersGroup,
+  IconSparkles,
 } from "@tabler/icons-react";
 
 const IconSplitScreen = () => (
@@ -104,6 +105,13 @@ export default {
       <span style={{ pointerEvents: "none" }}>
         <IconUsersGroup className="tabler-icon" /> Teams
       </span>
+    ),
+  },
+  mcp: {
+    title: (
+      <>
+        <IconSparkles className="tabler-icon" /> AI Assistants
+      </>
     ),
   },
   mobile: {
