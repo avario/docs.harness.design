@@ -75,6 +75,11 @@ export default withNextra({
             { source: '/pro-plan', destination: '/plan', permanent: true },
             { source: '/pro-plan/student', destination: '/plan/student', permanent: true },
 
+            // FSAE → Student Team
+            { source: '/plan/fsae', destination: '/plan/student-team', permanent: true },
+            { source: '/fsae', destination: '/plan/student-team', permanent: true },
+            { source: '/fsae-program', destination: '/student-team-program', permanent: true },
+
             // Shortcuts → Main Menu
             { source: '/shortcuts', destination: '/view/main-menu', permanent: true },
 

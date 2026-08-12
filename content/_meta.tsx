@@ -13,5 +13,5 @@ export default {
   about: {},
   'plan': { title: 'Plans', theme: { collapsed: true } },
   'partnership-program': { display: 'hidden' },
-  'fsae-program': { display: 'hidden' },
+  'student-team-program': { display: 'hidden' },
 }

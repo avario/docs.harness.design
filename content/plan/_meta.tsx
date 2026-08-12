@@ -1,4 +1,4 @@
 export default {
   'student': {},
-  'fsae': { title: 'FSAE Sponsorship' },
+  'student-team': { title: 'Student Team Sponsorship' },
 }
