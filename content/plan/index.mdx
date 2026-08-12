@@ -2,7 +2,7 @@
 asIndexPage: true
 title: "Plans — Wire Harness CAD | harness.design"
 sidebarTitle: "Plans"
-description: "Compare the Free, Pro, and Enterprise plans for harness.design. Pro unlocks unlimited connections per harness; Enterprise adds the 1:1 scale formboard layout."
+description: "Compare the Free and Pro plans for harness.design. Pro unlocks unlimited connections, private sharing, revisions, and team collaboration with per-seat pricing."
 ---
 
 import { Callout, Table } from "nextra/components";
@@ -32,36 +32,6 @@ export function IconPro({ size = "1.4em", className = "" }) {
   );
 }
 
-export function EnterpriseIcon({ size = "1.4em" }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 80 80"
-      style={{ display: "inline", verticalAlign: "middle" }}
-    >
-      <g
-        transform="translate(44, 44) rotate(30) translate(-44, -44)translate(18.5, 6)"
-        strokeWidth="6"
-        strokeLinecap="round"
-        fill="none"
-      >
-        <line x1="0.5" y1="16" x2="0.5" y2="66" stroke="#9FE153" />
-        <line x1="10.5" y1="1" x2="10.5" y2="76" stroke="#69D574" />
-        <g transform="translate(20, 6)" stroke="#20C899">
-          <path d="M0.5,20.6085758 C0.5,37.4991638 20.5,34.186197 20.5,49.5932537 C20.5,49.5932537 20.5,53.0621691 20.5,60" />
-          <line x1="0.5" y1="0" x2="0.5" y2="60" />
-        </g>
-        <g stroke="#2EA8D3">
-          <line x1="35.5" y1="0" x2="35.5" y2="20" />
-          <circle cx="35.5" cy="26" r="6" />
-        </g>
-        <line x1="50.5" y1="26" x2="50.5" y2="56" stroke="#349BEF" />
-      </g>
-    </svg>
-  );
-}
-
 export const Check = () => (
   <IconCircleCheck style={{ verticalAlign: "middle", stroke: "#48A95F" }} />
 );
@@ -71,7 +41,9 @@ export const Minus = () => (
 
 # Plans
 
-Three plans to suit how you work. **Free** is great for getting started, **Pro** removes the connection limit, and **Enterprise** adds the 1:1 scale [formboard layout](/feature/formboard).
+Two plans to suit how you work. **Free** is great for getting started, and **Pro** removes the connection limit and adds private sharing, revisions, and [team collaboration](/feature/teams).
+
+Pro is priced **per seat** — buy a seat for each person on your [team](/feature/teams) who needs to edit.
 
 ## Compare plans
 
@@ -86,31 +58,21 @@ Three plans to suit how you work. **Free** is great for getting started, **Pro**
           <IconPro /> Pro
         </span>
       </Table.Th>
-      <Table.Th>
-        <span style={{ color: "#20C899" }}>
-          <EnterpriseIcon /> Enterprise
-        </span>
-      </Table.Th>
     </Table.Tr>
   </thead>
   <tbody>
     <Table.Tr>
       <Table.Td>**Price** (billed monthly)</Table.Td>
       <Table.Td>$0 USD</Table.Td>
-      <Table.Td>**$29** / mo</Table.Td>
-      <Table.Td>**$99** / mo</Table.Td>
+      <Table.Td>**$29** / seat / mo</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>**Price** (billed annually)</Table.Td>
       <Table.Td>$0 USD</Table.Td>
-      <Table.Td>**$24** / mo (annually)</Table.Td>
-      <Table.Td>**$79** / mo (annually)</Table.Td>
+      <Table.Td>**$24** / seat / mo (annually)</Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>**Harnesses**</Table.Td>
-      <Table.Td>
-        <Check /> Unlimited
-      </Table.Td>
       <Table.Td>
         <Check /> Unlimited
       </Table.Td>
@@ -126,17 +88,11 @@ Three plans to suit how you work. **Free** is great for getting started, **Pro**
       <Table.Td>
         <Check /> Unlimited
       </Table.Td>
-      <Table.Td>
-        <Check /> Unlimited
-      </Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>[**Sharing**](/feature/sharing)</Table.Td>
       <Table.Td>
         <Minus /> Public link
-      </Table.Td>
-      <Table.Td>
-        <Check /> Private emails
       </Table.Td>
       <Table.Td>
         <Check /> Private emails
@@ -150,21 +106,6 @@ Three plans to suit how you work. **Free** is great for getting started, **Pro**
       <Table.Td>
         <Check /> Unlimited
       </Table.Td>
-      <Table.Td>
-        <Check /> Unlimited
-      </Table.Td>
-    </Table.Tr>
-    <Table.Tr>
-      <Table.Td>[**Layout**](/feature/formboard)</Table.Td>
-      <Table.Td>
-        <Minus /> Simple
-      </Table.Td>
-      <Table.Td>
-        <Minus /> Simple
-      </Table.Td>
-      <Table.Td>
-        <Check /> 1:1 scale formboard
-      </Table.Td>
     </Table.Tr>
     <Table.Tr>
       <Table.Td>[**Teams**](/feature/teams)</Table.Td>
@@ -172,27 +113,26 @@ Three plans to suit how you work. **Free** is great for getting started, **Pro**
         <Minus /> None
       </Table.Td>
       <Table.Td>
-        <Minus /> None
-      </Table.Td>
-      <Table.Td>
-        <Check /> Team collaboration
+        <Check /> Team collaboration & seats
       </Table.Td>
     </Table.Tr>
   </tbody>
 </Table>
 
 <Callout>
-  All paid plans can be cancelled anytime, and a Free account can always open and inspect harnesses
-  created on a paid plan.
+  Pro can be cancelled anytime, and a Free account can always open and inspect harnesses created on
+  a paid plan.
 </Callout>
 
 ## How to Upgrade
 
 In the app go to <IconMenu2/>**Main Menu** → <IconUserCircle/>**Account** and select <span style={{ color: '#F49F00' }}><IconPro/>Upgrade to Pro</span> or simply click [https://app.harness.design/upgrade](https://app.harness.design/upgrade).
 
-Pick the <span style={{ color: '#F49F00' }}>Pro</span> or <span style={{ color: '#20C899' }}>Enterprise</span> plan, choose whether you want to pay Monthly or Annually, and select **Upgrade now**.
+Choose whether you want to pay Monthly or Annually and select **Upgrade now**. This will take you to a Stripe payment window where you can pick the number of seats and your payment will be processed.
 
-This will take you to a Stripe payment window where your payment will be processed.
+## How Seats Work
+
+Each Pro subscription includes a number of **seats**, chosen when you subscribe. One seat covers you; buy more seats to build a [team](/feature/teams) and give each member full Pro access. You can change your seat count anytime from **Manage subscription** — changes are prorated automatically.
 
 ## What is a Connection
 
@@ -230,8 +170,7 @@ If you cancel, your plan stays active until the end of your current billing peri
 - Any harnesses exceeding 100 connections will no longer accept new connections until the total is reduced below the limit. You can still use and edit those harnesses.
 - **[Revisions](/feature/revisions)** you've already created stay intact. You can still view and restore them, but you can't create new revisions until you're back on a paid plan.
 - **[Email sharing](/feature/sharing)** winds down. People you've already invited by email keep their access, and you can still view and revoke those shares, but you can't send new email invites. Public link sharing remains available on Free.
-- If you were on Enterprise, formboard harnesses become read-only — you can still view and turn off formboard mode, but not edit it or turn it back on.
-- If you were on Enterprise, **[team](/feature/teams) collaboration** pauses. You keep ownership and full control of every harness — including any you moved into a team — but you can no longer invite members or assign seats. Restore your Enterprise plan to collaborate with your team again.
+- **[Team](/feature/teams) collaboration** pauses. You keep ownership and full control of every harness — including any you moved into a team — but you can no longer invite members or assign seats. Renew your subscription to collaborate with your team again.
 
 ## Student Discount
 
