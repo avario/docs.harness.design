@@ -5,3 +5,5 @@ node_modules
 public/llms.json
 public/llms.txt
 public/llms-full.txt
+# Generated search index (built by pagefind in postbuild)
+public/_pagefind

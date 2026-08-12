@@ -1,6 +1,6 @@
 import type { CSSProperties } from "react";
 import { IconFlask } from "@tabler/icons-react";
-import { EnterpriseIcon, ProIcon } from "./PlanIcons";
+import { ProIcon } from "./PlanIcons";
 
 // A small pill placed next to a page title to mark a plan-gated or beta feature.
 const badgeStyle: CSSProperties = {
@@ -28,11 +28,3 @@ export function ProBadge() {
   );
 }
 
-export function EnterpriseBadge() {
-  return (
-    <span style={badgeStyle}>
-      <EnterpriseIcon size="1.4em" />
-      Enterprise Feature
-    </span>
-  );
-}
