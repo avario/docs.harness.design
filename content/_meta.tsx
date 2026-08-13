@@ -1,6 +1,7 @@
 export default {
   index: {},
   'quick-start': { theme: { collapsed: true } },
+  guides: { title: 'Guides', theme: { collapsed: true } },
   view: { theme: { collapsed: true } },
   component: { theme: { collapsed: true } },
   part: { theme: { collapsed: true } },

@@ -1,0 +1,162 @@
+---
+title: "Representing a Device — Wire Harness CAD | harness.design"
+sidebarTitle: "Device"
+description: "How to represent a device such as a switch, relay or sensor in harness.design. Devices are drawn as the connectors and terminals that plug into them, grouped together and assigned a generic part."
+---
+
+import { Callout } from "nextra/components";
+import { IconMaximize } from "@tabler/icons-react";
+
+export function IconDevice({ size = "1em", className = "" }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 60 40"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ display: "inline", verticalAlign: "middle" }}
+      className={className}
+    >
+      <rect x="6" y="11" width="48" height="6" rx="2" fill="#696969" />
+      <rect x="6" y="23" width="48" height="6" rx="2" fill="#696969" />
+      <rect x="15" y="5" width="30" height="30" rx="2" fill="#495057" />
+      <rect x="22" y="12" width="16" height="16" rx="2" fill="#373C41" />
+    </svg>
+  );
+}
+
+# <IconDevice/> Devices
+
+A device is anything that your harness plugs into. Some examples of devices are:
+
+- Switch
+- Relay
+- ECU
+
+## What harness.design represents
+
+A harness.design document describes **the harness, and only the harness**. There is no switch component, no relay component and no sensor component, because none of those things are part of the harness you are building. They are the equipment the harness plugs into.
+
+So a device is not drawn as an object. A device is drawn as **the connectors and terminals that mate with it**, collected into a [Group](/component/group), with a [Generic Part](/part/generic) assigned to that group.
+
+## How to represent a device
+
+### 1. Add the connectors and terminals that plug into it
+
+Work out how the harness physically connects to the device, then add exactly that.
+
+- A device with a single plug gets one [Connector](/component/connector).
+- A device with several headers gets one connector per header.
+- A device with screw posts, studs or blade tabs gets one [Terminal](/component/terminal) per post.
+
+Name them the way they are named on the device itself, so the schematic reads like the datasheet.
+
+### 2. Group them
+
+Select the connectors and terminals, `right-click`, and choose <IconMaximize/>**Create Group**. See [Creating a Group](/component/group#creating-a-group).
+
+The group is the device boundary. It says these connections all land on the same piece of equipment, without claiming the equipment is part of the harness.
+
+### 3. Assign a generic part to the group
+
+Create a [Generic Part](/part/generic) for the device and assign it to the group. See [Assigning Parts](/part#assigning-parts).
+
+This is where the device's part number, manufacturer, price and datasheet link live. The device now appears in your parts list and BOM as a referenced item, while the harness itself still only contains harness parts.
+
+## Examples
+
+### Switch
+
+#### Real World Example
+
+Represented by the female quick connects that are wired into the harness.
+
+<br />  
+<img src="/guides/switch.jpg" width={300} style={{ borderRadius: '8px' }} />
+
+#### Schematic View
+
+<br/>
+<iframe
+  src="https://app.harness.design/oZnk/demo?allowSwitch=false&allowSearch=false&showBar=false&allowControls=false&showParts=true&views=Schematic"
+  width="100%"
+  height="500"
+  title="Example - Relay"
+  style={{ border: '1px solid #ccc', borderRadius: '8px' }}
+></iframe>
+
+#### Layout View
+
+<br/>
+<iframe
+  src="https://app.harness.design/oZnk/demo?allowSwitch=false&allowSearch=false&showBar=false&allowControls=false&showParts=true&views=Layout"
+  width="100%"
+  height="500"
+  title="Example - Relay"
+  style={{ border: '1px solid #ccc', borderRadius: '8px' }}
+></iframe>
+
+### Relay
+
+#### Real World Example
+
+Represented by the plug that it connects to which is then wired into the harness.
+
+<br />  
+<img src="/guides/relay.png" width={300} style={{ borderRadius: '8px' }} />
+
+#### Schematic View
+
+<br/>
+<iframe
+  src="https://app.harness.design/mq0n/demo?allowSwitch=false&allowSearch=false&showBar=false&allowControls=false&showParts=true&views=Schematic"
+  width="100%"
+  height="500"
+  title="Example - Relay"
+  style={{ border: '1px solid #ccc', borderRadius: '8px' }}
+></iframe>
+
+#### Layout View
+
+<br/>
+<iframe
+  src="https://app.harness.design/mq0n/demo?allowSwitch=false&allowSearch=false&showBar=false&allowControls=false&showParts=true&views=Layout"
+  width="100%"
+  height="500"
+  title="Example - Relay"
+  style={{ border: '1px solid #ccc', borderRadius: '8px' }}
+></iframe>
+
+### ECU
+
+#### Real World Example
+
+Represented by two connectors that are wired into the harness.
+
+<br />  
+<div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+  <img src="/guides/ecu.jpg" width={300} style={{ borderRadius: '8px' }} />
+  <img src="/guides/ecu-harness.png" width={300} style={{ borderRadius: '8px' }} />
+</div>
+
+#### Schematic View
+
+<br/>
+<iframe
+  src="https://app.harness.design/oV1N/demo?allowSwitch=false&allowSearch=false&showBar=false&allowControls=false&showParts=true&views=Schematic"
+  width="100%"
+  height="1200"
+  title="Example - Relay"
+  style={{ border: '1px solid #ccc', borderRadius: '8px' }}
+></iframe>
+
+#### Layout View
+
+<br/>
+<iframe
+  src="https://app.harness.design/oV1N/demo?allowSwitch=false&allowSearch=false&showBar=false&allowControls=false&showParts=true&views=Layout"
+  width="100%"
+  height="500"
+  title="Example - Relay"
+  style={{ border: '1px solid #ccc', borderRadius: '8px' }}
+></iframe>
