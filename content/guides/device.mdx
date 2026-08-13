@@ -29,9 +29,10 @@ export function IconDevice({ size = "1em", className = "" }) {
 
 A device is anything that your harness plugs into. Some examples of devices are:
 
-- Switch
-- Relay
-- ECU
+- [Switch](/guides/device#switch)
+- [Relay](/guides/device#relay)
+- [ECU](/guides/device#ecu)
+- [Fusebox](/guides/device#fusebox)
 
 ## What harness.design represents
 
@@ -72,7 +73,7 @@ This is where the device's part number, manufacturer, price and datasheet link l
 Represented by the female quick connects that are wired into the harness.
 
 <br />  
-<img src="/guides/switch.jpg" width={300} style={{ borderRadius: '8px' }} />
+<img src="/guides/device/switch.jpg" width={300} style={{ borderRadius: '8px' }} />
 
 #### Schematic View
 
@@ -103,7 +104,7 @@ Represented by the female quick connects that are wired into the harness.
 Represented by the plug that it connects to which is then wired into the harness.
 
 <br />  
-<img src="/guides/relay.png" width={300} style={{ borderRadius: '8px' }} />
+<img src="/guides/device/relay.png" width={300} style={{ borderRadius: '8px' }} />
 
 #### Schematic View
 
@@ -135,8 +136,8 @@ Represented by two connectors that are wired into the harness.
 
 <br />  
 <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-  <img src="/guides/ecu.jpg" width={300} style={{ borderRadius: '8px' }} />
-  <img src="/guides/ecu-harness.png" width={300} style={{ borderRadius: '8px' }} />
+  <img src="/guides/device/ecu.jpg" width={300} style={{ borderRadius: '8px' }} />
+  <img src="/guides/device/ecu-harness.png" width={300} style={{ borderRadius: '8px' }} />
 </div>
 
 #### Schematic View
@@ -157,6 +158,37 @@ Represented by two connectors that are wired into the harness.
   src="https://app.harness.design/oV1N/demo?allowSwitch=false&allowSearch=false&showBar=false&allowControls=false&showParts=true&views=Layout"
   width="100%"
   height="500"
+  title="Example - Relay"
+  style={{ border: '1px solid #ccc', borderRadius: '8px' }}
+></iframe>
+
+### Fusebox
+
+#### Real World Example
+
+Represented by spade and ring terminals that are wired into the harness.
+
+<br />  
+<img src="/guides/device/fusebox.png" width={300} style={{ borderRadius: '8px' }} />
+
+#### Schematic View
+
+<br/>
+<iframe
+  src="https://app.harness.design/qQpk/demo?allowSwitch=false&allowSearch=false&showBar=false&allowControls=false&showParts=true"
+  width="100%"
+  height="800"
+  title="Example - Relay"
+  style={{ border: '1px solid #ccc', borderRadius: '8px' }}
+></iframe>
+
+#### Layout View
+
+<br/>
+<iframe
+  src="https://app.harness.design/qQpk/demo?allowSwitch=false&allowSearch=false&showBar=false&allowControls=false&showParts=true&views=Layout"
+  width="100%"
+  height="800"
   title="Example - Relay"
   style={{ border: '1px solid #ccc', borderRadius: '8px' }}
 ></iframe>
