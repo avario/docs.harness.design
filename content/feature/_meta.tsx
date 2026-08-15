@@ -13,6 +13,7 @@ import {
   IconHistory,
   IconUsersGroup,
   IconSparkles,
+  IconFileExport,
 } from "@tabler/icons-react";
 
 const IconSplitScreen = () => (
@@ -83,6 +84,13 @@ export default {
     title: (
       <>
         <IconCopyCheck className="tabler-icon" /> Validation
+      </>
+    ),
+  },
+  export: {
+    title: (
+      <>
+        <IconFileExport className="tabler-icon" /> Export
       </>
     ),
   },

@@ -1,6 +1,5 @@
 import {
   IconFolder,
-  IconFileExport,
   IconSettings,
   IconAdjustments,
   IconUserCircle,
@@ -11,13 +10,6 @@ export default {
     title: (
       <>
         <IconFolder className="tabler-icon" /> Open Harness
-      </>
-    ),
-  },
-  export: {
-    title: (
-      <>
-        <IconFileExport className="tabler-icon" /> Export Options
       </>
     ),
   },

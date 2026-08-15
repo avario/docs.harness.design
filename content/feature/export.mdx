@@ -1,0 +1,97 @@
+---
+title: "Export — Wire Harness CAD | harness.design"
+sidebarTitle: "Export"
+description: "Export your harness as a customisable PDF with title block, to-scale formboard panels, Excel wiring table, CSV BOM, or raw JSON data."
+---
+
+import {
+  IconFileExport,
+  IconFile,
+  IconTable,
+  IconBraces,
+  IconMenu2,
+  IconLayoutGrid,
+  IconLayoutBottombarFilled,
+} from "@tabler/icons-react";
+import { Callout } from "nextra/components";
+
+# <IconFileExport/>Export
+
+From <IconMenu2/>**Main Menu** → <IconFileExport/>**Export** you can output documents for manufacturing your harness, or save a local copy of your harness data.
+
+<br />
+<img src="/quick-start/export.png" width={360} style={{ borderRadius: "8px" }} />
+
+## <IconFile/>PDF
+
+Opens the **Export PDF** panel, where you choose the content of the PDF before exporting. The export can contain a Schematic page, a Layout page, or both, each with its own content options.
+
+Your setup is saved with the harness, so the next export starts from the same configuration.
+
+<br />
+<img src="/feature/pdf-export.png" width={500} style={{ borderRadius: "8px" }} />
+
+### Schematic
+
+Includes a `PDF` page of the [Schematic](/view/schematic) view, with these options:
+
+- **Show parts** - Include the part pills assigned to components.
+- **Show coverings** - Include the covering pills assigned to components.
+- **Show component IDs** - Include the component IDs (`C1`, `W3`, ...) on nodes.
+- **Wire thickness** - The line weight used for wires: `Regular`, `Thick`, or `Extra Thick`. Also applies to cable cores and twisted wires.
+- **Nets** - Limit the page to specific [nets](/feature/nets). Only wires on the selected nets are drawn, and components that are not on a selected net are left out entirely. Cavity labels inherited from a hidden net still render, in a lighter gray. The shown nets are listed in the corner of the page.
+
+### Layout
+
+Includes a `PDF` page of the [Layout](/view/layout) view, with the same **Show parts**, **Show coverings**, and **Show component IDs** options.
+
+<Callout>
+  For a [formboard](/feature/formboard) harness, the Layout page renders the whole formboard onto a
+  single 1:1 scale page.
+</Callout>
+
+### <IconLayoutBottombarFilled/>Title block
+
+Adds an engineering-drawing title block to the bottom-right corner of each page, with **Company**, **Title**, **Drawing number**, **Date**, and **Drawn by** fields. Only the fields you fill in are rendered.
+
+Some fields fall back to a default when left empty:
+
+- **Title** - The harness title.
+- **Date** - Today's date.
+- **Drawn by** - The name on your [profile](/view/main-menu/account).
+
+The title block content is saved with the harness.
+
+## <IconLayoutGrid/>Formboard Panels
+
+Available for a [formboard](/feature/formboard) harness. Exports a `PDF` with **one page per panel** of the formboard grid, each page sized to your panel size and drawn to scale.
+
+Print the pages, lay them out in the same grid arrangement, and build the harness directly on top. For example, an `A3` panel with a `2 × 4` grid prints as 8 to-scale A3 pages.
+
+<Callout>
+  The number of pages equals the **Rows × Columns** set under the formboard's [Panel
+  grid](/feature/formboard#panel-grid) settings.
+</Callout>
+
+## <IconTable/>Wiring table
+
+Exports an Excel `.xlsx` file based on the [Connections](/view/connections) view. The file contains a complete list of all connections, followed by individual sheets that break down connections per connector.
+
+<br />
+<img src="/feature/export-xlsx.png" width={800} style={{ borderRadius: "8px" }} />
+
+## <IconTable/>BOM
+
+Exports a `CSV` version of the [Parts](/view/parts) view.
+
+## <IconBraces/>Harness data
+
+Exports a `JSON` file containing all the data of the harness to local storage.
+
+Click here to see how to [open harness data](/view/main-menu/open#harness-data)
+
+## <IconBraces/>Formboard Data
+
+Available for a [formboard](/feature/formboard) harness. Exports a `JSON` file with everything needed to render the harness on a **digital formboard**, such as a projection based system, instead of printed panels.
+
+The file contains the full formboard at physical scale: the panel configuration and pixel-to-length scale factor, every component with its position, rotation, and dimensions, the routed path of every bundle and wire, plus nets, coverings, notes, dimensions, and the part catalog. All geometry is relative to the top-left corner of the panel grid, matching the [Formboard Panels](#formboard-panels) PDF.

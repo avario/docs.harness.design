@@ -1,20 +1,42 @@
 ---
-title: "Export Your Design — Wire Harness CAD | harness.design"
-sidebarTitle: "Export Your Design"
-description: "Export your wire harness as PDF schematic, PDF layout, Excel wiring table, CSV BOM, or raw JSON data from the main menu. All export formats covered."
+title: "Export or Share Your Design — Wire Harness CAD | harness.design"
+sidebarTitle: "Export or Share"
+description: "Export your wire harness as a PDF, Excel wiring table, CSV BOM, or raw JSON data, or share a live read-only link so others always see the latest version."
 ---
 
 import { Steps } from 'nextra/components'
 import { Callout } from 'nextra/components'
-import { IconMenu2, IconFileExport } from "@tabler/icons-react";
+import { IconMenu2, IconFileExport, IconShare2 } from "@tabler/icons-react";
 
-# Export
+# Export or Share
+
+## <IconFileExport/>Export
 
 Go to <IconMenu2/>**Main Menu** → <IconFileExport/>**Export** and select what you would like to export.
 
 <br />
-<img src="/quick-start/export.png" width={200} style={{ borderRadius: "8px" }} />
+<img src="/quick-start/export.png" width={360} style={{ borderRadius: "8px" }} />
 
 <Callout>  
-See [Export](/view/main-menu/export) for more information.
+See [Export](/feature/export) for more information.
+</Callout>
+
+## <IconShare2/>Share
+
+If you just want someone to see your harness, share it directly instead of sending them an export. A shared harness is always the **latest version**, viewers can explore every view themselves, and nothing needs re-exporting after a change.
+
+Go to <IconMenu2/>**Main Menu** → <IconShare2/>**Share**.
+
+<br />
+<img src="/view/main-menu/share.png" width={400} style={{ borderRadius: "8px" }} />
+
+From here you can either:
+
+- **Copy the harness link** and make the harness **public**, so anyone with the link can view it.
+- **Invite specific people by email**, so only they can open the link.
+
+Shared viewers get read-only access. Only you can edit your harness.
+
+<Callout>
+See [Sharing](/feature/sharing) for more information, including embedding a harness on another website.
 </Callout>
