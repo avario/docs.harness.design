@@ -17,12 +17,20 @@ import {
   IconPencil,
   IconFiles,
   IconUsersGroup,
+  IconFolderPlus,
+  IconFolderOff,
+  IconFilePlus,
+  IconStack2,
+  IconLayoutGrid,
+  IconSearch,
 } from "@tabler/icons-react";
 import { Callout } from "nextra/components";
 
 # <IconFolder/>Open
 
 The <IconFolder/>**Open** panel allows you to open <IconUserCircle/>**Your harnesses** created by you, your <IconUsersGroup/>**Team**'s shared harnesses, harnesses <IconShare2/>**Shared with you** or directly from <IconBraces/>**Harness data**.
+
+Once you have more than a handful of harnesses, group them into [Projects](#projects) to keep the list organised.
 
 <br />
 <img src="/view/main-menu/open.png" width={600} style={{ borderRadius: "8px" }} />
@@ -44,7 +52,11 @@ Click on the <IconDotsVertical/> three dots next to the thumbnail of a harness t
 - <IconFiles />
   **Duplicate** - Duplicates the selected harness
 - <IconUsersGroup />
-  **Move to team** - Shares the harness with your [team](/feature/teams) (available to seated team members). See [Collaborating on harnesses](/feature/teams/collaborating).
+  **Move to team** - Shares the harness with your [team](/feature/teams) (available to seated team
+  members). See [Collaborating on harnesses](/feature/teams/collaborating).
+- <IconFolder />
+  **Move to project** - Files the harness under a [project](#projects), or removes it from the one
+  it's in
 
 <Callout>
   <IconWorld /> **PUBLIC** Will be shown on the thumbnail of any harness that is shared publicly.
@@ -56,14 +68,69 @@ If you belong to a [team](/feature/teams), a **Team** tab lists every harness sh
 
 To open a harness click on its thumbnail.
 
-If you hold a [seat](/feature/teams/seats), use the **New team harness** tile at the end of the grid to create a new harness that's assigned to the team right away.
+If you hold a [seat](/feature/teams/seats), use the <IconFilePlus/>**New team harness** button at the top of the panel to create a new harness that's assigned to the team right away.
 
 Click on the <IconDotsVertical/> three dots next to a harness for the actions available to you:
 
 - On harnesses **you own**, you get the same options as in <IconUserCircle/>**Your harnesses**, plus **Remove from team**.
-- The **team owner** can **Remove from team** for any of the team's harnesses.
+- On harnesses owned by someone else, any **seated member** can **Move to project**, and the **team owner** can also **Remove from team**.
 
 See [Collaborating on harnesses](/feature/teams/collaborating) for how editing a shared team harness works.
+
+## Projects
+
+Projects group related harnesses together — a vehicle, a machine, a customer — so a long list stays organised. A project is a label carried by the harness rather than a folder it sits inside, which means:
+
+- A harness belongs to **one project at a time**.
+- There are **no sub-projects** — projects are a single, flat level.
+- A project exists for as long as at least one harness is filed under it, so there is nothing left to tidy up once the last harness leaves.
+
+Projects work the same way in <IconUserCircle/>**Your harnesses** and <IconUsersGroup/>**Team**.
+
+### Switching views
+
+Use the <IconLayoutGrid/>**All** / <IconStack2/>**Projects** toggle at the top of the panel:
+
+- <IconLayoutGrid />
+  **All** shows every harness in a single grid. This is the default.
+- <IconStack2 />
+  **Projects** groups harnesses into sections, one per project. Only the section you edited most
+  recently starts open — click a section heading to open or close it.
+
+Your choice is remembered for next time.
+
+Sections are ordered by the **most recent edit** of any harness inside them, so whatever you are working on stays near the top. Each project heading shows how many harnesses it holds and when one of them was last edited. Harnesses that aren't in a project are collected in a **No project** section at the bottom.
+
+<IconSearch />
+**Search harnesses** filters by harness title and project name in either view.
+
+### Creating a project
+
+Switch to the <IconStack2/>**Projects** view, then click <IconFolderPlus/>**New project** at the top of the panel. Name the project, select the harnesses that belong in it, and confirm.
+
+Because a project only exists while a harness is filed under it, an empty project can't be created. If you don't select any harnesses the action becomes **Create project with a new harness**, which starts a new harness already filed under the name.
+
+### Filing a harness into a project
+
+Click the <IconDotsVertical/> three dots next to a harness and choose <IconFolder/>**Move to project**, then pick a project — or **New project** to file it under a new one. **Remove from project** returns it to **No project**.
+
+### Managing a project
+
+Click the <IconDotsVertical/> three dots next to a project heading to:
+
+- <IconFilePlus />
+  **New harness in this project** - Creates a harness already filed under the project
+- <IconPencil />
+  **Rename project** - Renames the project across every harness in it
+- <IconFolderOff />
+  **Remove all from project** - Clears the project from its harnesses. Nothing is deleted — the
+  harnesses move to **No project**.
+
+<Callout>
+  Projects on team harnesses are shared with the whole team: any seated member can file a team
+  harness into a project, and everyone sees the same groups. Harnesses in <IconShare2 />
+  **Shared with you** can only be filed by the person who owns them.
+</Callout>
 
 ## <IconShare2/>Shared with you
 
